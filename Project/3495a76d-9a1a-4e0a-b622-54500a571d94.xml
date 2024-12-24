@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=Signed_Distance	G=VAR
+++D=LREAL	N=Manual_Speed_C	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Fwd_Sig	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Rev_Sig	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Unit	Ord=3	G=VAR_INPUT
+++D=LREAL	N=Distance	Ord=4	G=VAR_INPUT
+++D=LREAL	N=Speed	Ord=5	G=VAR_INPUT
+++D=LREAL	N=Accel	Ord=6	G=VAR_INPUT
+++D=LREAL	N=Decel	Ord=7	G=VAR_INPUT
+++D=LREAL	N=Adj_Fac	Ord=8	G=VAR_INPUT
+++D=LREAL	N=Manual_Limit	Ord=9	G=VAR_INPUT
+++D=LREAL	N=Manual_Limit_Micro	Ord=10	G=VAR_INPUT
+++D=BOOL	N=Micro_Mode	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Out	Ord=12	G=VAR_OUTPUT
+++D=LREAL	N=Distance_O	Ord=13	G=VAR_OUTPUT
+++D=LREAL	N=Speed_O	Ord=14	G=VAR_OUTPUT
+++D=LREAL	N=Accel_O	Ord=15	G=VAR_OUTPUT
+++D=LREAL	N=Decel_O	Ord=16	G=VAR_OUTPUT
+++D=STRING[256]	N=Unit_Str	Ord=17	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

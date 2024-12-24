@@ -1,0 +1,16 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (ACT) THEN&#xD;
+	IF (Torque_Accumulator &lt; ABS(Torque)) THEN&#xD;
+		Torque_Accumulator := ABS(Torque);&#xD;
+	END_IF;&#xD;
+	IF (Torque_Accumulator &gt; ABS(Max_Torque)) THEN&#xD;
+		OUT := TRUE;&#xD;
+	IF (Reset) THEN&#xD;
+		Torque_Accumulator := 0;&#xD;
+	END_IF;&#xD;
+	ELSE&#xD;
+		OUT := FALSE;&#xD;
+	END_IF;&#xD;
+ELSE&#xD;
+	OUT := FALSE;&#xD;
+END_IF;&#xD;
+</Text></StructuredTextModel>

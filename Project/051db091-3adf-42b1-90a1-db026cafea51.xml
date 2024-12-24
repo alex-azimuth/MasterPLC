@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"LD","Id":"e185876c-e896-4136-a8fc-19c8a93cf8f8","Up":true,"Var":"Enable"},{"__type":"IST","EID":"340d0a75-b7d3-4023-8eee-630ed80a6bde","H":130,"Ix":1,"TXT":"Last_Torque := 0;","W":400,"X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Enable"},{"__type":"IST","EID":"da47aa41-78ab-44bc-a6a4-0b2a81967005","H":249.19999999999993,"Ix":1,"TXT":"IF (Last_Torque < ABS(Torque)) THEN\u000d\u000a\u0009Last_Torque := ABS(Torque);\u000d\u000aEND_IF;","W":877.59999999999991,"X":1}],"LRI":2,"RRI":3,"VLs":[]}

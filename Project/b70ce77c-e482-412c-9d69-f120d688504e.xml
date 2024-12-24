@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <SolutionModel>
+      <DateCreated>2024-12-19T16:15:18.096117-05:00</DateCreated>
+      <Author>Alex</Author>
+      <Customer></Customer>
+      <Project></Project>
+      <ShortDescription>1.1.0:
+Recoiling capabilities
+
+Alexis D. 2024-11-06
+1.2.0:
+Safety logic used to activate forced guide relay.
+Safety logic to activate DSV with signals from PLC.
+Automatic single stroke
+Pedal mode
+
+1.2.1 
+Alexis D. 21.11.2024
+Fixed Bypass grease alarm that was not working
+Bypassed FR3 and FR4 relay discrepency error because we dont have our uncoiler on the line
+
+1.3.0
+Alex
+- Added ability to restart the press automatically from a feed completed with the azimuth integrated feeder.</ShortDescription>
+      <Version></Version>
+      <Password></Password>
+      <ProjectType>StandardProject</ProjectType>
+      <EnableReferredLibrariesExport>true</EnableReferredLibrariesExport>
+      <PL>en-US</PL>
+    </SolutionModel>
+  </data>
+</data>

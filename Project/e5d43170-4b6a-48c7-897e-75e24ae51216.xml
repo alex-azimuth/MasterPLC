@@ -1,0 +1,25 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Enable_RT(Clk:=Enable);&#xD;
+&#xD;
+IF (Enable_RT.Q)  THEN&#xD;
+	Total_Length := Total_Length + Length;&#xD;
+END_IF;&#xD;
+&#xD;
+IF (Reset) THEN&#xD;
+	Total_Length := 0;&#xD;
+END_IF;&#xD;
+&#xD;
+IF (Total_Length &gt;= Length_SP*12) THEN&#xD;
+	Length_Reached := TRUE;&#xD;
+ELSE&#xD;
+	Length_Reached := FALSE;&#xD;
+END_IF;&#xD;
+&#xD;
+Curr_Length_Raw := Total_Length;&#xD;
+&#xD;
+// Transform units into feet or meters&#xD;
+IF (NOT Unit) THEN&#xD;
+	Curr_Length := (Total_Length+Coil_Offset_Length)/12;&#xD;
+ELSE&#xD;
+	Curr_Length := (Total_Length+Coil_Offset_Length)/1000;&#xD;
+END_IF;&#xD;
+	</Text></StructuredTextModel>

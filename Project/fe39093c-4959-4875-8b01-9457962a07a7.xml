@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..0] OF OEN\Modbus\sModbusAccess	N=Access_List	G=VAR
+++D=ARRAY[0..9] OF LREAL	N=Show_Feeds	G=VAR
+++D=OEN\Modbus\ModbusTCP_Server	N=Modbus_Server	G=VAR
+++D=LREAL	N=Test_Show_No_Of_Steps	G=VAR
+++D=ARRAY[0..9] OF INT	N=Show_Gags	G=VAR
+++D=UINT	N=No_Of_Clients_Connected	G=VAR
+++D=BOOL	N=Temp_OFF_Try	G=VAR
+++D=ARRAY[0..19] OF INT	N=Show_Gags2	G=VAR
+++D=ARRAY[0..19] OF LREAL	N=Show_Feeds2	G=VAR
+++D=BOOL	N=Test_Flag	G=VAR
+++D=R_TRIG	N=Sequence_Finished_Trig	G=VAR
+++D=BOOL	N=Sequence_Finished_Rising	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=Production_Manger_Connect_Status	G=VAR_EXTERNAL
+++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL
+++D=ModBus_Table	N=Modbus_Data_Table	G=VAR_EXTERNAL
+++D=BOOL	N=Stroke_Press	G=VAR_EXTERNAL
+++D=BOOL	N=Sequence_Finished	G=VAR_EXTERNAL
+++D=Feed_Sequence	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=Press_Data	N=Press	G=VAR_EXTERNAL
+++D=REAL	N=Press_Pos_REAL	G=VAR_EXTERNAL
+++D=BOOL	N=Translate_Table	G=VAR_EXTERNAL
+++D=BOOL	N=Comm_TimeStamp_Trigger	G=VAR_EXTERNAL
+++D=BOOL	N=Press_Ready	G=VAR_EXTERNAL

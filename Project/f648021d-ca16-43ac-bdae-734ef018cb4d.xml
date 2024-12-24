@@ -1,0 +1,12 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (Enable) THEN&#xD;
+	Longest_Feed := 0;&#xD;
+	FOR I:=0 TO Feeder_Sequences.No_Of_Steps BY 1 DO&#xD;
+		IF (Feeder_Sequences.Distance[I] &gt; Longest_Feed) THEN&#xD;
+			Longest_Feed := Feeder_Sequences.Distance[I];&#xD;
+		END_IF;&#xD;
+	END_FOR;&#xD;
+	Feed_Length := Longest_Feed;&#xD;
+	Done := TRUE;&#xD;
+ELSE&#xD;
+	Done := FALSE;&#xD;
+END_IF;</Text></StructuredTextModel>

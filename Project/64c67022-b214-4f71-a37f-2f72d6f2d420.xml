@@ -1,0 +1,62 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=Press_Unlock_Timer	G=VAR
+++D=UINT	N=I	G=VAR
+++D=_sNXUNIT_ID	N=UnitNb	G=VAR
+++D=BOOL	N=Err_Occured	G=VAR
+++D=GetNXUnitError	N=NXBusError	G=VAR
+++D=TOF	N=TOF_Shaker	G=VAR
+++D=TOF	N=Reset_Shaker_DRV	G=VAR
+++D=TON	N=Shaker_Wait_PR	G=VAR
+++D=TON	N=Shaker_Wait_Homing	G=VAR
+++D=BOOL	N=Testing_Shaker	G=VAR
+++D=TIME	N=Shaker_Wait_Homing_ET	G=VAR
+++D=TON	N=Shaker_Wait_Start_PR	G=VAR
+++D=BOOL	N=Shaker_Start_PR	G=VAR
+++D=TON	N=Shaker_Wait_Aux	G=VAR
+++D=TON	N=Shaker_Wait_PR_AUX	G=VAR
+++D=TP	N=Start_Pulse	G=VAR
+++D=BOOL	N=Test_OFF	G=VAR
+++D=BOOL	N=Test_Enable	G=VAR
+++D=BOOL	N=Test_Reset	G=VAR
+++D=TIME	N=Show_ET	G=VAR
+++D=R_Accumulation_Timer	N=Test_R_Timer	G=VAR
+++D=BOOL	N=HMI_Write_Ethercat	G=VAR
+++D=EC_CoESDORead	N=SDO_R_Ethercat_Comm	G=VAR
+++D=EC_CoESDOWrite	N=SDO_W_Ethercat_Comm	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=Features	N=Master_Features	G=VAR_EXTERNAL
+++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI_Data	G=VAR_EXTERNAL
+++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
+++D=HMI_General_Data_Retained	N=HMI_Data_Retained	G=VAR_EXTERNAL
+++D=BOOL	N=Stroke_Press	G=VAR_EXTERNAL
+++D=BOOL	N=Door1_Unlock_Request	G=VAR_EXTERNAL
+++D=INT	N=HMI_Dashboard_Selected_Screen	G=VAR_EXTERNAL
+++D=ARRAY[0..5] OF INT	N=HMI_Dashboard_Display_No	G=VAR_EXTERNAL
+++D=ARRAY[0..5] OF BOOL	N=HMI_Dashboard_Display_Selected	G=VAR_EXTERNAL
+++D=AlarmCodes	N=HMI_Error_Code_List	G=VAR_EXTERNAL
+++D=Shaker_Data	N=HMI_Shaker_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Press_Idle	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_1	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_3	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_2	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_4	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_5	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_6	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_7	G=VAR_EXTERNAL
+++D=BOOL	N=User_Output_8	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	G=VAR_EXTERNAL
+++D=Die_Configuration	N=Gag_Config	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_IN_Homed	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_OUT_Start_PR	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_OUT_Start	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_OUT_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_OUT_Aux	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_IN_Drive_Fault	G=VAR_EXTERNAL
+++D=Feeder_Options	N=Master_Feeder_Options	G=VAR_EXTERNAL
+++D=EtherCAT_Comm	N=HMI_EtherCAT_Comm	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Reset_Safety	G=VAR_EXTERNAL
+++D=BOOL	N=Act_Safety_Reset_PB	G=VAR_EXTERNAL
+++D=STRING[256]	N=Version_Number_String	G=VAR_EXTERNAL

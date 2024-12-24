@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=AccumulationTimer	N=Accumulator	G=VAR
+++D=TIME	N=Current_Time	G=VAR
+++D=TIME	N=Time_R	R=1	G=VAR
+++D=BOOL	N=Acc_Enable	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Reset	Ord=1	G=VAR_INPUT
+++D=BOOL	N=OUT	Ord=2	G=VAR_OUTPUT
+++D=TIME	N=ET	R=1	Ord=3	G=VAR_OUTPUT
+++D=TIME	N=PT	Ord=4	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

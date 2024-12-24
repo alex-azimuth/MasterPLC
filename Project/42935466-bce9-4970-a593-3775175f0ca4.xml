@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=Grease_Cycle_Complete	G=VAR
+++D=TON	N=Main_Cycle_Timer	G=VAR
+++D=TON	N=Grease_Failure_Delay	G=VAR
+++D=TIME	N=Show_ET_GSP	G=VAR
+++D=TIME	N=Show_ET_GSC	G=VAR
+++D=TIME	N=Show_ET_GFD	G=VAR
+++D=TIME	N=Show_ET_MCT	G=VAR
+++D=TOF	N=Grease_Sensor_OFF	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Greaser	Ord=0	G=VAR_OUTPUT
+++D=BOOL	N=Cycle_Success	Ord=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Press_IN_Hyd_Grease_Sensor	Ord=3	G=VAR_INPUT
+++D=Grease_Cycle_Timers	N=Grease_Cycle_Timer	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Cycle_Failure	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

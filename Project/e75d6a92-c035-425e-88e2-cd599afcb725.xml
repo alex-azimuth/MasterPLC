@@ -1,0 +1,4 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(* Pulse is in milliseconds so multiply by a thousand again *)&#xD;
+NanoSeconds := TimeToNanoSec(Time_Val)/1000000;&#xD;
+&#xD;
+Time_To_Ms := NanoSeconds;</Text></StructuredTextModel>

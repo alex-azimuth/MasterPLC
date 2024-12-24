@@ -1,0 +1,40 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=Start_RT	G=VAR
+++D=R_TRIG	N=Stop_RT	G=VAR
+++D=R_TRIG	N=Reset_RT	G=VAR
+++D=R_TRIG	N=Enable_RT	G=VAR
+++D=F_TRIG	N=Reset_Pulse_FT	G=VAR
+++D=UINT	N=Start_Code	IV=1151	Const=1	G=VAR
+++D=UINT	N=Stop_Code	IV=1150	Const=1	G=VAR
+++D=TP	N=Reset_Pulse	G=VAR
+++D=WORD	N=Reset_Word	G=VAR
+++D=TIME	N=Show_Et	G=VAR
+++D=REAL	N=Scale_REF	R=1	IV=0.003	G=VAR
+++D=REAL	N=Ref	G=VAR
+++D=BOOL	N=Test324	G=VAR
+++D=BOOL	N=Resetting	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=UINT	N=Control_Word	Ord=1	G=VAR_IN_OUT
+++D=UINT	N=Status_Word	Ord=2	G=VAR_INPUT
+++D=REAL	N=Accel_Time	Ord=3	G=VAR_INPUT
+++D=REAL	N=Decel_Time	Ord=4	G=VAR_INPUT
+++D=REAL	N=Ref_IN_Hz	Ord=5	G=VAR_INPUT
+++D=INT	N=Ref_OUT	Ord=6	G=VAR_OUTPUT
+++D=DINT	N=Accel_OUT	Ord=7	G=VAR_OUTPUT
+++D=DINT	N=Decel_OUT	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=Start	Ord=9	G=VAR_INPUT
+++D=BOOL	N=Stop	Ord=10	G=VAR_INPUT
+++D=BOOL	N=Reset_Drive	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Reverse	Ord=12	G=VAR_INPUT
+++D=UINT	N=Fault_Code	Ord=13	G=VAR_INPUT
+++D=DINT	N=Current	Ord=14	G=VAR_INPUT
+++D=DINT	N=Total_Torque	Ord=15	G=VAR_INPUT
+++D=DINT	N=DC_Voltage	Ord=16	G=VAR_INPUT
+++D=BOOL	N=Running	Ord=17	G=VAR_OUTPUT
+++D=BOOL	N=Forward	Ord=18	G=VAR_OUTPUT
+++D=BOOL	N=Fault	Ord=19	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=Abb_Drv	N=ABB_Control	G=VAR_EXTERNAL

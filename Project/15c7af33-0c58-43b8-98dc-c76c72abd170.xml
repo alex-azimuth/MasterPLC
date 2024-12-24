@@ -1,0 +1,19 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (Enable) THEN &#xD;
+	(* Zone does not pass through 0 *)&#xD;
+	IF (Angle1 &lt;= Angle2) THEN&#xD;
+		IF (Pos &gt;= Angle1 AND Pos &lt;= Angle2) THEN&#xD;
+			In_Zone := TRUE;&#xD;
+		ELSE&#xD;
+			In_Zone := FALSE;&#xD;
+		END_IF;&#xD;
+	ELSE&#xD;
+		(* Zone passes through 0 *)&#xD;
+		IF (Pos &gt;= Angle1 OR Pos &lt;= Angle2) THEN&#xD;
+			In_Zone := TRUE;&#xD;
+		ELSE&#xD;
+			In_Zone := FALSE;&#xD;
+		END_IF;&#xD;
+	END_IF;&#xD;
+ELSE&#xD;
+	In_Zone := FALSE;&#xD;
+END_IF;</Text></StructuredTextModel>

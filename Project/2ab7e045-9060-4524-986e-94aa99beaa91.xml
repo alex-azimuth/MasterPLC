@@ -1,0 +1,17 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=A_Time_Sec	G=VAR
+++D=REAL	N=Time_In	G=VAR
+++D=REAL	N=Sec_In_Day	IV=86400	Const=1	G=VAR
+++D=REAL	N=Sec_In_Hour	IV=3600	Const=1	G=VAR
+++D=REAL	N=Sec_In_Minute	IV=60	Const=1	G=VAR
+++D=REAL	N=R_Days	G=VAR
+++D=REAL	N=R_Hours	G=VAR
+++D=REAL	N=R_Minutes	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=TIME	N=A_Time	Ord=2	G=VAR_INPUT
+++D=Time_Construct	N=Packed_Time	Ord=3	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

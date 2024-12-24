@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="Master Program  - 1.3.1 - EMKA" id="b70ce77c-e482-412c-9d69-f120d688504e" trackingId="18be0c69-f03d-4301-8a4a-7edb4960ebb3" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA-RTLD□□Version:1.17" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="SetUnit NX1P2-9024DT1 Ver. 1.50" />
+      <ApplicationFeature name="SafetyDataProtection" />
+      <ApplicationFeature name="SafetyProgramProtection" />
+      <ApplicationFeature name="Safety_DataProtectionV2_0Using" />
+      <ApplicationFeature name="Safety" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

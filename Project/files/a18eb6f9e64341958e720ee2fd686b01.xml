@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="_sHMI_VNC_CLIENT_INFO" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="9e64fe28-9400-4c2d-b222-c8420751472d">
+      <DataType Name="IPAddress" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="d6574c7c-47f2-4c15-9831-f7c3a9b86c70" />
+      <DataType Name="Comment" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="f3bf5b48-84f6-4bb8-a70e-eaa80f571616" />
+      <DataType Name="MACAddress" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="0012cf66-f189-4afa-814d-5e99adbc8163" />
+    </DataType>
+    <DataType Name="_eHMI_BUZZER_TYPE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="97e32c6f-efc5-4056-9c5b-9e4b553f1b53">
+      <DataType Name="ContinuousBuzzer" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="064c5e1d-dad6-4809-a9df-f6e7da244884" />
+      <DataType Name="IntermittentShortPulse" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="d0e069e1-9d90-4bfe-9f0c-5bbf03dd911e" />
+      <DataType Name="IntermittentLongPulse" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="27407ac8-8644-4125-b18a-69d566144a21" />
+    </DataType>
+    <DataType Name="_eHMI_SERVICE_STATE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="7994ed11-98e7-4a43-bce5-a2b3b6d6fee2">
+      <DataType Name="Running" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="482e8e84-822f-43a9-ae3b-f59c01b2f6a5" />
+      <DataType Name="Suspended" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="aa5fc924-eb5d-49d7-b060-f69eea4d89f2" />
+    </DataType>
+    <DataType Name="_eHMI_SERVICE_TYPE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="0429d685-bb32-4a40-8137-f6ce8b4bc702">
+      <DataType Name="VNCServer" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="d5e961c9-a865-4b23-873f-57dc81e76c6b" />
+    </DataType>
+    <DataType Name="_eHMI_KNOWN_PATH" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="e5f5e75d-8a24-4caa-99a6-ad54e3cf61eb">
+      <DataType Name="SDCard" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="21c9fa36-d63f-446a-bcbe-97d78f10d890" />
+      <DataType Name="USBMemory" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="79da615f-4e42-4dd6-8353-ab9dda262675" />
+    </DataType>
+    <DataType Name="_eHMI_TROUBLESHOOTER_PAGE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="b3ba50f6-cfc3-451f-aa41-e285688a6471">
+      <DataType Name="ActiveControllerEvents" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="229e8449-53a4-4562-979d-772997dcc192" />
+      <DataType Name="ActiveUserEvents" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="229be8f5-ae7f-49ea-839f-5eaf59c8c65c" />
+      <DataType Name="ControllerEventLogs" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="2b97fd88-cb85-4355-a820-9b75abda2c69" />
+      <DataType Name="UserEventLogs" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="e43c794c-dcdc-48ac-b76b-e28960556499" />
+    </DataType>
+    <DataType Name="_eHMI_IME_LANGUAGE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="ac8c169c-cc0d-4368-b438-036edc86e515">
+      <DataType Name="CurrentSystemLanguage" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="d4ef1982-7fc0-42c1-a400-2eeef312b3de" />
+      <DataType Name="Japanese" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="2dca5560-44fd-436a-a75a-4979fe965cfc" />
+      <DataType Name="SimplifiedChinese" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="bb71644a-0d4b-4003-8dc4-225fd95841ca" />
+      <DataType Name="TraditionalChinese" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="1e9f0740-c533-4b52-a890-baf8e9aba8af" />
+      <DataType Name="Korean" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="437bf6f4-153d-4300-abc3-1a234501b0ee" />
+    </DataType>
+    <DataType Name="_eHMI_GRAPH_ZOOM_TARGET" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="03427245-b249-428e-969b-e61fde179ae1">
+      <DataType Name="Both" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="fa9a561e-9988-430f-a766-18a21c622ea7" />
+      <DataType Name="Horizontal" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="76cae04a-61cd-4506-a014-5f1319a59a40" />
+      <DataType Name="Vertical" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="7e1e5d12-9221-4add-8e91-096bacd57b24" />
+    </DataType>
+    <DataType Name="_eHMI_GRAPH_CURSOR" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="1d0a04df-c43e-4135-b447-e936d0d17bb1">
+      <DataType Name="Cursor1" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="dfbfea09-9a5f-4700-87b8-c05e6ebe37c8" />
+      <DataType Name="Cursor2" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="61e86a4d-da8b-48a7-8e6a-69f5946cbf24" />
+    </DataType>
+    <DataType Name="_eHMI_GRAPH_DIRECTION" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="b56276c3-6cce-45b5-a790-a804c6735022">
+      <DataType Name="Left" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="726fe8c5-64a4-4a16-8fea-355d456ca27b" />
+      <DataType Name="Right" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="9eda3d7f-1eac-4ba1-9578-1b5667aea608" />
+    </DataType>
+  </DataType>
+</data>

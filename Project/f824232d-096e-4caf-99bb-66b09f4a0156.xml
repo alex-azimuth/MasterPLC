@@ -1,0 +1,21 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF NOT ((Angle3 = Angle4)) THEN&#xD;
+	(* Zone does not pass through 0 *)&#xD;
+	IF (Angle1 &lt;= Angle2) THEN&#xD;
+		IF (Angle3 &gt;= Angle1 AND Angle3 &lt;= Angle2) OR&#xD;
+			(Angle4 &gt;= Angle1 AND Angle4 &lt;= Angle2) THEN&#xD;
+			In_Zone := TRUE;&#xD;
+		ELSE&#xD;
+			In_Zone := FALSE;&#xD;
+		END_IF;&#xD;
+	ELSE&#xD;
+		(* Zone passes through 0 *)&#xD;
+		IF (Angle3 &gt;= Angle1 OR Angle3 &lt;= Angle2) OR&#xD;
+			(Angle4 &gt;= Angle1 OR Angle4 &lt;= Angle2) THEN&#xD;
+			In_Zone := TRUE;&#xD;
+		ELSE&#xD;
+			In_Zone := FALSE;&#xD;
+		END_IF;&#xD;
+	END_IF;&#xD;
+ELSE&#xD;
+	In_Zone := FALSE;&#xD;
+END_IF;</Text></StructuredTextModel>

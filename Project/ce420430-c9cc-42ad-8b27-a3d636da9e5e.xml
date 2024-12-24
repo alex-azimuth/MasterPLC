@@ -1,0 +1,11 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Sequence_Counter := 0;&#xD;
+&#xD;
+(* Count the number of Feeder_Sequences based on how many are enabled *)&#xD;
+FOR C:=1 To 499 BY 1 DO&#xD;
+	IF (Feeder_Sequences.Enabled[C]) THEN&#xD;
+		Sequence_Counter := Sequence_Counter +1;&#xD;
+	ELSE&#xD;
+		RETURN;&#xD;
+	END_IF;&#xD;
+END_FOR;&#xD;
+</Text></StructuredTextModel>

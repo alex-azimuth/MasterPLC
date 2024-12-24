@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>OEN_Communication_V1_0_22</Name>
+      <NameSpace></NameSpace>
+      <Version>1.0.22</Version>
+      <Revision>1</Revision>
+      <LibraryId>772ecec8-0398-44b7-8543-ac49c73781ba</LibraryId>
+      <Author>OEE-N Bjarte Myklebust</Author>
+      <Company>Omron Electronics Norway AS</Company>
+      <DateCreated>2012-05-08T07:04:04.1180337-04:00</DateCreated>
+      <DateModified>2021-09-07T08:36:00.584808-04:00</DateModified>
+      <Comment>For NX/NJ FW 1.18 --&gt;</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>OEN\Serial\CIF\GetByteCount</PublicName>
+        <PublicName>OEN\ECat\SDO\NodeDatCmp_Read_Write</PublicName>
+        <PublicName>OEN\ECat\SDO\NodeDatRead</PublicName>
+        <PublicName>OEN\ECat\SDO\NodeDatWrite</PublicName>
+        <PublicName>OEN\Serial\CIF\NX_SendSMS</PublicName>
+        <PublicName>OEN\Serial\CIF\NX_RcvSMS</PublicName>
+        <PublicName>OEN\Serial\CIF\NX_ClearModemBuffer</PublicName>
+        <PublicName>OEN\Modbus\NX_ModbusRTU_Master</PublicName>
+        <PublicName>OEN\Modbus\NX_ModbusRTU_Slave</PublicName>
+        <PublicName>OEN\Modbus\ModbusTCP_Client</PublicName>
+        <PublicName>OEN\Modbus\ModbusTCP_Server</PublicName>
+        <PublicName>OEN\Etn\TCP\TCP_Server</PublicName>
+        <PublicName>OEN\ECat\SDO\sNodeDat</PublicName>
+        <PublicName>OEN\ECat\SDO\sSdoList</PublicName>
+        <PublicName>OEN\Modbus\eFun</PublicName>
+        <PublicName>OEN\Modbus\sModbusReq</PublicName>
+        <PublicName>OEN\Modbus\sAddressReq</PublicName>
+        <PublicName>OEN\Modbus\sAddress</PublicName>
+        <PublicName>OEN\Modbus\sModbusAccess</PublicName>
+        <PublicName>OEN\Modbus\eAccess</PublicName>
+        <PublicName>OEN\Modbus\eRegisterType</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX1P2-1040DT</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>18</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.18</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.18" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>a51d4973-7d2f-42e5-b95a-78e2c9fe090b</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\workstation12\Downloads\OEN_Communication.slr</LibraryFilePath>
+      <LibraryFileRelativePath>Downloads\OEN_Communication.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

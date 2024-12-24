@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=Start_RT	G=VAR
+++D=F_TRIG	N=Start_FT	G=VAR
+++D=R_TRIG	N=Release_RT	G=VAR
+++D=LREAL	N=Initial_Pos	G=VAR
+++D=LREAL	N=Total_Distance	G=VAR
+++D=LREAL	N=Torque	G=VAR
+++D=LREAL	N=Total_Torque	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=Feeder_Analytics	N=Analytics	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Feed_Start	Ord=2	G=VAR_INPUT
+++D=LREAL	N=Pos	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Release	Ord=4	G=VAR_INPUT
+++D=LREAL	N=Trq	Ord=5	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,4 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Current_Pos:=TO_LREAL(Press_Position_Raw);&#xD;
+Current_Speed:=(TO_LREAL(Abs_Enc_Speed)/360)*60;&#xD;
+Current_Pos_REAL :=TO_REAL(Current_Pos);&#xD;
+Current_Speed_REAL := TO_REAL(Current_Speed);</Text></StructuredTextModel>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="C_Press" InstanceName="C_Press" IniFileTrackingId="a898fcd57773426f8591cbd78d5f55e9" StartupSetting="FALSE" SequenceNumber="2" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Feeder" InstanceName="Feeder" IniFileTrackingId="5e121dfcd59940f29373fc7def511bdb" StartupSetting="FALSE" SequenceNumber="3" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Modbus" InstanceName="Modbus" IniFileTrackingId="a8dbbf5f177341f8a9e69737fde141af" StartupSetting="FALSE" SequenceNumber="5" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Master" InstanceName="Master" IniFileTrackingId="c32095ddc1cf46a2b15ebcf552a8221f" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Uncoiler" InstanceName="Uncoiler" IniFileTrackingId="3fc0a9ea9f8f47c2bc3816b8af1fad98" StartupSetting="FALSE" SequenceNumber="4" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Recoil" InstanceName="Recoil" IniFileTrackingId="d642a80e502344ae84eb324c9c25f6a2" StartupSetting="FALSE" SequenceNumber="6" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Shear" InstanceName="Shear" IniFileTrackingId="6d0c794129ff448fa3c13357d65e239d" StartupSetting="FALSE" SequenceNumber="7" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="dd951eeb-06d1-4c6c-ae1e-940ff5b33753" />
+    <RefreshUnitId RefreshUnitId="92abac92-967f-41bf-b74f-495297ef7196" />
+    <RefreshUnitId RefreshUnitId="c93ced1f-b41e-4d11-bacd-ae47ba974d6b" />
+    <RefreshUnitId RefreshUnitId="0ebdf9e6-b249-4ea1-ae39-fa21b55fb58a" />
+    <RefreshUnitId RefreshUnitId="7e358f3e-1c0b-4dc3-9dff-e297444a2485" />
+    <RefreshUnitId RefreshUnitId="81d7b7b9-bf18-42d9-b7b6-762647fa8bd2" />
+    <RefreshUnitId RefreshUnitId="bd418dc4-e26c-4c2c-a7ad-164a0a22e362" />
+    <RefreshUnitId RefreshUnitId="9472184a-0de8-449b-b660-5b900685647a" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

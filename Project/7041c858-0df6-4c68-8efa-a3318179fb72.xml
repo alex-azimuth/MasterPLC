@@ -1,0 +1,73 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=Coil_Calc	N=Recoil_Calc	G=VAR
+++D=LREAL	N=TestOD	G=VAR
+++D=LREAL	N=TestT	G=VAR
+++D=LREAL	N=Test_LEngth	G=VAR
+++D=LREAL	N=Test_Weight	G=VAR
+++D=MC_TorqueControl	N=Recoil_Torque_Cntl	G=VAR
+++D=BOOL	N=Test_Tuning	G=VAR
+++D=MC_Power	N=Power_On_Recoiler	G=VAR
+++D=BOOL	N=Recoiler_Servo_Error	G=VAR
+++D=BOOL	N=Recoiler_Safety_OK	G=VAR	Com=SAFETY - The Clamp on the recoiler is activated
+++D=BOOL	N=Operations_Ready	G=VAR
+++D=TOF	N=Temp_Reset_Recoiler	G=VAR
+++D=MC_Reset	N=Reset_Recoiler	G=VAR
+++D=ResetMCError	N=Reset_MC_Error	G=VAR
+++D=ResetECError	N=Reset_EC_Error	G=VAR
+++D=REAL	N=In_Scale	G=VAR
+++D=Recoiler_Trq	N=Recoil_Trq_Calc	G=VAR
+++D=LREAL	N=Torque_Value	G=VAR
+++D=MC_Stop	N=Stop_Recoil_Controls	G=VAR
+++D=MC_MoveJog	N=Recoil_Jog	G=VAR
+++D=BOOL	N=Invalid	G=VAR
+++D=BOOL	N=Test_Flag	G=VAR
+++D=REAL	N=Raw_Trans	G=VAR
+++D=LREAL	N=Temp_Raw_Trans	G=VAR
+++D=BOOL	N=Recoiler_OUT_Clamp_Close	G=VAR
+++D=BOOL	N=Recoiler_ou	G=VAR
+++D=BOOL	N=Show_Active	G=VAR
+++D=BOOL	N=Show_Error	G=VAR
+++D=BOOL	N=Show_Busy	G=VAR
+++D=BOOL	N=Test_Trigger	G=VAR
+++D=REAL	N=Scale_Percent_Threshold_Min	G=VAR
+++D=REAL	N=Scale_Percent_Threshold_Max	G=VAR
+++D=REAL	N=Sensor_Threshold	G=VAR
+++D=BOOL	N=Trigger_Test	G=VAR
+++D=MC_Home	N=Home_Recoiler	G=VAR
+++D=BOOL	N=Go_To_Home	G=VAR
+++D=MC_MoveAbsolute	N=Move_To_Home	G=VAR
+++D=HasChanged_REAL	N=Speed_Changed	G=VAR
+++D=HasChanged_LREAL	N=Has_Changed_Speed	G=VAR
+++D=LREAL	N=Coil_Length	G=VAR
+++D=TOF	N=Homing_Timer	G=VAR
+++D=BOOL	N=Temporary_Bypass	G=VAR
+++D=TOF	N=Wait_Auto	G=VAR
+++D=TON	N=Wait_Auto2	G=VAR
+++D=Coil_Size_Length	N=Calc_Length	G=VAR
+++D=TON	N=Finish_Feed	G=VAR
+++D=LREAL	N=My_OD	G=VAR
+++D=Vel_Change	N=Recoil_Vel_Shift	G=VAR
+++D=LREAL	N=Total_Length	G=VAR
+++D=LREAL	N=Show_AccDec	G=VAR
+++D=TON	N=Idle_Filter	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=_sAXIS_REF	N=Recoiler	Const=1	G=VAR_EXTERNAL
+++D=HMI_Recoiler	N=HMI_Recoiler_Data	G=VAR_EXTERNAL
+++D=Recoiler_Data	N=My_Recoiler	G=VAR_EXTERNAL
+++D=BOOL	N=Recoiler_IN_STO1	G=VAR_EXTERNAL
+++D=BOOL	N=Recoiler_IN_STO2	G=VAR_EXTERNAL
+++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI_Data	G=VAR_EXTERNAL
+++D=INT	N=Recoiler_IN_Radius_Sensor	G=VAR_EXTERNAL
+++D=HMI_Recoiler_Retained	N=HMI_Recoiler_Data_Retained	G=VAR_EXTERNAL
+++D=Recoiler_Comm	N=Recoiler_Signals	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_On_Signal	G=VAR_EXTERNAL
+++D=BOOL	N=Recoiler_OUT_Clamp_Closing	G=VAR_EXTERNAL
+++D=BOOL	N=Recoiler_IN_Clamp_Open	G=VAR_EXTERNAL
+++D=BOOL	N=Recoiler_Not_Ready_For_Auto	G=VAR_EXTERNAL
+++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
+++D=ARRAY[0..31] OF Do_Action	N=My_Actions	G=VAR_EXTERNAL
+++D=BOOL	N=Recoiler_IN_Jog_Rev	G=VAR_EXTERNAL
+++D=BOOL	N=Recoiler_IN_Jog_Fwd	G=VAR_EXTERNAL

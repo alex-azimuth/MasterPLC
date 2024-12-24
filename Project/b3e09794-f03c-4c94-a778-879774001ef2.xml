@@ -1,0 +1,24 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (Enable) THEN&#xD;
+	// Setup the fault timer&#xD;
+	Fault_Timer(IN:=Run_Timer, PT:=Frac_To_Time(Discrepency));&#xD;
+	&#xD;
+	// Fault condition&#xD;
+	IF (IN_NC AND IN_NO) OR&#xD;
+		(NOT IN_NC) AND (NOT IN_NO) THEN&#xD;
+		Run_Timer := TRUE;&#xD;
+	ELSE&#xD;
+		Run_Timer := FALSE;&#xD;
+	END_IF;&#xD;
+	Error := Fault_Timer.Q;&#xD;
+	&#xD;
+	// Conditions to give the output&#xD;
+	IF (NOT Run_Timer) AND (IN_NC AND NOT IN_NO) THEN&#xD;
+		Out := TRUE;&#xD;
+	ELSE&#xD;
+		Out := FALSE;&#xD;
+	END_IF;&#xD;
+ELSE&#xD;
+	Error := FALSE;&#xD;
+	Out := FALSE;&#xD;
+	Run_Timer := FALSE;&#xD;
+END_IF;</Text></StructuredTextModel>

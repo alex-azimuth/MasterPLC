@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=Range	G=VAR
+++D=LREAL	N=Multiplier	G=VAR
+++D=LREAL	N=Percentage_Of_Curr	G=VAR
+++D=LREAL	N=Percentage_Of_Set	G=VAR
+++D=LREAL	N=Difference	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=LREAL	N=Current_Value	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Always_True	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Deviation	Ord=2	G=VAR_OUTPUT
+++D=LREAL	N=Setpoint_Value	Ord=3	G=VAR_INPUT
+++D=LREAL	N=Min_Value	Ord=4	G=VAR_INPUT
+++D=LREAL	N=Max_Value	Ord=5	G=VAR_INPUT
+++D=LREAL	N=Allowed_Deviation	Ord=6	G=VAR_INPUT
+++D=LREAL	N=Current_Deviation	Ord=7	G=VAR_OUTPUT
+++D=LREAL	N=Current_Percentage	Ord=8	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

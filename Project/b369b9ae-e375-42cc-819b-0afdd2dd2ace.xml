@@ -1,0 +1,19 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (Enable) THEN&#xD;
+	// Convert time to seconds&#xD;
+	A_Time_Sec := LINT_TO_REAL(TimeToSec(A_Time));&#xD;
+	&#xD;
+	// Convert seconds to days and determine what is left&#xD;
+	Packed_Time.Days := LINT_TO_REAL(TRUNC(A_Time_Sec/Sec_In_Day));&#xD;
+	R_Days := ModReal(A_Time_Sec, Sec_In_Day);&#xD;
+	&#xD;
+	// Convert the remainder of days to hours and determine what is left&#xD;
+	Packed_Time.Hours := LINT_TO_REAL(TRUNC(R_Days/Sec_In_Hour));&#xD;
+	R_Hours := ModReal(R_Days, Sec_In_Hour);&#xD;
+	&#xD;
+	// Convert the remainder of hours and determine what is left&#xD;
+	Packed_Time.Minutes := LINT_TO_REAL(TRUNC(R_Hours/Sec_In_Minute));&#xD;
+	R_Minutes := ModReal(R_Hours, Sec_In_Minute);&#xD;
+	&#xD;
+	// Remove nanoseconds to prevent the screen from flickering constantly&#xD;
+	Packed_Time.Seconds := LINT_TO_REAL(TRUNC(R_Minutes));&#xD;
+END_IF;</Text></StructuredTextModel>

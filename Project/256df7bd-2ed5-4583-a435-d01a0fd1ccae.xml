@@ -1,0 +1,13 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>PI := 3.141592653589793238462643383279502884197;&#xD;
+// Verify the ratio after the gearbox - since the encoder is also after the gearbox&#xD;
+Feed_Verification_Data.After_Gearbox_Ratio := Metric_To_Imperial(Feeder_Scale_Ratio)*Feed_Verification_Data.Gearbox;&#xD;
+&#xD;
+// Diameter of the entry feeder roller&#xD;
+Entry_Feeder_Dia := Metric_To_Imperial((Feeder_Scale_Ratio*Feed_Verification_Data.After_Gearbox_Ratio)/PI);&#xD;
+&#xD;
+// Ratio between the diameter of the roller of the feeder and the roller of the encoder&#xD;
+Feeder_Encoder_Ratio := Feed_Verification_Data.Encoder_Diameter/Entry_Feeder_Dia;&#xD;
+&#xD;
+// Determine the ratio in pulses between the encoder and the feeder&#xD;
+Feed_Verification_Data.Pulse_Ratio := Feed_Verification_Data.Pulse_Per_Rotation/(Feed_Verification_Data.After_Gearbox_Ratio*(Feeder_Encoder_Ratio));&#xD;
+</Text></StructuredTextModel>

@@ -1,0 +1,44 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Normally_Open	G=VAR
+++D=BOOL	N=Normally_Closed	G=VAR
+++D=BOOL	N=Rising_Wave	G=VAR
+++D=BOOL	N=Falling_Wave	G=VAR
+++D=BOOL	N=Rising_Falling_Wave	G=VAR
+++D=BOOL	N=Falling_Rising_Wave	G=VAR
+++D=BOOL	N=Rising_Falling_Rising_Wave	G=VAR
+++D=BOOL	N=Falling_Rising_Falling_Wave	G=VAR
+++D=BOOL	N=Rising_Falling_Wave_Rose	G=VAR
+++D=BOOL	N=Falling_Rising_Wave_Fell	G=VAR
+++D=BOOL	N=Rising_Falling_Rising_Wave_Rose	G=VAR
+++D=BOOL	N=Rising_Falling_Rising_Wave_Fell	G=VAR
+++D=BOOL	N=Falling_Rising_Falling_Wave_Fell	G=VAR
+++D=BOOL	N=Falling_Rising_Falling_Wave_Rose	G=VAR
+++D=BOOL	N=Exec_Pulse	G=VAR
+++D=ARRAY[0..7] OF BOOL	N=Requirements_Met	G=VAR
+++D=INT	N=Index	G=VAR
+++D=TP	N=Pulse	G=VAR
+++D=BOOL	N=Reset_Requirements	G=VAR	Com=Resets requirements when doing a pulse if we have no cam and we are using rising or falling edges.
+++D=BOOL	N=SR_Done	G=VAR	Com=Set Reset Done. Necessary because we can't duplicate a coil. 
+++D=TIME	N=Pulse_Time	G=VAR
+++D=BOOL	N=In_Angle_Pulse	G=VAR	Com=True if our pulse has to be within the angle specified in our condition.
+++D=INT	N=I	G=VAR
+++D=ARRAY[0..15] OF R_TRIG	N=Rising	G=VAR
+++D=ARRAY[0..15] OF F_TRIG	N=Falling	G=VAR
+++D=F_TRIG	N=Reset_Requirements_FT	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Activate	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=1	G=VAR_OUTPUT	Com=Necessary requirements have been satisfied.
+++D=Recipe_Condition	N=My_Condition	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Direction_Ok	Ord=3	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=User_Input_1	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_2	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_6	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_5	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_4	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_3	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_7	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_8	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	G=VAR_EXTERNAL

@@ -1,0 +1,11 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>GetByteCount := 0;&#xD;
+FOR i := LOWER_BOUND(In, 1) TO UPPER_BOUND(In, 1) DO&#xD;
+	IF In[i] = 16#00 THEN&#xD;
+		GetByteCount := i;&#xD;
+		EXIT;&#xD;
+	END_IF;&#xD;
+	&#xD;
+	IF i = UPPER_BOUND(In, 1) AND In[i] &lt;&gt; 16#0 THEN&#xD;
+		GetByteCount := i + 1;&#xD;
+	END_IF;&#xD;
+END_FOR;</Text></StructuredTextModel>

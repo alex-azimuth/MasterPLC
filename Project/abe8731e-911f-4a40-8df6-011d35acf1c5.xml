@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <ReferredLibrariesModel>
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OEN_Communication_V1_0_22</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.22</Version>
+              <Revision>1</Revision>
+              <LibraryId>772ecec8-0398-44b7-8543-ac49c73781ba</LibraryId>
+              <Author>OEE-N Bjarte Myklebust</Author>
+              <Company>Omron Electronics Norway AS</Company>
+              <DateCreated>2012-05-08T07:04:04.1180337-04:00</DateCreated>
+              <DateModified>2021-09-07T08:36:00.584808-04:00</DateModified>
+              <Comment>For NX/NJ FW 1.18 --&gt;</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>OEN\Serial\CIF\GetByteCount</PublicName>
+                <PublicName>OEN\ECat\SDO\NodeDatCmp_Read_Write</PublicName>
+                <PublicName>OEN\ECat\SDO\NodeDatRead</PublicName>
+                <PublicName>OEN\ECat\SDO\NodeDatWrite</PublicName>
+                <PublicName>OEN\Serial\CIF\NX_SendSMS</PublicName>
+                <PublicName>OEN\Serial\CIF\NX_RcvSMS</PublicName>
+                <PublicName>OEN\Serial\CIF\NX_ClearModemBuffer</PublicName>
+                <PublicName>OEN\Modbus\NX_ModbusRTU_Master</PublicName>
+                <PublicName>OEN\Modbus\NX_ModbusRTU_Slave</PublicName>
+                <PublicName>OEN\Modbus\ModbusTCP_Client</PublicName>
+                <PublicName>OEN\Modbus\ModbusTCP_Server</PublicName>
+                <PublicName>OEN\Etn\TCP\TCP_Server</PublicName>
+                <PublicName>OEN\ECat\SDO\sNodeDat</PublicName>
+                <PublicName>OEN\ECat\SDO\sSdoList</PublicName>
+                <PublicName>OEN\Modbus\eFun</PublicName>
+                <PublicName>OEN\Modbus\sModbusReq</PublicName>
+                <PublicName>OEN\Modbus\sAddressReq</PublicName>
+                <PublicName>OEN\Modbus\sAddress</PublicName>
+                <PublicName>OEN\Modbus\sModbusAccess</PublicName>
+                <PublicName>OEN\Modbus\eAccess</PublicName>
+                <PublicName>OEN\Modbus\eRegisterType</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX1P2-1040DT</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>18</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.18</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.18" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>a51d4973-7d2f-42e5-b95a-78e2c9fe090b</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\workstation12\Downloads\OEN_Communication.slr</LibraryFilePath>
+              <LibraryFileRelativePath>Downloads\OEN_Communication.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>true</AsOldVer>
+              <SchemaVersion>1</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
+      <BuildOption>
+        <data>
+          <LibraryModel>
+            <Name>Master Program - 0.5.9</Name>
+            <NameSpace></NameSpace>
+            <Version>1.0.0</Version>
+            <Revision>1</Revision>
+            <LibraryId>00000000-0000-0000-0000-000000000000</LibraryId>
+            <Author>Alex &amp; Gautier</Author>
+            <Company></Company>
+            <DateCreated>2022-08-23T07:55:30.7721259-04:00</DateCreated>
+            <DateModified>2022-08-23T07:55:30.7721259-04:00</DateModified>
+            <Comment>- Version with IO Map from MetalWorks
+TODO: 
+Add gag forcing
+Add Output cam forcing
+Prevent startup of DSV if motor is not running (auto or single).
+^ give alarm if so
+Mechanism to prevent a new stroke until the press has reached its set speed.
+
+- Possible correction of top stop when changing modes from auto.
+- Added new HMI_Press structure and begun migrating variables to it.
+</Comment>
+            <Password></Password>
+            <AttachedFiles />
+            <AttachedFilesRelativePaths />
+            <PublicPartsNames />
+            <InternalPartsNames />
+            <BuildDevice>
+              <Category></Category>
+              <Family></Family>
+              <FullModel></FullModel>
+              <MajorVersion>0</MajorVersion>
+              <MinorVersion>0</MinorVersion>
+              <Revision>0</Revision>
+              <DisplayVersion></DisplayVersion>
+              <Packages />
+            </BuildDevice>
+            <DependencyId>00000000-0000-0000-0000-000000000000</DependencyId>
+            <IsSource>false</IsSource>
+            <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+            <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+            <LibraryFilePath></LibraryFilePath>
+            <LibraryFileRelativePath></LibraryFileRelativePath>
+            <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+            <AsOldVer>false</AsOldVer>
+            <SchemaVersion>0</SchemaVersion>
+            <Parameter1>false</Parameter1>
+          </LibraryModel>
+        </data>
+      </BuildOption>
+      <ExcludedParts />
+      <InternalParts />
+      <LibraryTrackingIdConversionTable>
+        <LibraryEntityTrackingId>00000000-0000-0000-0000-000000000000</LibraryEntityTrackingId>
+        <PartTrackingIds />
+      </LibraryTrackingIdConversionTable>
+      <AreLibrariesIncluded>true</AreLibrariesIncluded>
+      <IsLibraryIdsDifferenceNotified>false</IsLibraryIdsDifferenceNotified>
+    </ReferredLibrariesModel>
+  </data>
+</data>

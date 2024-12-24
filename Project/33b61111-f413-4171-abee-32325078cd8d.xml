@@ -1,0 +1,10 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Release_Btn	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Release_Sig	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Auto_Mode	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Valve_Out	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

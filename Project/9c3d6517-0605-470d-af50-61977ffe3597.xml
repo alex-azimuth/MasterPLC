@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=Modbus_Table_Translate	N=Modbus_Translation	G=VAR
+++D=Feed_Sorting	N=Feed_Sort	G=VAR
+++D=BOOL	N=Testing_Feed_Sort	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=Translate_Table	G=VAR_EXTERNAL
+++D=BOOL	N=Update_Feeder_Sequences	G=VAR_EXTERNAL
+++D=ModBus_Table	N=Modbus_Data_Table	G=VAR_EXTERNAL
+++D=Feed_Sequence	N=Act_Sequences	G=VAR_EXTERNAL
+++D=LREAL	N=Longest_Feed	G=VAR_EXTERNAL

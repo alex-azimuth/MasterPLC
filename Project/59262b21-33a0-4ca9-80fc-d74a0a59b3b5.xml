@@ -1,0 +1,26 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Error := FALSE;&#xD;
+CompareFailed := FALSE;&#xD;
+NodeDatCmp_Read_Write := TRUE; // Set to false if differences in any node are found.&#xD;
+&#xD;
+IF (NoOfSDOs &lt;= SizeOfAry(NodeDat[0].SdoList)) THEN&#xD;
+	FOR i := LOWER_BOUND(NodeDat, 1) TO UPPER_BOUND(NodeDat, 1) DO&#xD;
+		IF NodeDat[i].InUse THEN&#xD;
+			NodeDat[i].IsEqual_ReadDat_WriteDat := TRUE;&#xD;
+			FOR j := 0 TO (NoOfSDOs - 1) DO&#xD;
+				NodeDatCmp_Read_Write := TRUE; // Set to false if differences in node are found.&#xD;
+				NodeDat[i].SdoList[j].IsEqual_ReadDat_WriteDat := TRUE;&#xD;
+				FOR k := 0 TO 7 DO&#xD;
+					IF NodeDat[i].SdoList[j].ReadDat[k] &lt;&gt; NodeDat[i].SdoList[j].WriteDat[k] THEN&#xD;
+						NodeDat[i].IsEqual_ReadDat_WriteDat := FALSE;&#xD;
+						NodeDat[i].SdoList[j].IsEqual_ReadDat_WriteDat := FALSE;&#xD;
+						CompareFailed := TRUE;&#xD;
+						NodeDatCmp_Read_Write := FALSE;&#xD;
+					END_IF;&#xD;
+				END_FOR;&#xD;
+			END_FOR;&#xD;
+		END_IF;&#xD;
+	END_FOR;&#xD;
+ELSE&#xD;
+	Error := TRUE;&#xD;
+	NodeDatCmp_Read_Write := FALSE;&#xD;
+END_IF;</Text></StructuredTextModel>

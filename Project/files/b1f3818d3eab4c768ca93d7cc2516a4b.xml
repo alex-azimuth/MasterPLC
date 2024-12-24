@@ -1,0 +1,26 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Class</HiddenFooter><HiddenHeader>Partial Public Class Save_recipe&#xD;
+</HiddenHeader><Text>'**********************************************************************&#xD;
+'* Omron標準IAG&#xD;
+'*作成日：2014/6/25&#xD;
+'*作成者：Omron&#xD;
+'*&#xD;
+'*「レシピセーブIAG」&#xD;
+'*レシピビューワで選択されたテンプレートデータをNA内部ファイルに保存する&#xD;
+'*&#xD;
+'**********************************************************************&#xD;
+&#xD;
+Sub RecipeSave()&#xD;
+	'**********************************************************************	&#xD;
+	'レシピビューワ内選択テンプレート取得&#xD;
+	'**********************************************************************	&#xD;
+	SelectRecipeTemplateName = GetSelectedRecipeTemplate(_HMI_CurrentPage,RecipeObjName)&#xD;
+	If SelectRecipeTemplateName = "" Then&#xD;
+		Exit Sub&#xD;
+	End If&#xD;
+&#xD;
+	'**********************************************************************	&#xD;
+	'保存処理&#xD;
+	'**********************************************************************&#xD;
+	SaveRecipe(GetSelectedRecipeTemplate(_HMI_CurrentPage,RecipeObjName),GetSelectedRecipe(_HMI_CurrentPage,RecipeObjName))	&#xD;
+End Sub</Text></CodeEditorModel>

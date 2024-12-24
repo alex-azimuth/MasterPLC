@@ -1,0 +1,1 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>OD := SQRT(((4*Thickness*Length)/3.1416)+(ID**2));</Text></StructuredTextModel>

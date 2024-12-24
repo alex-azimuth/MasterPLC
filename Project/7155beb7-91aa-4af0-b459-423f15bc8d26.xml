@@ -1,0 +1,24 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=J	G=VAR
+++D=INT	N=Half_Out1	G=VAR
+++D=INT	N=Half_Out2	G=VAR
+++D=INT	N=Anal_Offset_Val1	G=VAR
+++D=INT	N=Anal_Offset_Val2	G=VAR
+++D=INT	N=Temp_Val	G=VAR
+++D=INT	N=Temp_Val2	G=VAR
+++D=INT	N=Act_Ton_Metric	G=VAR
+++D=LREAL	N=Act_Ton_Imperial	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Activate	Ord=0	G=VAR_INPUT
+++D=ARRAY[0..90] OF INT	N=Tonnage_Data1	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..90] OF INT	N=Tonnage_Data2	Ord=2	G=VAR_INPUT
+++D=INT	N=Analog_Value1	Ord=3	G=VAR_INPUT
+++D=INT	N=Analog_Value2	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=5	G=VAR_OUTPUT
+++D=INT	N=Offset_T_1	Ord=6	G=VAR_INPUT
+++D=INT	N=Offset_T_2	Ord=7	G=VAR_INPUT
+++D=STRING[256]	N=Act_Ton	Ord=8	G=VAR_OUTPUT
+++D=LREAL	N=Act_Ton_LREAL	Ord=9	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

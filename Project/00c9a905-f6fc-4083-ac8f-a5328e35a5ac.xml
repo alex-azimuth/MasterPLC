@@ -1,0 +1,90 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=Uncoiler_Wait_Timer	G=VAR
+++D=TOF	N=Uncoiler_Stay_Timer	G=VAR
+++D=BOOL	N=Uncoiler_OUT_Brake_Sol	G=VAR	Com=Disengage the brake.
+++D=BOOL	N=Brake_Disengage1	G=VAR	Com=Forward brake disengage.
+++D=BOOL	N=Brake_Disengage2	G=VAR	Com=Reverse brake disengage.
+++D=TON	N=Uncoiling_Delay	G=VAR
+++D=TOF	N=Brake_TOF	G=VAR
+++D=TOF	N=Hydraulic_TOF	G=VAR
+++D=TON	N=Hyd_On_Delay	G=VAR
+++D=REAL	N=Unc_Drv_Speed	G=VAR
+++D=BOOL	N=Pedal_OUT	G=VAR
+++D=BOOL	N=Pedal_NO	G=VAR
+++D=BOOL	N=Pedal_NC	G=VAR
+++D=BOOL	N=Uncoiler_Rev	G=VAR
+++D=BOOL	N=Uncoiler_Forward	G=VAR
+++D=BOOL	N=test1	G=VAR
+++D=BOOL	N=test2	G=VAR
+++D=BOOL	N=Sol_Block	G=VAR
+++D=TOF	N=Delay	G=VAR
+++D=INT	N=Unc_Drv_Speed_INT	G=VAR
+++D=BOOL	N=Test_Scaling	G=VAR
+++D=Equivalent	N=FR3_Monitor	G=VAR
+++D=Equivalent	N=FR4_Monitor	G=VAR
+++D=TP	N=Pressing_Arm_Up	G=VAR
+++D=TP	N=Pressing_Arm_Down	G=VAR
+++D=BOOL	N=BP_Test_AD	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
+++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Manual_Speed	G=VAR_EXTERNAL
+++D=Uncoiler_Data	N=My_Uncoiler	G=VAR_EXTERNAL
+++D=Uncoiler_Options	N=Master_Uncoiler_Options	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Preset_Speed	G=VAR_EXTERNAL	Com=Preset speed if we are going in manual.
+++D=BOOL	N=Uncoiler_OUT_Pressing_Arm_UP	G=VAR_EXTERNAL	Com=Move the pressing arm upwards. 5/3 valve
+++D=BOOL	N=Uncoiler_OUT_Pressing_Arm_DOWN	G=VAR_EXTERNAL	Com=Move the presssing arm downards. 5/3 vavle
+++D=BOOL	N=Uncoiler_IN_Pressing_Arm_UP	G=VAR_EXTERNAL	Com=Input to move the pressing arm upwards.
+++D=BOOL	N=Uncoiler_IN_Pressing_Arm_DOWN	G=VAR_EXTERNAL	Com=Input to move the pressing arm downwards.
+++D=BOOL	N=Uncoiler_OUT_Coil_Keeper	G=VAR_EXTERNAL	Com=Set or reset the coil keepers.
+++D=BOOL	N=Uncoiler_IN_Coil_Keeper_Down	G=VAR_EXTERNAL	Com=Input to move the coil keeper down.
+++D=BOOL	N=Uncoiler_IN_Coil_Keeper_UP	G=VAR_EXTERNAL	Com=Input to move the coil keeper down.
+++D=BOOL	N=Uncoiler_IN_Supporting_Arm_Down	G=VAR_EXTERNAL	Com=Supporting_Arm is lowered
+++D=BOOL	N=Uncoiler_IN_Supporting_Arm_UP	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Supporting_Arm_Down	G=VAR_EXTERNAL	Com=Jog the supporting armdownwards.
+++D=BOOL	N=Uncoiler_OUT_Supporting_Arm_Up	G=VAR_EXTERNAL	Com=Jog the supporting arm upwards.
+++D=BOOL	N=Uncoiler_OUT_Hydraulic_Unit	G=VAR_EXTERNAL	Com=Hydraulic unit for mandrel and coil cart.
+++D=BOOL	N=Uncoiler_IN_Mandrel_Expand	G=VAR_EXTERNAL	Com=Expand the mandrel.
+++D=BOOL	N=Uncoiler_IN_Mandrel_Shrink	G=VAR_EXTERNAL	Com=Shrink the mandrel.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Up	G=VAR_EXTERNAL	Com=Move the cart up.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Down	G=VAR_EXTERNAL	Com=Move the cart down.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Fwd	G=VAR_EXTERNAL	Com=Move the cart forward.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Rev	G=VAR_EXTERNAL	Com=Move the cart reverse.
+++D=BOOL	N=Uncoiler_OUT_Mandrel_Expand	G=VAR_EXTERNAL	Com=Expand the mandrel.
+++D=BOOL	N=Uncoiler_OUT_Mandrel_Shrink	G=VAR_EXTERNAL	Com=Shrink the mandrel.
+++D=BOOL	N=Uncoiler_IN_Limit_Forward	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Limit_Reverse	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Coil_Keeper_RS_UP	G=VAR_EXTERNAL	Com=Reed switch indicates the coil keeper is up.
+++D=BOOL	N=Uncoiler_IN_Pressing_Arm_RS_UP	G=VAR_EXTERNAL	Com=Reed switch indicates the pressing arm is up.
+++D=BOOL	N=Uncoiler_IN_Supporting_Arm_RS_Down	G=VAR_EXTERNAL	Com=Reed switch indicates the supporting arm is down.
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Up	G=VAR_EXTERNAL	Com=Move the coil cart upwards.
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Down	G=VAR_EXTERNAL	Com=Move the coil cart downwards.
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Reverse	G=VAR_EXTERNAL	Com=Move the coil cart away from the uncoiler.
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Forward	G=VAR_EXTERNAL	Com=Move the coil cart towards the feeder.
+++D=BOOL	N=Uncoiler_IN_Jog_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_On_Signal	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Forward	G=VAR_EXTERNAL	Com=Move the uncoiler forward.
+++D=BOOL	N=Uncoiler_OUT_Straightner_Release	G=VAR_EXTERNAL	Com=Open the straightner rolls.
+++D=BOOL	N=Uncoiler_OUT_Rev	G=VAR_EXTERNAL	Com=Move the uncoiler in reverse.
+++D=BOOL	N=Uncoiler_IN_Straightner_Release	G=VAR_EXTERNAL	Com=Release the straightner valve when true.
+++D=BOOL	N=Uncoiler_IN_Rack_Limit	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Jog_REV	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Overload	G=VAR_EXTERNAL
+++D=Uncoiler_Comm	N=Uncoiler_Signals	G=VAR_EXTERNAL
+++D=HMI_Uncoiler_Retained	N=HMI_Data_Uncoiler_Retained	G=VAR_EXTERNAL
+++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
+++D=INT	N=Unc_AOUT_Drv_Speed	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Clamp_Open	G=VAR_EXTERNAL
+++D=INT	N=Uncoiler_IN_Speed_Scaling	G=VAR_EXTERNAL
+++D=INT	N=Uncoiler_IN_Speed_INT	G=VAR_EXTERNAL
+++D=REAL	N=Uncoiler_IN_Speed_REAL	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_FR3_Monitor	G=VAR_EXTERNAL
+++D=BOOL	N=FR3_Active	G=VAR_EXTERNAL
+++D=BOOL	N=FR4_Active	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_FR4_Monitor	G=VAR_EXTERNAL
+++D=BOOL	N=FR3_Discrepency_Error	G=VAR_EXTERNAL
+++D=BOOL	N=FR4_Discrepency_Error	G=VAR_EXTERNAL
+++D=REAL	N=STO_Error_Time	G=VAR_EXTERNAL	Com=Time of non equivalence to between a STO fault and the monitoring of forced guided relays

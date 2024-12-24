@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=PI	G=VAR
+++D=LREAL	N=Entry_Feeder_Dia	G=VAR
+++D=LREAL	N=Feeder_Encoder_Ratio	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=Feed_Verification	N=Feed_Verification_Data	Ord=1	G=VAR_IN_OUT
+++D=LREAL	N=Feeder_Scale_Ratio	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Enable	Ord=3	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

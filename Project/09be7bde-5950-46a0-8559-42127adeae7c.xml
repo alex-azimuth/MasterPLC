@@ -1,0 +1,292 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Feeder_Servo_Error	G=VAR
+++D=Feed_Verification_Positions	N=Entry_Verification_Pos	G=VAR
+++D=BOOL	N=Feeder_Safety_OK	G=VAR
+++D=BOOL	N=Test_Tuning	G=VAR
+++D=BOOL	N=Feeder_Power_On_Error	G=VAR
+++D=MC_Power	N=Power_On_Feeder	G=VAR
+++D=BOOL	N=Operations_Ready	G=VAR
+++D=TOF	N=Temps_reset_MC_axis_feeder	G=VAR
+++D=MC_Reset	N=Reset_Feeder	G=VAR
+++D=ResetMCError	N=Reset_MC_Error	G=VAR
+++D=ResetECError	N=Reset_EC_Error	G=VAR
+++D=BOOL	N=First_Feed_Flag	G=VAR	Com=Sequence is reset to the first step.
+++D=TorqueStop	N=Feeder_MaxTorque	G=VAR
+++D=MC_Stop	N=Feeder_Sig_Lost_Stop	G=VAR
+++D=WORD	N=Show_Error	G=VAR
+++D=BOOL	N=Show_Error_Bool	G=VAR
+++D=INT	N=Step_No	G=VAR
+++D=INT	N=J	G=VAR
+++D=TP	N=Gag_Confirmation_Delay	G=VAR
+++D=INT	N=II	G=VAR
+++D=BOOL	N=Gag_Fault	G=VAR
+++D=INT	N=Sequence_No	G=VAR
+++D=BOOL	N=Wait_For_Parameters	G=VAR	Com=Feeding Signal, derived from waiting for the correct parameters.
+++D=INT	N=Next_Step	G=VAR
+++D=BOOL	N=Temp_Gag_Bypass	G=VAR
+++D=MC_Power	N=Power_ON_Feeder_Exit	G=VAR
+++D=BOOL	N=Feeder2_Power_On_Error	G=VAR
+++D=MC_Reset	N=Reset_Feeder2	G=VAR
+++D=Feed_Release	N=Entry_Release	G=VAR
+++D=Feed_Release	N=Exit_Release	G=VAR
+++D=MC_MoveJog	N=Entry_Feeder_Jog	G=VAR
+++D=MC_MoveJog	N=Exit_Feeder_Jog	G=VAR
+++D=Unit_Micro	N=Entry_Feeder_UNits	G=VAR
+++D=Unit_Micro	N=Exit_Feeder_UNits	G=VAR
+++D=MC_MoveRelative	N=Entry_Feeder_Micro	G=VAR
+++D=MC_MoveRelative	N=Exit_Feeder_Micro	G=VAR
+++D=BOOL	N=Execute_Micro_Feed_Exit	G=VAR
+++D=BOOL	N=Execute_Micro_Feed_Entry	G=VAR
+++D=BOOL	N=Feed_Jog_Conditions_Entry	G=VAR
+++D=BOOL	N=Feed_Jog_Conditions_Exit	G=VAR
+++D=Adj_Unit_Comp	N=Entry_Feeder_Adj_Unit_Comp	G=VAR
+++D=MC_MoveRelative	N=Entry_Feed_Move	G=VAR	Com=Entry feeder has finished feeding.
+++D=LREAL	N=Act_Entry_Distance	G=VAR
+++D=LREAL	N=Act_Entry_Speed	G=VAR
+++D=LREAL	N=Act_Entry_Accel	G=VAR
+++D=LREAL	N=Act_Entry_Decel	G=VAR
+++D=BOOL	N=Entry_Last_Feed_Positive	G=VAR
+++D=MC_Stop	N=Feeder_Sig_Lost_Stop2	G=VAR
+++D=MC_MoveRelative	N=Exit_Feed_Move	G=VAR	Com=Exit feeder has finished feeding.
+++D=Adj_Unit_Comp	N=Exit_Feeder_Adj_Unit_Comp	G=VAR
+++D=BOOL	N=Exit_Last_Feed_Positive	G=VAR
+++D=LREAL	N=Act_Exit_Distance	G=VAR
+++D=LREAL	N=Act_Exit_Speed	G=VAR
+++D=LREAL	N=Act_Exit_Accel	G=VAR
+++D=LREAL	N=Act_Exit_Decel	G=VAR
+++D=BOOL	N=Alternating	G=VAR
+++D=TON	N=Entry_Unclamp_Timer	G=VAR
+++D=EC_CoESDOWrite	N=Entry_Feeder_Preset	G=VAR
+++D=EC_CoESDOWrite	N=Exit_Feeder_Preset	G=VAR
+++D=BOOL	N=Preset_Encoder_Flag	G=VAR
+++D=EC_CoESDOWrite	N=Exit_Feeder_Direction	G=VAR
+++D=EC_CoESDOWrite	N=Exit_Feeder_Save_Data	G=VAR
+++D=Enc_Verification	N=Entry_Verification	G=VAR
+++D=Feed_Verification_Positions	N=Exit_Verification_Pos	G=VAR
+++D=Enc_Verification	N=Exit_Verification	G=VAR
+++D=TorqueStop	N=Feeder_MaxTorque2	G=VAR
+++D=LREAL	N=Feed_Tolerance_Imperial	G=VAR
+++D=BOOL	N=Disable_Entry_Jog	G=VAR	Com=Maximum jog length has been reached.
+++D=BOOL	N=Disable_Exit_Jog	G=VAR	Com=Maximum joging distance has been reached.
+++D=EC_CoESDOWrite	N=Entry_Feeder_Direction	G=VAR
+++D=EC_CoESDOWrite	N=Enty_Feeder_Save_Data	G=VAR
+++D=BOOL	N=Gag_Forcing	G=VAR	Com=When gags are forced then disable error checking.
+++D=MC_Stop	N=Manual_Break_Entry_Feed	G=VAR
+++D=MC_Stop	N=Manual_Break_Exit_Feed	G=VAR
+++D=LREAL	N=Entry_Deviation_Length	G=VAR
+++D=LREAL	N=Exit_Deviation_Length	G=VAR
+++D=BOOL	N=Exit_Feed_Done	G=VAR	Com=Last exit feed was finished with acceptable deviation.
+++D=TP	N=Stop_Record_Delay	G=VAR
+++D=TP	N=Stop_Record_Delay2	G=VAR
+++D=INT	N=Recorded_Step_No	G=VAR
+++D=LREAL	N=Feed_Verification_Alarm_Threshold	G=VAR
+++D=BOOL	N=Feeder3_Power_On_Error	G=VAR
+++D=MC_Power	N=Power_On_Feeder_Main	G=VAR
+++D=MC_Reset	N=Reset_Feeder3	G=VAR
+++D=Unit_Micro	N=Main_Feeder_UNits	G=VAR
+++D=BOOL	N=Feed_Jog_Conditions_Main	G=VAR
+++D=MC_MoveJog	N=Main_Feeder_Jog	G=VAR
+++D=MC_MoveRelative	N=Main_Feeder_Micro	G=VAR	Com=Main feeder micro feed.
+++D=BOOL	N=Execute_Micro_Feed_Main	G=VAR
+++D=Adj_Unit_Comp	N=Main_Feeder_Adj_Unit_Comp	G=VAR
+++D=BOOL	N=Main_Last_Feed_Positive	G=VAR
+++D=LREAL	N=Act_Main_Distance	G=VAR
+++D=LREAL	N=Act_Main_Speed	G=VAR
+++D=LREAL	N=Act_Main_Accel	G=VAR
+++D=LREAL	N=Act_Main_Decel	G=VAR
+++D=MC_MoveRelative	N=Main_Feed_Move	G=VAR	Com=Main feeder automatic feed.
+++D=TorqueStop	N=Feeder_MaxTorque3	G=VAR
+++D=Feed_Release	N=Main_Release	G=VAR
+++D=MC_Stop	N=Feeder_Sig_Lost_Stop3	G=VAR
+++D=MC_Stop	N=Manual_Break_Main_Feed	G=VAR
+++D=BOOL	N=Sequence_Inc	G=VAR
+++D=BOOL	N=Sequence_Counting	G=VAR
+++D=Feeder_Data	N=My_Exit_Feeder	G=VAR	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
+++D=ARRAY[0..99] OF Bool	N=Gags	G=VAR
+++D=Encoder_Data	N=Entry_Feeder_Enc_Data	R=1	IV=(Node := 6, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
+++D=Encoder_Data	N=Exit_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
+++D=Encoder_Data	N=Main_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
+++D=TOF	N=Start_Oiling_Cycle	G=VAR
+++D=TON	N=Start_Oiling_Motor	G=VAR
+++D=INT	N=Z	G=VAR
+++D=INT	N=I	G=VAR
+++D=CTU	N=Sequence_Count	G=VAR
+++D=BOOL	N=S_Feeding	G=VAR	Com=Feeding step.
+++D=BOOL	N=S_Reset	G=VAR	Com=Waiting for reset step.
+++D=BOOL	N=S_Release	G=VAR	Com=Waiting for release step.
+++D=BOOL	N=S_Release_Activated	G=VAR	Com=Releasing step.
+++D=BOOL	N=Release_Control	G=VAR	Com=Control the automatic releasing of the clamps.
+++D=BOOL	N=Auto_Entry_Release	G=VAR	Com=Automatic releasing of the entry feeder.
+++D=BOOL	N=Auto_Exit_Release	G=VAR	Com=Automatic releasing of the exit feeder.
+++D=BOOL	N=Auto_Main_Release	G=VAR	Com=Automatic releasing of the main feeder.
+++D=BOOL	N=S_Completed	G=VAR	Com=Completed step.
+++D=Feed_Verification_Calc	N=Main_Feeder_Enc_Calc	G=VAR
+++D=Feed_Verification_Calc	N=Entry_Feeder_Enc_Calc	G=VAR
+++D=Feed_Verification_Calc	N=Exit_Feeder_Enc_Calc	G=VAR
+++D=WORD	N=Display_Error_ID	G=VAR
+++D=EC_CoESDOWrite	N=Main_Feeder_Preset	G=VAR
+++D=EC_CoESDOWrite	N=Main_Feeder_Direction	G=VAR
+++D=EC_CoESDOWrite	N=Main_Feeder_Save_Data	G=VAR
+++D=TP	N=Stop_Record_Delay3	G=VAR
+++D=Enc_Verification	N=Main_Verification	G=VAR
+++D=Feed_Verification_Positions	N=Main_Verification_Pos	G=VAR
+++D=LREAL	N=Main_Deviation_Length	G=VAR
+++D=TP	N=Feed_Complete_Pulse	G=VAR
+++D=Feeder_Data_Analysis	N=Entry_Feeder_Analysis	G=VAR
+++D=Feeder_Data_Analysis	N=Exit_Feeder_Analysis	G=VAR
+++D=Feeder_Data_Analysis	N=Main_Feeder_Analysis	G=VAR
+++D=R_TRIG	N=Recipe_Transfered_RT	G=VAR
+++D=BOOL	N=Gag_Fault_Conditions	G=VAR	Com=Conditions that permit the verification of proper gag functioning.
+++D=MC_Home	N=Home_Entry_Feeder	G=VAR
+++D=MC_Home	N=Home_Exit_Feeder	G=VAR
+++D=BOOL	N=Home_Waiting	G=VAR	Com=Wait for the machine to be ready and then perform homing.
+++D=Feed_Recording	N=Record_Main_Feeder	G=VAR
+++D=LREAL	N=Test_Pos	G=VAR
+++D=BOOL	N=Test_DIR	G=VAR
+++D=LREAL	N=Test_Rec	G=VAR
+++D=BOOL	N=Test_Enable	G=VAR
+++D=BOOL	N=Recording	G=VAR
+++D=BOOL	N=Main	G=VAR
+++D=LREAL	N=Beginning_Position	G=VAR
+++D=LREAL	N=Starting_Position	G=VAR
+++D=Feed_Recording	N=Record_Any_Feeder	G=VAR
+++D=INT	N=IY	G=VAR
+++D=Gag_Counting	N=Count_Gags	G=VAR
+++D=ARRAY[0..99] OF BOOL	N=Gags_Force	G=VAR
+++D=BOOL	N=Temp_Length_Bypass	G=VAR
+++D=BOOL	N=Eastwood_Cut	G=VAR
+++D=R_TRIG	N=Cut_Activated_R	G=VAR
+++D=R_TRIG	N=Wait_For_Parameters_R	G=VAR
+++D=TP	N=Reset_Length_TP	G=VAR
+++D=BOOL	N=Reset_Length_Trigger	G=VAR
+++D=BOOL	N=v	G=VAR
+++D=LREAL	N=PI	IV=3.141592653589793238462643383279502884197	Const=1	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
+++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
+++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Main	G=VAR_EXTERNAL
+++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
+++D=Uncoiler_Data	N=My_Uncoiler	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF Bool	N=Gag_Pro	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF Bool	N=Gag_Ret	G=VAR_EXTERNAL
+++D=INT	N=No_Gags_Installed	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_EOM_Sensor	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_Present	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_Present	G=VAR_EXTERNAL
+++D=BOOL	N=Global_Feed_Completed	G=VAR_EXTERNAL	Com=Rising edge that the feed is complete.
+++D=_sAXIS_REF	N=Entry_Feeder	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Exit_Feeder	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Exit_STO1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Exit_STO2	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Entry_Release	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Exit_Release	G=VAR_EXTERNAL
+++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_EXTERNAL	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
+++D=BOOL	N=Feeder_IN_Entry_Feed_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Entry_Feed_REV	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Exit_Feed_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Exit_Feed_REV	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Entry_Release_Valve	G=VAR_EXTERNAL	Com=Opens the rolls when activated.
+++D=BOOL	N=Feeder_OUT_Exit_Release_Valve	G=VAR_EXTERNAL	Com=Opens the rolls when activated.
+++D=BOOL	N=Feeder_Entry_Alternate_Release	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_Exit_Alternate_Release	G=VAR_EXTERNAL
+++D=ULINT	N=Feeder_IN_Exit_Encoder_Pos	G=VAR_EXTERNAL
+++D=ULINT	N=Feeder_IN_Entry_Encoder_Pos	G=VAR_EXTERNAL
+++D=BOOL	N=Sequence_Finished	G=VAR_EXTERNAL
+++D=Feed_Sequence	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=UDINT	N=Gag_Fault_No	G=VAR_EXTERNAL
+++D=BOOL	N=Update_Feeder_Sequences	G=VAR_EXTERNAL
+++D=BOOL	N=Global_Exit_Feed_Completed	G=VAR_EXTERNAL	Com=Flag that the exit feed has been completed successfully.
+++D=BOOL	N=Global_Entry_Feed_Completed	G=VAR_EXTERNAL	Com=Flag that the entry feed has been completed successfully.
+++D=BOOL	N=Feed_Before_Press	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Main_feeder	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_STO1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_STO2	G=VAR_EXTERNAL
+++D=Feeder_Data	N=My_Main_Feeder	G=VAR_EXTERNAL	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
+++D=BOOL	N=Feeder_IN_Entry_STO1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Entry_STO2	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Press_Fault	G=VAR_EXTERNAL	Com=Input to communicate that the press is currently in fault condition. NC signal
+++D=BOOL	N=Uncoiler_IN_Overload	G=VAR_EXTERNAL	Com=Uncoiler drive fault/overload tripped.
+++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
+++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feeding_Signal" C="Feeding signal coming from the program itself." /></ECs>
+++D=BOOL	N=Feeder_OUT_Fault	G=VAR_EXTERNAL	Com=Output to communicate the feeder is in a fault condition.
+++D=BOOL	N=Feeder_IN_Passline_UP	G=VAR_EXTERNAL	Com=Button to move the passline up.
+++D=BOOL	N=Feeder_IN_Passline_Down	G=VAR_EXTERNAL	Com=Button to move the passline down.
+++D=BOOL	N=Feeder_IN_Passline_Up_Limit	G=VAR_EXTERNAL	Com=Limit switch that prevents the passline motor from exceeding its limits.
+++D=BOOL	N=Feeder_IN_Passline_Down_Limit	G=VAR_EXTERNAL	Com=Limit switch that prevents the passline motor from exceeding its limits.
+++D=BOOL	N=Feeder_IN_Passline_Overload	G=VAR_EXTERNAL	Com=Overload relay for the adjustment motor.
+++D=BOOL	N=Feeder_OUT_Passline_Up_Mtr	G=VAR_EXTERNAL	Com=Move the passline up using the motor.
+++D=BOOL	N=Feeder_OUT_Passline_Down_Mtr	G=VAR_EXTERNAL	Com=Move the passline down using the motor.
+++D=BOOL	N=Feeder_IN_Swing_Arm_UP	G=VAR_EXTERNAL	Com=Move the swing arm at the entry of the feeder upwards.
+++D=BOOL	N=Feeder_IN_Swing_Arm_DOWN	G=VAR_EXTERNAL	Com=Move the swing arm at the entry of the feeder downwards.
+++D=BOOL	N=Feeder_IN_Swing_Arm_UP_Limit	G=VAR_EXTERNAL	Com=Swing arm is at its upwards limit, verified via reed switch.
+++D=BOOL	N=Feeder_IN_Swing_Arm_Down_Limit	G=VAR_EXTERNAL	Com=Swing arm is at its downwards limit, verified via reed switch.
+++D=BOOL	N=Feeder_OUT_Swing_Arm_UP	G=VAR_EXTERNAL	Com=Move the swing arm upwards using a solenoid.
+++D=BOOL	N=Feeder_OUT_Swing_Arm_Down	G=VAR_EXTERNAL	Com=Move the swing arm downwards using a solenoid.
+++D=BOOL	N=Feeder_OUT_Oil_Pump	G=VAR_EXTERNAL	Com=Automatic oiler pump.
+++D=BOOL	N=Feeder_OUT_Oil_Valve	G=VAR_EXTERNAL	Com=Activate the valve to oil the strip.
+++D=ARRAY[0..15] OF BOOL	N=Feeder_OUT_Gags	G=VAR_EXTERNAL
+++D=Feeder_Options	N=Master_Feeder_Options	G=VAR_EXTERNAL	EC=<ECs><EC EK="Two_Feed_System" C="Two feed homing system - feeders must be homed." /></ECs>
+++D=HMI_General_Data	N=HMI_Data	G=VAR_EXTERNAL
+++D=HMI_Press	N=HMI_Press_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Feed_Signal	G=VAR_EXTERNAL	Com=Standalone feeder feeding signal.
+++D=BOOL	N=Feeder_IN_Reset_Signal	G=VAR_EXTERNAL	Com=Standalone feeder reset signal.
+++D=BOOL	N=Feeder_IN_Main_Release	G=VAR_EXTERNAL	Com=Main Feeder release button.
+++D=Feed_Verification	N=HMI_Feed_Verification_Main	G=VAR_EXTERNAL
+++D=Feed_Verification	N=HMI_Feed_Verification_Entry	G=VAR_EXTERNAL	EC=<ECs><EC EK="Manual_Homing" C="Manually home the encoders. Useful for initial setup." /></ECs>
+++D=Feed_Verification	N=HMI_Feed_Verification_Exit	G=VAR_EXTERNAL
+++D=ULINT	N=Feeder_IN_Main_Encoder_Pos	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Release_Signal	G=VAR_EXTERNAL	Com=Standalone feeder release signal.
+++D=BOOL	N=Feeder_OUT_Feed_Complete	G=VAR_EXTERNAL	Com=Output a pulse when the feed is completed.
+++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Entry	G=VAR_EXTERNAL
+++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Exit	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Main_Release_Valve	G=VAR_EXTERNAL	Com=Open the rolls when activated.
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD	G=VAR_EXTERNAL	Com=Jog main feeder forward.
+++D=BOOL	N=Feeder_IN_Main_Feed_Rev	G=VAR_EXTERNAL	Com=Jog main feeder reverse.
+++D=Features	N=Master_Features	G=VAR_EXTERNAL
+++D=Press_Options	N=Master_Press_Options	G=VAR_EXTERNAL
+++D=Uncoiler_Comm	N=Uncoiler_Signals	G=VAR_EXTERNAL	EC=<ECs><EC EK="Alarm_Active" C="Assume we always have a feeder if we have an uncoiler." /></ECs>
+++D=HMI_Sequence	N=HMI_Feed_Seq	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Feed_Pos1	G=VAR_EXTERNAL
+++D=Recoiler_Comm	N=Recoiler_Signals	G=VAR_EXTERNAL
+++D=Die_Configuration	N=Gag_Config	G=VAR_EXTERNAL
+++D=BOOL	N=Machine_Stopped	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro10	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro9	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro7	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro8	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro5	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro6	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro4	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro3	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro2	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Pro1	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret2	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret1	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret3	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret4	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret5	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret6	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret7	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret8	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret9	G=VAR_EXTERNAL
+++D=BOOL	N=Gag_Ret10	G=VAR_EXTERNAL
+++D=Die_Configuration	N=HMI_Die_Config	G=VAR_EXTERNAL
+++D=BOOL	N=Gag1	G=VAR_EXTERNAL
+++D=BOOL	N=Gag2	G=VAR_EXTERNAL
+++D=BOOL	N=Gag3	G=VAR_EXTERNAL
+++D=BOOL	N=Gag4	G=VAR_EXTERNAL
+++D=BOOL	N=Gag5	G=VAR_EXTERNAL
+++D=BOOL	N=Gag6	G=VAR_EXTERNAL
+++D=BOOL	N=Gag7	G=VAR_EXTERNAL
+++D=BOOL	N=Gag8	G=VAR_EXTERNAL
+++D=BOOL	N=Gag9	G=VAR_EXTERNAL
+++D=Feed_Sequence	N=Act_Sequences	G=VAR_EXTERNAL
+++D=BOOL	N=Sequence_Transfered_Latch	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Eastwood_Cut_Activated	G=VAR_EXTERNAL
+++D=BOOL	N=Press_Idle	G=VAR_EXTERNAL
+++D=Press_Data	N=Press	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Eastwood_Cut_Activate	G=VAR_EXTERNAL
+++D=HMI_Recoiler	N=HMI_Recoiler_Data	G=VAR_EXTERNAL
+++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL

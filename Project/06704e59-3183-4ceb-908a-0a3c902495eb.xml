@@ -1,0 +1,4 @@
+﻿{"CLs":[{"__type":"LD","Var":"Act_Mode_Inch"},{"__type":"ST","Ix":1,"Var":"HMI_Press_Data.Mode_Inch","X":1},{"__type":"ST","Ix":2,"Var":"Press_Signals.Act_Mode_Inch","X":1,"Y":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Act_Mode_Single"},{"__type":"ST","Ix":1,"Var":"HMI_Press_Data.Mode_Single","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Act_Mode_Auto"},{"__type":"ST","Ix":1,"Var":"HMI_Press_Data.Mode_Auto","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"IST","EID":"947aee8a-b43a-4c43-8e96-ea4c07e96b70","H":150.00000000000006,"TXT":"Press_Pos_REAL := LREAL_TO_REAL(Press.Pos);","W":914}],"LRI":1,"RRI":2,"VLs":[]}

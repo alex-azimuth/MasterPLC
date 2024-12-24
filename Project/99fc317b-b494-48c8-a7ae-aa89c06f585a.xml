@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataTraceSetModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>Overrun_Prox</Name>
+      <Id>820ca32d-735f-43c6-9789-c996c3f68ba6</Id>
+      <SymbolId>entity://variables.global.8c434e1e-af1a-45b9-abea-90485d0b8b26/Overrun_Prox%3ABOOL</SymbolId>
+      <NaturalDataType>BOOL</NaturalDataType>
+      <Comment>IN - Prox detects the press at 0 degrees. - Additional security.</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>255</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>0</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Boolean</DataType>
+      <Id>820ca32d-735f-43c6-9789-c996c3f68ba6</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>Press.Pos</Name>
+      <Id>adf21f08-2d92-4fff-a04a-1e431b616a63</Id>
+      <SymbolId>entity://variables.global.8c434e1e-af1a-45b9-abea-90485d0b8b26/Press.Pos%3ALREAL</SymbolId>
+      <NaturalDataType>LREAL</NaturalDataType>
+      <Comment>Contains the position of the press - the rest is not useful for now.</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>0</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>255</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Double</DataType>
+      <Id>adf21f08-2d92-4fff-a04a-1e431b616a63</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+  </DataTraceSetModel>
+</data>

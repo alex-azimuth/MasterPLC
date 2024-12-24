@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"LD","Id":"5bfd6894-3a01-43c4-9838-b843e2f4757c","Up":true,"Var":"Modbus_Data_Table.Coils[5]"},{"__type":"ST","Ix":1,"Var":"Comm_TimeStamp_Trigger","X":1}],"CMT":"Give timestamp of when the data is received by the HMI.","LRI":2,"RRI":3,"VLs":[]}

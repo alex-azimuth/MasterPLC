@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"IST","EID":"339e60db-8bc9-40e4-a587-0202e624792c","H":327.6,"TXT":"IF NOT (Master_Feeder_Options.Two_Feed_System) THEN\u000d\u000a\u0009Master_Feeder_Options.One_Feed_System := TRUE;\u000d\u000aEND_IF;","W":829.6}],"CMT":"Make sure we assume a one feed system if we are not at a two feed system.","LRI":1,"RRI":2,"VLs":[]}

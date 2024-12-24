@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"LD","Var":"HMI_Feeder_Data.Auto_Req"},{"__type":"ST","Ix":1,"Var":"Feeder_Signals.Auto_Req","X":1}],"CMT":"Communicate to other equipment that the user requested the feeder to be in automatic mode.","LRI":2,"RRI":3,"VLs":[]}

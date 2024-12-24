@@ -1,0 +1,15 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(* If the operator changes conditions then we reset our condition for a scan, making sure that the changes take&#xD;
+ * effect *)&#xD;
+Out := FALSE;&#xD;
+&#xD;
+IF (Current_Conditions.Action_Type &lt;&gt; Stored_Conditions.Action_Type) OR&#xD;
+	(Current_Conditions.Higher_Pos &lt;&gt; Stored_Conditions.Higher_Pos) OR&#xD;
+	(Current_Conditions.Input_Number &lt;&gt; Stored_Conditions.Input_Number) OR&#xD;
+	(Current_Conditions.Kind &lt;&gt; Stored_Conditions.Kind) OR&#xD;
+	(Current_Conditions.Lower_Pos &lt;&gt; Stored_Conditions.Lower_Pos) OR&#xD;
+	(Current_Conditions.Pulse &lt;&gt; Stored_Conditions.Pulse)  OR&#xD;
+	(Current_Conditions.On_Stroke &lt;&gt; Stored_Conditions.On_Stroke) &#xD;
+	THEN&#xD;
+		Stored_Conditions := Current_Conditions;	&#xD;
+		Out := TRUE;&#xD;
+END_IF;</Text></StructuredTextModel>

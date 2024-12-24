@@ -1,0 +1,20 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>	Initial_Trigger(CLK:=Enable, Q=&gt;Bool_Trigger);&#xD;
+(* When enabled then give an error if the position varies too far off *)&#xD;
+IF (Enable) THEN&#xD;
+	(* Determine the ratio between the pulses and the actual distance *)&#xD;
+	Ratio := (Diameter*3.1416)/Pulse_Per_Rev;&#xD;
+	&#xD;
+	(* Record the initial position when enabled *)&#xD;
+	IF (Bool_Trigger) THEN&#xD;
+		Initial_Pos := ULINT_TO_LREAL(Current_Pos)*Ratio;&#xD;
+	END_IF;&#xD;
+	&#xD;
+	Current_Pos_In := ULINT_TO_LREAL(Current_Pos)*Ratio;&#xD;
+	&#xD;
+	IF (ABS(Initial_Pos-Current_Pos_In) &gt; Tolerance) THEN&#xD;
+		Error := TRUE;&#xD;
+	END_IF;&#xD;
+ELSE&#xD;
+		Error := FALSE;&#xD;
+END_IF;&#xD;
+	</Text></StructuredTextModel>

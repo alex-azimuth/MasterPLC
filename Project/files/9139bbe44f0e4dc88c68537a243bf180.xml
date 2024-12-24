@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Strings">
+    <Resource Name="String1" ID="daeac171-90b9-404e-8a5d-634f6268a476">
+      <Localisation Language="ja-JP" Translation="Save" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String2" ID="7f117fe5-0a6e-4b5c-8677-8c4a86176baa">
+      <Localisation Language="ja-JP" Translation="Save As" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String4" ID="c1fdac52-48d6-4040-a9fa-ab8e8414d7ce">
+      <Localisation Language="ja-JP" Translation="Add" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String5" ID="6736aef7-f783-4967-88bb-a4be325f2bb8">
+      <Localisation Language="ja-JP" Translation="Delete" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String3" ID="03d156bc-4102-4957-ade3-795b32b91be1">
+      <Localisation Language="ja-JP" Translation="Write to Controller" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String6" ID="8d57e80a-bfec-4a35-a384-a952f00d3af8">
+      <Localisation Language="ja-JP" Translation="Read From Controller" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String7" ID="69666c85-c9a6-457e-9b5c-9fc479c3535e">
+      <Localisation Language="ja-JP" Translation="Imports" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String18" ID="3601ab12-9915-4a45-abc8-531859d14edb">
+      <Localisation Language="ja-JP" Translation="Button" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+  <Resources Type="Images">
+    <Resource Name="Image2" ID="6b826c43-b461-482b-97a2-7d0b77b18dd0">
+      <Localisation Language="ja-JP" Translation="save_recipe_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image3" ID="2cbdebe7-6a2d-4b87-bda5-123a6395e5de">
+      <Localisation Language="ja-JP" Translation="save_recipe_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image4" ID="ef353084-179f-42f6-aa14-92fa25993dbc">
+      <Localisation Language="ja-JP" Translation="save_recipe_as_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image5" ID="be686e08-fe72-458b-8827-527db3e70320">
+      <Localisation Language="ja-JP" Translation="save_recipe_as_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image6" ID="1e8a9376-bc5b-447c-9e64-ff29e27b020d">
+      <Localisation Language="ja-JP" Translation="add_recipe_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image7" ID="3c031a10-2884-4b08-a59a-d9e83e73fdc8">
+      <Localisation Language="ja-JP" Translation="add_recipe_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image8" ID="91710332-9a36-4730-86dc-d892f95c35c9">
+      <Localisation Language="ja-JP" Translation="import_recipe_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image9" ID="d40c945b-59b9-414e-8efe-0908fc651f71">
+      <Localisation Language="ja-JP" Translation="import_recipe_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image12" ID="f7caa5e2-3e77-44af-8d70-33be8b307c93">
+      <Localisation Language="ja-JP" Translation="delete_recipe_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image13" ID="6052de9b-2d79-4c60-bfc9-e39a620e39e2">
+      <Localisation Language="ja-JP" Translation="delete_recipe_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image14" ID="3b615efa-a792-48c4-8f38-68b9c9d043f1">
+      <Localisation Language="ja-JP" Translation="write_recipe_to_controller_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image15" ID="376cdb02-721e-4ab0-80ec-36e9618d0966">
+      <Localisation Language="ja-JP" Translation="write_recipe_to_controller_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image16" ID="30bdb429-5f28-4dc2-a705-0785774734bb">
+      <Localisation Language="ja-JP" Translation="read_recipe_from_controller_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image17" ID="87367269-3f04-4cda-ad0a-f13e9fa50565">
+      <Localisation Language="ja-JP" Translation="read_recipe_from_controller_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image58" ID="c22ca616-02cc-4084-b6da-07965495ff36">
+      <Localisation Language="ja-JP" Translation="save_all_recipe_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image59" ID="ef90c3e9-88e4-4cdb-b708-a7c79aaf3def">
+      <Localisation Language="ja-JP" Translation="save_all_recipe_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image80" ID="7e0f4989-f3f7-4b9f-a904-af88d02e3241">
+      <Localisation Language="ja-JP" Translation="composition_center_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image81" ID="abf0d719-0246-423c-8928-bab303e7cca4">
+      <Localisation Language="ja-JP" Translation="composition_right_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image101" ID="dda2f62f-1494-4291-90db-2acc5d2e8108">
+      <Localisation Language="ja-JP" Translation="receipe_composition_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+</IagResources>

@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Fractional_Part	G=VAR
+++D=LINT	N=Fractional_Part_Lint	G=VAR
+++D=LINT	N=Non_Fractional_Part	G=VAR
+++D=LINT	N=Total_In_Nanosec	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=REAL	N=In_Fraction	Ord=1	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=TIME	N=Frac_To_Time	G=RETURN

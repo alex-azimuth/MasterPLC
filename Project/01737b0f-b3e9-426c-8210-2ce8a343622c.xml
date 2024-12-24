@@ -1,0 +1,27 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>CASE error_code OF&#xD;
+	16#00000000: GetNXBusErrMsg := 'No error';&#xD;
+	16#04100000: GetNXBusErrMsg := 'NX Bus Controller Error';&#xD;
+	16#04110000: GetNXBusErrMsg := 'NX Bus Hardware Error';&#xD;
+	16#10600000: GetNXBusErrMsg := 'NX Bus Memory Check Error';&#xD;
+	16#10610000: GetNXBusErrMsg := 'Failed to Read NX Unit Operation Settings';&#xD;
+	16#24D00000: GetNXBusErrMsg := 'Number of Mountable NX Units Exceeded';&#xD;
+	16#24D20000: GetNXBusErrMsg := 'Total I/O Data Size in NX Units Excessive';&#xD;
+	16#35900000: GetNXBusErrMsg := 'NX Unit Version Not Matched';&#xD;
+	16#35910000: GetNXBusErrMsg := 'Unregistered NX Unit Mounted';&#xD;
+	16#35930000: GetNXBusErrMsg := 'NX Unit Serial Number Mismatch';&#xD;
+	16#44440000: GetNXBusErrMsg := 'NX Bus Function Processing Error';&#xD;
+	16#85540000: GetNXBusErrMsg := 'NX Bus I/O Communications Stopped Due to Another Event';&#xD;
+	16#35920000: GetNXBusErrMsg := 'Registered NX Unit Not Mounted';&#xD;
+	16#85500000: GetNXBusErrMsg := 'NX Bus Communications Error';&#xD;
+	16#85510000: GetNXBusErrMsg := 'NX Unit Communications Timeout';&#xD;
+	16#85520000: GetNXBusErrMsg := 'NX Unit Initialization Error';&#xD;
+	16#85530000: GetNXBusErrMsg := 'NX Unit Startup Error';&#xD;
+	16#103C0000: GetNXBusErrMsg := 'NX Unit Backup Failed';&#xD;
+	16#103D0000: GetNXBusErrMsg := 'NX Unit Restore Operation Failed';&#xD;
+	16#10620000: GetNXBusErrMsg := 'NX Unit Event Log Save Error';&#xD;
+	16#44450000: GetNXBusErrMsg := 'NX Bus System Information';&#xD;
+	16#95800000: GetNXBusErrMsg := 'NX Bus Restart Executed';&#xD;
+	16#95810000: GetNXBusErrMsg := 'NX Unit Memory All Cleared';&#xD;
+ELSE&#xD;
+	GetNXBusErrMsg := 'Unknown error code, check the manual';&#xD;
+END_CASE;</Text></StructuredTextModel>

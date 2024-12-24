@@ -1,0 +1,18 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (Enable) THEN&#xD;
+    // Case that we have a wraparound of the encoder going reverse&#xD;
+    IF (Current_Pos - Beginning_Pos) &gt; Max_Encoder_Val / 2 THEN&#xD;
+        Current_Value_No_Unit := (Current_Pos - Max_Encoder_Val) - Beginning_Pos;&#xD;
+    // Case that we have a wraparound of the encoder going forward&#xD;
+    ELSIF (Current_Pos - Beginning_Pos) &lt; -Max_Encoder_Val / 2 THEN&#xD;
+        Current_Value_No_Unit := (Current_Pos + Max_Encoder_Val) - Beginning_Pos;&#xD;
+    ELSE&#xD;
+        Current_Value_No_Unit := Current_Pos - Beginning_Pos;&#xD;
+    END_IF;&#xD;
+	&#xD;
+	// If we are imperial&#xD;
+	IF (NOT Unit) THEN &#xD;
+		Current_Feed := Metric_To_Imperial(Current_Value_No_Unit);&#xD;
+	ELSE&#xD;
+		Current_Feed := Current_Value_No_Unit;&#xD;
+	END_IF;&#xD;
+END_IF;</Text></StructuredTextModel>

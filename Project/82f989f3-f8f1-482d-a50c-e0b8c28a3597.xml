@@ -1,0 +1,11 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Module</HiddenFooter><HiddenHeader>Public Module Import_Export&#xD;
+</HiddenHeader><SerialData i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[]</SerialData><SerialDeviceHmiId i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[{"t":"System.String","a":"mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","o":"0ff281d7-9075-486b-843b-53b1fa12c4bf"},{"t":"System.String","a":"mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","o":"a8be233f-152b-41a6-b6b5-b372d2dd097e"}]</SerialDeviceHmiId><SerialScaleData i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[]</SerialScaleData><Text>'Add global subroutines&#xD;
+Public Sub ImportFromUSB&#xD;
+	ImportRecipes("Recipes_Index",Recipe_Path)&#xD;
+	Update_Recipe()&#xD;
+End Sub&#xD;
+&#xD;
+Public Sub ExportToUSB&#xD;
+	System.IO.File.Copy("C:\OMRON\Soft-NA\Projects\Current\Recipes_Index.csv", Recipe_Path, True)&#xD;
+End Sub </Text></CodeEditorModel>

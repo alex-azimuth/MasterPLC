@@ -1,0 +1,8 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (ACT) THEN&#xD;
+	IF (My_Value &lt;&gt; Value) THEN&#xD;
+		OUT := TRUE;&#xD;
+		My_Value := Value;&#xD;
+	ELSE&#xD;
+		OUT := FALSE;&#xD;
+	END_IF;&#xD;
+END_IF;</Text></StructuredTextModel>

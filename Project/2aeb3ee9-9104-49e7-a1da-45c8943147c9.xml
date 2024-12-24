@@ -1,0 +1,48 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=Enable_RT	G=VAR
+++D=R_TRIG	N=New_Cycle_RT	G=VAR
+++D=R_TRIG	N=Clutch_RT	G=VAR
+++D=F_TRIG	N=Clutch_FT	G=VAR
+++D=F_TRIG	N=Press_FT	G=VAR
+++D=R_TRIG	N=Press_RT	G=VAR
+++D=F_TRIG	N=Adj_FT	G=VAR
+++D=R_TRIG	N=Adj_RT	G=VAR
+++D=R_TRIG	N=Grease_Success_RT	G=VAR
+++D=R_TRIG	N=Grease_Failure_RT	G=VAR
+++D=R_TRIG	N=Hyd_Overload_RT	G=VAR
+++D=LREAL	N=Init_Pos	G=VAR
+++D=BOOL	N=New_Cycle_Trigger	G=VAR
+++D=BOOL	N=New_Cycle_Standy	G=VAR
+++D=TON	N=Clutch_Timer	G=VAR
+++D=TIME	N=Clutch_ET	G=VAR
+++D=BOOL	N=Clutch_T_Start	G=VAR
+++D=TON	N=Machine_ON_TON	G=VAR
+++D=DATE_AND_TIME	N=Clutch_Time_DT	G=VAR
+++D=DATE_AND_TIME	N=No_DT	G=VAR
+++D=Pack_Time_Construct	N=Pack_ON_Time	G=VAR
+++D=Pack_Time_Construct	N=Pack_Clutch_Time	G=VAR
+++D=Pack_Time_Construct	N=Pack_Adj_Time	G=VAR
+++D=Pack_Time_Construct	N=Pack_Press_Mtr_Time	G=VAR
+++D=BOOL	N=Press_T_Start	G=VAR
+++D=TON	N=Press_Timer	G=VAR
+++D=TON	N=Adj_Timer	G=VAR
+++D=TIME	N=Press_ET	G=VAR
+++D=TIME	N=Adj_ET	G=VAR
+++D=TIME	N=Clutch_Time_Total	G=VAR
+++D=TIME	N=Motor_Time_Total	G=VAR
+++D=BOOL	N=Adj_T_Start	G=VAR
+++D=TIME	N=Adj_Total_Time	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=Press_Analytics	N=Analytics	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enable	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Clutch_Active	Ord=3	G=VAR_INPUT
+++D=LREAL	N=Pos	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Grease_Success	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Grease_Failure	Ord=6	G=VAR_INPUT
+++D=BOOL	N=Overload_Trip	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Press_Motor_On	Ord=8	G=VAR_INPUT
+++D=BOOL	N=Adj_Motor_On	Ord=9	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

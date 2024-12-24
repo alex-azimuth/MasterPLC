@@ -1,0 +1,9 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (Enable) THEN&#xD;
+	// If we override the torque from the calculation and proceed with the value directly set on the screen&#xD;
+	IF (Torque_Override_Active) THEN&#xD;
+		Torque_Out := Torque_Override_Value;&#xD;
+	ELSE&#xD;
+		// Determine the torque required to move the recoiler depending on the radius&#xD;
+		Torque_Out := Tension*(Curr_Diameter/2);&#xD;
+	END_IF;&#xD;
+END_IF;</Text></StructuredTextModel>

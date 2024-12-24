@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="1135682" Revision="16777216" IONodeID="62778c10-47d0-4301-aaeb-5cd780341ca1" DeviceName="DI4" SerialNo="0" IsEnabled="1">
+  <Parameter Index="20480" SubIndex="1" Value="3" />
+  <Parameter Index="20480" SubIndex="2" Value="0" />
+  <IOPort IOPortID="1e77afeb-13e0-4f40-b19d-23b9ef884a1a" Index="24578" SubIndex="1">
+    <SubIOPort IOPortID="e081a852-3ba8-4678-a612-59eabc5d5bcd" />
+    <SubIOPort IOPortID="ed39fa39-6371-4592-9922-44d0b2b7b696" />
+    <SubIOPort IOPortID="cf63e269-61be-4cc1-a418-d9cff7f25e31" />
+    <SubIOPort IOPortID="0e4b23b0-cd55-40b4-bbcc-0035e5f11f98" />
+    <SubIOPort IOPortID="cdcebf75-c900-4c28-a37d-8393b0309ab2" />
+    <SubIOPort IOPortID="2cb263d4-e84a-469e-a2df-3ffdd5b573d0" />
+    <SubIOPort IOPortID="84ad991e-79cd-4471-80d7-9cb10d59c976" />
+    <SubIOPort IOPortID="d22c8837-aee7-4aa2-86fc-3b08cba13066" />
+    <SubIOPort IOPortID="6e916556-5a59-49d3-8417-65a1d603e23a" />
+    <SubIOPort IOPortID="aafc256f-9db0-489c-b0d4-0fb06e5a1412" />
+    <SubIOPort IOPortID="5ddb30c5-4373-4c32-a28a-7f6e2d47b5b4" />
+    <SubIOPort IOPortID="d64434b1-df22-4de9-a321-da2623990520" />
+    <SubIOPort IOPortID="76620973-75dc-4506-8d9a-2cc15aaa4dd2" />
+    <SubIOPort IOPortID="b2de4b14-2c2a-49a2-ac3a-bdf7688fdc74" />
+    <SubIOPort IOPortID="0c40e6a9-8cac-4e46-93c1-e956eea9d75d" />
+    <SubIOPort IOPortID="20fb2940-2cfc-4a27-b056-f4507bf5c2ea" />
+  </IOPort>
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="1e77afeb-13e0-4f40-b19d-23b9ef884a1a" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

@@ -1,0 +1,53 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=User_In_Out	N=UIO_0	G=VAR
+++D=User_In_Out	N=UIO_1	G=VAR
+++D=User_In_Out	N=UIO_2	G=VAR
+++D=User_In_Out	N=UIO_3	G=VAR
+++D=User_In_Out	N=UIO_4	G=VAR
+++D=User_In_Out	N=UIO_5	G=VAR
+++D=User_In_Out	N=UIO_6	G=VAR
+++D=User_In_Out	N=UIO_7	G=VAR
+++D=User_In_Out	N=UIO_8	G=VAR
+++D=User_In_Out	N=UIO_9	G=VAR
+++D=User_In_Out	N=UIO_10	G=VAR
+++D=User_In_Out	N=UIO_11	G=VAR
+++D=User_In_Out	N=UIO_12	G=VAR
+++D=User_In_Out	N=UIO_13	G=VAR
+++D=User_In_Out	N=UIO_14	G=VAR
+++D=User_In_Out	N=UIO_15	G=VAR
+++D=User_In_Out	N=UIO_16	G=VAR
+++D=User_In_Out	N=UIO_17	G=VAR
+++D=User_In_Out	N=UIO_18	G=VAR
+++D=User_In_Out	N=UIO_19	G=VAR
+++D=User_In_Out	N=UIO_20	G=VAR
+++D=User_In_Out	N=UIO_21	G=VAR
+++D=User_In_Out	N=UIO_22	G=VAR
+++D=User_In_Out	N=UIO_23	G=VAR
+++D=User_In_Out	N=UIO_24	G=VAR
+++D=User_In_Out	N=UIO_25	G=VAR
+++D=User_In_Out	N=UIO_26	G=VAR
+++D=User_In_Out	N=UIO_27	G=VAR
+++D=User_In_Out	N=UIO_28	G=VAR
+++D=User_In_Out	N=UIO_29	G=VAR
+++D=User_In_Out	N=UIO_30	G=VAR
+++D=User_In_Out	N=UIO_31	G=VAR
+++D=UINT	N=HMI_Selected_Condition	G=VAR
+++D=BOOL	N=HMI_Update_Selected_Condition	G=VAR
+++D=UINT	N=Condition_Iterator	G=VAR
+++D=UINT	N=I	G=VAR
+++D=UINT	N=Selected_Condition	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Stroke_Press	G=VAR_EXTERNAL
+++D=ARRAY[0..31] OF Do_Action	N=My_Actions	G=VAR_EXTERNAL
+++D=Press_Data	N=Press	G=VAR_EXTERNAL
+++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
+++D=BOOL	N=User_Input_1	G=VAR_EXTERNAL
+++D=ARRAY[0..31] OF BOOL	N=HMI_Display_Details	G=VAR_EXTERNAL
+++D=UINT	N=HMI_Clicked_User_Condition	G=VAR_EXTERNAL
+++D=HMI_W_Global_Condition	N=HMI_Widget_User_Condition	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_User_Condition_Save	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Condition_Cam	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Condition_Changed	G=VAR_EXTERNAL

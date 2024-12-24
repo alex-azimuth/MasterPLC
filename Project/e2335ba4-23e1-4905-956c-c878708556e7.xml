@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=My_Value	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=INT	N=Value	IV=0	Ord=0	G=VAR_INPUT
+++D=BOOL	N=ACT	Ord=1	G=VAR_INPUT
+++D=BOOL	N=OUT	Ord=2	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

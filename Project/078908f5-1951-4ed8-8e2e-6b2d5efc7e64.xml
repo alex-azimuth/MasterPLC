@@ -1,0 +1,302 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=Record_Angle	G=VAR
+++D=BOOL	N=Wait_Pass_0	G=VAR
+++D=TON	N=Inch_Timer	G=VAR
+++D=BOOL	N=Press_Adj_Interlock	G=VAR	Com=Prevent the press from stroking if the adjustment motors are running.
+++D=TP	N=Hyd_Overload_Pulse	G=VAR
+++D=Grease_Cycle	N=My_Grease_Cycle	G=VAR
+++D=TON	N=Grease_Cycle_Main_Timer	G=VAR
+++D=TIME	N=Show_ET_GCMT	G=VAR
+++D=BOOL	N=Grease_Cycle_Failure	G=VAR	Com=Signals that the cycle has failed.
+++D=BOOL	N=Overrun_Fault	G=VAR
+++D=Press_Moving	N=Press_Idle_Or_Not	G=VAR
+++D=TIME	N=Press_Idle_Sampling_Rate	G=VAR
+++D=TP	N=Hyd_Overload_Sol_Reset_Pulse	G=VAR
+++D=BOOL	N=Grease_Cycle_Success	G=VAR	Com=Signals that the grease cycle was successful.
+++D=BOOL	N=Testing_Greaser	G=VAR
+++D=TP	N=Adj_Pulsing_Encoder	G=VAR
+++D=TP	N=Adj_Pulsing_Encoder_Off	G=VAR
+++D=TON	N=Adj_Down_Error	G=VAR
+++D=TON	N=Adj_Up_Error	G=VAR
+++D=BOOL	N=Set_Adj_Up_Error	G=VAR
+++D=TON	N=Adj_Up_Error_Reset	G=VAR
+++D=BOOL	N=Set_Adj_Down_Error	G=VAR
+++D=TON	N=Adj_Down_Error_Reset	G=VAR
+++D=BOOL	N=SA_Stop_Press	G=VAR	Com=Stop the press from auto or single mode.
+++D=TP	N=Brake_Time_Pulse	G=VAR
+++D=TON	N=Brake_Time_Alarm_Timer	G=VAR
+++D=TP	N=Start_Time_Pulse	G=VAR
+++D=TON	N=Start_Time_Alarm_Timer	G=VAR
+++D=BOOL	N=Top_Stop_Conditions	G=VAR	Com=Conditions which perform a top stop rather than stopping immediately.
+++D=BOOL	N=Press_At_Top	G=VAR
+++D=TOF	N=Prior_Act_T	G=VAR
+++D=BOOL	N=Alarm_Conditions	G=VAR	Com=Signifies that an alarm which immediately stops the press s active.
+++D=BOOL	N=Overrun_Monitoring	G=VAR
+++D=BOOL	N=Overrun_Cycle	G=VAR
+++D=TP	N=Cycle_Counter_Buffer_Pulse	G=VAR
+++D=AccumulationTimer	N=Press_Brake_Time_Monitoring	G=VAR
+++D=BOOL	N=Waiting_For_Brake	G=VAR
+++D=BOOL	N=Waiting_For_Start	G=VAR
+++D=AccumulationTimer	N=Press_Start_Time_Monitoring	G=VAR
+++D=Press_Positioning	N=My_Positioning	G=VAR
+++D=BOOL	N=Top_Stop_Waiting	G=VAR
+++D=BOOL	N=Stroke_Counter_Up	G=VAR
+++D=CTU	N=Main_Counter	G=VAR
+++D=TP	N=My_Grease_Bleeding	G=VAR
+++D=Zone_Switch	N=Release_Cam_Zone	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Homing	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Direction_Set	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Units_Per_Rev	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Total_Range	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Save_Data	G=VAR
+++D=Zone_Switch	N=Feeding_Cam	G=VAR
+++D=BOOL	N=Test_Homg_Error	G=VAR
+++D=WORD	N=Test_Error_D	G=VAR
+++D=BOOL	N=Test_Direction_Error	G=VAR
+++D=WORD	N=Test_Error_Direction	G=VAR
+++D=BOOL	N=Test_Unts_Error	G=VAR
+++D=WORD	N=Test_Errr_DD	G=VAR
+++D=BOOL	N=Tes3	G=VAR
+++D=WORD	N=tst	G=VAR
+++D=BOOL	N=Test_Show_Error	G=VAR
+++D=WORD	N=Test_Show_ErroID	G=VAR
+++D=DWORD	N=test_Show_Abort_Code	G=VAR
+++D=BOOL	N=Wait_Pass_180	G=VAR	Com=Waiting to pass 180 degrees before having to verify if our feeder was indeed activated.
+++D=TON	N=Press_Unlock_Timer	G=VAR
+++D=BOOL	N=Pause_Press_Top_Stop	G=VAR
+++D=REAL	N=Drv_Speed_Real	G=VAR
+++D=INT	N=Record_Drv_Speed	G=VAR
+++D=BOOL	N=Speed_Change_Trigger	G=VAR
+++D=TOF	N=Speed_Change_Timer	G=VAR
+++D=BOOL	N=Speed_Change_Waiting	G=VAR	Com=Waiting for the press to acceleratte or decelerate.
+++D=TON	N=Oiler_Timer	G=VAR
+++D=REAL	N=Drv_Upper_Value	R=1	IV=30000	G=VAR
+++D=Zone_Switch	N=Overrun_Zone	G=VAR
+++D=TOF	N=Manual_Grease_Cycle_Timer	G=VAR
+++D=Zone_Overlap	N=Feed_Release_Overlap_Zone	G=VAR
+++D=BOOL	N=UIO_Top_Stop	G=VAR	Com=Trigger a top stop from User IO
+++D=BOOL	N=UIO_Stop	G=VAR	Com=Stop coming from UIO.
+++D=INT	N=I	G=VAR
+++D=INT	N=END_INDEX	IV=31	Const=1	G=VAR
+++D=BOOL	N=UIO_Start_Condition	G=VAR
+++D=BOOL	N=UIO_Top_Stop_Start_Condition	G=VAR	Com=Top stop only active when press is idle - start condition.
+++D=INT	N=Y	G=VAR
+++D=BOOL	N=Mode_Change_Top_Stop	G=VAR	Com=Trigger a top stop when the mode is changed from auto to another mode.
+++D=BOOL	N=Press_Mtr_Forward_Start	G=VAR	Com=Contactor motor forward.
+++D=BOOL	N=Press_Mtr_Reverse_Start	G=VAR	Com=Contactor motor reverse.
+++D=BOOL	N=Press_Monitoring	G=VAR	Com=Monitor whether the press is actually stroking or not. True when the press has begin moving.
+++D=Press_Data_Analysis	N=C_Press_Data_Analysis	G=VAR
+++D=BOOL	N=Test	G=VAR
+++D=BOOL	N=Test_Grease_Success	G=VAR
+++D=BOOL	N=Test_Grease_Failure	G=VAR
+++D=BOOL	N=Test_Overload_Trip	G=VAR
+++D=BOOL	N=Test_Press_Mtr_ON	G=VAR
+++D=BOOL	N=Test_Adj_Mtr_ON	G=VAR
+++D=REAL	N=Drv_Speed_Real2	G=VAR
+++D=ACS580_ECAT	N=ECAT_Comm	G=VAR
+++D=BOOL	N=Test_2	G=VAR
+++D=TOF	N=Reset_Pulse	G=VAR
+++D=BOOL	N=Gautier	G=VAR
+++D=BOOL	N=Test_Alarm	G=VAR
+++D=BOOL	N=Adj_Motor_ON	G=VAR
+++D=AccumulationTimer	N=Micro_Timer	G=VAR
+++D=BOOL	N=Reset_Micro_Timer	G=VAR
+++D=TON	N=Timer_Top_Stop_Reset	G=VAR
+++D=R_Accumulation_Timer	N=Grease_Cycle_Main_Timer_R	G=VAR
+++D=BOOL	N=Reset_Main_Timer	G=VAR
+++D=TOF	N=First_Cycle_Palm_Delay	G=VAR
+++D=Antivalent	N=Test_Antivalent	G=VAR
+++D=BOOL	N=Test_IN_NC	G=VAR
+++D=BOOL	N=Test_IN_NO	G=VAR
+++D=BOOL	N=test_Error	G=VAR
+++D=Antivalent	N=Antivalent_Palms	G=VAR
+++D=BOOL	N=Palm2	G=VAR
+++D=BOOL	N=Palm1	G=VAR
+++D=Antivalent	N=Antivalent_Auto	G=VAR
+++D=BOOL	N=Palm_Discrepency	G=VAR	Com=A set of contacts does not concord with the other.
+++D=TON	N=Auto_Cycle_Timer	G=VAR
+++D=BOOL	N=Auto_Cycle	G=VAR
+++D=BOOL	N=Auto_Mode_Stroke	G=VAR
+++D=BOOL	N=Pres	G=VAR
+++D=BOOL	N=Manual_Mode_Stroke	G=VAR
+++D=BOOL	N=DSV_Activate	G=VAR
+++D=BOOL	N=Palm_Signal_TOCHANGE	G=VAR
+++D=BOOL	N=Stroke_Press_TOCHANGE	G=VAR
+++D=Equivalent	N=DSV_Monitor1	G=VAR
+++D=BOOL	N=Dsv_Conf1	G=VAR
+++D=REAL	N=DSV_Error_Time	IV=0.1	G=VAR
+++D=Equivalent	N=DSV_Monitor2	G=VAR
+++D=BOOL	N=Dsv_Conf2	G=VAR
+++D=BOOL	N=FR2_Discrepency_Error_TOCHANGE	G=VAR
+++D=BOOL	N=FR1_Discrepency_Error_TOCHANGE	G=VAR
+++D=Antivalent	N=Antivalent_Pedal	G=VAR
+++D=BOOL	N=Pedal1	G=VAR
+++D=BOOL	N=Single_Mode_Alarm	G=VAR
+++D=BOOL	N=Single_Mode_Actuation_Error	G=VAR
+++D=BOOL	N=Automatic_Single_Stroke_Active	G=VAR
+++D=TOF	N=Automatic_Single_Timer	G=VAR
+++D=BOOL	N=Temp_Remove_Please	G=VAR
+++D=Equivalent	N=FR3_Monitor	G=VAR
+++D=Equivalent	N=FR4_Monitor	G=VAR
+++D=Equivalent	N=DSV_PSW_Monitoring	G=VAR
+++D=REAL	N=DSV_PSW_Allowed_Time	IV=0.1	G=VAR	Com=The amount of time given before gettung an error
+++D=Antivalent	N=Antivalent_A_Single_Stroke	G=VAR
+++D=BOOL	N=Pedal_Control_Active_TOCHANGE	G=VAR
+++D=BOOL	N=Power_Up_Activate_Palm	G=VAR
+++D=BOOL	N=Pedal_Discrepency	G=VAR	Com=A set of contact does not concord with the other.
+++D=BOOL	N=A_Single_Stroke_Discrepency	G=VAR	Com=A set of contact does not concord with the other.
+++D=BOOL	N=Pedal_Signal	G=VAR	Com=Pedal signal is activated.
+++D=BOOL	N=A_Single_Stroke_Signal	G=VAR	Com=Automatic single stroke signal is activated.
+++D=BOOL	N=A_Single_Stroke_Top_Stopped	G=VAR	Com=The top stop button has been press while the automatic single stroke was active. Or the Automatic Single Stroke mode was deactivated.
+++D=TOF	N=Toggle_ASS_Permission	G=VAR
+++D=BOOL	N=Toggle_Switch_ASS	G=VAR
+++D=BOOL	N=bp_temp	G=VAR
+++D=Zone_Switch	N=Tonnage_Zero_Cam	G=VAR
+++D=BOOL	N=Temp_Bp_AD	G=VAR
+++D=R_TRIG	N=Automatic_Single_Stroke_Toggle_R	G=VAR
+++D=BOOL	N=Do_Auto_Single_Stroke	G=VAR	Com=Latch variable to to a AutoSingle Stroke with the pulse of a sensor or a feedcomplete pulse.
+++D=BOOL	N=BP_EMKA	G=VAR
+++D=BOOL	N=Automatic_Single_Stroke_OUT	G=VAR	Com=Variable that actually starts the press in automatic single stroke.
+++D=TOF	N=Single_Stroke_Restart_Delay	G=VAR
+++D=BOOL	N=Top_Stop	G=VAR
+++D=BOOL	N=Latch_Global_Feed_Completed	G=VAR
+++D=BOOL	N=Automatic	Ord=1	G=VAR	AOE=1
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
+++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
+++D=ARRAY[0..31] OF Do_Action	N=My_Actions	G=VAR_EXTERNAL
+++D=BOOL	N=Press_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Mode_Inch	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Mode_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Stroke_Press	G=VAR_EXTERNAL
+++D=BOOL	N=Stop_Press	G=VAR_EXTERNAL
+++D=BOOL	N=Reset_Stroke	G=VAR_EXTERNAL
+++D=TIME	N=Micro_Time_Active	G=VAR_EXTERNAL
+++D=BOOL	N=Rev_Manual_Interlock	G=VAR_EXTERNAL
+++D=BOOL	N=Act_Mode_Auto	G=VAR_EXTERNAL	Com=Mode auto is single.
+++D=BOOL	N=Act_Mode_Single	G=VAR_EXTERNAL	Com=Mode single is active.
+++D=BOOL	N=Act_Mode_Inch	G=VAR_EXTERNAL	Com=Mode inch is active mode.
+++D=BOOL	N=Press_IN_Adj_Up_Req	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Down_Req	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Start	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Adj_Motor_Up	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Adj_Motor_Down	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Down_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Overload_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Mtr_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Hyd_Overload_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Hyd_Overload_Sol	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Hyd_Grease_Sensor	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Grease_Motor	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Temp_Fault	G=VAR_EXTERNAL
+++D=Grease_Cycle_Timers	N=My_Grease_Timers	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Oiler_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Air_Pressure	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Overrun_Prox	G=VAR_EXTERNAL
+++D=BOOL	N=Press_Idle	G=VAR_EXTERNAL
+++D=LREAL	N=Press_Idle_Tolerance	G=VAR_EXTERNAL	Com=Possible distance between two positions - in between two sampling cycles.
+++D=BOOL	N=Record_Mode_Single	G=VAR_EXTERNAL
+++D=BOOL	N=Record_Mode_Manual	G=VAR_EXTERNAL
+++D=BOOL	N=Record_Mode_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Record_Mode_Inch	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Adj_Pulse	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Drv_Start	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Drv_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Motor_Running	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Drv_Reverse	G=VAR_EXTERNAL
+++D=REAL	N=Brake_Time	G=VAR_EXTERNAL
+++D=REAL	N=Start_Time	G=VAR_EXTERNAL
+++D=BOOL	N=Automatic_Start_Permission	G=VAR_EXTERNAL	Com=Gives permission for the press to start in automatic mode.
+++D=BOOL	N=Press_IN_Prior_Act	G=VAR_EXTERNAL	Com=Operator must perform a prior act in order to start the press in automatic mode.
+++D=BOOL	N=Palm_Discrepency_Alarm	G=VAR_EXTERNAL
+++D=BOOL	N=FR2_Discrepency_Error	G=VAR_EXTERNAL
+++D=BOOL	N=FR1_Discrepency_Error	G=VAR_EXTERNAL
+++D=BOOL	N=Act_Mode_Adj_Up	G=VAR_EXTERNAL	Com=Adjustment motor active mode is going up.
+++D=BOOL	N=Act_Mode_Adj_Down	G=VAR_EXTERNAL	Com=Adjustment motor active mode is going down.
+++D=BOOL	N=Press_Mtr_Reverse_Req	G=VAR_EXTERNAL	Com=Drive reverse demand
+++D=BOOL	N=Grease_Startup_Bypass	G=VAR_EXTERNAL
+++D=ULINT	N=Press_Position_Raw	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Reset_Home	G=VAR_EXTERNAL
+++D=Press_Data	N=Press	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Top_Stop	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Release_Pos1	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Release_Pos2	G=VAR_EXTERNAL
+++D=BOOL	N=Machine_Stopped	G=VAR_EXTERNAL
+++D=Encoder_Data	N=Press_Enc_Data	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Feed_Pos1	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Feed_Pos2	G=VAR_EXTERNAL
+++D=BOOL	N=Overrun_Bypass	G=VAR_EXTERNAL	Com=Bypasses overrun alarm
+++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Alarm" C="Motion error while feeding." /></ECs>
+++D=BOOL	N=Stroke_Initiated	G=VAR_EXTERNAL	Com=Press is currently stroking.
+++D=BOOL	N=Door1_Unlock_HMI	G=VAR_EXTERNAL	Com=Request from the HMI to unlock door1.
+++D=BOOL	N=Door2_Unlock_HMI	G=VAR_EXTERNAL	Com=Request from the HMI to unlock door1.
+++D=BOOL	N=Insertion_Not_Finished_Alarm	G=VAR_EXTERNAL	Com=Tried to start the press without the insertion sequence being finished.
+++D=BOOL	N=Press_Ready	G=VAR_EXTERNAL
+++D=INT	N=Press_AOUT_Drv_Speed	G=VAR_EXTERNAL
+++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
+++D=REAL	N=SPM	G=VAR_EXTERNAL
+++D=INT	N=Press_Speed_Raw	G=VAR_EXTERNAL
+++D=BOOL	N=Feed_Alarm_Bypass	G=VAR_EXTERNAL
+++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL	EC=<ECs><EC EK="Press_Fault" C="Press is in fault condition." /></ECs>
+++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF int	N=UIO_Cam_Force	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Up_Fault	G=VAR_EXTERNAL
+++D=HMI_Press	N=HMI_Press_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Press_Mtr_Rev" C="Motor rototation currently set to reverse" /><EC EK="Alarms.Press_Drive" C="Motor for the press will need to be reset via the interface on the panel." /><EC EK="Alarms.Brake" C="Press has failed to brake in the allowed timeframe. Verify mechanical issue or increase timer." /><EC EK="Alarms.Start" C="Press has failed to start in the allowed timeframe. Verify mechanical issue or increase start time timer." /></ECs>
+++D=BOOL	N=Press_IN_Mode_Single	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI_Data	G=VAR_EXTERNAL
+++D=Press_Analytics	N=HMI_Press_Analytics	G=VAR_EXTERNAL
+++D=HMI_Press_Retained	N=HMI_Data_Press_Retained	G=VAR_EXTERNAL
+++D=Press_Options	N=Master_Press_Options	G=VAR_EXTERNAL
+++D=BOOL	N=Sft_Press_Mtr_Comm	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Contactor_FWD	G=VAR_EXTERNAL	Com=Contactor forward output.
+++D=BOOL	N=Press_OUT_Contactor_Rev	G=VAR_EXTERNAL	Com=Contactor reverse output.
+++D=BOOL	N=Palm_Signal	G=VAR_EXTERNAL
+++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_EXTERNAL
+++D=UINT	N=Control_Word	G=VAR_EXTERNAL
+++D=UINT	N=Status_Word	G=VAR_EXTERNAL
+++D=UINT	N=Show_Trip_Fault	G=VAR_EXTERNAL
+++D=INT	N=Ref1_2102_00	G=VAR_EXTERNAL
+++D=DINT	N=Accel_Time	G=VAR_EXTERNAL
+++D=DINT	N=Decel_Time	G=VAR_EXTERNAL
+++D=Abb_Drv	N=ABB_Control	G=VAR_EXTERNAL
+++D=REAL	N=Press_Pos_REAL	G=VAR_EXTERNAL
+++D=Feed_Sequence	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=ULINT	N=Press_Position_Pulse	G=VAR_EXTERNAL
+++D=UINT	N=HMI_Clicked_User_Condition	G=VAR_EXTERNAL
+++D=DINT	N=Press_IN_Mtr_Current	G=VAR_EXTERNAL
+++D=DINT	N=Press_IN_Total_Torque	G=VAR_EXTERNAL
+++D=DINT	N=Press_IN_DC_Voltage	G=VAR_EXTERNAL
+++D=BOOL	N=UIO_Top_Stop_Latch	G=VAR_EXTERNAL
+++D=BOOL	N=UIO_Stop_Latch	G=VAR_EXTERNAL
+++D=Recoiler_Comm	N=Recoiler_Signals	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_FR1_Monitor	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_FR2_Monitor	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Palm2	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Palm1	G=VAR_EXTERNAL
+++D=BOOL	N=FR3_Discrepency_Error	G=VAR_EXTERNAL
+++D=BOOL	N=FR4_Discrepency_Error	G=VAR_EXTERNAL
+++D=REAL	N=STO_Error_Time	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_FR3_Monitor	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_FR4_Monitor	G=VAR_EXTERNAL
+++D=BOOL	N=FR4_Active	G=VAR_EXTERNAL
+++D=BOOL	N=FR3_Active	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Pedal2	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Pedal1	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_DSV1_Pressure_Switch	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_DSV2_Pressure_Switch	G=VAR_EXTERNAL
+++D=BOOL	N=PSW_Discrepency_Error	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Automatic_Single_Strke_NC	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Automatic_Single_Strke_NO	G=VAR_EXTERNAL
+++D=BOOL	N=Palm_Activated	G=VAR_EXTERNAL
+++D=BOOL	N=Pedal_Activated	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Tonnage_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Zero_CAM	G=VAR_EXTERNAL
+++D=Features	N=Master_Features	G=VAR_EXTERNAL
+++D=BOOL	N=Alex_Test	G=VAR_EXTERNAL
+++D=BOOL	N=R_DSV1	G=VAR_EXTERNAL
+++D=BOOL	N=R_DSV2	G=VAR_EXTERNAL
+++D=BOOL	N=FSFT_R_DSV	G=VAR_EXTERNAL
+++D=BOOL	N=Global_Feed_Completed	G=VAR_EXTERNAL

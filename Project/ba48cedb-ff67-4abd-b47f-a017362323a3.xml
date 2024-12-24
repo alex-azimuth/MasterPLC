@@ -1,0 +1,10 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(* Record what is before the dot (ex: .555 2 in 2.555) *)&#xD;
+Non_Fractional_Part := (TRUNC(In_Fraction))*1000;&#xD;
+(* Record what is after the dot (ex: .555 in 2.555) *)&#xD;
+Fractional_Part := Fraction(In_Fraction);&#xD;
+Fractional_Part_Lint := REAL_To_LINT(Fractional_Part*1000);&#xD;
+(* Add the fractional and non-fractional parts and convert to nanosecs *)&#xD;
+Total_In_Nanosec := (Non_Fractional_Part+Fractional_Part_Lint)*1000;&#xD;
+&#xD;
+(* Pulse is in milliseconds so multiply by a thousand again *)&#xD;
+Frac_To_Time := NanoSecToTime(Total_In_Nanosec*1000);</Text></StructuredTextModel>

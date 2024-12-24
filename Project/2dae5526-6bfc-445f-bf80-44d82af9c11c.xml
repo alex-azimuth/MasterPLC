@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EtherCATCoupler VenderID="1" ProductCode="6357506" Revision="16908288" IONodeID="92abac92-967f-41bf-b74f-495297ef7196" WaitTimeForAddition="3" CheckSerialNo="0">
+  <Parameter Index="16394" SubIndex="1" Value="0" />
+  <Parameter Index="16397" SubIndex="1" Value="1" />
+  <Parameter Index="20480" SubIndex="1" Value="1" />
+  <Parameter Index="20481" SubIndex="1" Value="0" />
+  <IOPort IOPortID="25851911-f1b0-4bf9-9587-4c7d9c6cd6ec" Index="8195" SubIndex="4" />
+  <IOPort IOPortID="68e70bb9-9a02-486b-8fa9-33cca791afad" Index="8197" SubIndex="4" />
+  <IOAllocation Index="7160">
+    <IOEntry>
+      <IOPortReference IOPortID="25851911-f1b0-4bf9-9587-4c7d9c6cd6ec" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="68e70bb9-9a02-486b-8fa9-33cca791afad" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="93a3c8ee-6f4b-48ff-b89f-751f1b53d3d5" Index="8193" SubIndex="1">
+    <SubIOPort IOPortID="e2a4b224-eb19-4c05-bb1f-a33d26dc0535" />
+    <SubIOPort IOPortID="f5b845cb-ecd8-409c-9682-91cefca0b099" />
+    <SubIOPort IOPortID="e8fc5d77-5fc9-46c6-b47f-194fa000938d" />
+    <SubIOPort IOPortID="16a14da8-38c6-4ec1-9b34-031f74100a4a" />
+  </IOPort>
+  <IOAllocation Index="7167">
+    <IOEntry>
+      <IOPortReference IOPortID="93a3c8ee-6f4b-48ff-b89f-751f1b53d3d5" />
+    </IOEntry>
+  </IOAllocation>
+</EtherCATCoupler>

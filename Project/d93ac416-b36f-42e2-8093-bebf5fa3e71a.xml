@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=Fault_Timer	G=VAR
+++D=BOOL	N=Run_Timer	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=IN1	Ord=1	G=VAR_INPUT
+++D=BOOL	N=IN2	Ord=2	G=VAR_INPUT
+++D=REAL	N=Discrepency	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Out	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
