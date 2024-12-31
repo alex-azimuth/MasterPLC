@@ -29,6 +29,7 @@ _EN=Variables
 ++D=BOOL	N=BP_Test_AD	G=VAR
 ++D=Abb_Drv	N=ABB_Control	G=VAR
 ++D=ACS580_ECAT	N=ECAT_Comm	G=VAR
+++D=BOOL	N=Uncoiler_Coil_Cart_Alarm	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -101,3 +102,4 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_EXTERNAL
 ++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_EXTERNAL
 ++D=INT	N=Uncoiler_ABB_Ref	G=VAR_EXTERNAL
+++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_EXTERNAL

@@ -163,6 +163,7 @@ _EN=Variables
 ++D=BOOL	N=Top_Stop	G=VAR
 ++D=BOOL	N=Latch_Global_Feed_Completed	G=VAR
 ++D=BOOL	N=Automatic	G=VAR
+++D=TON	N=Shaker_DSV_TON	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -300,3 +301,5 @@ _EN=Variables
 ++D=BOOL	N=R_DSV2	G=VAR_EXTERNAL
 ++D=BOOL	N=FSFT_R_DSV	G=VAR_EXTERNAL
 ++D=BOOL	N=Global_Feed_Completed	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_OUT_Start	G=VAR_EXTERNAL
+++D=Shaker_Data	N=HMI_Shaker_Data	G=VAR_EXTERNAL

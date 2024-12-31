@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="10553344" Revision="16777216" IONodeID="d3aa5987-397c-40e1-8dc1-5bf08534d4a9" DeviceName="SDI3" SerialNo="0" IsEnabled="1">
+  <IOPort IOPortID="8f7cc676-cfb7-470c-8e5e-cf3eb5179ac7" Index="28672" SubIndex="1" />
+  <IOPort IOPortID="8417f43e-90ac-4e10-b4a4-56aa17e6b7fd" Index="28673" SubIndex="1" />
+  <IOPort IOPortID="0e4821c5-9fc5-4ab6-a1bb-68933b3a3bd8" Index="28672" SubIndex="3" />
+  <IOPort IOPortID="da95241b-a9f7-42b3-9fa3-8bd039b138b9" Index="28672" SubIndex="2" />
+  <IOAllocation Index="5632">
+    <IOEntry>
+      <IOPortReference IOPortID="8f7cc676-cfb7-470c-8e5e-cf3eb5179ac7" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="8417f43e-90ac-4e10-b4a4-56aa17e6b7fd" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="0e4821c5-9fc5-4ab6-a1bb-68933b3a3bd8" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="da95241b-a9f7-42b3-9fa3-8bd039b138b9" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="a9561a36-4ad6-4344-a324-4ff6559d70b5" Index="28674" SubIndex="1" />
+  <IOPort IOPortID="ef38bc4e-a064-4eea-b2fb-48ed9b0848c9" Index="28674" SubIndex="2" />
+  <IOAllocation Index="5633">
+    <IOEntry>
+      <IOPortReference IOPortID="a9561a36-4ad6-4344-a324-4ff6559d70b5" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="ef38bc4e-a064-4eea-b2fb-48ed9b0848c9" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="a7ae369f-1dae-4879-8de8-db47ece05525" Index="24576" SubIndex="1" />
+  <IOPort IOPortID="686088fd-2739-40b8-a754-7f32de155950" Index="24577" SubIndex="1" />
+  <IOPort IOPortID="c07aabe5-de56-48f6-8d0e-ea943a16b766" Index="24576" SubIndex="3" />
+  <IOPort IOPortID="54f70326-7e6b-4b7b-8160-5a2fb3821498" Index="24576" SubIndex="2" />
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="a7ae369f-1dae-4879-8de8-db47ece05525" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="686088fd-2739-40b8-a754-7f32de155950" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="c07aabe5-de56-48f6-8d0e-ea943a16b766" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="54f70326-7e6b-4b7b-8160-5a2fb3821498" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="38bf98ad-d3e3-47ad-a402-0f37a35bc862" Index="24578" SubIndex="1">
+    <SubIOPort IOPortID="176522d2-f354-4b41-8ff1-b0982a0220f6" />
+    <SubIOPort IOPortID="7475b203-6e75-427f-8b9d-de1e058c378e" />
+    <SubIOPort IOPortID="fd3a3770-ac8d-4435-bb1f-f01e44c83930" />
+    <SubIOPort IOPortID="86911a8d-97b2-4b27-9ec2-d53f5ded9ae8" />
+    <SubIOPort IOPortID="7d13f257-46b4-4895-b007-28dfcd14dd74" />
+    <SubIOPort IOPortID="496aa901-1f67-448b-8a23-94dbd6d23a15" />
+    <SubIOPort IOPortID="e3995acc-2390-40f5-abae-4eb2c47d68b9" />
+    <SubIOPort IOPortID="a91c3d3e-6dd3-431b-b354-4c4cb8eff9d4" />
+    <SubIOPort IOPortID="7a9228a3-eadb-4b83-8bb6-b70f0648fa79" />
+    <SubIOPort IOPortID="e4ff2eed-aa84-407a-a64a-34fba4bae328" />
+    <SubIOPort IOPortID="60ef4e78-53b7-4661-a77b-bf72b0d4f7ec" />
+    <SubIOPort IOPortID="3fdd7896-f321-40b4-9428-3aa08ca42fa5" />
+  </IOPort>
+  <IOPort IOPortID="de016e0c-7520-4698-856a-5aecb1ed0c66" Index="24578" SubIndex="2">
+    <SubIOPort IOPortID="8cea8fcf-7c0b-4e2b-ad39-aa04a8bb5789" />
+    <SubIOPort IOPortID="5f9df196-f287-4939-af29-4c2b3fdc0566" />
+    <SubIOPort IOPortID="28811b0e-8856-49b8-b2b1-b411f330bfcc" />
+    <SubIOPort IOPortID="02543b42-4f9b-4d48-87e8-d300a8650729" />
+    <SubIOPort IOPortID="e9aa8492-1d58-48e5-9d41-9c8330fcae48" />
+    <SubIOPort IOPortID="aea55571-cbd2-4a52-a8d2-229e252af70a" />
+    <SubIOPort IOPortID="1e2a167a-3fff-41ba-a8fa-5e343b712a5b" />
+    <SubIOPort IOPortID="c651391e-de2e-42a2-b585-325f43fafb97" />
+  </IOPort>
+  <IOAllocation Index="6657">
+    <IOEntry>
+      <IOPortReference IOPortID="38bf98ad-d3e3-47ad-a402-0f37a35bc862" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="de016e0c-7520-4698-856a-5aecb1ed0c66" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

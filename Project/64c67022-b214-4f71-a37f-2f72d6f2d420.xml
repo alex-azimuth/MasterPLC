@@ -25,6 +25,11 @@ _EN=Variables
 ++D=BOOL	N=HMI_Write_Ethercat	G=VAR
 ++D=EC_CoESDORead	N=SDO_R_Ethercat_Comm	G=VAR
 ++D=EC_CoESDOWrite	N=SDO_W_Ethercat_Comm	G=VAR
+++D=TP	N=Shaker_OL_Reset_TP	G=VAR
+++D=TP	N=Hydraulic_OL_Reset_TP	G=VAR
+++D=TP	N=Adj_OL_Reset_TP	G=VAR
+++D=TP	N=Passline_OL_Reset_TP	G=VAR
+++D=TP	N=Oil_OL_Reset_TP	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
@@ -60,3 +65,14 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Reset_Safety	G=VAR_EXTERNAL
 ++D=BOOL	N=Act_Safety_Reset_PB	G=VAR_EXTERNAL
 ++D=STRING[256]	N=Version_Number_String	G=VAR_EXTERNAL
+++D=HMI_Overload_Reset	N=HMI_O_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Shaker_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Adj_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Hyd_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Oil_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_PassL_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_IN_Overload_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Passline_Overload	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Oiler_Overload	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Overload_Fault	G=VAR_EXTERNAL

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="10683392" Revision="16777216" IONodeID="dfbfe311-0019-43e4-a6e9-1cbbbbde710d" DeviceName="SDO2" SerialNo="0" IsEnabled="1">
+  <IOPort IOPortID="89f23444-a694-4959-b379-d0e6ce53ce56" Index="28672" SubIndex="1" />
+  <IOPort IOPortID="f75b9466-42c0-406d-b091-ee360a834f73" Index="28673" SubIndex="1" />
+  <IOPort IOPortID="a959711b-bc40-4d70-811f-31f2252d4ab1" Index="28672" SubIndex="3" />
+  <IOPort IOPortID="956a9d82-d622-452a-b21d-57afd710a2a7" Index="28672" SubIndex="2" />
+  <IOAllocation Index="5632">
+    <IOEntry>
+      <IOPortReference IOPortID="89f23444-a694-4959-b379-d0e6ce53ce56" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="f75b9466-42c0-406d-b091-ee360a834f73" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="a959711b-bc40-4d70-811f-31f2252d4ab1" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="956a9d82-d622-452a-b21d-57afd710a2a7" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="4504a256-899e-4e55-b393-1b8f1e5cd6de" Index="28674" SubIndex="1" />
+  <IOPort IOPortID="3f132c71-567f-4144-b949-fe932a052f9f" Index="28674" SubIndex="2" />
+  <IOAllocation Index="5633">
+    <IOEntry>
+      <IOPortReference IOPortID="4504a256-899e-4e55-b393-1b8f1e5cd6de" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="3f132c71-567f-4144-b949-fe932a052f9f" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="b6f5c0fe-f9a2-41ac-a841-d03d0f919e39" Index="24576" SubIndex="1" />
+  <IOPort IOPortID="9ab08ad9-7348-429d-825b-55b371c23a12" Index="24577" SubIndex="1" />
+  <IOPort IOPortID="952d1499-5ee8-40d9-a840-25c848e4b86c" Index="24576" SubIndex="3" />
+  <IOPort IOPortID="7d4e2eb3-71e7-4cfd-b4b1-8771383782a5" Index="24576" SubIndex="2" />
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="b6f5c0fe-f9a2-41ac-a841-d03d0f919e39" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="9ab08ad9-7348-429d-825b-55b371c23a12" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="952d1499-5ee8-40d9-a840-25c848e4b86c" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="7d4e2eb3-71e7-4cfd-b4b1-8771383782a5" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="594c76ac-e706-4068-9170-51d53eea78d8" Index="24578" SubIndex="1">
+    <SubIOPort IOPortID="7fbd86bf-5a81-408b-90cf-059855188209" />
+    <SubIOPort IOPortID="5a10dc27-73ba-4858-917e-9d72fc46649f" />
+    <SubIOPort IOPortID="ed27192c-58a6-4fe4-bb07-a923f41f08d2" />
+    <SubIOPort IOPortID="2c966204-a860-4821-84e7-cd7a708809ae" />
+    <SubIOPort IOPortID="49c76812-8d29-4d40-b914-79d5747325fd" />
+    <SubIOPort IOPortID="9614cd29-c6ec-4ef4-80fb-52aab493f6f4" />
+    <SubIOPort IOPortID="98aa0bee-f43d-4ad3-b481-b04643eda829" />
+    <SubIOPort IOPortID="62b6701f-c0b4-4366-8d9c-4ca815fad13e" />
+  </IOPort>
+  <IOPort IOPortID="a55bfae1-44da-48c1-8296-b33426a4156e" Index="24578" SubIndex="2">
+    <SubIOPort IOPortID="e5553d0c-88f3-41a6-9104-ced982a4941b" />
+    <SubIOPort IOPortID="6807ae03-3fe3-4f70-9505-2e10fde3fb8f" />
+    <SubIOPort IOPortID="1ae2ef96-0a04-4a73-b81f-8c622b522e56" />
+    <SubIOPort IOPortID="19a60a21-2fcf-4516-a257-f4819d46e3a5" />
+  </IOPort>
+  <IOAllocation Index="6657">
+    <IOEntry>
+      <IOPortReference IOPortID="594c76ac-e706-4068-9170-51d53eea78d8" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="a55bfae1-44da-48c1-8296-b33426a4156e" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

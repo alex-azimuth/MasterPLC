@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Module VenderID="1" ProductCode="10683392" Revision="16777216" IONodeID="e10b0b0b-1841-459b-8193-a91a97e8652a" DeviceName="SDO2" SerialNo="0" IsEnabled="1">
+<Module VenderID="1" ProductCode="10683392" Revision="16777216" IONodeID="e10b0b0b-1841-459b-8193-a91a97e8652a" DeviceName="SDO4" SerialNo="0" IsEnabled="1">
   <IOPort IOPortID="53deb1f6-64b4-4715-aeb6-6d32d61c125b" Index="28672" SubIndex="1" />
   <IOPort IOPortID="16f05152-177f-43cf-88bf-de252e93765f" Index="28673" SubIndex="1" />
   <IOPort IOPortID="109d0640-71a0-4a75-a9fb-d66039cc47dd" Index="28672" SubIndex="3" />

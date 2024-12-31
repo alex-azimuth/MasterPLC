@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="1266262" Revision="16777216" IONodeID="c361fbb2-29ab-4213-bc01-b41c8a781071" DeviceName="CPL1_DO2" SerialNo="0" IsEnabled="1">
+  <Parameter Index="20498" SubIndex="1" Value="0" />
+  <IOPort IOPortID="6b22b57c-c4ac-4a5a-a2fc-9fe4c7242172" Index="28674" SubIndex="1">
+    <SubIOPort IOPortID="ef6a58a0-7a34-4bd0-a280-c1abbd5233d5" />
+    <SubIOPort IOPortID="2d7f238e-d0a9-4d97-b3c7-8656a620ad6a" />
+    <SubIOPort IOPortID="85651c39-46a7-4cfe-9ae8-571b9e80b247" />
+    <SubIOPort IOPortID="2ba4c0e2-13e8-4e7a-9878-1e4a6fa821fc" />
+    <SubIOPort IOPortID="57070373-a74c-41a8-9429-ae7575ab0e0e" />
+    <SubIOPort IOPortID="73169cfa-aa4e-4f74-ae37-5d0672027a48" />
+    <SubIOPort IOPortID="4d18e205-2a27-4647-bc51-19aa0d1eb349" />
+    <SubIOPort IOPortID="49c4fd15-465c-4387-9406-5461ea71e164" />
+    <SubIOPort IOPortID="8bf6f28d-b709-48b1-a252-82d383d4a9ce" />
+    <SubIOPort IOPortID="10988a67-972d-45c5-9651-32449661e15a" />
+    <SubIOPort IOPortID="bdebfa6a-6580-49e6-af1f-882e058c2641" />
+    <SubIOPort IOPortID="8d21e5f8-40e2-44da-8c27-1adf26f87e85" />
+    <SubIOPort IOPortID="f3de0b65-aadd-42a0-9ff9-205a63a50316" />
+    <SubIOPort IOPortID="3c6ff008-b2b6-4db5-8043-113ed0249d3f" />
+    <SubIOPort IOPortID="1fdbc9da-71b8-4ea4-bd1d-3f68d7b55cc3" />
+    <SubIOPort IOPortID="ae40fe11-6c0c-4d5a-b54d-0ceeca798484" />
+  </IOPort>
+  <IOAllocation Index="5632">
+    <IOEntry>
+      <IOPortReference IOPortID="6b22b57c-c4ac-4a5a-a2fc-9fe4c7242172" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

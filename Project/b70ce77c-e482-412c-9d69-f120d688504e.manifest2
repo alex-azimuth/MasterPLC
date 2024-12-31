@@ -6,7 +6,8 @@
       <ApplicationFeature name="HMI" />
       <ApplicationFeature name="NA-RTLD□□Version:1.17" />
       <ApplicationFeature name="V102Project" />
-      <ApplicationFeature name="SetUnit NX1P2-9024DT1 Ver. 1.50" />
+      <ApplicationFeature name="DBCon V2.01" />
+      <ApplicationFeature name="SetUnit NX102-1120 Ver. 1.60" />
       <ApplicationFeature name="SafetyDataProtection" />
       <ApplicationFeature name="SafetyProgramProtection" />
       <ApplicationFeature name="Safety_DataProtectionV2_0Using" />

@@ -93,6 +93,16 @@
       <DefaultValue>NexCpuActionEmptyUnit</DefaultValue>
       <Options />
     </NexCpuActionSDCardRestorePasswordValue2>
+    <NexCpuActionProhibitFirmwareUpdate>
+      <CurrentValue>EnumElement1</CurrentValue>
+      <IsEnabled>true</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue>EnumElement1</DefaultValue>
+      <Options>
+        <Option>EnumElement1</Option>
+        <Option>EnumElement2</Option>
+      </Options>
+    </NexCpuActionProhibitFirmwareUpdate>
     <NexCpuActionSetting.CommandErrorOutput>
       <CurrentValue>EnumElement1</CurrentValue>
       <IsEnabled>true</IsEnabled>
@@ -123,34 +133,6 @@
         <Option>EnumElement2</Option>
       </Options>
     </NexCpuActionProhibitSDBackup>
-    <NexCpuActionSDCardProgramTransferConfirmPassword>
-      <CurrentValue></CurrentValue>
-      <IsEnabled>false</IsEnabled>
-      <IsVisible>true</IsVisible>
-      <DefaultValue></DefaultValue>
-      <Options />
-    </NexCpuActionSDCardProgramTransferConfirmPassword>
-    <NexCpuActionSDCardProgramTransferConfirmPasswordValue2>
-      <CurrentValue>NexCpuActionEmptyUnit</CurrentValue>
-      <IsEnabled>true</IsEnabled>
-      <IsVisible>true</IsVisible>
-      <DefaultValue>NexCpuActionEmptyUnit</DefaultValue>
-      <Options />
-    </NexCpuActionSDCardProgramTransferConfirmPasswordValue2>
-    <NexCpuActionSDCardRestoreConfirmPassword>
-      <CurrentValue></CurrentValue>
-      <IsEnabled>false</IsEnabled>
-      <IsVisible>true</IsVisible>
-      <DefaultValue></DefaultValue>
-      <Options />
-    </NexCpuActionSDCardRestoreConfirmPassword>
-    <NexCpuActionSDCardRestoreConfirmPasswordValue2>
-      <CurrentValue>NexCpuActionEmptyUnit</CurrentValue>
-      <IsEnabled>true</IsEnabled>
-      <IsVisible>true</IsVisible>
-      <DefaultValue>NexCpuActionEmptyUnit</DefaultValue>
-      <Options />
-    </NexCpuActionSDCardRestoreConfirmPasswordValue2>
   </NexCpuActionGeneral>
   <NexCpuEipFINSSetting>
     <NexCpuEipFINSRoutingTable>
@@ -2564,6 +2546,16 @@
       <DefaultValue></DefaultValue>
       <Options />
     </NexCpuEipFINSRoutingTableRemoteTableItem63RelayNode>
+    <NexCpuEipFINSWriteProtectionEnable>
+      <CurrentValue>EnumElement1</CurrentValue>
+      <IsEnabled>true</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue>EnumElement1</DefaultValue>
+      <Options>
+        <Option>EnumElement1</Option>
+        <Option>EnumElement2</Option>
+      </Options>
+    </NexCpuEipFINSWriteProtectionEnable>
   </NexCpuEipFINSSetting>
   <NexCpuLevelSetting>
     <NexCpuLevelSettingTable>
