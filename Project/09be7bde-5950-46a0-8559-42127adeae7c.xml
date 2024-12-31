@@ -108,6 +108,8 @@ _EN=Variables
 ++D=Encoder_Data	N=Entry_Feeder_Enc_Data	R=1	IV=(Node := 6, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
 ++D=Encoder_Data	N=Exit_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
 ++D=Encoder_Data	N=Main_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
+++D=Encoder_Data	N=Straightner_Enc1	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
+++D=Encoder_Data	N=Straightner_Enc2	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
 ++D=TOF	N=Start_Oiling_Cycle	G=VAR
 ++D=TON	N=Start_Oiling_Motor	G=VAR
 ++D=INT	N=Z	G=VAR
@@ -163,6 +165,23 @@ _EN=Variables
 ++D=BOOL	N=Reset_Length_Trigger	G=VAR
 ++D=BOOL	N=v	G=VAR
 ++D=LREAL	N=PI	IV=3.141592653589793238462643383279502884197	Const=1	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc1_Direction_Set	G=VAR
+++D=EC_CoESDOWrite	N=Straight_Enc1_Preset	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc1_Preset	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc1_Units_Rev	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc1_Total_Range	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc1_Save_Data	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc2_Preset	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc2_Direction_Set	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc2_Units_Rev	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc2_Total_Range	G=VAR
+++D=EC_CoESDOWrite	N=Straightner_Enc2_Save_Data	G=VAR
+++D=REAL	N=Straightner_Enc1_Current_Pos	G=VAR
+++D=REAL	N=Enc1_HMI_Val	G=VAR
+++D=Deviates	N=Enc1_Deviation	G=VAR
+++D=Deviates	N=Enc2_Deviation	G=VAR
+++D=Straightner_Enc_Verification	N=Enc1_Verification	G=VAR
+++D=Straightner_Enc_Verification	N=Enc2_Verification	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
@@ -290,3 +309,5 @@ _EN=Variables
 ++D=BOOL	N=HMI_Eastwood_Cut_Activate	G=VAR_EXTERNAL
 ++D=HMI_Recoiler	N=HMI_Recoiler_Data	G=VAR_EXTERNAL
 ++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL
+++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_EXTERNAL
+++D=LINT	N=Straightner_IN_Enc2_Pos	G=VAR_EXTERNAL

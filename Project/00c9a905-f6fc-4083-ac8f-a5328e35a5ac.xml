@@ -27,6 +27,8 @@ _EN=Variables
 ++D=TP	N=Pressing_Arm_Up	G=VAR
 ++D=TP	N=Pressing_Arm_Down	G=VAR
 ++D=BOOL	N=BP_Test_AD	G=VAR
+++D=Abb_Drv	N=ABB_Control	G=VAR
+++D=ACS580_ECAT	N=ECAT_Comm	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -88,3 +90,14 @@ _EN=Variables
 ++D=BOOL	N=FR3_Discrepency_Error	G=VAR_EXTERNAL
 ++D=BOOL	N=FR4_Discrepency_Error	G=VAR_EXTERNAL
 ++D=REAL	N=STO_Error_Time	G=VAR_EXTERNAL	Com=Time of non equivalence to between a STO fault and the monitoring of forced guided relays
+++D=DINT	N=Press_ABB_Accel_Time	G=VAR_EXTERNAL
+++D=DINT	N=Press_ABB_Decel_Time	G=VAR_EXTERNAL
+++D=UINT	N=Uncoiler_ABB_Control_Word	G=VAR_EXTERNAL
+++D=UINT	N=Uncoiler_ABB_Status_Word	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_IN_Mtr_Current	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_IN_Total_Torque	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_IN_DC_Voltage	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_ABB_Accel_Time	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_EXTERNAL
+++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_EXTERNAL
+++D=INT	N=Uncoiler_ABB_Ref	G=VAR_EXTERNAL

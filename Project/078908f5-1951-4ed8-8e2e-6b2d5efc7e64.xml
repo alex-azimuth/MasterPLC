@@ -162,7 +162,7 @@ _EN=Variables
 ++D=TOF	N=Single_Stroke_Restart_Delay	G=VAR
 ++D=BOOL	N=Top_Stop	G=VAR
 ++D=BOOL	N=Latch_Global_Feed_Completed	G=VAR
-++D=BOOL	N=Automatic	Ord=1	G=VAR	AOE=1
+++D=BOOL	N=Automatic	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -255,12 +255,12 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Contactor_Rev	G=VAR_EXTERNAL	Com=Contactor reverse output.
 ++D=BOOL	N=Palm_Signal	G=VAR_EXTERNAL
 ++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_EXTERNAL
-++D=UINT	N=Control_Word	G=VAR_EXTERNAL
-++D=UINT	N=Status_Word	G=VAR_EXTERNAL
-++D=UINT	N=Show_Trip_Fault	G=VAR_EXTERNAL
-++D=INT	N=Ref1_2102_00	G=VAR_EXTERNAL
-++D=DINT	N=Accel_Time	G=VAR_EXTERNAL
-++D=DINT	N=Decel_Time	G=VAR_EXTERNAL
+++D=UINT	N=Press_ABB_Control_Word	G=VAR_EXTERNAL
+++D=UINT	N=Press_ABB_Status_Word	G=VAR_EXTERNAL
+++D=UINT	N=Press_ABB_Trip_Fault	G=VAR_EXTERNAL
+++D=INT	N=Press_ABB_Ref	G=VAR_EXTERNAL
+++D=DINT	N=Press_ABB_Accel_Time	G=VAR_EXTERNAL
+++D=DINT	N=Press_ABB_Decel_Time	G=VAR_EXTERNAL
 ++D=Abb_Drv	N=ABB_Control	G=VAR_EXTERNAL
 ++D=REAL	N=Press_Pos_REAL	G=VAR_EXTERNAL
 ++D=Feed_Sequence	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL

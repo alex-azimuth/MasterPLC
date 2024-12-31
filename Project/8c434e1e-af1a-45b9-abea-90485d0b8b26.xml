@@ -81,7 +81,7 @@ _EN=Variables
 ++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_GLOBAL
 ++D=HMI_Feeder	N=HMI_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Press	N=HMI_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /></ECs>
-++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	R=1	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	R=1	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Main	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Entry	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Exit	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
@@ -236,12 +236,12 @@ _EN=Variables
 ++D=ARRAY[0..31] OF BOOL	N=HMI_Display_Details	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Buttons on the HMI that selects the user condition we'd like to display
 ++D=AlarmCodes	N=HMI_Error_Code_List	NTP=PublicationOnly	G=VAR_GLOBAL	Com=List of the error codes
 ++D=UINT	N=HMI_Clicked_User_Condition	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Index of the user condition clicked for details
-++D=UINT	N=Control_Word	AT=ECAT://node#2/RxPDO 21 map_ABB Drives control word_2101_00	G=VAR_GLOBAL
-++D=UINT	N=Status_Word	AT=ECAT://node#2/TxPDO 21 map_ABB Drives status word_2104_00	G=VAR_GLOBAL
-++D=UINT	N=Show_Trip_Fault	AT=ECAT://node#2/TxPDO 21 map_04.01 Tripping fault_4004_01	G=VAR_GLOBAL
-++D=INT	N=Ref1_2102_00	AT=ECAT://node#2/RxPDO 21 map_ABB Drives REF1_2102_00	G=VAR_GLOBAL
-++D=DINT	N=Accel_Time	AT=ECAT://node#2/RxPDO 21 map_28.72 Freq acceleration tim_401C_48	G=VAR_GLOBAL
-++D=DINT	N=Decel_Time	AT=ECAT://node#2/RxPDO 21 map_28.73 Freq deceleration tim_401C_49	G=VAR_GLOBAL
+++D=UINT	N=Press_ABB_Control_Word	AT=ECAT://node#2/RxPDO 21 map_ABB Drives control word_2101_00	G=VAR_GLOBAL
+++D=UINT	N=Press_ABB_Status_Word	AT=ECAT://node#2/TxPDO 21 map_ABB Drives status word_2104_00	G=VAR_GLOBAL
+++D=UINT	N=Press_ABB_Trip_Fault	AT=ECAT://node#2/TxPDO 21 map_04.01 Tripping fault_4004_01	G=VAR_GLOBAL
+++D=INT	N=Press_ABB_Ref	AT=ECAT://node#2/RxPDO 21 map_ABB Drives REF1_2102_00	G=VAR_GLOBAL
+++D=DINT	N=Press_ABB_Accel_Time	AT=ECAT://node#2/RxPDO 21 map_28.72 Freq acceleration tim_401C_48	G=VAR_GLOBAL
+++D=DINT	N=Press_ABB_Decel_Time	AT=ECAT://node#2/RxPDO 21 map_28.73 Freq deceleration tim_401C_49	G=VAR_GLOBAL
 ++D=Abb_Drv	N=ABB_Control	R=1	IV=(Accel_Time := 20, Decel_Time := 20, Speed := 30, Start := False, Stop := False, Reset := False, Reverse := False, Forward_Status := False, Fault := False, Running := False, FaultMsg := '', Current := 0.0, Total_Torque := 0.0, DC_Voltage := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_W_Global_Condition	N=HMI_Widget_User_Condition	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Widget displaying some of the user conditions
 ++D=BOOL	N=HMI_User_Condition_Save	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Save the version of user condition edited from the detailed page
@@ -381,3 +381,14 @@ _EN=Variables
 ++D=BOOL	N=R_DSV2	AT=ECAT://node#[3,1]/Activate_DSV2	G=VAR_GLOBAL
 ++D=BOOL	N=FSFT_R_DSV	AT=ECAT://node#[3,1]/FST_R_DSV	G=VAR_GLOBAL	Com=From Safety, R_DSV
 ++D=STRING[256]	N=Version_Number_String	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_GLOBAL
+++D=LINT	N=Straightner_IN_Enc2_Pos	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Control_Word	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Status_Word	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_Mtr_Current	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_Total_Torque	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_DC_Voltage	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_ABB_Accel_Time	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_GLOBAL
+++D=INT	N=Uncoiler_ABB_Ref	G=VAR_GLOBAL
