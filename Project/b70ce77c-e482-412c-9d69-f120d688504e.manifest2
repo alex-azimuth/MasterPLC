@@ -5,6 +5,7 @@
     <ApplicationFeatures>
       <ApplicationFeature name="HMI" />
       <ApplicationFeature name="NA-RTLD□□Version:1.17" />
+      <ApplicationFeature name="SupportD41DDevice" />
       <ApplicationFeature name="V102Project" />
       <ApplicationFeature name="DBCon V2.01" />
       <ApplicationFeature name="SetUnit NX102-1120 Ver. 1.60" />

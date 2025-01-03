@@ -30,6 +30,7 @@ _EN=Variables
 ++D=TP	N=Adj_OL_Reset_TP	G=VAR
 ++D=TP	N=Passline_OL_Reset_TP	G=VAR
 ++D=TP	N=Oil_OL_Reset_TP	G=VAR
+++D=R_TRIG	N=Unlock_Btn_R	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
@@ -37,7 +38,7 @@ _EN=Variables
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
 ++D=HMI_General_Data_Retained	N=HMI_Data_Retained	G=VAR_EXTERNAL
 ++D=BOOL	N=Stroke_Press	G=VAR_EXTERNAL
-++D=BOOL	N=Door1_Unlock_Request	G=VAR_EXTERNAL
+++D=BOOL	N=Doors_Unlock_Request	G=VAR_EXTERNAL
 ++D=INT	N=HMI_Dashboard_Selected_Screen	G=VAR_EXTERNAL
 ++D=ARRAY[0..5] OF INT	N=HMI_Dashboard_Display_No	G=VAR_EXTERNAL
 ++D=ARRAY[0..5] OF BOOL	N=HMI_Dashboard_Display_Selected	G=VAR_EXTERNAL
@@ -66,13 +67,23 @@ _EN=Variables
 ++D=BOOL	N=Act_Safety_Reset_PB	G=VAR_EXTERNAL
 ++D=STRING[256]	N=Version_Number_String	G=VAR_EXTERNAL
 ++D=HMI_Overload_Reset	N=HMI_O_Reset	G=VAR_EXTERNAL
-++D=BOOL	N=Master_Shaker_OL_Reset	G=VAR_EXTERNAL
-++D=BOOL	N=Master_Adj_OL_Reset	G=VAR_EXTERNAL
-++D=BOOL	N=Master_Hyd_OL_Reset	G=VAR_EXTERNAL
-++D=BOOL	N=Master_Oil_OL_Reset	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_PassL_OL_Reset	G=VAR_EXTERNAL
 ++D=BOOL	N=Shaker_IN_Overload_Fault	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Passline_Overload	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Oiler_Overload	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Adj_Overload_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Door_LED_Green	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Door_LED_Yellow	G=VAR_EXTERNAL
+++D=BOOL	N=State_Unsafe_Comm	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Door_LED_Blue	G=VAR_EXTERNAL
+++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL
+++D=BOOL	N=Master_IN_Door_Btn_Green	G=VAR_EXTERNAL
+++D=BOOL	N=Door1_Unlock_HMI	G=VAR_EXTERNAL
+++D=BOOL	N=Doors_Unlock_Comm	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Shaker_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Hyd_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Adj_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Passline_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Oil_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_IN_Door_Btn_Blue	G=VAR_EXTERNAL

@@ -1,10 +1,10 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
-++D=BOOL	N=Safety_Ok	AT=IOBus://unit#10/Safety_Ok_Out	G=VAR_GLOBAL
+++D=BOOL	N=Safety_Ok	G=VAR_GLOBAL
 ++D=HMI_Overload_Reset	N=HMI_O_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Stroke_Press	AT=IOBus://unit#10/Stroke_Press	G=VAR_GLOBAL	Com=From Safety - DSV is active.
-++D=BOOL	N=Stop_Press	AT=IOBus://unit#10/Finish_Stroke	G=VAR_GLOBAL
+++D=BOOL	N=Stop_Press	G=VAR_GLOBAL
 ++D=BOOL	N=Press_Top_Pos	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is at the top position
 ++D=TIME	N=Micro_Time_Active	R=1	G=VAR_GLOBAL
 ++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	AT=ECAT://node#[9,3]/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -39,16 +39,16 @@ _EN=Variables
 ++D=ARRAY[0..5] OF INT	N=HMI_Dashboard_Display_No	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Array of screen selected for the dashboard
 ++D=BOOL	N=Press_OUT_Drv_Stop	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Stop the drive of the press.
 ++D=BOOL	N=Press_OUT_Drv_Reverse	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Put the drive of the press in reverse.
-++D=BOOL	N=Press_Conditions	AT=IOBus://unit#10/Press_Conditions	G=VAR_GLOBAL	Com=Non-Safe conditions required to start the press.
+++D=BOOL	N=Press_Conditions	G=VAR_GLOBAL	Com=Non-Safe conditions required to start the press.
 ++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	AT=ECAT://node#[9,6]/Output Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL	Com=This variable stores the press current outputs cam
 ++D=BOOL	N=Reset_Stroke	G=VAR_GLOBAL	Com=Palms or relays have been depressed.
-++D=BOOL	N=Rev_Manual_Interlock	AT=IOBus://unit#10/Rev_Manual_Interlock	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Rev_Manual_Interlock	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Features	N=Master_Features	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Options	N=Master_Feeder_Options	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Uncoiler_Options	N=Master_Uncoiler_Options	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Act_Mode_Auto	AT=IOBus://unit#10/Auto_Mode	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode auto is single.
-++D=BOOL	N=Act_Mode_Single	AT=IOBus://unit#10/Single_Mode	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode single is active.
-++D=BOOL	N=Act_Mode_Inch	AT=IOBus://unit#10/Inch_Mode	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode inch is active mode.
+++D=BOOL	N=Act_Mode_Auto	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode auto is single.
+++D=BOOL	N=Act_Mode_Single	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode single is active.
+++D=BOOL	N=Act_Mode_Inch	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode inch is active mode.
 ++D=HMI_General_Data	N=HMI_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_Adj_Start	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Start adjustment motor.
 ++D=BOOL	N=Press_IN_Adj_Up_Req	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going up.
@@ -134,7 +134,7 @@ _EN=Variables
 ++D=UDINT	N=Gag_Fault_No	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feed_Before_Press	R=1	G=VAR_GLOBAL
 ++D=BOOL	N=Update_Feeder_Sequences	G=VAR_GLOBAL	Com=New Feeder_Sequences transfer update the program.
-++D=BOOL	N=Door1_Unlock_Request	AT=IOBus://unit#10/Door1_Unlock_Request	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Unlock front door.
+++D=BOOL	N=Doors_Unlock_Request	AT=IOBus://unit#10/Door_Unlock_Request	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Unlock front door.
 ++D=BOOL	N=Door1_Unlock_HMI	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Request from the HMI to unlock door1.
 ++D=BOOL	N=Door2_Unlock_HMI	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Request from the HMI to unlock door1.
 ++D=BOOL	N=Translate_Table	G=VAR_GLOBAL
@@ -226,10 +226,10 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
 ++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := True, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := True, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := True, Greaser := True, DSV_Reset := False, C_Drive_Present := True, C_Contactor_Present := False, ABB_Drive := FALSE, ABB_ECAT := False, Pedal := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Press_Mtr_Comm	AT=IOBus://unit#10/Sft_Press_Mtr_Comm	G=VAR_GLOBAL
-++D=BOOL	N=Sft_Maintain_Timer_ON	AT=IOBus://unit#10/Mute_Angle_Timer	G=VAR_GLOBAL	Com=True when the operator must maintain both his hands on the dual palms to start in auto.
+++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_GLOBAL	Com=True when the operator must maintain both his hands on the dual palms to start in auto.
 ++D=BOOL	N=Press_OUT_Contactor_FWD	G=VAR_GLOBAL	Com=Contactor forward output.
 ++D=BOOL	N=Press_OUT_Contactor_Rev	G=VAR_GLOBAL	Com=Contactor reverse output.
-++D=BOOL	N=Prior_Act_Error	AT=IOBus://unit#10/Prior_Act_Error	G=VAR_GLOBAL	Com=Operator neglected to press on prior act.
+++D=BOOL	N=Prior_Act_Error	G=VAR_GLOBAL	Com=Operator neglected to press on prior act.
 ++D=BOOL	N=Palm_Signal	G=VAR_GLOBAL	Com=Dual palms are activated.
 ++D=HMI_Uncoiler_Retained	N=HMI_Data_Uncoiler_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Die_Configuration	N=Gag_Config	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Configuration of the current die. Stored in recipes.
@@ -380,7 +380,7 @@ _EN=Variables
 ++D=BOOL	N=Alex_Test	G=VAR_GLOBAL
 ++D=BOOL	N=R_DSV1	AT=IOBus://unit#10/Activate_DSV1	G=VAR_GLOBAL
 ++D=BOOL	N=R_DSV2	AT=IOBus://unit#10/Activate_DSV2	G=VAR_GLOBAL
-++D=BOOL	N=FSFT_R_DSV	AT=IOBus://unit#10/FST_R_DSV	G=VAR_GLOBAL	Com=From Safety, R_DSV
+++D=BOOL	N=SFT_FSFT_R_DSV	AT=IOBus://unit#10/FST_R_DSV	G=VAR_GLOBAL	Com=From Safety, R_DSV
 ++D=STRING[256]	N=Version_Number_String	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	AT=ECAT://node#6/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc2_Pos	AT=ECAT://node#7/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
@@ -399,16 +399,24 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Oiler_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL	Com=Oiler motor overload
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL	Com=Enable switch jog uncoiler forward
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL	Com=Enable switch jog uncoiler reverse
-++D=BOOL	N=Master_Door_Btn_Green	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL	Com=Door green button
-++D=BOOL	N=Master_Door_Btn_Yellow	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL	Com=Door yellow button
-++D=BOOL	N=Master_Door_Btn_Blue	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Door blue button
+++D=BOOL	N=Master_IN_Door_Btn_Green	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL	Com=Door green button - unlocks doors.
+++D=BOOL	N=Master_IN_Door_Btn_Yellow	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL	Com=Door yellow button - top stop the press.
+++D=BOOL	N=Master_IN_Door_Btn_Blue	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Door blue button - safety reset
 ++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Motor	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
 ++D=BOOL	N=Master_Door_LED_Green	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 06	G=VAR_GLOBAL
 ++D=BOOL	N=Master_Door_LED_Yellow	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 07	G=VAR_GLOBAL
 ++D=BOOL	N=Master_Door_LED_Blue	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 08	G=VAR_GLOBAL
-++D=BOOL	N=Master_Adj_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 10	G=VAR_GLOBAL
-++D=BOOL	N=Master_Shaker_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 11	G=VAR_GLOBAL
-++D=BOOL	N=Master_Hyd_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 12	G=VAR_GLOBAL
-++D=BOOL	N=Master_PassL_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 13	G=VAR_GLOBAL
-++D=BOOL	N=Master_Oil_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Adj_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 10	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Shaker_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Hyd_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=Master_PassL_OL_Reset	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Oil_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL
 ++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_GLOBAL
+++D=BOOL	N=Uncoiler_Active	AT=IOBus://unit#10/Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
+++D=BOOL	N=Shaker_Active	AT=IOBus://unit#10/Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
+++D=BOOL	N=State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
+++D=BOOL	N=Doors_Unlock_Comm	AT=IOBus://unit#10/Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
+++D=BOOL	N=Master_OUT_Passline_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=Enable_Switch_Valves	AT=IOBus://unit#10/Enable_Switch_Valves	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
+++D=BOOL	N=Uncoiler_OUT_Brake_Sol	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL	Com=Disengage the brake of the uncoiler mandrel.
+++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	AT=IOBus://unit#10/Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
