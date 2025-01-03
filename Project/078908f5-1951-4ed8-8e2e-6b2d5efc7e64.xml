@@ -164,6 +164,16 @@ _EN=Variables
 ++D=BOOL	N=Latch_Global_Feed_Completed	G=VAR
 ++D=BOOL	N=Automatic	G=VAR
 ++D=TON	N=Shaker_DSV_TON	G=VAR
+++D=WORD	N=Temp_Ambient_Word	G=VAR
+++D=WORD	N=Temp_Press1_Word	G=VAR
+++D=WORD	N=Temp_Press2_Word	G=VAR
+++D=INT	N=Temp_Press1	G=VAR
+++D=INT	N=Temp_Press2	G=VAR
+++D=INT	N=Temp_Ambient	G=VAR
+++D=REAL	N=Temp_Press1_REAL	G=VAR
+++D=REAL	N=Temp_Press2_REAL	G=VAR
+++D=REAL	N=Temp_Ambient_REAL	G=VAR
+++D=BOOL	N=Press_Etalex_Temp_Fault	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -305,3 +315,8 @@ _EN=Variables
 ++D=Shaker_Data	N=HMI_Shaker_Data	G=VAR_EXTERNAL
 ++D=BOOL	N=Shaker_Active	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_IN_Door_Btn_Yellow	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	G=VAR_EXTERNAL
+++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	G=VAR_EXTERNAL
+++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	G=VAR_EXTERNAL

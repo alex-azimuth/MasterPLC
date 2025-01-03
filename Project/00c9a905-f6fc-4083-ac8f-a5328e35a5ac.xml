@@ -36,6 +36,13 @@ _EN=Variables
 ++D=BOOL	N=Maintain_Coil_Keeper	G=VAR
 ++D=BOOL	N=Maintain_Supporting_Arm_UP	G=VAR
 ++D=BOOL	N=Maintain_Supporting_Arm_Down	G=VAR
+++D=R_TRIG	N=Teach_SP_R	G=VAR
+++D=IOL_WriteObj	N=IOL_Teach_SP	G=VAR
+++D=_sDEVICE_PORT	N=Device_Port	IV=(DeviceType := _DeviceNXUnit, NxUnit := (NodeAdr := 0, IPAdr := [5(16#0)], UnitNo := 0, Path := [64(16#0)], PathLength := 0), EcatSlave := (NodeAdr := 0), OptBoard := (SlotNo := 0, IPAdr := [5(16#0)]), Reserved := [88(16#0)], PortNo := 0)	G=VAR
+++D=_sNXUNIT_ID	N=IO_LINK_Unit	IV=(NodeAdr := 6, IPAdr := [5(16#0)], UnitNo := 0, Path := [64(16#0)], PathLength := 0)	G=VAR
+++D=INT	N=IOL_Distance	G=VAR
+++D=WORD	N=Distance_Word	G=VAR
+++D=BOOL	N=IOL_Uncoiler_Signal	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -114,3 +121,5 @@ _EN=Variables
 ++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	G=VAR_EXTERNAL
