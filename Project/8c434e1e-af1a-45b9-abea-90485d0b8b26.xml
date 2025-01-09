@@ -77,7 +77,7 @@ _EN=Variables
 ++D=BOOL	N=Grease_Startup_Bypass	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Bypasses initial grease cycle upon power on
 ++D=BOOL	N=Feeder_IN_Entry_STO1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Entry_STO2	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Entry_Feeder	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Entry_Feeder	AT=MC://_MC_AX[3]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_GLOBAL
 ++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_GLOBAL
 ++D=HMI_Feeder	N=HMI_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -116,7 +116,7 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Exit_Release	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder release signal.
 ++D=BOOL	N=Feeder_IN_Exit_Feed_FWD	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder forward signal.
 ++D=BOOL	N=Feeder_IN_Exit_Feed_REV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder reverse signal.
-++D=_sAXIS_REF	N=Exit_Feeder	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Exit_Feeder	AT=MC://_MC_AX[4]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Exit_STO1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Exit_STO2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_OUT_Entry_Release_Valve	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Opens the rolls when activated.
@@ -195,8 +195,8 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_IN_Limit_Forward	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Coil cart forward limit
 ++D=BOOL	N=Uncoiler_IN_Limit_Reverse	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Coil cart reverse limit
 ++D=BOOL	N=Uncoiler_IN_Coil_Keeper_RS_UP	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the coil keeper is up.
-++D=BOOL	N=Uncoiler_IN_Pressing_Arm_RS_UP	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the pressing arm is up.
-++D=BOOL	N=Uncoiler_IN_Supporting_Arm_RS_Down	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the supporting arm is down.
+++D=BOOL	N=Uncoiler_IN_Pressing_Arm_RS_UP	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the pressing arm is up.
+++D=BOOL	N=Uncoiler_IN_Supporting_Arm_RS_Down	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the supporting arm is down.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Up	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 11	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart upwards.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Down	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart downwards.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Reverse	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart away from the uncoiler.
@@ -221,7 +221,7 @@ _EN=Variables
 ++D=ULINT	N=Feeder_IN_Main_Encoder_Pos	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Release_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder release signal.
 ++D=BOOL	N=Feeder_OUT_Feed_Complete	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output a pulse when the feed is completed.
-++D=BOOL	N=Feeder_OUT_Main_Release_Valve	AT=ECAT://node#[9,5]/Output Bit 16 bits/Output Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the rolls when activated.
+++D=BOOL	N=Feeder_OUT_Main_Release_Valve	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 15	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the rolls when activated.
 ++D=BOOL	N=Feeder_IN_Main_Feed_FWD	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
 ++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := True, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := True, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := True, Greaser := True, DSV_Reset := False, C_Drive_Present := True, C_Contactor_Present := False, ABB_Drive := FALSE, ABB_ECAT := False, Pedal := False)	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -244,6 +244,7 @@ _EN=Variables
 ++D=DINT	N=Press_ABB_Accel_Time	AT=ECAT://node#2/RxPDO 21 map_28.72 Freq acceleration tim_401C_48	G=VAR_GLOBAL
 ++D=DINT	N=Press_ABB_Decel_Time	AT=ECAT://node#2/RxPDO 21 map_28.73 Freq deceleration tim_401C_49	G=VAR_GLOBAL
 ++D=Abb_Drv	N=ABB_Control	R=1	IV=(Accel_Time := 20, Decel_Time := 20, Speed := 30, Start := False, Stop := False, Reset := False, Reverse := False, Forward_Status := False, Fault := False, Running := False, FaultMsg := '', Current := 0.0, Total_Torque := 0.0, DC_Voltage := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=Abb_Drv	N=ABB_Control_Uncoiler	R=1	IV=(Accel_Time := 2, Decel_Time := 2, Speed := 30, Start := False, Stop := False, Reset := False, Reverse := False, Forward_Status := False, Fault := False, Running := False, FaultMsg := '', Current := 0.0, Total_Torque := 0.0, DC_Voltage := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_W_Global_Condition	N=HMI_Widget_User_Condition	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Widget displaying some of the user conditions
 ++D=BOOL	N=HMI_User_Condition_Save	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Save the version of user condition edited from the detailed page
 ++D=Shaker_Data	N=HMI_Shaker_Data	R=1	IV=(OUT_Enable := False, TOF := 5, Force := False, Inhibit := False, One_Cycle := False)	NTP=PublicationOnly	G=VAR_GLOBAL	Com=If the press is equiped with a shaker, it will communicate through this variable
@@ -272,7 +273,7 @@ _EN=Variables
 ++D=BOOL	N=UIO_Top_Stop_Latch	NTP=PublicationOnly	Ord=4	G=VAR_GLOBAL
 ++D=BOOL	N=UIO_Stop_Latch	NTP=PublicationOnly	Ord=5	G=VAR_GLOBAL
 ++D=HMI_Recoiler	N=HMI_Recoiler_Data	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Recoiler	AT=MC://_MC_AX[3]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Recoiler	AT=MC://_MC_AX[12]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=Recoiler_Data	N=My_Recoiler	G=VAR_GLOBAL
 ++D=HMI_Recoiler_Retained	N=HMI_Recoiler_Data_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Recoiler_IN_STO1	G=VAR_GLOBAL
@@ -393,7 +394,7 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_GLOBAL
 ++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_GLOBAL
 ++D=INT	N=Uncoiler_ABB_Ref	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Strip_Encoder	AT=MC://_MC_AX[4]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Strip_Encoder	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=Shaker_IN_Overload_Fault	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL	Com=Shaker motor overload
 ++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL	Com=Hydraulic Unit Overload
 ++D=BOOL	N=Feeder_IN_Oiler_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL	Com=Oiler motor overload
@@ -432,3 +433,5 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	AT=IOBus://unit#7/Port2 Input Data02	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Master_Feed_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Master_Axis_Error	AT=MC://_MC_AX[5]	RO=1	Const=1	G=VAR_GLOBAL

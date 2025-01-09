@@ -26,5 +26,4 @@
 ELSE&#xD;
 	// Set alarm to false if we do not straightner encoders&#xD;
 	Deviation_Fault := FALSE;&#xD;
-END_IF;&#xD;
-</Text></StructuredTextModel>
+END_IF;</Text></StructuredTextModel>

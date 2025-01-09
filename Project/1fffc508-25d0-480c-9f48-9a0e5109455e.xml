@@ -42,7 +42,7 @@
       </Options>
     </NexAxisAxisType>
     <NexAxisFunctionLimit>
-      <CurrentValue>NexAxisSingleAxisPTP</CurrentValue>
+      <CurrentValue>NexAxisNoLimit</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisNoLimit</DefaultValue>
@@ -2066,7 +2066,7 @@
       </Options>
     </NexAxisCountMode>
     <NexAxisModuloMAXPosition>
-      <CurrentValue>99999</CurrentValue>
+      <CurrentValue>200000</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>2147483647</DefaultValue>
@@ -2080,7 +2080,7 @@
       <Options />
     </NexAxisModuloMAXPositionValue2>
     <NexAxisModuloMINPosition>
-      <CurrentValue>0</CurrentValue>
+      <CurrentValue>-200000</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>-2147483648</DefaultValue>
