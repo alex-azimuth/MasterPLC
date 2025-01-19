@@ -1,22 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter index="2200.00" value="1" />
-  <parameter index="3001.01" value="170" />
+  <parameter index="3000.03" value="0" />
+  <parameter index="3001.01" value="381" />
   <parameter index="3011.03" value="0" />
-  <parameter index="3011.04" value="299" />
+  <parameter index="3011.04" value="112" />
   <parameter index="3041.02" value="2" />
   <parameter index="3041.10" value="1" />
+  <parameter index="3112.01" value="1000" />
   <parameter index="3120.01" value="30" />
-  <parameter index="3213.01" value="62" />
-  <parameter index="3214.01" value="62" />
-  <parameter index="3223.01" value="299" />
-  <parameter index="3223.02" value="73" />
-  <parameter index="3224.01" value="299" />
-  <parameter index="3224.02" value="73" />
-  <parameter index="3233.02" value="2093" />
-  <parameter index="3234.02" value="2093" />
-  <parameter index="3310.01" value="4712" />
-  <parameter index="3310.02" value="337" />
+  <parameter index="3213.01" value="21" />
+  <parameter index="3214.01" value="21" />
+  <parameter index="3223.01" value="112" />
+  <parameter index="3223.02" value="29" />
+  <parameter index="3224.01" value="112" />
+  <parameter index="3224.02" value="29" />
+  <parameter index="3233.02" value="784" />
+  <parameter index="3234.02" value="784" />
+  <parameter index="3310.01" value="553" />
+  <parameter index="3310.03" value="24" />
+  <parameter index="3310.04" value="24" />
+  <parameter index="3323.01" value="1" />
+  <parameter index="3323.02" value="1654" />
+  <parameter index="3323.04" value="33" />
+  <parameter index="3B51.01" value="2000" />
   <parameter index="3B80.01" value="0" />
   <parameter index="4610.01" value="0" />
   <parameter index="4630.01" value="0" />
@@ -27,8 +34,5 @@
   <parameter index="4637.01" value="0" />
   <parameter index="4638.01" value="0" />
   <parameter index="4639.01" value="0" />
-  <parameter index="4651.01" value="0" />
-  <parameter index="465C.01" value="0" />
-  <parameter index="465D.01" value="0" />
   <parameter index="5011.02" value="100" />
 </parameters>

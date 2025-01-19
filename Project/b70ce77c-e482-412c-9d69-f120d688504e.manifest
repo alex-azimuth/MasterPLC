@@ -11,6 +11,7 @@
       <ApplicationFeature name="SetUnit NX102-1120 Ver. 1.60" />
       <ApplicationFeature name="SafetyDataProtection" />
       <ApplicationFeature name="SafetyProgramProtection" />
+      <ApplicationFeature name="Safety_SL5x00_V1_4" />
       <ApplicationFeature name="Safety_DataProtectionV2_0Using" />
       <ApplicationFeature name="Safety" />
       <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />

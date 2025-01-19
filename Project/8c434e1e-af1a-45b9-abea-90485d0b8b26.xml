@@ -1,13 +1,13 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
-++D=BOOL	N=Safety_Ok	G=VAR_GLOBAL
+++D=BOOL	N=Safety_Ok	AT=IOBus://unit#10/Safety_Ok_Comm	G=VAR_GLOBAL
 ++D=HMI_Overload_Reset	N=HMI_O_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Stroke_Press	AT=IOBus://unit#10/Stroke_Press	G=VAR_GLOBAL	Com=From Safety - DSV is active.
 ++D=BOOL	N=Stop_Press	G=VAR_GLOBAL
 ++D=BOOL	N=Press_Top_Pos	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is at the top position
 ++D=TIME	N=Micro_Time_Active	R=1	G=VAR_GLOBAL
-++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	AT=ECAT://node#[9,3]/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	AT=ECAT://node#[10,3]/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=User_Input_1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 1
 ++D=BOOL	N=User_Input_2	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 2
 ++D=BOOL	N=User_Input_3	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 3
@@ -15,24 +15,24 @@ _EN=Variables
 ++D=BOOL	N=User_Input_5	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 5
 ++D=BOOL	N=User_Input_6	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 6
 ++D=BOOL	N=HMI_Condition_Cam	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Show the user condition cam in higher or lower
-++D=BOOL	N=Press_IN_Adj_Up_Fault	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Topmost adjustment position reached.
-++D=BOOL	N=Press_IN_Adj_Down_Fault	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Bottommost adjustment position reached.
+++D=BOOL	N=Press_IN_Adj_Up_Fault	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Topmost adjustment position reached.
+++D=BOOL	N=Press_IN_Adj_Down_Fault	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Bottommost adjustment position reached.
 ++D=BOOL	N=Unc_IN_Overload_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Unc motor overload tripped.
-++D=BOOL	N=Press_IN_Hyd_Overload_Fault	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Hydraulic overload tripped.
-++D=BOOL	N=Press_IN_Hyd_Grease_Sensor	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Cam sensor that moves when greasing.
+++D=BOOL	N=Press_IN_Hyd_Overload_Fault	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Hydraulic overload tripped.
+++D=BOOL	N=Press_IN_Hyd_Grease_Sensor	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Cam sensor that moves when greasing.
 ++D=BOOL	N=Press_IN_Oiler_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Turns true when the oil level is too low.
-++D=BOOL	N=Press_IN_Air_Pressure	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch.
+++D=BOOL	N=Press_IN_Air_Pressure	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch.
 ++D=Press_Comm	N=Press_Signals	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_Mode_Inch	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in inch mode.
-++D=BOOL	N=Press_IN_Mode_Auto	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in auto mode.
+++D=BOOL	N=Press_IN_Mode_Inch	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in inch mode.
+++D=BOOL	N=Press_IN_Mode_Auto	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in auto mode.
 ++D=BOOL	N=Press_IN_Mtr_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Press motor (drive/overload) fault.
 ++D=BOOL	N=Press_IN_Motor_Running	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signifies the motor is running - either with drive or with contactor.
 ++D=BOOL	N=Press_IN_Temp_Fault	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Press_OUT_Adj_Motor_Up	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move adjustment motor upwards.
 ++D=BOOL	N=HMI_Eastwood_Cut_Activated	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Press_OUT_Adj_Motor_Down	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move adjustment motor down.
-++D=BOOL	N=Press_OUT_Grease_Motor	AT=ECAT://node#[9,5]/Output Bit 16 bits/Output Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Grease motor on.
-++D=BOOL	N=Press_OUT_Hyd_Overload_Sol	AT=ECAT://node#[9,5]/Output Bit 16 bits/Output Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Hydraulic overload solenoid.
+++D=BOOL	N=Press_OUT_Grease_Motor	AT=ECAT://node#[10,5]/Output Bit 16 bits/Output Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Grease motor on.
+++D=BOOL	N=Press_OUT_Hyd_Overload_Sol	AT=ECAT://node#[10,5]/Output Bit 16 bits/Output Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Hydraulic overload solenoid.
 ++D=BOOL	N=Press_OUT_Drv_Start	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Start the drive of the press.
 ++D=INT	N=HMI_Dashboard_Selected_Screen	IV=0	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Current screen selected
 ++D=ARRAY[0..5] OF BOOL	N=HMI_Dashboard_Display_Selected	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Active when a user clicks on the corresponding screen in the dashboard config
@@ -40,7 +40,7 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Drv_Stop	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Stop the drive of the press.
 ++D=BOOL	N=Press_OUT_Drv_Reverse	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Put the drive of the press in reverse.
 ++D=BOOL	N=Press_Conditions	G=VAR_GLOBAL	Com=Non-Safe conditions required to start the press.
-++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	AT=ECAT://node#[9,6]/Output Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL	Com=This variable stores the press current outputs cam
+++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	AT=ECAT://node#[10,6]/Output Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL	Com=This variable stores the press current outputs cam
 ++D=BOOL	N=Reset_Stroke	G=VAR_GLOBAL	Com=Palms or relays have been depressed.
 ++D=BOOL	N=Rev_Manual_Interlock	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Features	N=Master_Features	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -50,10 +50,10 @@ _EN=Variables
 ++D=BOOL	N=Act_Mode_Single	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode single is active.
 ++D=BOOL	N=Act_Mode_Inch	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode inch is active mode.
 ++D=HMI_General_Data	N=HMI_Data	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_Adj_Start	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Start adjustment motor.
-++D=BOOL	N=Press_IN_Adj_Up_Req	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going up.
-++D=BOOL	N=Press_IN_Adj_Down_Req	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going down.
-++D=BOOL	N=Press_IN_Overrun_Prox	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prox detects the press at 0 degrees. - Additional security.
+++D=BOOL	N=Press_IN_Adj_Start	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Start adjustment motor.
+++D=BOOL	N=Press_IN_Adj_Up_Req	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going up.
+++D=BOOL	N=Press_IN_Adj_Down_Req	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going down.
+++D=BOOL	N=Press_IN_Overrun_Prox	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prox detects the press at 0 degrees. - Additional security.
 ++D=Grease_Cycle_Timers	N=My_Grease_Timers	R=1	G=VAR_GLOBAL	Com=Grease timer settings
 ++D=BOOL	N=Press_Idle	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is currently idle.
 ++D=LREAL	N=Press_Idle_Tolerance	R=1	IV=1	G=VAR_GLOBAL	Com=Possible distance between two positions - in between two sampling cycles.
@@ -61,12 +61,12 @@ _EN=Variables
 ++D=BOOL	N=Record_Mode_Manual	G=VAR_GLOBAL
 ++D=BOOL	N=Record_Mode_Auto	G=VAR_GLOBAL
 ++D=BOOL	N=Record_Mode_Inch	G=VAR_GLOBAL
-++D=BOOL	N=Press_OUT_Adj_Pulse	AT=ECAT://node#[9,5]/Output Bit 16 bits/Output Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Encoder module requires pulsing to provide accurate limit feedback.
+++D=BOOL	N=Press_OUT_Adj_Pulse	AT=ECAT://node#[10,5]/Output Bit 16 bits/Output Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Encoder module requires pulsing to provide accurate limit feedback.
 ++D=Uncoiler_Comm	N=Uncoiler_Signals	G=VAR_GLOBAL
 ++D=REAL	N=Brake_Time	R=1	IV=0.250	NTP=PublicationOnly	Ord=12	G=VAR_GLOBAL	Com=Time it takes for the press to stop - otherwise we get an alarm.
 ++D=REAL	N=Start_Time	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Time it takes to start the press - before generating an alarm.
 ++D=BOOL	N=Automatic_Start_Permission	G=VAR_GLOBAL	Com=Gives permission for the press to start in automatic mode.
-++D=BOOL	N=Press_IN_Prior_Act	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prior Act - necessary in order to start the press in auto mode.
+++D=BOOL	N=Press_IN_Prior_Act	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prior Act - necessary in order to start the press in auto mode.
 ++D=HMI_Press_Retained	N=HMI_Data_Press_Retained	R=1	IV=(Press_Stop_Angle := 320, Prior_Act_Timer := 5, Micro_Time := 0.250, Press_Idle_Sampling_Rate := 0.020, Grease_Cycle_Complete := 40, Grease_Cycle_Complete_Delay := 20, Grease_Main_Timer := 144000, Grease_Main_Cycle := 120, Grease_Pulse := 10, Release_Pos1 := 0.0, Release_Pos2 := 180, Automatic_Single_Timer := 15, Feed_Pos1 := 300, Feed_Pos2 := 60, Press_Mtr_Speed := 5, Press_Mtr_Speed_Inch := 10, Automatic_Single_Stroke_Active := False, Automatic_Stroke_Feeder_Active := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Palm_Discrepency_Alarm	G=VAR_GLOBAL	Com=If a set of contacts does not concord with the other then give an alarm. Indicates a mechanical failure.
 ++D=BOOL	N=FR2_Discrepency_Error	G=VAR_GLOBAL	Com=FR2 relay, which activates second DSV, does not respond properly. Troubleshoot, change relay.
@@ -91,15 +91,15 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_IN_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Uncoiler drive fault.
 ++D=INT	N=No_Gags_Installed	R=1	IV=20	G=VAR_GLOBAL	Com=Must be smaller than 19. Total number of gags physically installed on the machine.
 ++D=BOOL	N=Machine_Stopped	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is currently idle.
-++D=ARRAY[0..15] OF Bool	N=Gag_Pro	AT=ECAT://node#[9,4]/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..15] OF Bool	N=Gag_Ret	AT=ECAT://node#[9,2]/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..15] OF Bool	N=Gag_Pro	AT=ECAT://node#[10,4]/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..15] OF Bool	N=Gag_Ret	AT=ECAT://node#[10,2]/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_EOM_Sensor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - End of material sensor
 ++D=BOOL	N=Uncoiler_IN_Rack_Limit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signals the loop has gone higher than it should.
 ++D=BOOL	N=Feeder_Present	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Present	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Press_Data	N=Press	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Contains the position of the press - the rest is not useful for now.
-++D=BOOL	N=Press_IN_Top_Stop	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Top Stop request - must be sent for the press to stop.
-++D=ULINT	N=Press_Position_Raw	AT=ECAT://node#8/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_Top_Stop	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Top Stop request - must be sent for the press to stop.
+++D=ULINT	N=Press_Position_Raw	AT=ECAT://node#9/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Reset_Home	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Sets the zero position of the press at wherever the press currently is.
 ++D=BOOL	N=Global_Feed_Completed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Rising edge that the feed is complete.
 ++D=Press_Analytics	N=HMI_Press_Analytics	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -150,12 +150,12 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Main_STO2	AT=ECAT://node#1/Digital inputs/STO2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Data	N=My_Main_Feeder	G=VAR_GLOBAL
 ++D=REAL	N=SPM	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=INT	N=Press_Speed_Raw	AT=ECAT://node#8/First TxPDO Mapping_Speed value_6030_01	G=VAR_GLOBAL
+++D=INT	N=Press_Speed_Raw	AT=ECAT://node#9/First TxPDO Mapping_Speed value_6030_01	G=VAR_GLOBAL
 ++D=BOOL	N=Feed_Alarm_Bypass	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Press_Fault	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_OUT_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output to communicate the feeder is in a fault condition.
-++D=BOOL	N=Feeder_IN_Passline_UP	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Button to move the passline up.
-++D=BOOL	N=Feeder_IN_Passline_Down	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 09	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Button to move the passline down.
+++D=BOOL	N=Feeder_IN_Passline_UP	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Button to move the passline up.
+++D=BOOL	N=Feeder_IN_Passline_Down	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 09	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Button to move the passline down.
 ++D=BOOL	N=Feeder_IN_Passline_Up_Limit	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Limit switch that prevents the passline motor from exceeding its limits.
 ++D=BOOL	N=Feeder_IN_Passline_Down_Limit	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Limit switch that prevents the passline motor from exceeding its limits.
 ++D=BOOL	N=Feeder_IN_Passline_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Overload relay for the passline motor.
@@ -170,7 +170,7 @@ _EN=Variables
 ++D=BOOL	N=Feeder_OUT_Oil_Pump	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 09	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Automatic oiler pump.
 ++D=BOOL	N=Feeder_OUT_Oil_Valve	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Activate the valve to oil the strip.
 ++D=BOOL	N=Uncoiler_OUT_Manual_Speed	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..15] OF BOOL	N=Feeder_OUT_Gags	AT=ECAT://node#[9,7]/Output Bit 16 bits	G=VAR_GLOBAL
+++D=ARRAY[0..15] OF BOOL	N=Feeder_OUT_Gags	AT=ECAT://node#[10,7]/Output Bit 16 bits	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_OUT_Preset_Speed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Preset speed if we are going in manual.
 ++D=BOOL	N=Uncoiler_OUT_Pressing_Arm_UP	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the pressing arm upwards. 5/3 valve
 ++D=BOOL	N=Uncoiler_OUT_Pressing_Arm_DOWN	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the presssing arm downards. 5/3 vavle
@@ -183,7 +183,7 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_IN_Supporting_Arm_UP	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 15	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_OUT_Supporting_Arm_Down	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog the supporting armdownwards.
 ++D=BOOL	N=Uncoiler_OUT_Supporting_Arm_Up	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog the supporting arm upwards.
-++D=BOOL	N=Uncoiler_OUT_Hydraulic_Unit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Hydraulic unit for mandrel and coil cart.
+++D=BOOL	N=Uncoiler_OUT_Hydraulic_Unit	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Hydraulic unit for mandrel and coil cart.
 ++D=BOOL	N=Uncoiler_IN_Mandrel_Expand	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Expand the mandrel.
 ++D=BOOL	N=Uncoiler_IN_Mandrel_Shrink	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shrink the mandrel.
 ++D=BOOL	N=Uncoiler_IN_Coil_Cart_Up	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart up.
@@ -210,11 +210,11 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_IN_Jog_REV	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..15] OF int	N=UIO_Cam_Force	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=User I/O (32 is for display only)
-++D=BOOL	N=Press_IN_Mode_Single	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in single mode.
+++D=BOOL	N=Press_IN_Mode_Single	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in single mode.
 ++D=ARRAY[0..31] OF Do_Action	N=My_Actions	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Feed_Signal	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Reset_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder reset signal.
-++D=BOOL	N=Feeder_IN_Main_Release	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Main Feeder release button.
+++D=BOOL	N=Feeder_IN_Main_Release	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Main Feeder release button.
 ++D=Feed_Verification	N=HMI_Feed_Verification_Main	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feed_Verification	N=HMI_Feed_Verification_Entry	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feed_Verification	N=HMI_Feed_Verification_Exit	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -222,8 +222,8 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Release_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder release signal.
 ++D=BOOL	N=Feeder_OUT_Feed_Complete	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output a pulse when the feed is completed.
 ++D=BOOL	N=Feeder_OUT_Main_Release_Valve	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 15	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the rolls when activated.
-++D=BOOL	N=Feeder_IN_Main_Feed_FWD	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
 ++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := True, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := True, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := True, Greaser := True, DSV_Reset := False, C_Drive_Present := True, C_Contactor_Present := False, ABB_Drive := FALSE, ABB_ECAT := False, Pedal := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Press_Mtr_Comm	AT=IOBus://unit#10/Sft_Press_Mtr_Comm	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_GLOBAL	Com=True when the operator must maintain both his hands on the dual palms to start in auto.
@@ -263,7 +263,7 @@ _EN=Variables
 ++D=BOOL	N=User_Output_8	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 8
 ++D=HMI_Sequence	N=HMI_Feed_Seq	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Displays some infos about the current feed sequence
 ++D=INT	N=Unc_AOUT_Drv_Speed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Analog signal to control uncoiler's speed.
-++D=ULINT	N=Press_Position_Pulse	AT=ECAT://node#8/Second TxPDO Mapping_High resolution position ra_600B_00	G=VAR_GLOBAL	Com=Encoder position in pulse
+++D=ULINT	N=Press_Position_Pulse	AT=ECAT://node#9/Second TxPDO Mapping_High resolution position ra_600B_00	G=VAR_GLOBAL	Com=Encoder position in pulse
 ++D=DINT	N=Press_IN_Mtr_Current	AT=ECAT://node#2/TxPDO 21 map_01.07 Motor current_4001_07	G=VAR_GLOBAL
 ++D=DINT	N=Press_IN_Total_Torque	AT=ECAT://node#2/TxPDO 21 map_01.08 Motor current % of mo_4001_08	G=VAR_GLOBAL
 ++D=DINT	N=Press_IN_DC_Voltage	AT=ECAT://node#2/TxPDO 21 map_01.11 DC voltage_4001_0B	G=VAR_GLOBAL
@@ -336,8 +336,8 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_IN_FR3_Monitor	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR3
 ++D=BOOL	N=Uncoiler_IN_FR4_Monitor	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR4
 ++D=BOOL	N=Shear_IN_Hyd_Unit_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Overload relay for the hydraulic unit motor.
-++D=BOOL	N=Press_IN_DSV1_Pressure_Switch	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch of DSV1
-++D=BOOL	N=Press_IN_DSV2_Pressure_Switch	AT=ECAT://node#[9,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch of DSV2
+++D=BOOL	N=Press_IN_DSV1_Pressure_Switch	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch of DSV1
+++D=BOOL	N=Press_IN_DSV2_Pressure_Switch	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch of DSV2
 ++D=BOOL	N=Shear_IN_Fan_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Overload relay for hydraulic unit fan motor.
 ++D=BOOL	N=Shear_OUT_Hyd_Unit_Motor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Activates the motor of the hydraulic unit
 ++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Fan	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Activates the fan of the cooling unit
@@ -349,9 +349,9 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Zero_CAM	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Pulse sent to Autoset to reset its reading value
 ++D=BOOL	N=Shear_OUT_Cmd_Up	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - 5/2 valve avtivation so the shear goes up.
 ++D=BOOL	N=Shear_OUT_Cmd_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - 5/2 valve avtivation so the shear goes down
-++D=BOOL	N=Press_IN_Palm2	AT=ECAT://node#[10,2]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NC contacts
-++D=BOOL	N=Press_IN_Palm1	AT=ECAT://node#[10,2]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NO contacts
-++D=BOOL	N=Press_IN_Reset_Safety	AT=ECAT://node#[10,2]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Safety Reset push button
+++D=BOOL	N=Press_IN_Palm2	AT=ECAT://node#[8,2]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NC contacts
+++D=BOOL	N=Press_IN_Palm1	AT=ECAT://node#[8,2]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NO contacts
+++D=BOOL	N=Press_IN_Reset_Safety	AT=ECAT://node#[8,2]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Safety Reset push button
 ++D=BOOL	N=Shear_IN_Activation	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signal for the shear to go down
 ++D=BOOL	N=Act_Safety_Reset_PB	AT=IOBus://unit#10/Safety_Reset_Button	G=VAR_GLOBAL	Com=To Safety - Safety Reset Push button has been pressed.
 ++D=BOOL	N=FR3_Active	AT=IOBus://unit#10/FR3_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR3 is active
@@ -385,49 +385,49 @@ _EN=Variables
 ++D=STRING[256]	N=Version_Number_String	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	AT=ECAT://node#6/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc2_Pos	AT=ECAT://node#7/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
-++D=UINT	N=Uncoiler_ABB_Control_Word	G=VAR_GLOBAL
-++D=UINT	N=Uncoiler_ABB_Status_Word	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_IN_Mtr_Current	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_IN_Total_Torque	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_IN_DC_Voltage	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_ABB_Accel_Time	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_GLOBAL
-++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_GLOBAL
-++D=INT	N=Uncoiler_ABB_Ref	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Control_Word	AT=ECAT://node#3/RxPDO 21 map_ABB Drives control word_2101_00	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Status_Word	AT=ECAT://node#3/TxPDO 21 map_ABB Drives status word_2104_00	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_Mtr_Current	AT=ECAT://node#3/TxPDO 21 map_1.07 Motor current_4001_07	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_Total_Torque	AT=ECAT://node#3/TxPDO 21 map_1.10 Motor torque_4001_0A	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_DC_Voltage	AT=ECAT://node#3/TxPDO 21 map_1.11 DC voltage_4001_0B	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_ABB_Accel_Time	AT=ECAT://node#3/RxPDO 21 map_28.72 Freq acceleration tim_401C_48	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_Abb_Decel_Time	AT=ECAT://node#3/RxPDO 21 map_28.73 Freq deceleration tim_401C_49	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Trip_Fault	AT=ECAT://node#3/TxPDO 21 map_4.01 Tripping fault_4004_01	G=VAR_GLOBAL
+++D=INT	N=Uncoiler_ABB_Ref	AT=ECAT://node#3/RxPDO 21 map_ABB Drives REF1_2102_00	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Strip_Encoder	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
-++D=BOOL	N=Shaker_IN_Overload_Fault	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL	Com=Shaker motor overload
-++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL	Com=Hydraulic Unit Overload
-++D=BOOL	N=Feeder_IN_Oiler_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL	Com=Oiler motor overload
+++D=BOOL	N=Shaker_IN_Overload_Fault	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shaker motor overload
+++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Hydraulic Unit Overload
+++D=BOOL	N=Feeder_IN_Oiler_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Oiler motor overload
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL	Com=Enable switch jog uncoiler forward
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL	Com=Enable switch jog uncoiler reverse
 ++D=BOOL	N=Master_IN_Door_Btn_Green	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL	Com=Door green button - unlocks doors.
 ++D=BOOL	N=Master_IN_Door_Btn_Yellow	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL	Com=Door yellow button - top stop the press.
 ++D=BOOL	N=Master_IN_Door_Btn_Blue	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Door blue button - safety reset
-++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Motor	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Motor	G=VAR_GLOBAL
 ++D=BOOL	N=Master_Door_LED_Green	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 06	G=VAR_GLOBAL
 ++D=BOOL	N=Master_Door_LED_Yellow	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 07	G=VAR_GLOBAL
 ++D=BOOL	N=Master_Door_LED_Blue	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 08	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Adj_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 10	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Shaker_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 11	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Hyd_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Adj_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Shaker_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Hyd_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 02	G=VAR_GLOBAL
 ++D=BOOL	N=Master_PassL_OL_Reset	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Oil_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Oil_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 04	G=VAR_GLOBAL
 ++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Active	AT=IOBus://unit#10/Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
 ++D=BOOL	N=Shaker_Active	AT=IOBus://unit#10/Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
 ++D=BOOL	N=State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
 ++D=BOOL	N=Doors_Unlock_Comm	AT=IOBus://unit#10/Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
-++D=BOOL	N=Master_OUT_Passline_OL_Reset	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Passline_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
 ++D=BOOL	N=Enable_Switch_Valves	AT=IOBus://unit#10/Enable_Switch_Valves	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
 ++D=BOOL	N=Uncoiler_OUT_Brake_Sol	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL	Com=Disengage the brake of the uncoiler mandrel.
 ++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	AT=IOBus://unit#10/Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
 ++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	AT=IOBus://unit#6/Port1 Input Data01	G=VAR_GLOBAL	Com=Byte array of EOM Sensor, second byte has 0/1 value for end of material or not.
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	AT=IOBus://unit#6/Port2 Input Data01	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	AT=IOBus://unit#6/Port2 Input Data02	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_32	AT=IOBus://unit#6/Port2 Input Data03	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_48	AT=IOBus://unit#6/Port2 Input Data04	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	AT=IOBus://unit#6/Port3 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	AT=IOBus://unit#6/Port3 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	AT=IOBus://unit#6/Port3 Input Data02	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_32	AT=IOBus://unit#6/Port3 Input Data03	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_48	AT=IOBus://unit#6/Port3 Input Data04	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	AT=IOBus://unit#6/Port2 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	AT=IOBus://unit#6/Port4 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	AT=IOBus://unit#7/Port2 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	AT=IOBus://unit#7/Port2 Input Data02	G=VAR_GLOBAL
@@ -435,3 +435,4 @@ _EN=Variables
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Master_Feed_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Master_Axis_Error	AT=MC://_MC_AX[5]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sNXUNIT_ID	N=Press_CPL_2_NLI	IV=(NodeAdr := 10, IPAdr := [5(16#FF)], UnitNo := 0, Path := [16#11, 16#0, 16#2, 16#0, 16#a, 16#0, 16#1, 16#0, 16#2, 55(16#0)], PathLength := 12)	RO=1	Const=1	G=VAR_GLOBAL

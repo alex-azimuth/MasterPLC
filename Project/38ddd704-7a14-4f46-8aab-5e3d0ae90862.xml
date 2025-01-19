@@ -14,6 +14,11 @@ _EN=Variables
 ++D=Equivalent	N=FR6_Monitor	G=VAR
 ++D=BOOL	N=FR6_Discrepency_Error	G=VAR	Com=FR6 relay, which activates the going down movement of the shear, does not respond properly. Troubleshoot, change relay.
 ++D=BOOL	N=FR5_Discrepency_Error	G=VAR	Com=FR5 relay, which activates the going up movement of the shear, does not respond properly. Troubleshoot, change relay.
+++D=BOOL	N=Need_Go_Up	G=VAR	Com=indicates that the shear need to go up after if the shear was not up while a safety device stopped the press
+++D=TOF	N=Need_Go_Up_TOF	G=VAR
+++D=F_TRIG	N=Shear_Activation_F	G=VAR
+++D=R_TRIG	N=Shear_Activation_R	G=VAR
+++D=TOF	N=Shear_Fan_Activation_TOF	G=VAR	Com=TOF for the fan to be active for a certain amount of time after the end of the shear movement.
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Shear_OUT_Cmd_Down	G=VAR_EXTERNAL
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL
@@ -36,3 +41,5 @@ _EN=Variables
 ++D=Recoiler_Comm	N=Recoiler_Signals	G=VAR_EXTERNAL
 ++D=Uncoiler_Comm	N=Uncoiler_Signals	G=VAR_EXTERNAL
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Fan	G=VAR_EXTERNAL
+++D=INT	N=No_Gags_Installed	G=VAR_EXTERNAL

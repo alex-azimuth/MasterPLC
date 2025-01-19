@@ -2106,7 +2106,7 @@
   </NexAxisCount>
   <NexAxisServoDriverSetting>
     <NexAxisServoDriverModuloMAXPosition>
-      <CurrentValue>2147483647</CurrentValue>
+      <CurrentValue>8796093022207</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>2147483647</DefaultValue>
@@ -2120,7 +2120,7 @@
       <Options />
     </NexAxisServoDriverModuloMAXPositionValue2>
     <NexAxisServoDriverModuloMINPosition>
-      <CurrentValue>-2147483648</CurrentValue>
+      <CurrentValue>0</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>-2147483648</DefaultValue>

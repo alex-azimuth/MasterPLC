@@ -156,8 +156,8 @@
     <SubIOPort IOPortID="a44a1cdc-90db-4313-87d9-4330cdc74ec6" />
   </IOPort>
   <IOPort IOPortID="88fc3fc9-4fe3-4d70-a4c0-5717fbc81bad" Index="24580" SubIndex="1">
-    <SubIOPort IOPortID="136dd639-7614-4a02-8edc-ae370f6f3e05" />
-    <SubIOPort IOPortID="49618284-50a4-4e34-b867-7454ed17e168" />
+    <SubIOPort IOPortID="d77d04d4-cf0d-48b2-9dac-251e5fcc29a2" />
+    <SubIOPort IOPortID="0d8f1eb4-0dc8-4c7b-ac6e-e7a68252c95a" />
   </IOPort>
   <IOAllocation Index="6656">
     <IOEntry>

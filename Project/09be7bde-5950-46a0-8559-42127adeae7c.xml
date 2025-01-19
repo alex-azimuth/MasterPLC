@@ -67,7 +67,7 @@ _EN=Variables
 ++D=Feed_Verification_Positions	N=Exit_Verification_Pos	G=VAR
 ++D=Enc_Verification	N=Exit_Verification	G=VAR
 ++D=TorqueStop	N=Feeder_MaxTorque2	G=VAR
-++D=LREAL	N=Feed_Tolerance_Imperial	G=VAR
+++D=LREAL	N=Feed_Tolerance_Metric	G=VAR
 ++D=BOOL	N=Disable_Entry_Jog	G=VAR	Com=Maximum jog length has been reached.
 ++D=BOOL	N=Disable_Exit_Jog	G=VAR	Com=Maximum joging distance has been reached.
 ++D=EC_CoESDOWrite	N=Entry_Feeder_Direction	G=VAR
@@ -81,7 +81,7 @@ _EN=Variables
 ++D=TP	N=Stop_Record_Delay	G=VAR
 ++D=TP	N=Stop_Record_Delay2	G=VAR
 ++D=INT	N=Recorded_Step_No	G=VAR
-++D=LREAL	N=Feed_Verification_Alarm_Threshold	G=VAR
+++D=LREAL	N=Feed_Verification_Alarm_Threshold_Metric	G=VAR
 ++D=BOOL	N=Feeder3_Power_On_Error	G=VAR
 ++D=MC_Power	N=Power_On_Feeder_Main	G=VAR
 ++D=MC_Reset	N=Reset_Feeder3	G=VAR
@@ -187,7 +187,7 @@ _EN=Variables
 ++D=BOOL	N=Maintain_Swing_Arm_Down	G=VAR
 ++D=BOOL	N=UnPause_Zone	G=VAR
 ++D=BOOL	N=Pause_Feed	G=VAR
-++D=BOOL	N=Feed_Active	G=VAR
+++D=BOOL	N=Feed_Active	G=VAR	Com=Auto feeding signal - from cam or outside signal.
 ++D=R_TRIG	N=Feed_Active_R	G=VAR
 ++D=BOOL	N=Pause_Wait	G=VAR
 ++D=BOOL	N=Unpause_Wait	G=VAR
@@ -197,7 +197,7 @@ _EN=Variables
 ++D=F_TRIG	N=Pause_Feed_F	G=VAR
 ++D=BOOL	N=IOL_EOM_Signal	G=VAR
 ++D=IOL_WriteObj	N=IOL_Teach_SP	G=VAR
-++D=BOOL	N=Feed_Ready	G=VAR
+++D=BOOL	N=Feed_Exec_Auto	G=VAR	Com=Feed motion - execute feed in auto
 ++D=EC_CoESDOWrite	N=Main_Feeder_Preset_Motion	G=VAR
 ++D=MC_Home	N=Home_Strip_Encoder	G=VAR
 ++D=MC_Home	N=Home_Main_Feeder	G=VAR
@@ -206,6 +206,41 @@ _EN=Variables
 ++D=MC_GearIn	N=Gear_Encoder	G=VAR
 ++D=MC_CombineAxes	N=Calc_Encoder_Error	G=VAR
 ++D=MC_Home	N=Home_Master_Axis_Error	G=VAR
+++D=MC_Phasing	N=Error_Correction	G=VAR
+++D=BOOL	N=Correct_Error	G=VAR
+++D=BOOL	N=Motion_Combine_Active	G=VAR	Com=All is ready for the motion feeding setup.
+++D=BOOL	N=Feed_Exec_Micro	G=VAR	Com=Micro feed in motion feeding.
+++D=MC_MoveRelative	N=Main_Feed_Move_Motion	G=VAR
+++D=MC_MoveRelative	N=Main_Feeder_Micro_Motion	G=VAR
+++D=BOOL	N=Exec_Au	G=VAR
+++D=MC_GearOut	N=Gear_Main_Feeder_OUT	G=VAR
+++D=MC_GearOut	N=Gear_Encoder_OUT	G=VAR
+++D=BOOL	N=Home_Test	G=VAR
+++D=BOOL	N=Show_Error_Bool2	G=VAR
+++D=WORD	N=Show_Error_ID	G=VAR
+++D=MC_SetPosition	N=Encoder_SetPosition	G=VAR
+++D=LREAL	N=Online_Test	IV=1	G=VAR
+++D=LREAL	N=Online_Test2	IV=1	G=VAR
+++D=MC_Stop	N=Stop_Encoder_Axis	G=VAR
+++D=TON	N=Cheat_Code	G=VAR
+++D=WORD	N=Error_Correction_ID	G=VAR
+++D=WORD	N=Error_Correction_ErrorID	G=VAR
+++D=WORD	N=Gear_Main_Feeder_EID	G=VAR
+++D=WORD	N=Calc_Encoder_Error_EID	G=VAR
+++D=WORD	N=Main_Feeder_Micro_Motion_EID	G=VAR
+++D=WORD	N=Gear_Main_Feeder_OUT_EID	G=VAR
+++D=WORD	N=Stop_EncodeR_Axis_EID	G=VAR
+++D=BOOL	N=Test_OFF	G=VAR
+++D=BOOL	N=parallel	G=VAR
+++D=LREAL	N=correctionFActor	G=VAR
+++D=LREAL	N=factor	G=VAR
+++D=BOOL	N=Reset_Again	G=VAR
+++D=MC_Reset	N=Reset_Feeder4	G=VAR
+++D=MC_Reset	N=Reset_Feeder5	G=VAR
+++D=MC_Reset	N=Reset_Feeder6	G=VAR
+++D=BOOL	N=Feeding_Motion_Fault	G=VAR
+++D=R_TRIG	N=Main_Feeder_Preset_Motion_R	G=VAR
+++D=BOOL	N=Feed_Motion_Fault	G=VAR	Com=Motion for encoder compensation has failed.
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
@@ -341,3 +376,5 @@ _EN=Variables
 ++D=_sAXIS_REF	N=Strip_Encoder	Const=1	G=VAR_EXTERNAL
 ++D=_sAXIS_REF	N=Master_Feed_Axis	Const=1	G=VAR_EXTERNAL
 ++D=_sAXIS_REF	N=Master_Axis_Error	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_CommErrTbl	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_PDSlavTbl	Const=1	G=VAR_EXTERNAL

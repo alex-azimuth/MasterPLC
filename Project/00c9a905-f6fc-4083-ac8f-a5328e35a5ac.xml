@@ -3,7 +3,6 @@ _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=TON	N=Uncoiler_Wait_Timer	G=VAR
 ++D=TOF	N=Uncoiler_Stay_Timer	G=VAR
-++D=BOOL	N=Uncoiler_OUT_Brake_Sol	G=VAR	Com=Disengage the brake.
 ++D=BOOL	N=Brake_Disengage1	G=VAR	Com=Forward brake disengage.
 ++D=BOOL	N=Brake_Disengage2	G=VAR	Com=Reverse brake disengage.
 ++D=TON	N=Uncoiling_Delay	G=VAR
@@ -124,3 +123,4 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	G=VAR_EXTERNAL
 ++D=Abb_Drv	N=ABB_Control_Uncoiler	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Brake_Sol	G=VAR_EXTERNAL

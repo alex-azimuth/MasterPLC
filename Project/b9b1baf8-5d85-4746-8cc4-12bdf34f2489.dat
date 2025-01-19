@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="10507520" Revision="17039360" IONodeID="0218453c-7f9f-4deb-8be3-90208d0cfcc7" DeviceName="NXSL3300" SerialNo="0" IsEnabled="1">
+  <Feature Values="SupportFbViewProtection, SupportFbChangeProtection, SupportProgramViewProtection, SupportProgramChangeProtection, SupportD41DDevice, SupportDataProtectionV20" />
+  <PdoM PMIndex="6656" PMN="TxSlaves" PMIOD="I">
+    <Pdo PID="a81a42ea-19a0-4bf3-baed-a476753eeb7f" Index="24576" SIndex="1" Name="FSoEMaster_Instance3" DSC="" PBit="56" PD="I" PV="H" PBO="0" BTBL="56" LEMI="7" SPId="399b2bee-8e34-457e-8589-59ea73644a71" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="762f3269-717d-4566-8dbe-f714d77d9c5b" Index="24576" SIndex="2" Name="FSoEMaster_Instance2" DSC="" PBit="56" PD="I" PV="H" PBO="56" BTBL="56" LEMI="5" SPId="9b70dc4a-d76d-4553-9f2c-135b1af57c86" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="7dc97185-8722-4480-b8c1-67719d888d88" Index="24576" SIndex="3" Name="FSoEMaster_Instance4" DSC="" PBit="56" PD="I" PV="H" PBO="112" BTBL="56" LEMI="14" SPId="8f7cc676-cfb7-470c-8e5e-cf3eb5179ac7" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="d9603dd7-ee55-4761-8530-c76fde3256ba" Index="24576" SIndex="4" Name="FSoEMaster_Instance5" DSC="" PBit="56" PD="I" PV="H" PBO="168" BTBL="56" LEMI="15" SPId="11c23b98-a5d9-4158-810e-7bd3da159d44" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="1c0b70da-67f9-4bd4-98f0-14c178ea7da2" Index="24576" SIndex="5" Name="FSoEMaster_Instance0" DSC="" PBit="48" PD="I" PV="H" PBO="224" BTBL="48" LEMI="2" SPId="aaf3c939-3b9b-4599-93c2-53ebded23e00" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="86b94c6b-ee29-46a3-968f-3624c9399171" Index="24576" SIndex="6" Name="FSoEMaster_Instance6" DSC="" PBit="48" PD="I" PV="H" PBO="272" BTBL="48" LEMI="16" SPId="89f23444-a694-4959-b379-d0e6ce53ce56" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="a35aa3ba-ff6d-480f-83e9-b7000c813ba0" Index="24576" SIndex="7" Name="FSoEMaster_Instance7" DSC="" PBit="48" PD="I" PV="H" PBO="320" BTBL="48" LEMI="17" SPId="c19f9bb3-460b-43e9-9ed3-6bbf41d1e0d1" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="fbc04e8d-02b2-4f1f-b076-b4f70197eb41" Index="24576" SIndex="8" Name="FSoEMaster_Instance1" DSC="" PBit="48" PD="I" PV="H" PBO="368" BTBL="48" LEMI="3" SPId="53deb1f6-64b4-4715-aeb6-6d32d61c125b" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="5632" PMN="RxSlaves" PMIOD="O">
+    <Pdo PID="52bb9ae2-7442-48c1-9994-7f5f1d533071" Index="28672" SIndex="1" Name="FSoEMaster_Instance3" DSC="" PBit="56" PD="O" PV="H" PBO="0" BTBL="56" LEMI="7" SPId="02d4a8e3-ea49-44c7-a64c-7702ed1f31a1" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="7374a52b-9048-4a1c-a585-0322c4c3d5bd" Index="28672" SIndex="2" Name="FSoEMaster_Instance2" DSC="" PBit="56" PD="O" PV="H" PBO="56" BTBL="56" LEMI="5" SPId="eee16934-07b7-488d-9237-18af84bcb01d" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="2b930b3d-f13c-442c-81f4-d79e3e088a13" Index="28672" SIndex="3" Name="FSoEMaster_Instance4" DSC="" PBit="56" PD="O" PV="H" PBO="112" BTBL="56" LEMI="14" SPId="a7ae369f-1dae-4879-8de8-db47ece05525" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="34abfb3b-6ea6-4f0f-b7e1-2838369a8c32" Index="28672" SIndex="4" Name="FSoEMaster_Instance5" DSC="" PBit="56" PD="O" PV="H" PBO="168" BTBL="56" LEMI="15" SPId="0b556eab-51b2-4a14-a7d6-6bb17fa1ca7a" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="2b5ac1e1-507f-40e5-9caf-1036cba22389" Index="28672" SIndex="5" Name="FSoEMaster_Instance0" DSC="" PBit="48" PD="O" PV="H" PBO="224" BTBL="48" LEMI="2" SPId="fff6748b-000c-425f-8929-b574d6235343" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="b6eb8d02-986a-4176-986d-78d5cc978ba3" Index="28672" SIndex="6" Name="FSoEMaster_Instance6" DSC="" PBit="48" PD="O" PV="H" PBO="272" BTBL="48" LEMI="16" SPId="b6f5c0fe-f9a2-41ac-a841-d03d0f919e39" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="2d699d68-15bb-452d-abb8-67e6a623b1aa" Index="28672" SIndex="7" Name="FSoEMaster_Instance7" DSC="" PBit="48" PD="O" PV="H" PBO="320" BTBL="48" LEMI="17" SPId="a90cd334-f91f-45f9-b627-0705bdd810f7" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="ec9dd2c7-8964-458b-ad0b-6a2125268f52" Index="28672" SIndex="8" Name="FSoEMaster_Instance1" DSC="" PBit="48" PD="O" PV="H" PBO="368" BTBL="48" LEMI="3" SPId="af2729d7-7b33-40da-963c-81bbd670c72d" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="6657" PMN="TxVariables" PMIOD="I">
+    <Pdo PID="bb90a933-2cf0-4301-a500-b97fa1a36aae" Index="24580" SIndex="1" Name="Safety CPU Status" DSC="Status of Safety CPU Unit for monitoring" PBit="16" PD="I" PV="V" PBO="416" BTBL="16" LEMI="2147483648" SPId="00000000-0000-0000-0000-000000000000" PDT="UINT" CipType="None">
+      <SubPort PID="8c5b89af-50da-4873-b9a0-2737df301fa4" Name="Normal Operating" DSC="Safety program is running without any fault and all safety master connections are established" Offset="0" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="259bd721-87e9-4c5e-8cd9-b454feb361e4" Name="Program Operating" DSC="Safety program is running" Offset="1" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="e4d6f121-4850-4641-bc35-590bc7ff527c" Name="Program No Fault" DSC="No system event more than minor fault occurs" Offset="2" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="3c27c54a-fbab-4fdc-9f3f-b41f69294e16" Name="Safety Master Connection Status" DSC="All safety master connections are established" Offset="3" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="62f9cfde-f669-4f11-aaee-73827b191b6a" Name="FSoE Master Connection Status" DSC="All FSoE master connections are established." Offset="4" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="ea24a8cb-92b0-453e-8aae-6c9119fea9d4" Name="CIP Safety Originator Connection Status" DSC="All CIP Safety Originator connections are established" Offset="5" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="d6e23763-fa11-442b-8038-e7b5b031e41f" Name="CIP Safety Target Connection Status" DSC="No error exists on CIP Safety Target connections" Offset="6" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="564ff62b-8ccd-4cf7-bec5-0ae05e89e6c3" Name="Reserved" DSC="" Offset="7" PD="I" BTBL="9" PDT="BOOL" PV="H" />
+    </Pdo>
+    <Pdo PID="2765c480-feaf-4401-96f9-43900397a135" Index="24577" SIndex="2" Name="FST_R_DSV" DSC="From Safety - Informs that the DSV is active" PBit="8" PD="I" PV="V" PBO="432" BTBL="1" LEMI="13" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="9e3c3ed0-ee54-47e6-ba9e-6ce02c068b71" Index="24577" SIndex="3" Name="Uncoiler_Dr_SFT_Comm" DSC="From Safety - Uncoiler safety feedback - puts uncoiler in manual mode." PBit="8" PD="I" PV="V" PBO="440" BTBL="1" LEMI="21" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="b72ea664-075d-49b1-bcc9-f6a30e412b48" Index="24577" SIndex="4" Name="State_Unsafe_Comm" DSC="From Safety - State is unsafe, cannot unlock." PBit="8" PD="I" PV="V" PBO="448" BTBL="1" LEMI="20" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="d6d8c04e-8838-46fe-9b33-9b3176019551" Index="24577" SIndex="5" Name="FR3_Signal" DSC="From Safety - FR3 is active" PBit="8" PD="I" PV="V" PBO="456" BTBL="1" LEMI="11" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="b0e58390-d725-46db-a134-68933a4188e6" Index="24577" SIndex="6" Name="FR4_Signal" DSC="From Safety - FR4 is active" PBit="8" PD="I" PV="V" PBO="464" BTBL="1" LEMI="12" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="3636c545-eb5a-4ba1-a426-389ba751329c" Index="24577" SIndex="7" Name="Stroke_Press" DSC="From Safety - Signal that the press is currently stroking." PBit="8" PD="I" PV="V" PBO="472" BTBL="1" LEMI="23" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="ea4d0b1a-3d28-44cd-bbbc-aec2589ff6e3" Index="24577" SIndex="8" Name="Sft_Press_Mtr_Comm" DSC="From Safety - Press can start the motor or not." PBit="8" PD="I" PV="V" PBO="480" BTBL="1" LEMI="24" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="ec1ce9c9-bc85-45c8-bfc6-effb285f9045" Index="24577" SIndex="9" Name="Doors_Unlock_Comm" DSC="From Safety - Doors are unlocked." PBit="8" PD="I" PV="V" PBO="488" BTBL="1" LEMI="22" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="579405cd-6433-488f-942b-94984cd53896" Index="24577" SIndex="10" Name="Enable_Switch_Valves" DSC="From Safety - Enable switch is activated, prevent valves from changing state." PBit="8" PD="I" PV="V" PBO="496" BTBL="1" LEMI="4" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="ee89e438-8b11-4c5a-b7dd-4c8c7fbd0e72" Index="24577" SIndex="11" Name="Safety_Ok_Comm" DSC="From Safety - Safeties are ok." PBit="8" PD="I" PV="V" PBO="504" BTBL="1" LEMI="26" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="5633" PMN="RxVariables" PMIOD="O">
+    <Pdo PID="abe7c828-7e74-4f54-b48d-ef13f80e584c" Index="28673" SIndex="1" Name="Uncoiler_Active" DSC="From PLC - Signal that the uncoiler is active (in order to determine safe state)" PBit="8" PD="O" PV="V" PBO="416" BTBL="1" LEMI="18" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="cc97c6b4-c24d-462e-bce6-cc0e67902fe2" Index="28673" SIndex="2" Name="Activate_DSV1" DSC="From PLC - Activate DSV1" PBit="8" PD="O" PV="V" PBO="424" BTBL="1" LEMI="9" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="b708b32a-23b3-45ea-bac0-9205f408b840" Index="28673" SIndex="3" Name="Safety_Reset_Button" DSC="From PLC - Safety Reset has been pressed." PBit="8" PD="O" PV="V" PBO="432" BTBL="1" LEMI="6" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="b0849425-b376-4e96-b50c-e5da56042d15" Index="28673" SIndex="4" Name="Activate_DSV2" DSC="From PLC - Activate DSV2" PBit="8" PD="O" PV="V" PBO="440" BTBL="1" LEMI="10" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="8ee88d74-8d7f-4cbd-a938-e0edf2c85b25" Index="28673" SIndex="5" Name="Door_Unlock_Request" DSC="From PLC - Request to unlock the door." PBit="8" PD="O" PV="V" PBO="448" BTBL="1" LEMI="8" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="5862c94c-e5fb-4c81-922a-4d6f4b8addb9" Index="28673" SIndex="6" Name="Shaker_Active" DSC="From PLC - Signal that the shaker is active (in order to determine safe state)" PBit="8" PD="O" PV="V" PBO="456" BTBL="1" LEMI="19" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="6658" PMN="TxCIPSafety" PMIOD="I">
+    <Pdo PID="813f8c8b-f1cb-49a8-9ea9-fef85d01102e" Index="24578" SIndex="1" Name="CIPTarget_Instance0" DSC="" PBit="376" PD="I" PV="H" PBO="512" BTBL="376" LEMI="25" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..46] OF BYTE" CipType="TargetInputAssembly">
+      <BridgeNodes>
+        <BridgeNode>00000000-0000-0000-0000-000000000000</BridgeNode>
+      </BridgeNodes>
+    </Pdo>
+    <Pdo PID="50bebcb4-91d0-4fc2-ade6-f5d093f8419b" Index="24578" SIndex="2" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="888" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="5634" PMN="RxCIPSafety" PMIOD="O">
+    <Pdo PID="ae7d81fb-59c0-4819-907c-0f3a6d91000e" Index="28674" SIndex="1" Name="CIPTarget_Instance0" DSC="" PBit="448" PD="O" PV="H" PBO="464" BTBL="448" LEMI="25" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..55] OF BYTE" CipType="TargetInputAssembly">
+      <BridgeNodes>
+        <BridgeNode>00000000-0000-0000-0000-000000000000</BridgeNode>
+      </BridgeNodes>
+    </Pdo>
+  </PdoM>
+</Module>
