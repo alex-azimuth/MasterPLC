@@ -3,6 +3,8 @@ _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=REAL	N=Enc1_HMI_Val	G=VAR
 ++D=Deviates	N=Enc_Deviation	G=VAR
+++D=LREAL	N=Eccentricity	Ord=1	G=VAR	AOE=1
+++D=REAL	N=Angle	Ord=2	G=VAR	AOE=1
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
 ++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT

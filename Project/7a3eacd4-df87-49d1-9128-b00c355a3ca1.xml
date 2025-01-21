@@ -9,6 +9,6 @@
     <MaxSamplesPerFile>4500</MaxSamplesPerFile>
     <MaxDataSetSize>100</MaxDataSetSize>
     <TargetDirectory>C:\OMRON\Data\DataTrace\</TargetDirectory>
-    <FilePrefix />
+    <FilePrefix></FilePrefix>
   </DataTraceConfigModel>
 </data>

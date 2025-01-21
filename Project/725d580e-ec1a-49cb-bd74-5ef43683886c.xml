@@ -13,8 +13,8 @@
     <NumSamplingRecords>10000</NumSamplingRecords>
     <NexDataTraceTriggerModel>
       <Enabled>true</Enabled>
-      <SymbolId>entity://nextask.base.d669aa04-0492-483e-bb21-bd152676ff53/Feeder/Feed_Exec_Micro%3ABOOL</SymbolId>
-      <SymbolName>Feeder.Feed_Exec_Micro</SymbolName>
+      <SymbolId>entity://variables.global.8c434e1e-af1a-45b9-abea-90485d0b8b26/Press_Signals.Feeding_Signal%3ABOOL</SymbolId>
+      <SymbolName>Press_Signals.Feeding_Signal</SymbolName>
       <Condition>BooleanRising</Condition>
       <Value></Value>
     </NexDataTraceTriggerModel>

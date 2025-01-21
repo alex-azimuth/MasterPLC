@@ -82,7 +82,7 @@ _EN=Variables
 ++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_GLOBAL
 ++D=HMI_Feeder	N=HMI_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Press	N=HMI_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /></ECs>
-++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	R=1	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	R=1	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False, Correction_Time_Limit := 0.5, Correction_Feed_Length_Begin := 0.9, Correction_Speed_Mul := 1, Correction_Accel_Mul := 1, Correction_Decel_Mul := 1, Correction_Factor := 1, Feed_Counter := 20, Feed_Complete_Time := 1)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Main	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Entry	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Exit	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
@@ -431,8 +431,25 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	AT=IOBus://unit#6/Port4 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	AT=IOBus://unit#7/Port2 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	AT=IOBus://unit#7/Port2 Input Data02	G=VAR_GLOBAL
-++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	G=VAR_GLOBAL
-++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	G=VAR_GLOBAL
+++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Station_ES	AT=IOBus://unit#10/Station_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Uncoiler_ES	AT=IOBus://unit#10/Uncoiler_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door1_ES	AT=IOBus://unit#10/Door1_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door2_ES	AT=IOBus://unit#10/Door2_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door3_ES	AT=IOBus://unit#10/Door3_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door4_ES	AT=IOBus://unit#10/Door4_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door5_ES	AT=IOBus://unit#10/Door5_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Robot_ES	AT=IOBus://unit#10/Robot_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock1	AT=IOBus://unit#10/Door1_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock2	AT=IOBus://unit#10/Door2_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock3	AT=IOBus://unit#10/Door3_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock4	AT=IOBus://unit#10/Door4_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock5	AT=IOBus://unit#10/Door5_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Master_Feed_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Master_Axis_Error	AT=MC://_MC_AX[5]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sNXUNIT_ID	N=Press_CPL_2_NLI	IV=(NodeAdr := 10, IPAdr := [5(16#FF)], UnitNo := 0, Path := [16#11, 16#0, 16#2, 16#0, 16#a, 16#0, 16#1, 16#0, 16#2, 55(16#0)], PathLength := 12)	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Die_Block	AT=IOBus://unit#10/Die_Block_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_FR1_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_FR2_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ULINT	N=Feeder_Strip_Encoder_Raw	AT=ECAT://node#5/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL

@@ -321,3 +321,5 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	G=VAR_EXTERNAL
 ++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	G=VAR_EXTERNAL
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	G=VAR_EXTERNAL

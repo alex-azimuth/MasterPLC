@@ -1,0 +1,21 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Enable_F(Clk:=Enable);&#xD;
+Timer_ON(In:=Timer_Active, PT:=T#50s);&#xD;
+&#xD;
+IF (Enable) THEN&#xD;
+	Total_Time := Timer_ON.ET;&#xD;
+	Timer_Active := TRUE;&#xD;
+	ENO := TRUE;&#xD;
+END_IF;&#xD;
+&#xD;
+IF (Enable_F.Q) THEN&#xD;
+	Total_Time := Timer_ON.ET;&#xD;
+END_IF;&#xD;
+&#xD;
+IF (NOT Enable) THEN&#xD;
+	Timer_Active := FALSE;&#xD;
+	ENO := FALSE;&#xD;
+END_IF;&#xD;
+&#xD;
+IF (Reset) THEN&#xD;
+	Total_Time := T#0s;&#xD;
+END_IF;</Text></StructuredTextModel>

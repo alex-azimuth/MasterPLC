@@ -15,7 +15,7 @@
       <Historical>false</Historical>
       <DataType>System.Double</DataType>
       <Id>5abc448b-5612-4b78-b776-6f078b47af0b</Id>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
       <Offset>0</Offset>
       <ValueOffset>0</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
@@ -53,7 +53,7 @@
       <Historical>false</Historical>
       <DataType>System.Double</DataType>
       <Id>ff25dcf3-a96d-437c-890f-dca0b8dfc75d</Id>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
       <Offset>0</Offset>
       <ValueOffset>0</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
@@ -91,16 +91,16 @@
       <Historical>false</Historical>
       <DataType>System.Double</DataType>
       <Id>b984b690-ff5d-47a7-a0b0-05d2af276d64</Id>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
       <Offset>0</Offset>
       <ValueOffset>0</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
     </DataTraceSetItemModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>Feeder.Calc_Encoder_Error.CommandAborted</Name>
+      <Name>Feeder.Error_Correction.CommandAborted</Name>
       <Id>4a021b68-42ee-4a4f-83df-fd2b18370d4c</Id>
-      <SymbolId>entity://nextask.base.d669aa04-0492-483e-bb21-bd152676ff53/Feeder/Calc_Encoder_Error/CommandAborted%3ABOOL</SymbolId>
+      <SymbolId>entity://nextask.base.d669aa04-0492-483e-bb21-bd152676ff53/Feeder/Error_Correction/CommandAborted%3ABOOL</SymbolId>
       <NaturalDataType>BOOL</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
@@ -129,7 +129,7 @@
       <Historical>false</Historical>
       <DataType>System.Double</DataType>
       <Id>6a5c44a5-a57d-41f4-b430-90addcd812d0</Id>
-      <Visible>false</Visible>
+      <Visible>true</Visible>
       <Offset>0</Offset>
       <ValueOffset>0</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
@@ -151,6 +151,25 @@
       <Visible>true</Visible>
       <Offset>0</Offset>
       <ValueOffset>-4</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>Feeder.Main_Feed_Move_Motion.Busy</Name>
+      <Id>36042f47-6ac1-4a0c-a110-a697d2603c8a</Id>
+      <SymbolId>entity://nextask.base.d669aa04-0492-483e-bb21-bd152676ff53/Feeder/Main_Feed_Move_Motion/Busy%3ABOOL</SymbolId>
+      <NaturalDataType>BOOL</NaturalDataType>
+      <Comment></Comment>
+      <ColourA>255</ColourA>
+      <ColourR>255</ColourR>
+      <ColourG>127</ColourG>
+      <ColourB>80</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Boolean</DataType>
+      <Id>36042f47-6ac1-4a0c-a110-a697d2603c8a</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>-6</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
     </DataTraceSetItemModel>
   </DataTraceSetModel>
