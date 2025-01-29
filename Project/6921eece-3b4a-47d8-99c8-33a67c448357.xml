@@ -1,1 +1,1 @@
-﻿{"CLs":[{"__type":"IST","EID":"310079fe-039b-4d6f-862e-b4f1bf5abfa5","H":524,"TXT":"IF (Master_Feeder_Options.IOL_Sensors) THEN\u000d\u000a\u0009IOL_EOM_Signal := TestABit(Feeder_IOL_EOM[0], 0);\u000d\u000aEND_IF;","W":932}],"LRI":1,"RRI":2,"VLs":[]}
+﻿{"CLs":[{"__type":"IST","EID":"310079fe-039b-4d6f-862e-b4f1bf5abfa5","H":524,"TXT":"IF (Master_Feeder_Options.IOL_Sensors) THEN\u000d\u000a\u0009IOL_EOM_Signal := TestABit(Feeder_IOL_EOM[0], 0);\u000d\u000aELSE\u000d\u000a\u0009IOL_EOM_Signal := Feeder_IN_EOM_Sensor;\u000d\u000aEND_IF;","W":932}],"LRI":1,"RRI":2,"VLs":[]}

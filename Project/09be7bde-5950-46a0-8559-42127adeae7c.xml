@@ -195,7 +195,6 @@ _EN=Variables
 ++D=R_TRIG	N=Unpause_Zone_R	G=VAR
 ++D=R_TRIG	N=Pause_Feed_R	G=VAR
 ++D=F_TRIG	N=Pause_Feed_F	G=VAR
-++D=BOOL	N=IOL_EOM_Signal	G=VAR
 ++D=IOL_WriteObj	N=IOL_Teach_SP	G=VAR
 ++D=BOOL	N=Feed_Exec_Auto	G=VAR	Com=Feed motion - execute feed in auto
 ++D=EC_CoESDOWrite	N=Main_Feeder_Preset_Motion	G=VAR
@@ -253,11 +252,11 @@ _EN=Variables
 ++D=LREAL	N=Current_Feed_Length	G=VAR
 ++D=Equivalent	N=Feeder_FR1_Monitoring	G=VAR
 ++D=Equivalent	N=Feeder_FR2_Monitoring	G=VAR
-++D=EC_CoESDORead	N=Test_Read	Ord=1	G=VAR	AOE=1
-++D=UDINT	N=Test_Read_Variable	Ord=2	G=VAR	AOE=1
-++D=WORD	N=Home_Main_Feeder_ID	Ord=4	G=VAR	AOE=1
-++D=WORD	N=Home_Master_ID	Ord=5	G=VAR	AOE=1
-++D=WORD	N=Home_Master_Axis_Error_ID	Ord=6	G=VAR	AOE=1
+++D=EC_CoESDORead	N=Test_Read	G=VAR
+++D=UDINT	N=Test_Read_Variable	G=VAR
+++D=WORD	N=Home_Main_Feeder_ID	G=VAR
+++D=WORD	N=Home_Master_ID	G=VAR
+++D=WORD	N=Home_Master_Axis_Error_ID	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
@@ -387,7 +386,7 @@ _EN=Variables
 ++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc2_Pos	G=VAR_EXTERNAL
-++D=BOOL	N=Enable_Switch_Valves	G=VAR_EXTERNAL
+++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	G=VAR_EXTERNAL
 ++D=_sAXIS_REF	N=Strip_Encoder	Const=1	G=VAR_EXTERNAL
@@ -398,3 +397,4 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_FR1_Monitor	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_FR2_Monitor	G=VAR_EXTERNAL
 ++D=REAL	N=STO_Error_Time	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_EOM_Signal	G=VAR_EXTERNAL

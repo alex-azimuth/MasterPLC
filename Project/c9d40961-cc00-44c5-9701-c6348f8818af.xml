@@ -6,8 +6,8 @@ _EN=Variables
 ++D=R_TRIG	N=Reset_RT	G=VAR
 ++D=R_TRIG	N=Enable_RT	G=VAR
 ++D=F_TRIG	N=Reset_Pulse_FT	G=VAR
-++D=UINT	N=Start_Code	IV=1151	Const=1	G=VAR
-++D=UINT	N=Stop_Code	IV=1150	Const=1	G=VAR
+++D=UINT	N=Start_Code	R=1	IV=1151	G=VAR
+++D=UINT	N=Stop_Code	R=1	IV=1150	G=VAR
 ++D=TP	N=Reset_Pulse	G=VAR
 ++D=WORD	N=Reset_Word	G=VAR
 ++D=TIME	N=Show_Et	G=VAR
@@ -15,6 +15,9 @@ _EN=Variables
 ++D=REAL	N=Ref	G=VAR
 ++D=BOOL	N=Test324	G=VAR
 ++D=BOOL	N=Resetting	G=VAR
+++D=TON	N=Coast_Timer	Ord=1	G=VAR	AOE=1
+++D=TIME	N=Show_ET2	Ord=2	G=VAR	AOE=1
+++D=UINT	N=Stop_Code2	R=1	IV=1150	Ord=3	G=VAR	AOE=1
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
 ++D=UINT	N=Control_Word	Ord=1	G=VAR_IN_OUT
@@ -36,5 +39,10 @@ _EN=Variables
 ++D=BOOL	N=Running	Ord=17	G=VAR_OUTPUT
 ++D=BOOL	N=Forward	Ord=18	G=VAR_OUTPUT
 ++D=BOOL	N=Fault	Ord=19	G=VAR_OUTPUT
+++D=REAL	N=Out_Current	Ord=20	G=VAR_OUTPUT
+++D=REAL	N=Out_Total_Torque	Ord=21	G=VAR_OUTPUT
+++D=REAL	N=Out_DC_Voltage	Ord=22	G=VAR_OUTPUT
+++D=STRING[256]	N=Out_FaultMsg	Ord=23	G=VAR_OUTPUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Abb_Drv	N=ABB_Control	G=VAR_EXTERNAL
+++D=Abb_Drv	N=ABB_Control_Uncoiler	G=VAR_EXTERNAL

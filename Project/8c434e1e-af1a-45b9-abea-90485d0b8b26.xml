@@ -20,7 +20,7 @@ _EN=Variables
 ++D=BOOL	N=Unc_IN_Overload_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Unc motor overload tripped.
 ++D=BOOL	N=Press_IN_Hyd_Overload_Fault	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Hydraulic overload tripped.
 ++D=BOOL	N=Press_IN_Hyd_Grease_Sensor	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Cam sensor that moves when greasing.
-++D=BOOL	N=Press_IN_Oiler_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Turns true when the oil level is too low.
+++D=BOOL	N=Press_IN_Oiler_Fault	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Turns true when the oil level is too low.
 ++D=BOOL	N=Press_IN_Air_Pressure	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch.
 ++D=Press_Comm	N=Press_Signals	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_Mode_Inch	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in inch mode.
@@ -381,7 +381,7 @@ _EN=Variables
 ++D=BOOL	N=Alex_Test	G=VAR_GLOBAL
 ++D=BOOL	N=R_DSV1	AT=IOBus://unit#10/Activate_DSV1	G=VAR_GLOBAL
 ++D=BOOL	N=R_DSV2	AT=IOBus://unit#10/Activate_DSV2	G=VAR_GLOBAL
-++D=BOOL	N=SFT_FSFT_R_DSV	AT=IOBus://unit#10/FST_R_DSV	G=VAR_GLOBAL	Com=From Safety, R_DSV
+++D=BOOL	N=SFT_FSFT_R_DSV	AT=IOBus://unit#10/FST_R_DSV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety, R_DSV
 ++D=STRING[256]	N=Version_Number_String	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	AT=ECAT://node#6/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc2_Pos	AT=ECAT://node#7/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
@@ -398,28 +398,28 @@ _EN=Variables
 ++D=BOOL	N=Shaker_IN_Overload_Fault	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shaker motor overload
 ++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Hydraulic Unit Overload
 ++D=BOOL	N=Feeder_IN_Oiler_Overload	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Oiler motor overload
-++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL	Com=Enable switch jog uncoiler forward
-++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL	Com=Enable switch jog uncoiler reverse
-++D=BOOL	N=Master_IN_Door_Btn_Green	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL	Com=Door green button - unlocks doors.
-++D=BOOL	N=Master_IN_Door_Btn_Yellow	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL	Com=Door yellow button - top stop the press.
-++D=BOOL	N=Master_IN_Door_Btn_Blue	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Door blue button - safety reset
+++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Enable switch jog uncoiler forward
+++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Enable switch jog uncoiler reverse
+++D=BOOL	N=Master_IN_Door_Btn_Green	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Door green button - unlocks doors.
+++D=BOOL	N=Master_IN_Door_Btn_Yellow	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Door yellow button - top stop the press.
+++D=BOOL	N=Master_IN_Door_Btn_Blue	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 09	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Door blue button - safety reset
 ++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Motor	G=VAR_GLOBAL
-++D=BOOL	N=Master_Door_LED_Green	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 06	G=VAR_GLOBAL
-++D=BOOL	N=Master_Door_LED_Yellow	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 07	G=VAR_GLOBAL
-++D=BOOL	N=Master_Door_LED_Blue	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 08	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Adj_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 00	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Shaker_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 01	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Hyd_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 02	G=VAR_GLOBAL
-++D=BOOL	N=Master_PassL_OL_Reset	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Oil_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=Master_Door_LED_Green	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_Door_LED_Yellow	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_Door_LED_Blue	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Adj_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Shaker_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Hyd_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_PassL_OL_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Oil_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Active	AT=IOBus://unit#10/Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
 ++D=BOOL	N=Shaker_Active	AT=IOBus://unit#10/Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
 ++D=BOOL	N=State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
 ++D=BOOL	N=Doors_Unlock_Comm	AT=IOBus://unit#10/Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
 ++D=BOOL	N=Master_OUT_Passline_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
-++D=BOOL	N=Enable_Switch_Valves	AT=IOBus://unit#10/Enable_Switch_Valves	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
-++D=BOOL	N=Uncoiler_OUT_Brake_Sol	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL	Com=Disengage the brake of the uncoiler mandrel.
+++D=BOOL	N=Enable_Switch_Selector	AT=IOBus://unit#10/Enable_Switch_Valves	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
+++D=BOOL	N=Uncoiler_OUT_Brake_Sol	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Disengage the brake of the uncoiler mandrel.
 ++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	AT=IOBus://unit#10/Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
 ++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	AT=IOBus://unit#6/Port1 Input Data01	G=VAR_GLOBAL	Com=Byte array of EOM Sensor, second byte has 0/1 value for end of material or not.
@@ -429,8 +429,8 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_48	AT=IOBus://unit#6/Port3 Input Data04	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	AT=IOBus://unit#6/Port2 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	AT=IOBus://unit#6/Port4 Input Data01	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	AT=IOBus://unit#7/Port2 Input Data01	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	AT=IOBus://unit#7/Port2 Input Data02	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	AT=IOBus://unit#7/Port1 Input Data02	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	AT=IOBus://unit#7/Port1 Input Data03	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Station_ES	AT=IOBus://unit#10/Station_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -453,3 +453,14 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_FR1_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_FR2_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ULINT	N=Feeder_Strip_Encoder_Raw	AT=ECAT://node#5/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
+++D=BOOL	N=IOL_EOM_Signal	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA3	AT=IOBus://unit#7/Port1 Input Data04	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA0	AT=IOBus://unit#7/Port1 Input Data01	G=VAR_GLOBAL
+++D=BOOL	N=IOL_PO1_CE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Communication Error	G=VAR_GLOBAL
+++D=BOOL	N=IOL_PO1_SE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Short Error	G=VAR_GLOBAL
+++D=BOOL	N=IOL_PO1_CmE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Compare Error	G=VAR_GLOBAL
+++D=BOOL	N=IOL_PO1_SiE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Device IO Size Error	G=VAR_GLOBAL
+++D=BOOL	N=IOL_PO1_DE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Device Error	G=VAR_GLOBAL
+++D=BOOL	N=IOL_PO1_DEI	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Device Information	G=VAR_GLOBAL
+++D=BOOL	N=IOL_PO1_PE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 PDO Error	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA4	G=VAR_GLOBAL

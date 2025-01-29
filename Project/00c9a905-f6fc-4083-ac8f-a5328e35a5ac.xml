@@ -42,9 +42,9 @@ _EN=Variables
 ++D=INT	N=IOL_Distance	G=VAR
 ++D=WORD	N=Distance_Word	G=VAR
 ++D=BOOL	N=IOL_Uncoiler_Signal	G=VAR
-++D=BOOL	N=Test_Block_Out_Hydraulic	Ord=1	G=VAR	AOE=1
-++D=REAL	N=Value	Ord=2	G=VAR	AOE=1
-++D=REAL	N=Speed_Value	Ord=3	G=VAR	AOE=1
+++D=BOOL	N=Test_Block_Out_Hydraulic	G=VAR
+++D=REAL	N=Value	G=VAR
+++D=REAL	N=Speed_Value	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -119,7 +119,7 @@ _EN=Variables
 ++D=INT	N=Uncoiler_ABB_Ref	G=VAR_EXTERNAL
 ++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_Active	G=VAR_EXTERNAL
-++D=BOOL	N=Enable_Switch_Valves	G=VAR_EXTERNAL
+++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	G=VAR_EXTERNAL

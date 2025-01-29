@@ -175,6 +175,9 @@ _EN=Variables
 ++D=REAL	N=Temp_Ambient_REAL	G=VAR
 ++D=BOOL	N=Press_Etalex_Temp_Fault	G=VAR
 ++D=BOOL	N=Mode_OFF	G=VAR
+++D=BOOL	N=Pr	G=VAR
+++D=BOOL	N=Press_Encoder_Save_Data_Test	G=VAR
+++D=BOOL	N=Shaker_Bypass	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -323,3 +326,4 @@ _EN=Variables
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	G=VAR_EXTERNAL
+++D=BOOL	N=Shaker_IN_Overload_Fault	G=VAR_EXTERNAL

@@ -31,7 +31,7 @@ _EN=Variables
 ++D=TP	N=Passline_OL_Reset_TP	G=VAR
 ++D=TP	N=Oil_OL_Reset_TP	G=VAR
 ++D=R_TRIG	N=Unlock_Btn_R	G=VAR
-++D=BOOL	N=Shaker_Disable	Ord=1	G=VAR	AOE=1
+++D=BOOL	N=Shaker_Disable	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
@@ -68,7 +68,7 @@ _EN=Variables
 ++D=BOOL	N=Act_Safety_Reset_PB	G=VAR_EXTERNAL
 ++D=STRING[256]	N=Version_Number_String	G=VAR_EXTERNAL
 ++D=HMI_Overload_Reset	N=HMI_O_Reset	G=VAR_EXTERNAL
-++D=BOOL	N=Master_PassL_OL_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_PassL_OL_Reset	G=VAR_EXTERNAL
 ++D=BOOL	N=Shaker_IN_Overload_Fault	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Passline_Overload	G=VAR_EXTERNAL

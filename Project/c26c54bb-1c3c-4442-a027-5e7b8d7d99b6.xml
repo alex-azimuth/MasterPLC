@@ -34,7 +34,7 @@
       <Historical>false</Historical>
       <DataType>System.Double</DataType>
       <Id>11681777-99db-4c28-b124-e373088c5478</Id>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
       <Offset>0</Offset>
       <ValueOffset>0</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
