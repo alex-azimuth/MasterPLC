@@ -8,7 +8,7 @@
       <ApplicationFeature name="SupportD41DDevice" />
       <ApplicationFeature name="V102Project" />
       <ApplicationFeature name="DBCon V2.01" />
-      <ApplicationFeature name="SetUnit NX102-1120 Ver. 1.60" />
+      <ApplicationFeature name="SetUnit NX102-1120 Ver. 1.64" />
       <ApplicationFeature name="SafetyDataProtection" />
       <ApplicationFeature name="SafetyProgramProtection" />
       <ApplicationFeature name="Safety_SL5x00_V1_4" />
