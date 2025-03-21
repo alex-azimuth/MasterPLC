@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"LD","Var":"Enable_Switch_Selector"},{"__type":"LD","Ix":1,"Var":"Test_Buzzer_OUT","Y":1},{"__type":"F","In":[{"__type":"PF","Arg":"EN"}],"Ix":3,"Name":"Get1sClk","Out":[{"__type":"PF","Arg":""}],"X":1},{"__type":"ST","Ix":2,"Var":"Master_OUT_Buzzer","X":2}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1}]}

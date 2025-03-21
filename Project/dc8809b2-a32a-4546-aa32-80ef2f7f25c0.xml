@@ -14,7 +14,7 @@
     <NexDataTraceTriggerModel>
       <Enabled>true</Enabled>
       <SymbolId>entity://nextask.base.d669aa04-0492-483e-bb21-bd152676ff53/Feeder/Main_Feeder_Micro/Busy%3ABOOL</SymbolId>
-      <SymbolName>Feeder.Enc1_DeviationHMI_Straight_Enc1Encoder1Main_Feeder_Micro.Busy</SymbolName>
+      <SymbolName>Feeder.Gag_ListMy_INTEnc1_DeviationHMI_Straight_Enc1Encoder1Main_Feeder_Micro.Busy</SymbolName>
       <Condition>BooleanRising</Condition>
       <Value></Value>
     </NexDataTraceTriggerModel>

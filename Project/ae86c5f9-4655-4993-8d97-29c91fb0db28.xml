@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=R_Signal	G=VAR
+++D=F_TRIG	N=F_Signal	G=VAR
+++D=TON	N=Main_Time	G=VAR
+++D=BOOL	N=Start_Main_Time	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Signal	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Out	Ord=2	G=VAR_OUTPUT
+++D=BOOL	N=Reset	Ord=3	G=VAR_INPUT
+++D=TIME	N=Off_Time	Ord=4	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

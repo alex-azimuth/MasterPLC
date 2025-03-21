@@ -127,3 +127,4 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	G=VAR_EXTERNAL
 ++D=Abb_Drv	N=ABB_Control_Uncoiler	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_OUT_Brake_Sol	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Off_Signal	G=VAR_EXTERNAL

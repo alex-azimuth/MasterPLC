@@ -178,6 +178,49 @@ _EN=Variables
 ++D=BOOL	N=Pr	G=VAR
 ++D=BOOL	N=Press_Encoder_Save_Data_Test	G=VAR
 ++D=BOOL	N=Shaker_Bypass	G=VAR
+++D=UINT	N=My_Uint	G=VAR
+++D=ARRAY[0..4] OF UINT	N=My_OUT	G=VAR
+++D=TOF_Reset	N=TOF_Reset_Test	G=VAR
+++D=BOOL	N=TOF_Reset_Sig	G=VAR
+++D=BOOL	N=TOF_Signal	G=VAR
+++D=BOOL	N=TOF_RESET_OUT	G=VAR
+++D=BOOL	N=Testing_Hydraulic_Overload	G=VAR
+++D=TOF	N=Continuous_On_Demand_Timer	G=VAR
+++D=R_TRIG	N=Continuous_on_Demand_Toggle_R	G=VAR
+++D=BOOL	N=Continuous_On_Demand_Top_Stopped	G=VAR	Com=The top stop button has been press while the automatic single stroke was active. Or the Continuous pm demand mode was deactivated.
+++D=BOOL	N=Do_Restart_Continuous	G=VAR	Com=Latch variable to restart the automatic cycle when a shear cycle is over and we have finished feeding
+++D=BOOL	N=Go_To_Final_Pos	G=VAR
+++D=BOOL	N=Go_to_Start_Pos	G=VAR
+++D=BOOL	N=Home_S_Adj_Motor	G=VAR	Com=Variable to manually put on and off to home the axis
+++D=MC_Power	N=Power_On_S_Adj	G=VAR
+++D=LREAL	N=Range	R=1	IV=0.2	G=VAR	Com=Range to be within
+++D=MC_Reset	N=Reset_S_Adj	G=VAR
+++D=ResetECError	N=Reset_S_Adj_EC_Error	G=VAR
+++D=ResetMCError	N=Reset_S_Adj_MC_Error	G=VAR
+++D=BOOL	N=S_Adj_Automatic	G=VAR	Com=If the key selector is not set to Down or Up adj then we are in automatic adj mode.
+++D=_eMC_DIRECTION	N=S_Adj_Direction	G=VAR
+++D=MC_MoveJog	N=S_Adj_Jog	G=VAR
+++D=BOOL	N=S_Adj_Jog_Conditions	G=VAR
+++D=TorqueStop	N=S_Adj_MaxTorque	G=VAR
+++D=MC_Home	N=S_Adj_Motor_Home	G=VAR
+++D=MC_Power	N=S_ADJ_Motor_Power_ON	G=VAR
+++D=BOOL	N=S_ADJ_Motor_Power_On_Error	G=VAR
+++D=MC_HomeWithParameter	N=S_Adj_Motor_Set_Position	G=VAR
+++D=MC_MoveAbsolute	N=S_Adj_Move	G=VAR
+++D=MC_MoveAbsolute	N=S_Adj_Move_Final	G=VAR
+++D=MC_MoveAbsolute	N=S_Adj_Move_To_Start	G=VAR
+++D=MC_Power	N=S_ADJ_Mtr_Power	G=VAR
+++D=BOOL	N=S_Adj_Operation_Ready	G=VAR
+++D=BOOL	N=S_Adj_Power_On_Error	G=VAR
+++D=BOOL	N=S_Adj_Safety_OK	G=VAR
+++D=BOOL	N=S_Adj_Servo_Error	G=VAR	Com=The servo drive of the shut height adjusment motor is in fault state
+++D=MC_SetPosition	N=S_Adj_Set_Pos	G=VAR
+++D=BOOL	N=S_Adj_Start_Conditions	G=VAR
+++D=LREAL	N=S_Adj_Start_Pos	G=VAR
+++D=R_TRIG	N=Shear_Cycle_Completed_R	G=VAR
+++D=TOF	N=Temps_reset_MC_Axis_S_Adj	G=VAR
+++D=TOF	N=Temps_reset_MC_Error_S_Adj	G=VAR
+++D=BOOL	N=Test_Tunning	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -327,3 +370,22 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	G=VAR_EXTERNAL
 ++D=BOOL	N=Shaker_IN_Overload_Fault	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA0	G=VAR_EXTERNAL
+++D=BOOL	N=Etalex_OUT_Motor_Running	G=VAR_EXTERNAL
+++D=BOOL	N=Feed_After_Shear	G=VAR_EXTERNAL
+++D=BOOL	N=Feed_After_Shear_Complete	G=VAR_EXTERNAL	Com=The first feed done after the shear cycle has completed has been done
+++D=HMI_S_Adj	N=HMI_S_Adj_Data	G=VAR_EXTERNAL
+++D=HMI_S_Adj_Retained	N=HMI_S_Adj_Data_Retained	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Main_Feeder	Const=1	G=VAR_EXTERNAL
+++D=S_Adj_Data	N=My_S_Adj_Motor	G=VAR_EXTERNAL
+++D=S_Adj_Data_Retained	N=My_S_Adj_Motor_Retained	G=VAR_EXTERNAL
+++D=Shear_Data	N=My_Shear	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_S_Adj_STO1	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_S_Adj_STO2	G=VAR_EXTERNAL
+++D=_sHOMING_REF	N=S_Adj_Homing	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=S_Adj_Motor	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_Activation	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Cycle_Completed	G=VAR_EXTERNAL
+++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_EXTERNAL

@@ -32,6 +32,7 @@ _EN=Variables
 ++D=TP	N=Oil_OL_Reset_TP	G=VAR
 ++D=R_TRIG	N=Unlock_Btn_R	G=VAR
 ++D=BOOL	N=Shaker_Disable	G=VAR
+++D=BOOL	N=Test_Buzzer_OUT	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
@@ -88,3 +89,5 @@ _EN=Variables
 ++D=BOOL	N=Master_OUT_Passline_OL_Reset	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_OUT_Oil_OL_Reset	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_IN_Door_Btn_Blue	G=VAR_EXTERNAL
+++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Buzzer	G=VAR_EXTERNAL

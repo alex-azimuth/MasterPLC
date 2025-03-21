@@ -1,0 +1,22 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Divider := 10000;&#xD;
+Modulo := 1000;&#xD;
+&#xD;
+// Get the first digit&#xD;
+Temp_Real := To_Real(IN_INT)/Divider;&#xD;
+OUT_Numbers[4] := DINT_To_UINT(Trunc(Temp_Real));&#xD;
+&#xD;
+Temp_Mod := IN_INT MOD 10000;&#xD;
+Temp_Real := TO_REAL(Temp_Mod)/1000;&#xD;
+OUT_Numbers[3] := DINT_TO_UINT(Trunc(Temp_Real));&#xD;
+&#xD;
+Temp_Mod := IN_INT MOD 1000;&#xD;
+Temp_Real := TO_REAL(Temp_Mod)/100;&#xD;
+OUT_Numbers[2] := DINT_TO_UINT(Trunc(Temp_Real));&#xD;
+&#xD;
+Temp_Mod := IN_INT MOD 100;&#xD;
+Temp_Real := TO_REAL(Temp_Mod)/10;&#xD;
+OUT_Numbers[1] := DINT_TO_UINT(Trunc(Temp_Real));&#xD;
+&#xD;
+Temp_Mod := IN_INT MOD 10;&#xD;
+Temp_Real := TO_REAL(Temp_Mod)/1;&#xD;
+OUT_Numbers[0] := DINT_TO_UINT(Trunc(Temp_Real));</Text></StructuredTextModel>

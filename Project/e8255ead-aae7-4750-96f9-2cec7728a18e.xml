@@ -1,0 +1,2 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Out_List[0] := IN_List[0]+IN_List[1]*10;&#xD;
+Out_List[1] := IN_List[2]+IN_List[3]*10;</Text></StructuredTextModel>

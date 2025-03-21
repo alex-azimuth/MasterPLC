@@ -19,6 +19,22 @@ _EN=Variables
 ++D=F_TRIG	N=Shear_Activation_F	G=VAR
 ++D=R_TRIG	N=Shear_Activation_R	G=VAR
 ++D=TOF	N=Shear_Fan_Activation_TOF	G=VAR	Com=TOF for the fan to be active for a certain amount of time after the end of the shear movement.
+++D=TIME	N=Activation_Alarms_PT	G=VAR
+++D=TON	N=Activation_Down_Alarm_TON	G=VAR
+++D=TON	N=Activation_Up_Alarm_TON	G=VAR
+++D=BOOL	N=Shear_Auto_Activation_Down	G=VAR	Com=Automatic activation for the shear to go down.
+++D=BOOL	N=Shear_Auto_Activation_Up	G=VAR	Com=Automatic activation signal for the shear to go up
+++D=BOOL	N=Shear_Auto_Cmd_Down	G=VAR	Com=Command to go down in automatic mode.
+++D=BOOL	N=Shear_Auto_Cmd_Up	G=VAR	Com=Command to go up in automatic mode
+++D=TOF	N=Shear_Complete_TO	G=VAR
+++D=TOF	N=Shear_Complete_TOF	G=VAR
+++D=TON	N=Shear_Complete_TON	G=VAR
+++D=TOF	N=Shear_Hyd_Unit_Motor_TOF	G=VAR
+++D=BOOL	N=Shear_Manual_Cmd_Down	G=VAR	Com=Manual signal to operate the shear going down
+++D=BOOL	N=Shear_Manual_Cmd_Up	G=VAR	Com=Manual signal to operate the shear going up
+++D=TON	N=Shear_Prox_High_TON	G=VAR
+++D=TON	N=Shear_Prox_Low_TON	G=VAR
+++D=BOOL	N=Temp_BP_Alexis_Test	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Shear_OUT_Cmd_Down	G=VAR_EXTERNAL
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL
@@ -33,7 +49,7 @@ _EN=Variables
 ++D=BOOL	N=Shear_IN_Fan_Overload	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_IN_Hyd_Unit_Overload	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_IN_Activation	G=VAR_EXTERNAL
-++D=Shear_Data	N=HMI_Shear_Data	G=VAR_EXTERNAL
+++D=HMI_Shear	N=HMI_Shear_Data	G=VAR_EXTERNAL
 ++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL
 ++D=HMI_General_Data	N=HMI_Data	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_Idle	G=VAR_EXTERNAL
@@ -43,3 +59,17 @@ _EN=Variables
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Fan	G=VAR_EXTERNAL
 ++D=INT	N=No_Gags_Installed	G=VAR_EXTERNAL
+++D=BOOL	N=Feed_After_Shear	G=VAR_EXTERNAL
+++D=BOOL	N=Feed_After_Shear_Complete	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF BOOL	N=Feeder_OUT_Gags	G=VAR_EXTERNAL
+++D=BOOL	N=Global_Feed_Completed	G=VAR_EXTERNAL
+++D=BOOL	N=Global_Gags_16	G=VAR_EXTERNAL
+++D=Shear_Data_Retained	N=HMI_Shear_Data_Retained	G=VAR_EXTERNAL
+++D=Shear_Options	N=Master_Shear_Options	G=VAR_EXTERNAL
+++D=Shear_Data	N=My_Shear	G=VAR_EXTERNAL
+++D=BOOL	N=Palm_Signal	G=VAR_EXTERNAL
+++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_Activation	G=VAR_EXTERNAL	Com=Latch variable to imitate the manual shear button.
+++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Cycle_Completed	G=VAR_EXTERNAL

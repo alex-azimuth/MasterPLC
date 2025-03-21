@@ -1,0 +1,16 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>&#xD;
+//Initialization of the utilized variables&#xD;
+Range_Div_By_Two := Range/2;&#xD;
+Range_Upper_Limit := Ref+Range_Div_By_Two;&#xD;
+Range_Lower_Limit := Ref-Range_Div_By_Two;&#xD;
+&#xD;
+//Check if our position is within spicified range.&#xD;
+&#xD;
+IF(Act_Pos &gt;= Range_Upper_Limit) OR (Act_Pos &lt;= Range_Lower_Limit)THEN&#xD;
+	Within_Range := TRUE;&#xD;
+ELSE&#xD;
+	Within_Range := FALSE;&#xD;
+END_IF;&#xD;
+&#xD;
+&#xD;
+</Text></StructuredTextModel>

@@ -67,7 +67,7 @@ _EN=Variables
 ++D=REAL	N=Start_Time	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Time it takes to start the press - before generating an alarm.
 ++D=BOOL	N=Automatic_Start_Permission	G=VAR_GLOBAL	Com=Gives permission for the press to start in automatic mode.
 ++D=BOOL	N=Press_IN_Prior_Act	AT=ECAT://node#[8,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prior Act - necessary in order to start the press in auto mode.
-++D=HMI_Press_Retained	N=HMI_Data_Press_Retained	R=1	IV=(Press_Stop_Angle := 320, Prior_Act_Timer := 5, Micro_Time := 0.250, Press_Idle_Sampling_Rate := 0.020, Grease_Cycle_Complete := 40, Grease_Cycle_Complete_Delay := 20, Grease_Main_Timer := 144000, Grease_Main_Cycle := 120, Grease_Pulse := 10, Release_Pos1 := 0.0, Release_Pos2 := 180, Automatic_Single_Timer := 15, Feed_Pos1 := 300, Feed_Pos2 := 60, Press_Mtr_Speed := 5, Press_Mtr_Speed_Inch := 10, Automatic_Single_Stroke_Active := False, Automatic_Stroke_Feeder_Active := False)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Press_Retained	N=HMI_Data_Press_Retained	R=1	IV=(Press_Stop_Angle := 320, Prior_Act_Timer := 5, Micro_Time := 0.250, Press_Idle_Sampling_Rate := 0.020, Grease_Cycle_Complete := 40, Grease_Cycle_Complete_Delay := 20, Grease_Main_Timer := 144000, Grease_Main_Cycle := 120, Grease_Pulse := 10, Release_Pos1 := 0.0, Release_Pos2 := 180, Automatic_Single_Timer := 15, Feed_Pos1 := 300, Feed_Pos2 := 60, Press_Mtr_Speed := 5, Press_Mtr_Speed_Inch := 10, Automatic_Single_Stroke_Active := False, Automatic_Stroke_Feeder_Active := False, Continuous_On_Demand_Timer := 15, Continuous_On_Demand_Active := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Palm_Discrepency_Alarm	G=VAR_GLOBAL	Com=If a set of contacts does not concord with the other then give an alarm. Indicates a mechanical failure.
 ++D=BOOL	N=FR2_Discrepency_Error	G=VAR_GLOBAL	Com=FR2 relay, which activates second DSV, does not respond properly. Troubleshoot, change relay.
 ++D=BOOL	N=FR1_Discrepency_Error	G=VAR_GLOBAL	Com=FR1 relay, which activates first DSV, does not respond properly. Troubleshoot, change relay.
@@ -81,7 +81,7 @@ _EN=Variables
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_GLOBAL
 ++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_GLOBAL
 ++D=HMI_Feeder	N=HMI_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=HMI_Press	N=HMI_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /></ECs>
+++D=HMI_Press	N=HMI_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /><EC EK="Alarms.Continuoud_On_Demand_Warning" C="Warning to restart the automatic on demand sequence with the palms." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	R=1	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False, Correction_Time_Limit := 0.5, Correction_Feed_Length_Begin := 0.9, Correction_Speed_Mul := 1, Correction_Accel_Mul := 1, Correction_Decel_Mul := 1, Correction_Factor := 1, Feed_Counter := 20, Feed_Complete_Time := 1)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Main	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Entry	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
@@ -192,8 +192,8 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_IN_Coil_Cart_Rev	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 13	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart reverse.
 ++D=BOOL	N=Uncoiler_OUT_Mandrel_Expand	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Expand the mandrel.
 ++D=BOOL	N=Uncoiler_OUT_Mandrel_Shrink	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shrink the mandrel.
-++D=BOOL	N=Uncoiler_IN_Limit_Forward	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Coil cart forward limit
-++D=BOOL	N=Uncoiler_IN_Limit_Reverse	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Coil cart reverse limit
+++D=BOOL	N=Uncoiler_IN_Limit_Forward	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 13	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Coil cart forward limit
+++D=BOOL	N=Uncoiler_IN_Limit_Reverse	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 11	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Coil cart reverse limit
 ++D=BOOL	N=Uncoiler_IN_Coil_Keeper_RS_UP	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the coil keeper is up.
 ++D=BOOL	N=Uncoiler_IN_Pressing_Arm_RS_UP	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the pressing arm is up.
 ++D=BOOL	N=Uncoiler_IN_Supporting_Arm_RS_Down	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Reed switch indicates the supporting arm is down.
@@ -359,7 +359,7 @@ _EN=Variables
 ++D=BOOL	N=FR3_Discrepency_Error	G=VAR_GLOBAL	Com=FR3 relay, which activates first STO for the uncoiler, does not respond properly. Troubleshoot, change relay.
 ++D=BOOL	N=FR4_Discrepency_Error	G=VAR_GLOBAL	Com=FR4 relay, which activates second STO for the uncoiler, does not respond properly. Troubleshoot, change relay.
 ++D=REAL	N=STO_Error_Time	IV=0.25	G=VAR_GLOBAL	Com=Time of non equivalence to between a STO fault and the monitoring of forced guided relays
-++D=Shear_Data	N=HMI_Shear_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Fan_Overload" C="Fan motor overload has tripped" /><EC EK="Alarms.Hydraulic_Unit_Overload" C="Hydraulic unit motor overload has tripped." /><EC EK="Alarms.Oil_Temperature_Fault" C="The hydraulic unit oil temperature is too high." /><EC EK="Alarms.FR5_Discrepency" C="FR5 relay, which activates the going up movement of the shear, does not respond properly. Troubleshoot, change relay." /><EC EK="Alarms.FR6_Discrepency" C="FR6 relay, which activates the going down movement of the shear, does not respond properly. Troubleshoot, change relay." /></ECs>
+++D=HMI_Shear	N=HMI_Shear_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Fan_Overload" C="Fan motor overload has tripped" /><EC EK="Alarms.Hydraulic_Unit_Overload" C="Hydraulic unit motor overload has tripped." /><EC EK="Alarms.Oil_Temperature_Fault" C="The hydraulic unit oil temperature is too high." /><EC EK="Alarms.FR5_Discrepency" C="FR5 relay, which activates the going up movement of the shear, does not respond properly. Troubleshoot, change relay." /><EC EK="Alarms.FR6_Discrepency" C="FR6 relay, which activates the going down movement of the shear, does not respond properly. Troubleshoot, change relay." /><EC EK="Alarms.Auto_Activation_Up" C="Monitoring of blocage or sensor malfunction for shear to go up." /><EC EK="Alarms.Auto_Activation_Down" C="Monitoring of blocage or sensor malfunction for shear to go down." /><EC EK="Alarms.Not_Auto_Alarm" C="You are trying to execute an automatic movement of the shear, but the shear is set to manual mode" /><EC EK="Alarms.Need_Go_Up" C="The shear has faulted during a cycle. Press on the activation button to make it go at initial position." /><EC EK="Alarms.Stroke_While_Shear" C="An attemp to stroke the press has been made while the shearing cycle was excecuting." /></ECs>
 ++D=Shear_Comm	N=Shear_Signals	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarm_Active" C="An alarm related to the shearing unit is active" /></ECs>
 ++D=BOOL	N=Press_IN_Pedal1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pedal NO contact
 ++D=BOOL	N=Press_IN_Pedal2	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pedal NC contact
@@ -415,13 +415,13 @@ _EN=Variables
 ++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Active	AT=IOBus://unit#10/Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
 ++D=BOOL	N=Shaker_Active	AT=IOBus://unit#10/Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
-++D=BOOL	N=State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
+++D=BOOL	N=State_Unsafe_Comm	AT=IOBus://unit#10/State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
 ++D=BOOL	N=Doors_Unlock_Comm	AT=IOBus://unit#10/Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
 ++D=BOOL	N=Master_OUT_Passline_OL_Reset	AT=IOBus://unit#5/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
 ++D=BOOL	N=Enable_Switch_Selector	AT=IOBus://unit#10/Enable_Switch_Valves	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
 ++D=BOOL	N=Uncoiler_OUT_Brake_Sol	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Disengage the brake of the uncoiler mandrel.
 ++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	AT=IOBus://unit#10/Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
-++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Pause_Signal	AT=ECAT://node#[10,1]/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	AT=IOBus://unit#6/Port1 Input Data01	G=VAR_GLOBAL	Com=Byte array of EOM Sensor, second byte has 0/1 value for end of material or not.
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	AT=IOBus://unit#6/Port3 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	AT=IOBus://unit#6/Port3 Input Data02	G=VAR_GLOBAL
@@ -429,8 +429,8 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_48	AT=IOBus://unit#6/Port3 Input Data04	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	AT=IOBus://unit#6/Port2 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	AT=IOBus://unit#6/Port4 Input Data01	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	AT=IOBus://unit#7/Port1 Input Data02	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	AT=IOBus://unit#7/Port1 Input Data03	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Station_ES	AT=IOBus://unit#10/Station_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -454,7 +454,7 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_FR2_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ULINT	N=Feeder_Strip_Encoder_Raw	AT=ECAT://node#5/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
 ++D=BOOL	N=IOL_EOM_Signal	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA3	AT=IOBus://unit#7/Port1 Input Data04	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA3	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA0	AT=IOBus://unit#7/Port1 Input Data01	G=VAR_GLOBAL
 ++D=BOOL	N=IOL_PO1_CE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Communication Error	G=VAR_GLOBAL
 ++D=BOOL	N=IOL_PO1_SE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Short Error	G=VAR_GLOBAL
@@ -464,3 +464,29 @@ _EN=Variables
 ++D=BOOL	N=IOL_PO1_DEI	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 Device Information	G=VAR_GLOBAL
 ++D=BOOL	N=IOL_PO1_PE	AT=IOBus://unit#7/Port1_2 I/O Port Error Status/Port1 PDO Error	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA4	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Buzzer	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 15	G=VAR_GLOBAL	Com=Electronic buzzer
+++D=BOOL	N=Etalex_OUT_Motor_Running	AT=ECAT://node#[10,5]/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=Feed_After_Shear	G=VAR_GLOBAL	Com=Variable to monitor the first feed after the shear cycle
+++D=BOOL	N=Feed_After_Shear_Complete	G=VAR_GLOBAL	Com=The first feed done after the shear cycle has completed has been done
+++D=BOOL	N=Global_Gags_16	G=VAR_GLOBAL
+++D=HMI_S_Adj	N=HMI_S_Adj_Data	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_S_Adj_Retained	N=HMI_S_Adj_Data_Retained	R=1	IV=(Adj_Factor := 1, Max_Torque := 150, Unit := False, Speed := 20, Accel := 50, Decel := 50, Bypass_Min_Alarm := False, Bypass_Max_Alarm := False, Bypass_Different_Shut_Height := False, Shut_Height_Max := 300, Shut_Height_Min := 200)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=Shear_Data_Retained	N=HMI_Shear_Data_Retained	R=1	IV=(Activation_Alarms_Delay := 5)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=Shear_Options	N=Master_Shear_Options	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=S_Adj_Data	N=My_S_Adj_Motor	R=1	IV=(Direction := True, Pos := 240, Speed := 10, Accel := 50, Decel := 50)	G=VAR_GLOBAL
+++D=S_Adj_Data_Retained	N=My_S_Adj_Motor_Retained	R=1	G=VAR_GLOBAL
+++D=Shear_Data	N=My_Shear	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_S_Adj_STO1	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_S_Adj_STO2	G=VAR_GLOBAL
+++D=BOOL	N=Press_SIN_Die_block	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - Die Block
+++D=BOOL	N=Press_SIN_S_Adj_EDM	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - S_Adj EDM
+++D=_sHOMING_REF	N=S_Adj_Homing	G=VAR_GLOBAL	EC=<ECs><EC EK="Offset" C="Actual shut height value." /></ECs>
+++D=BOOL	N=SFT_Back_Door	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Press_LC	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Shear_Auto_Activation	G=VAR_GLOBAL	Com=Latch variable to imitate the manual shear button.
+++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_GLOBAL
+++D=BOOL	N=Shear_Cycle	G=VAR_GLOBAL	Com=When the shear cycle is active, this variable is set to true.
+++D=BOOL	N=Shear_Cycle_Completed	G=VAR_GLOBAL	Com=Active when the shear cycle has completed so the press can stroke again.
+++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_GLOBAL	Com=Top Stop signal to enable the shear cycle.
+++D=BOOL	N=Uncoiler_IN_Off_Signal	G=VAR_GLOBAL	Com=IN - Uncoiler needs to stop
+++D=_sAXIS_REF	N=S_Adj_Motor	AT=MC://_MC_AX[6]	RO=1	Const=1	G=VAR_GLOBAL

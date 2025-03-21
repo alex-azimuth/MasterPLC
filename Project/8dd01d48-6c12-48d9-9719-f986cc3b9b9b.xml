@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Temp_Real	G=VAR
+++D=UINT	N=Temp_Mod	G=VAR
+++D=INT	N=S	G=VAR
+++D=REAL	N=Divider	IV=10000	G=VAR
+++D=UINT	N=Modulo	IV=1000	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=UINT	N=IN_INT	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..4] OF UINT	N=OUT_Numbers	Ord=2	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=Strip_UINT	G=RETURN

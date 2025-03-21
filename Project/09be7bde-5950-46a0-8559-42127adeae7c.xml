@@ -257,6 +257,11 @@ _EN=Variables
 ++D=WORD	N=Home_Main_Feeder_ID	G=VAR
 ++D=WORD	N=Home_Master_ID	G=VAR
 ++D=WORD	N=Home_Master_Axis_Error_ID	G=VAR
+++D=ARRAY[0..4] OF UINT	N=Gag_List	G=VAR
+++D=ARRAY[0..1] OF UINT	N=Gag_No	G=VAR
+++D=BOOL	N=Test_Manual_Bypass	G=VAR
+++D=BOOL	N=Seq_Latch_Glob_Feed_Complete	G=VAR
+++D=BOOL	N=temp_BP	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
@@ -398,3 +403,9 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_FR2_Monitor	G=VAR_EXTERNAL
 ++D=REAL	N=STO_Error_Time	G=VAR_EXTERNAL
 ++D=BOOL	N=IOL_EOM_Signal	G=VAR_EXTERNAL
+++D=BOOL	N=Global_Gags_16	G=VAR_EXTERNAL
+++D=Shear_Options	N=Master_Shear_Options	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_Activation	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
+++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_EXTERNAL
