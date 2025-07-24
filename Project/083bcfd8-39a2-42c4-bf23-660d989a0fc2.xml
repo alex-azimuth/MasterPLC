@@ -95,9 +95,9 @@
 	    Gag_Config.Gag15.Enabled := FALSE;&#xD;
 	END_IF;&#xD;
 &#xD;
-	IF NOT Gag_Config.Gag15.Enabled THEN&#xD;
-	    Gag_Config.Gag16.Enabled := FALSE;&#xD;
-	END_IF;&#xD;
+	//IF NOT Gag_Config.Gag15.Enabled THEN&#xD;
+	    //Gag_Config.Gag16.Enabled := FALSE;&#xD;
+	//END_IF;&#xD;
 	&#xD;
 	IF   Gag_Config.Gag1.Enabled THEN&#xD;
 	    No_Of_Gags := 1;&#xD;
@@ -144,7 +144,7 @@
 	IF   Gag_Config.Gag15.Enabled THEN&#xD;
 	    No_Of_Gags := 15;&#xD;
 	END_IF;&#xD;
-	IF   Gag_Config.Gag16.Enabled THEN&#xD;
-	    No_Of_Gags := 16;&#xD;
-	END_IF;&#xD;
+	//IF   Gag_Config.Gag16.Enabled THEN&#xD;
+	   // No_Of_Gags := 16;&#xD;
+	//END_IF;&#xD;
 END_IF;</Text></StructuredTextModel>

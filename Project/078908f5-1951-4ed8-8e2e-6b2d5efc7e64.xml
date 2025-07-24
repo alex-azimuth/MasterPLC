@@ -174,7 +174,6 @@ _EN=Variables
 ++D=REAL	N=Temp_Press2_REAL	G=VAR
 ++D=REAL	N=Temp_Ambient_REAL	G=VAR
 ++D=BOOL	N=Press_Etalex_Temp_Fault	G=VAR
-++D=BOOL	N=Mode_OFF	G=VAR
 ++D=BOOL	N=Pr	G=VAR
 ++D=BOOL	N=Press_Encoder_Save_Data_Test	G=VAR
 ++D=BOOL	N=Shaker_Bypass	G=VAR
@@ -221,6 +220,44 @@ _EN=Variables
 ++D=TOF	N=Temps_reset_MC_Axis_S_Adj	G=VAR
 ++D=TOF	N=Temps_reset_MC_Error_S_Adj	G=VAR
 ++D=BOOL	N=Test_Tunning	G=VAR
+++D=R_TRIG	N=Auto_Top_Stop_Toggle_R	G=VAR
+++D=Zone_Switch	N=Calibrate_Cam	G=VAR
+++D=R_TRIG	N=Calibrate_Cam_R	G=VAR
+++D=R_TRIG	N=Calibrate_High_Toggle_R	G=VAR
+++D=R_TRIG	N=Calibrate_Low_Toggle_R	G=VAR
+++D=TON	N=Feed_Release_Overlap_Delay	G=VAR
+++D=BOOL	N=High_T_Error	G=VAR
+++D=BOOL	N=LOW_T_Error	G=VAR
+++D=CTU_LINT	N=Main_Counter_LINT	G=VAR
+++D=CTU_Mul	N=Main_Counter_Mul	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Integration	G=VAR
+++D=DWORD	N=Press_Encoder_Integration_AbortCode	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Integration2	G=VAR
+++D=DWORD	N=Press_Encoder_Total_Range_AbortCode	G=VAR
+++D=TON	N=Press_Idle_TON	G=VAR
+++D=DWORD	N=Show_Abort_Code2	G=VAR
+++D=LREAL	N=SPM_Speed	G=VAR
+++D=T_Stop_Calc	N=T_Stop_Calc_High	G=VAR
+++D=T_Stop_Calc	N=T_Stop_Calc_LOW	G=VAR
+++D=BOOL	N=Test_Integration	G=VAR
+++D=BOOL	N=Test_Selector_Speed	G=VAR
+++D=_sSDO_ACCESS	N=Test_Speed_Parameters_Adress	G=VAR
+++D=WORD	N=Test_Speed_Selection	G=VAR
+++D=SINT	N=Test_Speed_Selection2	G=VAR
+++D=UINT	N=Test_Speed_Selection3	G=VAR
+++D=USINT	N=Test_Speed10	G=VAR
+++D=UINT	N=Test_Speed11	G=VAR
+++D=WORD	N=Test_Speed4	G=VAR
+++D=USINT	N=Test_Speed5	G=VAR
+++D=BYTE	N=Test_Speed6	G=VAR
+++D=LREAL	N=Time_Per_Rotation	G=VAR
+++D=LREAL	N=Time_Remaining	G=VAR
+++D=LREAL	N=Top_Stop_Angle_Local	G=VAR
+++D=BOOL	N=UIO_Abort_Feed	G=VAR
+++D=BOOL	N=UIO_Start_Feed	G=VAR	Com=Start Feed via user IO.
+++D=BOOL	N=UIO_Start_Feed_Condition	G=VAR	Com=Start Feeder via UIO
+++D=BOOL	N=Wait_For_Stop_Flag	G=VAR
+++D=BOOL	N=Mode_Cut_To_Lenght	G=VAR	Com=Mode Cut to Lenght is active
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -321,7 +358,7 @@ _EN=Variables
 ++D=DINT	N=Press_ABB_Decel_Time	G=VAR_EXTERNAL
 ++D=Abb_Drv	N=ABB_Control	G=VAR_EXTERNAL
 ++D=REAL	N=Press_Pos_REAL	G=VAR_EXTERNAL
-++D=Feed_Sequence	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
 ++D=ULINT	N=Press_Position_Pulse	G=VAR_EXTERNAL
 ++D=UINT	N=HMI_Clicked_User_Condition	G=VAR_EXTERNAL
 ++D=DINT	N=Press_IN_Mtr_Current	G=VAR_EXTERNAL
@@ -371,7 +408,6 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	G=VAR_EXTERNAL
 ++D=BOOL	N=Shaker_IN_Overload_Fault	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA0	G=VAR_EXTERNAL
-++D=BOOL	N=Etalex_OUT_Motor_Running	G=VAR_EXTERNAL
 ++D=BOOL	N=Feed_After_Shear	G=VAR_EXTERNAL
 ++D=BOOL	N=Feed_After_Shear_Complete	G=VAR_EXTERNAL	Com=The first feed done after the shear cycle has completed has been done
 ++D=HMI_S_Adj	N=HMI_S_Adj_Data	G=VAR_EXTERNAL
@@ -389,3 +425,16 @@ _EN=Variables
 ++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Cycle_Completed	G=VAR_EXTERNAL
 ++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_EXTERNAL
+++D=C_Press_Calibration	N=C_Press_Calibration_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
+++D=HMI_Sequence_Absolute	N=HMI_ABS_Seq_Data	G=VAR_EXTERNAL
+++D=HMI_CP_Calibration	N=HMI_C_Press_Calibration_Data	G=VAR_EXTERNAL
+++D=HMI_C_Press_Misc	N=HMI_C_Press_Misc_Data	G=VAR_EXTERNAL
+++D=Die_Configuration	N=HMI_Die_Config	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_OFF	G=VAR_EXTERNAL
+++D=DINT	N=Press_ABB_OUTFreq	G=VAR_EXTERNAL
+++D=BOOL	N=Press_Coast_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_First_Cycle	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_IN_Prox_Pos_Low	G=VAR_EXTERNAL
+++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL
+++D=BOOL	N=Top_Stop_Shear	G=VAR_EXTERNAL

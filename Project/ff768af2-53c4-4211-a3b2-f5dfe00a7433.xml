@@ -22,9 +22,9 @@
 	Volume := Unit_Width*Diff_Cyl;&#xD;
 	&#xD;
 	// Calulate length from coil thickness in meters&#xD;
-	Unit_Length := (Diff_Cyl/Unit_Thickness)/1000;&#xD;
+	Unit_Length := (SafeDiv_LREAL(Diff_Cyl, Unit_Thickness))/1000;&#xD;
 	// Calulate weight from density in kilograms&#xD;
-	Unit_Weight := (Volume*Unit_Density)/1000000; &#xD;
+	Unit_Weight := (SafeDiv_LREAL((Volume*Unit_Density), 1000000)); &#xD;
 	&#xD;
 	// Convert units if necessary&#xD;
 		IF (Metric) THEN&#xD;

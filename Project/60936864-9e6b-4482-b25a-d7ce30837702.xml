@@ -1,0 +1,13 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Enable_R(Clk:=Enable);&#xD;
+Amount_Of_Sequence:=SizeOfAry(Sequence);&#xD;
+IF (Enable_R.Q)THEN&#xD;
+	&#xD;
+	Found_Last_Flag :=FALSE;&#xD;
+	&#xD;
+	FOR I := 0 TO Amount_Of_Sequence BY 1 DO&#xD;
+		IF (Sequence[I].Punch = 0 AND Sequence[I].Feed = 0 AND NOT Found_Last_Flag) THEN&#xD;
+			last := I-1;&#xD;
+			Found_Last_Flag := TRUE;&#xD;
+		END_IF;&#xD;
+	END_FOR;&#xD;
+END_IF;</Text></StructuredTextModel>

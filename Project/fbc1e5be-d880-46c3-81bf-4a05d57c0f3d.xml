@@ -1,0 +1,4 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Time_Per_Rotation := SafeDiv_LREAL(360, (SPM/60*360));&#xD;
+Time_Remaining := (Time_Per_Rotation-(Brake_T)/1000);&#xD;
+Time_Ratio := SafeDiv_LREAL(Time_Remaining, Time_Per_Rotation);&#xD;
+T_Angle :=Time_Ratio*360;</Text></StructuredTextModel>

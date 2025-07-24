@@ -45,6 +45,19 @@ _EN=Variables
 ++D=BOOL	N=Test_Block_Out_Hydraulic	G=VAR
 ++D=REAL	N=Value	G=VAR
 ++D=REAL	N=Speed_Value	G=VAR
+++D=TP	N=Anti_Restart_Timer	G=VAR
+++D=BOOL	N=BP_AD	G=VAR
+++D=R_TRIG	N=Clk_R	G=VAR
+++D=BOOL	N=Filter_Trigger	G=VAR
+++D=R_TRIG	N=Filter_Trigger_R	G=VAR
+++D=REAL	N=Highest_Val	G=VAR
+++D=UINT	N=Iterator_SPD	G=VAR
+++D=INT	N=J	G=VAR
+++D=REAL	N=Lowest_Val	G=VAR
+++D=TON	N=Prevent_Drive_Restart_Issues_Timer	G=VAR
+++D=BOOL	N=Switch_Val	G=VAR
+++D=ARRAY[0..99] OF REAL	N=Val_Array	G=VAR
+++D=REAL	N=Val_Average	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -128,3 +141,6 @@ _EN=Variables
 ++D=Abb_Drv	N=ABB_Control_Uncoiler	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_OUT_Brake_Sol	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_Off_Signal	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_ABB_AI1_Value	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_ABB_OUTFreq	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_Coast_Stop	G=VAR_EXTERNAL

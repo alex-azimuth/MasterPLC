@@ -9,5 +9,5 @@ Entry_Feeder_Dia := Metric_To_Imperial((Feeder_Scale_Ratio*Feed_Verification_Dat
 Feeder_Encoder_Ratio := Feed_Verification_Data.Encoder_Diameter/Entry_Feeder_Dia;&#xD;
 &#xD;
 // Determine the ratio in pulses between the encoder and the feeder&#xD;
-Feed_Verification_Data.Pulse_Ratio := Feed_Verification_Data.Pulse_Per_Rotation/(Feed_Verification_Data.After_Gearbox_Ratio*(Feeder_Encoder_Ratio));&#xD;
+Feed_Verification_Data.Pulse_Ratio := SafeDiv_LREAL(Feed_Verification_Data.Pulse_Per_Rotation, (Feed_Verification_Data.After_Gearbox_Ratio*(Feeder_Encoder_Ratio)));&#xD;
 </Text></StructuredTextModel>

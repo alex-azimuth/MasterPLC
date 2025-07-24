@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=CU_R	G=VAR
+++D=R_TRIG	N=Reset_R	G=VAR
+++D=LINT	N=Add_Val	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=CU	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Reset	Ord=1	G=VAR_INPUT
+++D=LINT	N=PV	Ord=2	G=VAR_INPUT
+++D=LINT	N=MP	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Q	Ord=4	G=VAR_OUTPUT
+++D=LINT	N=CV	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

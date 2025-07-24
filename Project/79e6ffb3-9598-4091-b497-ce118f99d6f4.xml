@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=Enable_R	G=VAR
+++D=INT	N=Amount_Of_Sequence	G=VAR
+++D=INT	N=I	G=VAR
+++D=BOOL	N=Found_Last_Flag	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..30] OF Sequence_Absolute	N=Sequence	Ord=2	G=VAR_IN_OUT
+++D=INT	N=Last	Ord=3	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

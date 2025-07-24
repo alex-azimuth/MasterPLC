@@ -1,0 +1,42 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..30] OF Sequence_Absolute	N=Offset_Pos	G=VAR
+++D=ARRAY[0..30] OF Sequence_Absolute	N=In_Range_Pos	G=VAR
+++D=ARRAY[0..30] OF Sequence_Absolute	N=Incremental_Pos	G=VAR
+++D=LREAL	N=Modulo_Shear_Dist_Gag_OG	G=VAR
+++D=INT	N=I	G=VAR
+++D=INT	N=J	G=VAR
+++D=INT	N=K	G=VAR
+++D=Sort_Feed	N=Sequence_Absolute_Pos_Sorting_Feed	G=VAR
+++D=BOOL	N=Test_Sort_Trigger	G=VAR
+++D=RecSort	N=TestSort	G=VAR
+++D=BOOL	N=Test_Sort_Trigger2	G=VAR
+++D=BOOL	N=Show_Busy	G=VAR
+++D=BOOL	N=Show_Error	G=VAR
+++D=BOOL	N=Test324	G=VAR
+++D=INT	N=Size	IV=30	G=VAR
+++D=INT	N=L	G=VAR
+++D=INT	N=Itterator	G=VAR
+++D=R_TRIG	N=Reset_Iterator_R	G=VAR
+++D=INT	N=M	G=VAR
+++D=TON	N=Incremental_Trigger_TON	G=VAR
+++D=INT	N=Last	G=VAR
+++D=Find_Last	N=Find_Last_Instance	G=VAR
+++D=INT	N=Last_Gag	G=VAR
+++D=INT	N=N	G=VAR
+++D=ARRAY[0..30] OF Sequence_Absolute	N=Incremental_Punch_Shift	G=VAR
+++D=INT	N=TempGag	G=VAR
+++D=LREAL	N=TempFeed	G=VAR
+++D=INT	N=O	G=VAR
+++D=ARRAY[0..30] OF Sequence_Absolute	N=Seq_Absolute_Input	G=VAR
+++D=INT	N=H	G=VAR
+++D=INT	N=P	G=VAR
+++D=INT	N=Q	G=VAR
+++D=Find_Last	N=Find_Last_Instance_1	G=VAR
+++D=INT	N=Last_1	G=VAR
+++D=INT	N=R	G=VAR
+++D=ARRAY[0..30] OF Sequence_Absolute	N=Sorted_Pos	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=HMI_Sequence_Absolute	N=HMI_ABS_Seq_Data	G=VAR_EXTERNAL
+++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL

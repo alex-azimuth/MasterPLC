@@ -1,6 +1,6 @@
 <StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(* Determine the range between the max and minimum values *)&#xD;
 Range := (Max_Value - Min_Value);&#xD;
-Multiplier := 100/Range;&#xD;
+Multiplier := SafeDiv_LREAL(100, Range);&#xD;
 Percentage_Of_Curr := Multiplier*(Current_Value-Min_Value);&#xD;
 Percentage_Of_Set := Multiplier*(Setpoint_Value-Min_Value);&#xD;
 &#xD;

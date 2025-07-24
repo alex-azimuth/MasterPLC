@@ -43,6 +43,9 @@ _EN=Variables
 ++D=REAL	N=Out_Total_Torque	Ord=21	G=VAR_OUTPUT
 ++D=REAL	N=Out_DC_Voltage	Ord=22	G=VAR_OUTPUT
 ++D=STRING[256]	N=Out_FaultMsg	Ord=23	G=VAR_OUTPUT
+++D=BOOL	N=Coast_Stop	Ord=24	G=VAR_INPUT
+++D=REAL	N=Out_Freq	Ord=25	G=VAR_OUTPUT
+++D=DINT	N=Freq	Ord=26	G=VAR_INPUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Abb_Drv	N=ABB_Control	G=VAR_EXTERNAL
 ++D=Abb_Drv	N=ABB_Control_Uncoiler	G=VAR_EXTERNAL

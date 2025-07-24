@@ -1,0 +1,5 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF (Numerator &lt;&gt; 0) AND (Denominator &lt;&gt; 0) THEN&#xD;
+	SafeDiv_REAL := Numerator/Denominator;&#xD;
+ELSE&#xD;
+	SafeDiv_REAL := 0;&#xD;
+END_IF;</Text></StructuredTextModel>

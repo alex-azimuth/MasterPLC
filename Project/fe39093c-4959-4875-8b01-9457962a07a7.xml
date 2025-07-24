@@ -19,7 +19,7 @@ _EN=Variables
 ++D=ModBus_Table	N=Modbus_Data_Table	G=VAR_EXTERNAL
 ++D=BOOL	N=Stroke_Press	G=VAR_EXTERNAL
 ++D=BOOL	N=Sequence_Finished	G=VAR_EXTERNAL
-++D=Feed_Sequence	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
 ++D=Press_Data	N=Press	G=VAR_EXTERNAL
 ++D=REAL	N=Press_Pos_REAL	G=VAR_EXTERNAL
 ++D=BOOL	N=Translate_Table	G=VAR_EXTERNAL

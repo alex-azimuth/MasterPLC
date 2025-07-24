@@ -8,7 +8,8 @@ IF (Current_Conditions.Action_Type &lt;&gt; Stored_Conditions.Action_Type) OR&#x
 	(Current_Conditions.Kind &lt;&gt; Stored_Conditions.Kind) OR&#xD;
 	(Current_Conditions.Lower_Pos &lt;&gt; Stored_Conditions.Lower_Pos) OR&#xD;
 	(Current_Conditions.Pulse &lt;&gt; Stored_Conditions.Pulse)  OR&#xD;
-	(Current_Conditions.On_Stroke &lt;&gt; Stored_Conditions.On_Stroke) &#xD;
+	(Current_Conditions.On_Stroke &lt;&gt; Stored_Conditions.On_Stroke)  OR&#xD;
+	(Current_Conditions.Timer_Type &lt;&gt; Stored_Conditions.Timer_Type)&#xD;
 	THEN&#xD;
 		Stored_Conditions := Current_Conditions;	&#xD;
 		Out := TRUE;&#xD;

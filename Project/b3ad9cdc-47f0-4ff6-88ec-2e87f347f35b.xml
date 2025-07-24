@@ -1,1 +1,1 @@
-<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Adj_Val_Calc := Demanded_Value/Real_Value;</Text></StructuredTextModel>
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Adj_Val_Calc := SafeDiv_LREAL(Demanded_Value, Real_Value);</Text></StructuredTextModel>

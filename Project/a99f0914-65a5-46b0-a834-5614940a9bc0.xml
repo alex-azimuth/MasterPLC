@@ -9,6 +9,10 @@ _EN=Variables
 ++D=Zone_Switch	N=My_Zone_Switch	G=VAR
 ++D=TOF	N=Press_Stroke_Off_Delay	G=VAR
 ++D=INT	N=I	G=VAR
+++D=ARRAY[0..15] OF BOOL	N=Out_FALSE	Const=1	G=VAR
+++D=TIME	N=Press_Stroke_Delay	G=VAR	Com=Delays of the timer
+++D=TON	N=Press_Stroke_On_Delay	G=VAR
+++D=TOF_Reset	N=Press_Stroke_Safe_Off_Delay	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
 ++D=Recipe_Condition	N=Condition	Ord=1	G=VAR_IN_OUT
@@ -19,3 +23,5 @@ _EN=Variables
 ++D=BOOL	N=Press_Stroke	Ord=6	G=VAR_INPUT
 ++D=Do_Action	N=Actions	Ord=7	G=VAR_IN_OUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=HMI_Press	N=HMI_Press_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL

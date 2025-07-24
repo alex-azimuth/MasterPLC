@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=I	G=VAR
+++D=R_TRIG	N=Enable_R	G=VAR
+++D=INT	N=Size	G=VAR
+++D=ARRAY[0..1] OF UINT	N=Gag_No	G=VAR
+++D=ARRAY[0..4] OF UINT	N=Gag_List	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..50] OF INT	N=Gag_Array	Ord=2	G=VAR_INPUT
+++D=INT	N=Gag_To_Count	Ord=3	G=VAR_INPUT
+++D=INT	N=Sequence_No	Ord=4	G=VAR_INPUT
+++D=INT	N=Gag_Amount_In_Seq	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

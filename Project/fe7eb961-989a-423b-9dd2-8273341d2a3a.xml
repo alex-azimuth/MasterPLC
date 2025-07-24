@@ -2,7 +2,7 @@
 (* When enabled then give an error if the position varies too far off *)&#xD;
 IF (Enable) THEN&#xD;
 	(* Determine the ratio between the pulses and the actual distance *)&#xD;
-	Ratio := (Diameter*3.1416)/Pulse_Per_Rev;&#xD;
+	Ratio := SafeDiv_LREAL((Diameter*3.1416), Pulse_Per_Rev);&#xD;
 	&#xD;
 	(* Record the initial position when enabled *)&#xD;
 	IF (Bool_Trigger) THEN&#xD;

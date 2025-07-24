@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Recipe_Transfered_Pulse	G=VAR
+++D=R_TRIG	N=Recipe_Transfered_RT	G=VAR
+++D=INT	N=I	G=VAR
+++D=BOOL	N=Test_Running	G=VAR
+++D=INT	N=Selected_Condition	G=VAR
+++D=INT	N=Condition_Iterator	G=VAR
+++D=TP	N=Recipe_Transfered_TP	G=VAR
+++D=F_TRIG	N=Recipe_Transfered_F	G=VAR
+++D=TP	N=Recipe_Transfered_TOF	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=Feed_Sequence	N=Act_Sequences	G=VAR_EXTERNAL
+++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Sequence_Transfered_Latch	G=VAR_EXTERNAL
+++D=BOOL	N=Feed_Sequence_Changed	G=VAR_EXTERNAL
+++D=Feeder_Options	N=Master_Feeder_Options	G=VAR_EXTERNAL
+++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Entry	G=VAR_EXTERNAL
+++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Condition_Changed	G=VAR_EXTERNAL
+++D=ARRAY[0..31] OF BOOL	N=HMI_Display_Details	G=VAR_EXTERNAL
+++D=UINT	N=HMI_Clicked_User_Condition	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_User_Condition_Save	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Condition_Cam	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Transfer_Flag	G=VAR_EXTERNAL
+++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_EXTERNAL

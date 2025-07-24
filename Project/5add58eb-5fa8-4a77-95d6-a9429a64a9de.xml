@@ -1,0 +1,10 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(* 6 Ton : Half Stroke = 0.625, Pitman Length = 6.875 &#xD;
+   22 Ton : Half Stroke = 1.5,	Pitman Length = 15&#xD;
+  *)&#xD;
+A := Half_Stroke+Pitman_Length;&#xD;
+B := (DEG-180)*2*PI/360;&#xD;
+C := EXPT(Half_Stroke, LREAL#2);&#xD;
+E := SQRT(EXPT(Pitman_Length, 2)-EXPT(Half_Stroke, 2)*(EXPT(SIN(B), 2)));&#xD;
+F := (E+Half_Stroke*COS(B));&#xD;
+&#xD;
+Convert_Deg_To_Height := A-(SQRT(EXPT(Pitman_Length, 2)-EXPT(Half_Stroke, 2)*(EXPT(SIN(B), 2)))+Half_Stroke*COS(B));</Text></StructuredTextModel>

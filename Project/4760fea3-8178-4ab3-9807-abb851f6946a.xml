@@ -3,7 +3,7 @@ F_Signal(Clk:=Signal);&#xD;
 Main_Time(In:=Start_Main_Time, PT:=Off_Time);&#xD;
 &#xD;
 // Output is always true if we have the signal &#xD;
-IF (R_Signal.Q) THEN&#xD;
+IF (R_Signal.Q AND NOT Reset) THEN&#xD;
 	Out := TRUE;&#xD;
 	Start_Main_Time := FALSE;&#xD;
 ELSIF (F_Signal.Q) THEN&#xD;

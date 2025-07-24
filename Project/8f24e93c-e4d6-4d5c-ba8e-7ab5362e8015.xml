@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=Time_Per_Rotation	G=VAR
+++D=LREAL	N=Time_Remaining	G=VAR
+++D=LREAL	N=Time_Ratio	G=VAR
+++D=LREAL	N=Brake_T_MS	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=LREAL	N=SPM	Ord=2	G=VAR_INPUT
+++D=LREAL	N=Brake_T	Ord=3	G=VAR_INPUT
+++D=LREAL	N=T_Angle	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

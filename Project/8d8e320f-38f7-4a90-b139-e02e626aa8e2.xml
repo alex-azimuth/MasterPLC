@@ -1,0 +1,20 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Enable_R(Clk:=Enable);&#xD;
+&#xD;
+Size := Sequence_No;&#xD;
+&#xD;
+&#xD;
+&#xD;
+IF(Enable_R.Q) THEN&#xD;
+//Initialization of the monitoring variable&#xD;
+Gag_Amount_In_Seq := 0;&#xD;
+// Loop Through the sequence to find the amount of Gag_To_Count&#xD;
+	IF(Sequence_No&gt;0) THEN&#xD;
+		FOR I := 0 TO Size BY 1 DO&#xD;
+			Strip_UINT(Gag_Array[I], Gag_List);&#xD;
+			Gag_No_Extract(Gag_List, Gag_No);&#xD;
+			IF (Gag_No[0] = Gag_To_Count OR Gag_No[1] = Gag_To_Count) THEN&#xD;
+				Gag_Amount_In_Seq :=  Gag_Amount_In_Seq +1;&#xD;
+			END_IF;&#xD;
+		END_FOR;&#xD;
+	END_IF;&#xD;
+END_IF;</Text></StructuredTextModel>

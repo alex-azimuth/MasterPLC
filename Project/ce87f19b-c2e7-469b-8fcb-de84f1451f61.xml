@@ -1,0 +1,22 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>CU_R(Clk := CU);&#xD;
+Reset_R(Clk := Reset);&#xD;
+&#xD;
+IF (CV &lt;= PV) THEN&#xD;
+	// Check if multiplier value is larger than one&#xD;
+	IF (MP &lt; 1) THEN&#xD;
+		Add_Val := 1;&#xD;
+	ELSE&#xD;
+		Add_Val := MP;&#xD;
+	END_IF;&#xD;
+&#xD;
+	// Add multiplier value, or one, to the count&#xD;
+	IF (CU_R.Q) THEN&#xD;
+		CV := CV + Add_Val;&#xD;
+	END_IF;&#xD;
+ELSE&#xD;
+	Q := TRUE;&#xD;
+END_IF;&#xD;
+&#xD;
+IF (Reset_R.Q) THEN&#xD;
+	CV := 0;&#xD;
+END_IF;</Text></StructuredTextModel>

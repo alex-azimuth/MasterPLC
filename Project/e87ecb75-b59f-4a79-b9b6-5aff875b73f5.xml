@@ -1,0 +1,11 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>// Find slope for each ms&#xD;
+Rate := Slope/1000;&#xD;
+&#xD;
+Total_Dist := 0; Time_Index :=0;&#xD;
+&#xD;
+WHILE  Time_Index &lt; Phase_Time*1000 DO&#xD;
+	Total_Dist := Total_Dist+Rate*Time_Index;&#xD;
+	Time_Index := Time_Index +1;&#xD;
+END_WHILE;&#xD;
+&#xD;
+Distance := Total_Dist/1000;</Text></StructuredTextModel>

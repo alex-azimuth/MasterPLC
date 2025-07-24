@@ -17,14 +17,12 @@ _EN=Variables
 ++D=MC_Stop	N=Feeder_Sig_Lost_Stop	G=VAR
 ++D=WORD	N=Show_Error	G=VAR
 ++D=BOOL	N=Show_Error_Bool	G=VAR
-++D=INT	N=Step_No	G=VAR
 ++D=INT	N=J	G=VAR
 ++D=TP	N=Gag_Confirmation_Delay	G=VAR
 ++D=INT	N=II	G=VAR
 ++D=BOOL	N=Gag_Fault	G=VAR
 ++D=INT	N=Sequence_No	G=VAR
 ++D=BOOL	N=Wait_For_Parameters	G=VAR	Com=Feeding Signal, derived from waiting for the correct parameters.
-++D=INT	N=Next_Step	G=VAR
 ++D=BOOL	N=Temp_Gag_Bypass	G=VAR
 ++D=MC_Power	N=Power_ON_Feeder_Exit	G=VAR
 ++D=BOOL	N=Feeder2_Power_On_Error	G=VAR
@@ -105,11 +103,11 @@ _EN=Variables
 ++D=BOOL	N=Sequence_Counting	G=VAR
 ++D=Feeder_Data	N=My_Exit_Feeder	G=VAR	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
 ++D=ARRAY[0..99] OF Bool	N=Gags	G=VAR
-++D=Encoder_Data	N=Entry_Feeder_Enc_Data	R=1	IV=(Node := 6, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
-++D=Encoder_Data	N=Exit_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
-++D=Encoder_Data	N=Main_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc1	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc2	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011)	G=VAR
+++D=Encoder_Data	N=Entry_Feeder_Enc_Data	R=1	IV=(Node := 6, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011, Integration_Data := 0, Integration_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False))	G=VAR
+++D=Encoder_Data	N=Exit_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011, Integration_Data := 0, Integration_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False))	G=VAR
+++D=Encoder_Data	N=Main_Feeder_Enc_Data	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011, Integration_Data := 0, Integration_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False))	G=VAR
+++D=Encoder_Data	N=Straightner_Enc1	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011, Integration_Data := 0, Integration_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False))	G=VAR
+++D=Encoder_Data	N=Straightner_Enc2	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := 2147483648, Units_Data := UDINT#16#360, Resolution_Data := UDINT#16#360, Save_Data := 1702257011, Integration_Data := 0, Integration_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False))	G=VAR
 ++D=TOF	N=Start_Oiling_Cycle	G=VAR
 ++D=TON	N=Start_Oiling_Motor	G=VAR
 ++D=INT	N=Z	G=VAR
@@ -262,6 +260,23 @@ _EN=Variables
 ++D=BOOL	N=Test_Manual_Bypass	G=VAR
 ++D=BOOL	N=Seq_Latch_Glob_Feed_Complete	G=VAR
 ++D=BOOL	N=temp_BP	G=VAR
+++D=ARRAY[0..4] OF UINT	N=Act_Gag_List_Seq	G=VAR
+++D=ARRAY[0..1] OF UINT	N=Act_Gag_No_seq	G=VAR
+++D=INT	N=Amout_Of_Shear	G=VAR
+++D=Adj_Unit_Comp	N=Calc_Distance_Unit_Comp	G=VAR
+++D=MC_Stop	N=Entry_Feeder_Abort	G=VAR
+++D=MC_Stop	N=Exit_Feeder_Abort	G=VAR
+++D=TON	N=Feed_Abort_Reset_T	G=VAR
+++D=R_TRIG	N=Gag_16_R	G=VAR
+++D=ARRAY[0..4] OF UINT	N=Gag_List_Seq0	G=VAR
+++D=ARRAY[0..1] OF UINT	N=Gag_No_seq0	G=VAR
+++D=MC_Stop	N=Main_Feeder_Abort	G=VAR
+++D=MC_Stop	N=Main_Feeder_Stop	G=VAR
+++D=No_of_Gag_In_Sequence	N=No_Of_Shear_In_Seq	G=VAR
+++D=ARRAY[0..4] OF UINT	N=Prev_Gag_List_Seq	G=VAR
+++D=ARRAY[0..1] OF UINT	N=Prev_Gag_No_seq	G=VAR
+++D=BOOL	N=Shear_Cycle_Start_Conditions_1	G=VAR
+++D=BOOL	N=Shear_Cycle_Start_Conditions_2	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
@@ -293,7 +308,7 @@ _EN=Variables
 ++D=ULINT	N=Feeder_IN_Exit_Encoder_Pos	G=VAR_EXTERNAL
 ++D=ULINT	N=Feeder_IN_Entry_Encoder_Pos	G=VAR_EXTERNAL
 ++D=BOOL	N=Sequence_Finished	G=VAR_EXTERNAL
-++D=Feed_Sequence	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
 ++D=UDINT	N=Gag_Fault_No	G=VAR_EXTERNAL
 ++D=BOOL	N=Update_Feeder_Sequences	G=VAR_EXTERNAL
 ++D=BOOL	N=Global_Exit_Feed_Completed	G=VAR_EXTERNAL	Com=Flag that the exit feed has been completed successfully.
@@ -409,3 +424,14 @@ _EN=Variables
 ++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
 ++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_EXTERNAL
+++D=BOOL	N=Act_Mode_Auto	G=VAR_EXTERNAL
+++D=HMI_Feed_Calc	N=HMI_Calc_Data_Feed	G=VAR_EXTERNAL
+++D=HMI_Press_Retained	N=HMI_Data_Press_Retained	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_OFF	G=VAR_EXTERNAL
+++D=INT	N=Next_Step	G=VAR_EXTERNAL
+++D=BOOL	N=Palm_Signal	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Top_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_First_Cycle	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Top_Stopped	G=VAR_EXTERNAL
+++D=INT	N=Step_No	G=VAR_EXTERNAL
+++D=BOOL	N=Top_Stop_Shear	G=VAR_EXTERNAL

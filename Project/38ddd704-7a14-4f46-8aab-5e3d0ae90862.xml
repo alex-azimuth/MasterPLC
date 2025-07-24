@@ -35,6 +35,16 @@ _EN=Variables
 ++D=TON	N=Shear_Prox_High_TON	G=VAR
 ++D=TON	N=Shear_Prox_Low_TON	G=VAR
 ++D=BOOL	N=Temp_BP_Alexis_Test	G=VAR
+++D=TON	N=Auto_Pos_High_Alarm_TON	G=VAR
+++D=TIME	N=Auto_Pos_High_Alarms_PT	G=VAR
+++D=BOOL	N=Hydraulic_Unit_Lock	G=VAR
+++D=R_TRIG	N=Manual_Shear_R	G=VAR
+++D=ARRAY[0..4] OF UINT	N=Next_Gag_List_Seq	G=VAR
+++D=ARRAY[0..1] OF UINT	N=Next_Gag_No_seq	G=VAR
+++D=TON	N=Shear_Cycle_Reset_TON	G=VAR
+++D=TOF	N=Shear_Hyd_Unit_Motor_TOF2	G=VAR
+++D=TON	N=T_Stop_Shear_TON	G=VAR
+++D=BOOL	N=Temp_BP_Alexis_Test_1	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Shear_OUT_Cmd_Down	G=VAR_EXTERNAL
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL
@@ -73,3 +83,16 @@ _EN=Variables
 ++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Cycle_Completed	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF UINT	N=Act_Gag_No_seq	G=VAR_EXTERNAL
+++D=Feed_Sequence	N=Act_Sequences	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Main_Release_Valve	G=VAR_EXTERNAL
+++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL
+++D=HMI_Press	N=HMI_Press_Data	G=VAR_EXTERNAL
+++D=INT	N=Next_Step	G=VAR_EXTERNAL
+++D=Press_Data	N=Press	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Top_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Auto_First_Cycle	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_IN_Motor_Overload	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_Top_Stopped	G=VAR_EXTERNAL	Com=A top stop demand has been made in the shearing process
+++D=INT	N=Step_No	G=VAR_EXTERNAL
+++D=BOOL	N=Top_Stop_Shear	G=VAR_EXTERNAL

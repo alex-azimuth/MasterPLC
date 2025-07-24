@@ -9,7 +9,6 @@
   </GeneralSettingsData>
   <Programs>
     <AssociatedProgramData ProgramName="Data_Translation" InstanceName="Data_Translation" IniFileTrackingId="05dbc9f0cb474293a013774f83b4ad91" StartupSetting="FALSE" SequenceNumber="1" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="Seq_Monitoring" InstanceName="Seq_Monitoring" IniFileTrackingId="d48f92ad1b1d4043919b740ca7cab03c" StartupSetting="FALSE" SequenceNumber="2" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds />
   <TaskInterfaceVariables version="1" />
