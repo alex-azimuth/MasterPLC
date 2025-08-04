@@ -20,7 +20,7 @@ IF (Enable) THEN&#xD;
 	END_IF;&#xD;
 &#xD;
 	// Setup coasting for high intertia load, change Stop_Code to 1148&#xD;
-	Coast_Timer(IN:=Control_Word=1148, PT:=T#1s, ET=&gt;Show_ET2);&#xD;
+	Coast_Timer(IN:=Control_Word=1148, PT:=T#0.1s, ET=&gt;Show_ET2);&#xD;
 	&#xD;
 	IF (Coast_Timer.Q) THEN&#xD;
 		Control_Word := Stop_Code2;&#xD;
