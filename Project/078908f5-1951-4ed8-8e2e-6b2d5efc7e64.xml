@@ -258,6 +258,35 @@ _EN=Variables
 ++D=BOOL	N=UIO_Start_Feed_Condition	G=VAR	Com=Start Feeder via UIO
 ++D=BOOL	N=Wait_For_Stop_Flag	G=VAR
 ++D=BOOL	N=Mode_Cut_To_Lenght	G=VAR	Com=Mode Cut to Lenght is active
+++D=ResetECError	N=Encoder_Startup_Reset_Alarm	G=VAR
+++D=TON	N=Encoder_Startup_Timer	G=VAR
+++D=TP	N=Encoder_Startup_Timer_TP	G=VAR
+++D=BOOL	N=Press_Encoder_Direction_Set_Error	G=VAR
+++D=DWORD	N=Press_Encoder_Direction_Set_Error_Abort_Code	G=VAR
+++D=WORD	N=Press_Encoder_Direction_Set_ErrorID	G=VAR
+++D=DWORD	N=Press_Encoder_Homing_Abort_Code	G=VAR
+++D=BOOL	N=Press_Encoder_Homing_Error	G=VAR
+++D=WORD	N=Press_Encoder_Homing_ErrorID	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Speed_Depth	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Speed_Filter	G=VAR
+++D=DWORD	N=Press_Encoder_Speed_Filter_Abort_Code	G=VAR
+++D=BOOL	N=Press_Encoder_Speed_Filter_Error	G=VAR
+++D=WORD	N=Press_Encoder_Speed_Filter_ErrorID	G=VAR
+++D=EC_CoESDOWrite	N=Press_Encoder_Speed_Measure	G=VAR
+++D=DWORD	N=Press_Encoder_Speed_Measure_Abort_Code	G=VAR
+++D=BOOL	N=Press_Encoder_Speed_Measure_Error	G=VAR
+++D=WORD	N=Press_Encoder_Speed_Measure_ErrorID	G=VAR
+++D=WORD	N=Press_Encoder_Total_Range_AbortCodeID	G=VAR
+++D=BOOL	N=Press_Encoder_Total_Range_Error	G=VAR
+++D=DWORD	N=Press_Encoder_Units_Per_Rev_Abort_Code	G=VAR
+++D=BOOL	N=Press_Encoder_Units_Per_Rev_Error	G=VAR
+++D=WORD	N=Press_Encoder_Units_Per_Rev_ErrorID	G=VAR
+++D=BOOL	N=Test_Depth	G=VAR
+++D=BOOL	N=Test_ECE	G=VAR
+++D=BOOL	N=Test_Filter	G=VAR
+++D=BOOL	N=Test_Integration2	G=VAR
+++D=BOOL	N=Test_Measure	G=VAR
+++D=BOOL	N=Test_Total_Range	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -438,3 +467,9 @@ _EN=Variables
 ++D=BOOL	N=Shear_IN_Prox_Pos_Low	G=VAR_EXTERNAL
 ++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL
 ++D=BOOL	N=Top_Stop_Shear	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Drive_Safety	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_DSV_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_DSV1_Monitor	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_DSV2_Monitor	G=VAR_EXTERNAL
+++D=UDINT	N=Press_Position_Raw_Baumer	G=VAR_EXTERNAL
+++D=DINT	N=Press_Speed_Raw_Baumer	G=VAR_EXTERNAL

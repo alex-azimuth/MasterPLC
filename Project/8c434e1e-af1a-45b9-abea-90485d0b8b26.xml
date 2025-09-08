@@ -224,7 +224,7 @@ _EN=Variables
 ++D=BOOL	N=Feeder_OUT_Main_Release_Valve	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the rolls when activated.
 ++D=BOOL	N=Feeder_IN_Main_Feed_FWD	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
-++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := True, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := True, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := True, Greaser := True, DSV_Reset := False, C_Drive_Present := True, C_Contactor_Present := False, ABB_Drive := FALSE, ABB_ECAT := False, Pedal := False)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := False, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := False, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := False, Greaser := False, DSV_Reset := False, C_Drive_Present := False, C_Contactor_Present := False, ABB_Drive := False, ABB_ECAT := False, Pedal := False, Extrenal_SFT := False, Baumer_Encoder := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Press_Mtr_Comm	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_GLOBAL	Com=True when the operator must maintain both his hands on the dual palms to start in auto.
 ++D=BOOL	N=Press_OUT_Contactor_FWD	G=VAR_GLOBAL	Com=Contactor forward output.
@@ -520,3 +520,12 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_ABB_AI1_Value	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=DINT	N=Uncoiler_ABB_OUTFreq	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Coast_Stop	R=1	IV=True	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_Drive_Reverse	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_Drive_Safety	AT=BuiltInIO://cpu/#0/Input_Bit_10	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_DSV_Conditions	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=IN - Feedback that the press is safe mode from safety controller
+++D=BOOL	N=Press_IN_DSV1_Monitor	AT=BuiltInIO://cpu/#0/Input_Bit_02	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_DSV2_Monitor	AT=BuiltInIO://cpu/#0/Input_Bit_03	G=VAR_GLOBAL
+++D=BOOL	N=Press_OUT_DSV1_Sig	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Press_OUT_DSV2_Sig	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=UDINT	N=Press_Position_Raw_Baumer	AT=ECAT://node#2/TPDO 5 mapping parameter_Position value_6004_00	G=VAR_GLOBAL
+++D=DINT	N=Press_Speed_Raw_Baumer	AT=ECAT://node#2/TPDO 5 mapping parameter_Speed value 4 bytes_2004_00	G=VAR_GLOBAL
