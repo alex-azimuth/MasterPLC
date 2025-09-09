@@ -108,7 +108,7 @@ _EN=Variables
 ++D=LREAL	N=HMI_Feed_Pos2	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Zone in which we feed and activate the pilot.
 ++D=LREAL	N=HMI_Release_Pos2	R=1	IV=0.0	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Position at which we trigger a pilot release.
 ++D=HMI_General_Data_Retained	N=HMI_Data_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=Encoder_Data	N=Press_Enc_Data	R=1	IV=(Node := 8, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False))	G=VAR_GLOBAL
+++D=Encoder_Data	N=Press_Enc_Data	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
 ++D=BOOL	N=Overrun_Bypass	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Bypasses overrun alarm
 ++D=BOOL	N=Feeder_IN_Entry_Feed_FWD	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder forward signal.
 ++D=BOOL	N=Feeder_IN_Entry_Feed_REV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder reverse signal.
@@ -521,11 +521,11 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_ABB_OUTFreq	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Coast_Stop	R=1	IV=True	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_Drive_Reverse	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_Drive_Safety	AT=BuiltInIO://cpu/#0/Input_Bit_10	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_Drive_Safety	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_DSV_Conditions	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=IN - Feedback that the press is safe mode from safety controller
-++D=BOOL	N=Press_IN_DSV1_Monitor	AT=BuiltInIO://cpu/#0/Input_Bit_02	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_DSV2_Monitor	AT=BuiltInIO://cpu/#0/Input_Bit_03	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_DSV1_Monitor	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_DSV2_Monitor	G=VAR_GLOBAL
 ++D=BOOL	N=Press_OUT_DSV1_Sig	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Press_OUT_DSV2_Sig	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=UDINT	N=Press_Position_Raw_Baumer	AT=ECAT://node#2/TPDO 5 mapping parameter_Position value_6004_00	G=VAR_GLOBAL
-++D=DINT	N=Press_Speed_Raw_Baumer	AT=ECAT://node#2/TPDO 5 mapping parameter_Speed value 4 bytes_2004_00	G=VAR_GLOBAL
+++D=UDINT	N=Press_Position_Raw_Baumer	G=VAR_GLOBAL
+++D=DINT	N=Press_Speed_Raw_Baumer	G=VAR_GLOBAL
