@@ -6,9 +6,8 @@ _EN=Variables
 ++D=TON	N=Main_Time	G=VAR
 ++D=BOOL	N=Start_Main_Time	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
-++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
-++D=BOOL	N=Signal	Ord=1	G=VAR_INPUT
-++D=BOOL	N=Reset	Ord=2	G=VAR_INPUT
-++D=TIME	N=Off_Time	Ord=3	G=VAR_INPUT
-++D=BOOL	N=Out	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=Signal	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Reset	Ord=1	G=VAR_INPUT
+++D=TIME	N=Off_Time	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Out	Ord=3	G=VAR_OUTPUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
