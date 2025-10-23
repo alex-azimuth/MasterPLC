@@ -511,7 +511,7 @@ _EN=Variables
 ++D=UINT	N=Press_Enc_Speed_Source	G=VAR_GLOBAL
 ++D=UINT	N=Recipe_Number	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=UINT	N=Set_Recipe_No	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..499] OF UDINT	N=Sharpening_Data	G=VAR_GLOBAL
+++D=ARRAY[0..499] OF UDINT	N=Sharpening_Data	R=1	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Auto_First_Cycle	G=VAR_GLOBAL	Com=Flag for the first shear cycle to be done when in automatic mode
 ++D=BOOL	N=Shear_IN_Motor_Overload	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Top_Stopped	G=VAR_GLOBAL	Com=The shear has been top stopped
