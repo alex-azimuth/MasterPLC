@@ -9,6 +9,7 @@
   </GeneralSettingsData>
   <Programs>
     <AssociatedProgramData ProgramName="Data_Translation" InstanceName="Data_Translation" IniFileTrackingId="05dbc9f0cb474293a013774f83b4ad91" StartupSetting="FALSE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Calc_Misc" InstanceName="Calc_Misc" IniFileTrackingId="d54263755aa546fd95faa48a1f6322dc" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds />
   <TaskInterfaceVariables version="1" />

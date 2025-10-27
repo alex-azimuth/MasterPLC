@@ -113,8 +113,8 @@ _EN=Variables
 ++D=INT	N=Uncoiler_IN_Speed_INT	G=VAR_EXTERNAL
 ++D=REAL	N=Uncoiler_IN_Speed_REAL	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_FR3_Monitor	G=VAR_EXTERNAL
-++D=BOOL	N=FR3_Active	G=VAR_EXTERNAL
-++D=BOOL	N=FR4_Active	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_FR3_Active	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_FR4_Active	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_FR4_Monitor	G=VAR_EXTERNAL
 ++D=BOOL	N=FR3_Discrepency_Error	G=VAR_EXTERNAL
 ++D=BOOL	N=FR4_Discrepency_Error	G=VAR_EXTERNAL
@@ -131,9 +131,9 @@ _EN=Variables
 ++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_EXTERNAL
 ++D=INT	N=Uncoiler_ABB_Ref	G=VAR_EXTERNAL
 ++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_EXTERNAL
-++D=BOOL	N=Uncoiler_Active	G=VAR_EXTERNAL
-++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
-++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Uncoiler_Active	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Enable_Switch_Selector	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Uncoiler_Dr_SFT_Comm	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_EXTERNAL

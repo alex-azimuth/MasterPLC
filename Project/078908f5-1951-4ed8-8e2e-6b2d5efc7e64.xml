@@ -288,6 +288,7 @@ _EN=Variables
 ++D=BOOL	N=Test_Measure	G=VAR
 ++D=BOOL	N=Test_Total_Range	G=VAR
 ++D=BOOL	N=Safety_Controller	G=VAR	Com=True when a schneider safety controller is present.
+++D=BOOL	N=Press_Adj_Start	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -406,8 +407,8 @@ _EN=Variables
 ++D=REAL	N=STO_Error_Time	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_FR3_Monitor	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_FR4_Monitor	G=VAR_EXTERNAL
-++D=BOOL	N=FR4_Active	G=VAR_EXTERNAL
-++D=BOOL	N=FR3_Active	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_FR4_Active	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_FR3_Active	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Pedal2	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Pedal1	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_DSV1_Pressure_Switch	G=VAR_EXTERNAL
@@ -421,13 +422,13 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Zero_CAM	G=VAR_EXTERNAL
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=BOOL	N=Alex_Test	G=VAR_EXTERNAL
-++D=BOOL	N=R_DSV1	G=VAR_EXTERNAL
-++D=BOOL	N=R_DSV2	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_R_DSV1	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_R_DSV2	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_FSFT_R_DSV	G=VAR_EXTERNAL
 ++D=BOOL	N=Global_Feed_Completed	G=VAR_EXTERNAL
 ++D=BOOL	N=Shaker_OUT_Start	G=VAR_EXTERNAL
 ++D=Shaker_Data	N=HMI_Shaker_Data	G=VAR_EXTERNAL
-++D=BOOL	N=Shaker_Active	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Shaker_Active	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_IN_Door_Btn_Yellow	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	G=VAR_EXTERNAL
@@ -456,7 +457,7 @@ _EN=Variables
 ++D=BOOL	N=Shear_Cycle_Completed	G=VAR_EXTERNAL
 ++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_EXTERNAL
 ++D=C_Press_Calibration	N=C_Press_Calibration_Data	G=VAR_EXTERNAL
-++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=HMI_Sequence_Absolute	N=HMI_ABS_Seq_Data	G=VAR_EXTERNAL
 ++D=HMI_CP_Calibration	N=HMI_C_Press_Calibration_Data	G=VAR_EXTERNAL
 ++D=HMI_C_Press_Misc	N=HMI_C_Press_Misc_Data	G=VAR_EXTERNAL
@@ -474,3 +475,6 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_DSV2_Monitor	G=VAR_EXTERNAL
 ++D=UDINT	N=Press_Position_Raw_Baumer	G=VAR_EXTERNAL
 ++D=DINT	N=Press_Speed_Raw_Baumer	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Safety_Ok	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Uncoiler_Dr_SFT_Comm	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Stroke_Press	G=VAR_EXTERNAL

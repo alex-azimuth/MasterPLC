@@ -406,7 +406,7 @@ _EN=Variables
 ++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc2_Pos	G=VAR_EXTERNAL
-++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	G=VAR_EXTERNAL
 ++D=_sAXIS_REF	N=Strip_Encoder	Const=1	G=VAR_EXTERNAL

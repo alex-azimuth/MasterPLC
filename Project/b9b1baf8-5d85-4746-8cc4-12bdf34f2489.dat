@@ -56,6 +56,8 @@
     <Pdo PID="ec1ce9c9-bc85-45c8-bfc6-effb285f9045" Index="24577" SIndex="23" Name="Doors_Unlock_Comm" DSC="From Safety - Doors are unlocked." PBit="8" PD="I" PV="V" PBO="600" BTBL="1" LEMI="22" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
     <Pdo PID="579405cd-6433-488f-942b-94984cd53896" Index="24577" SIndex="24" Name="Enable_Switch_Valves" DSC="From Safety - Enable switch is activated, prevent valves from changing state." PBit="8" PD="I" PV="V" PBO="608" BTBL="1" LEMI="4" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
     <Pdo PID="ee89e438-8b11-4c5a-b7dd-4c8c7fbd0e72" Index="24577" SIndex="25" Name="Safety_Ok_Comm" DSC="From Safety - Safeties are ok." PBit="8" PD="I" PV="V" PBO="616" BTBL="1" LEMI="26" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="5af87aed-9404-4c99-b658-214cc499cf9c" Index="24577" SIndex="26" Name="Press_LC_Comm" DSC="" PBit="8" PD="I" PV="V" PBO="624" BTBL="1" LEMI="35" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="9d922ca4-b7cb-4df1-828e-759a3f2dbe42" Index="24577" SIndex="27" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="632" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
   </PdoM>
   <PdoM PMIndex="5633" PMN="RxVariables" PMIOD="O">
     <Pdo PID="abe7c828-7e74-4f54-b48d-ef13f80e584c" Index="28673" SIndex="1" Name="Uncoiler_Active" DSC="From PLC - Signal that the uncoiler is active (in order to determine safe state)" PBit="8" PD="O" PV="V" PBO="416" BTBL="1" LEMI="18" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
@@ -66,12 +68,12 @@
     <Pdo PID="5862c94c-e5fb-4c81-922a-4d6f4b8addb9" Index="28673" SIndex="6" Name="Shaker_Active" DSC="From PLC - Signal that the shaker is active (in order to determine safe state)" PBit="8" PD="O" PV="V" PBO="456" BTBL="1" LEMI="19" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
   </PdoM>
   <PdoM PMIndex="6658" PMN="TxCIPSafety" PMIOD="I">
-    <Pdo PID="813f8c8b-f1cb-49a8-9ea9-fef85d01102e" Index="24578" SIndex="1" Name="CIPTarget_Instance0" DSC="" PBit="376" PD="I" PV="H" PBO="624" BTBL="376" LEMI="25" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..46] OF BYTE" CipType="TargetInputAssembly">
+    <Pdo PID="813f8c8b-f1cb-49a8-9ea9-fef85d01102e" Index="24578" SIndex="1" Name="CIPTarget_Instance0" DSC="" PBit="376" PD="I" PV="H" PBO="640" BTBL="376" LEMI="25" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..46] OF BYTE" CipType="TargetInputAssembly">
       <BridgeNodes>
         <BridgeNode>00000000-0000-0000-0000-000000000000</BridgeNode>
       </BridgeNodes>
     </Pdo>
-    <Pdo PID="6b63b6bd-12c8-4e79-94e4-11b79be0a099" Index="24578" SIndex="2" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="1000" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+    <Pdo PID="1904b042-933e-4e14-adf1-028fc114c35c" Index="24578" SIndex="2" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="1016" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
   </PdoM>
   <PdoM PMIndex="5634" PMN="RxCIPSafety" PMIOD="O">
     <Pdo PID="ae7d81fb-59c0-4819-907c-0f3a6d91000e" Index="28674" SIndex="1" Name="CIPTarget_Instance0" DSC="" PBit="448" PD="O" PV="H" PBO="464" BTBL="448" LEMI="25" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..55] OF BYTE" CipType="TargetInputAssembly">

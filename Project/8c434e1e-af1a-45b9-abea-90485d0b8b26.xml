@@ -134,7 +134,7 @@ _EN=Variables
 ++D=UDINT	N=Gag_Fault_No	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feed_Before_Press	R=1	G=VAR_GLOBAL
 ++D=BOOL	N=Update_Feeder_Sequences	G=VAR_GLOBAL	Com=New Feeder_Sequences transfer update the program.
-++D=BOOL	N=Doors_Unlock_Request	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Unlock front door.
+++D=BOOL	N=SFT_Doors_Unlock_Request	AT=IOBus://unit#10/Door_Unlock_Request	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Unlock front door.
 ++D=BOOL	N=Door1_Unlock_HMI	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Request from the HMI to unlock door1.
 ++D=BOOL	N=Door2_Unlock_HMI	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Request from the HMI to unlock door1.
 ++D=BOOL	N=Translate_Table	G=VAR_GLOBAL
@@ -225,7 +225,7 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Main_Feed_FWD	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
 ++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := False, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := False, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := False, Greaser := False, DSV_Reset := False, C_Drive_Present := False, C_Contactor_Present := False, ABB_Drive := False, ABB_ECAT := False, Pedal := False, Extrenal_SFT := False, Baumer_Encoder := False)	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Sft_Press_Mtr_Comm	G=VAR_GLOBAL
+++D=BOOL	N=Sft_Press_Mtr_Comm	AT=IOBus://unit#10/Sft_Press_Mtr_Comm	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_GLOBAL	Com=True when the operator must maintain both his hands on the dual palms to start in auto.
 ++D=BOOL	N=Press_OUT_Contactor_FWD	G=VAR_GLOBAL	Com=Contactor forward output.
 ++D=BOOL	N=Press_OUT_Contactor_Rev	G=VAR_GLOBAL	Com=Contactor reverse output.
@@ -353,9 +353,9 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Palm1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NO contacts
 ++D=BOOL	N=Press_IN_Reset_Safety	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Safety Reset push button
 ++D=BOOL	N=Shear_IN_Activation	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signal for the shear to go down
-++D=BOOL	N=Act_Safety_Reset_PB	G=VAR_GLOBAL	Com=To Safety - Safety Reset Push button has been pressed.
-++D=BOOL	N=FR3_Active	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR3 is active
-++D=BOOL	N=FR4_Active	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR4 is active
+++D=BOOL	N=SFT_Act_Safety_Reset_PB	AT=IOBus://unit#10/Safety_Reset_Button	G=VAR_GLOBAL	Com=To Safety - Safety Reset Push button has been pressed.
+++D=BOOL	N=SFT_FR3_Active	AT=IOBus://unit#10/FR3_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR3 is active
+++D=BOOL	N=SFT_FR4_Active	AT=IOBus://unit#10/FR4_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR4 is active
 ++D=BOOL	N=FR3_Discrepency_Error	G=VAR_GLOBAL	Com=FR3 relay, which activates first STO for the uncoiler, does not respond properly. Troubleshoot, change relay.
 ++D=BOOL	N=FR4_Discrepency_Error	G=VAR_GLOBAL	Com=FR4 relay, which activates second STO for the uncoiler, does not respond properly. Troubleshoot, change relay.
 ++D=REAL	N=STO_Error_Time	IV=0.25	G=VAR_GLOBAL	Com=Time of non equivalence to between a STO fault and the monitoring of forced guided relays
@@ -379,9 +379,9 @@ _EN=Variables
 ++D=BOOL	N=Press_SOUT_Drive_STO	NTP=PublicationOnly	G=VAR_GLOBAL	Com=FBSOUT - Feedback from Safety output - Press motor STO 
 ++D=BOOL	N=Feeder_SIN_EDM	NTP=PublicationOnly	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - Feeder EDM
 ++D=BOOL	N=Alex_Test	G=VAR_GLOBAL
-++D=BOOL	N=R_DSV1	G=VAR_GLOBAL
-++D=BOOL	N=R_DSV2	G=VAR_GLOBAL
-++D=BOOL	N=SFT_FSFT_R_DSV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety, R_DSV
+++D=BOOL	N=SFT_R_DSV1	AT=IOBus://unit#10/Activate_DSV1	G=VAR_GLOBAL
+++D=BOOL	N=SFT_R_DSV2	AT=IOBus://unit#10/Activate_DSV2	G=VAR_GLOBAL
+++D=BOOL	N=SFT_FSFT_R_DSV	AT=IOBus://unit#10/FST_R_DSV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety, R_DSV
 ++D=STRING[256]	N=Version_Number_String	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc2_Pos	G=VAR_GLOBAL
@@ -413,14 +413,14 @@ _EN=Variables
 ++D=BOOL	N=Master_OUT_PassL_OL_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Master_OUT_Oil_OL_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_GLOBAL
-++D=BOOL	N=Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
-++D=BOOL	N=Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
-++D=BOOL	N=State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
-++D=BOOL	N=Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
+++D=BOOL	N=SFT_Uncoiler_Active	AT=IOBus://unit#10/Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
+++D=BOOL	N=SFT_Shaker_Active	AT=IOBus://unit#10/Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
+++D=BOOL	N=SFT_State_Unsafe_Comm	AT=IOBus://unit#10/State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
+++D=BOOL	N=SFT_Doors_Unlock_Comm	AT=IOBus://unit#10/Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
 ++D=BOOL	N=Master_OUT_Passline_OL_Reset	G=VAR_GLOBAL
-++D=BOOL	N=Enable_Switch_Selector	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
+++D=BOOL	N=SFT_Enable_Switch_Selector	AT=IOBus://unit#10/Enable_Switch_Valves	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
 ++D=BOOL	N=Uncoiler_OUT_Brake_Sol	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Disengage the brake of the uncoiler mandrel.
-++D=BOOL	N=Sft_Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
+++D=BOOL	N=SFT_Uncoiler_Dr_SFT_Comm	AT=IOBus://unit#10/Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
 ++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	G=VAR_GLOBAL	Com=Byte array of EOM Sensor, second byte has 0/1 value for end of material or not.
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_GLOBAL
@@ -433,23 +433,23 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Station_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Uncoiler_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door1_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door2_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door3_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door4_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door5_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Robot_ES	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock2	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock3	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock4	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock5	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Station_ES	AT=IOBus://unit#10/Station_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Uncoiler_ES	AT=IOBus://unit#10/Uncoiler_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door1_ES	AT=IOBus://unit#10/Door1_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door2_ES	AT=IOBus://unit#10/Door2_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door3_ES	AT=IOBus://unit#10/Door3_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door4_ES	AT=IOBus://unit#10/Door4_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door5_ES	AT=IOBus://unit#10/Door5_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Robot_ES	AT=IOBus://unit#10/Robot_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock1	AT=IOBus://unit#10/Door1_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock2	AT=IOBus://unit#10/Door2_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock3	AT=IOBus://unit#10/Door3_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock4	AT=IOBus://unit#10/Door4_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock5	AT=IOBus://unit#10/Door5_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Master_Feed_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Master_Axis_Error	AT=MC://_MC_AX[5]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sNXUNIT_ID	N=Press_CPL_2_NLI	IV=(NodeAdr := 10, IPAdr := [5(16#FF)], UnitNo := 0, Path := [16#11, 16#0, 16#2, 16#0, 16#a, 16#0, 16#1, 16#0, 16#2, 55(16#0)], PathLength := 12)	RO=1	Const=1	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Die_Block	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Die_Block	AT=IOBus://unit#10/Die_Block_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_FR1_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_FR2_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ULINT	N=Feeder_Strip_Encoder_Raw	G=VAR_GLOBAL
@@ -481,7 +481,7 @@ _EN=Variables
 ++D=BOOL	N=Press_SIN_S_Adj_EDM	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - S_Adj EDM
 ++D=_sHOMING_REF	N=S_Adj_Homing	G=VAR_GLOBAL	EC=<ECs><EC EK="Offset" C="Actual shut height value." /></ECs>
 ++D=BOOL	N=SFT_Back_Door	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Press_LC	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Press_LC	AT=IOBus://unit#10/Press_LC_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Auto_Activation	G=VAR_GLOBAL	Com=Latch variable to imitate the manual shear button.
 ++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Cycle	G=VAR_GLOBAL	Com=When the shear cycle is active, this variable is set to true.
@@ -529,3 +529,5 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_DSV2_Sig	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=UDINT	N=Press_Position_Raw_Baumer	G=VAR_GLOBAL
 ++D=DINT	N=Press_Speed_Raw_Baumer	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Safety_Ok	AT=IOBus://unit#10/Safety_Ok_Comm	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Stroke_Press	AT=IOBus://unit#10/Stroke_Press	G=VAR_GLOBAL

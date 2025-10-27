@@ -49,7 +49,7 @@ _EN=Variables
 ++D=HMI_Press_Calc	N=HMI_Calc_Data_Press	G=VAR_EXTERNAL
 ++D=UINT	N=Recipe_Number	G=VAR_EXTERNAL
 ++D=ARRAY[0..499] OF UDINT	N=Sharpening_Data	G=VAR_EXTERNAL
-++D=BOOL	N=Enable_Switch_Selector	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=Die_Configuration	N=HMI_Die_Config	G=VAR_EXTERNAL
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=BOOL	N=Act_Mode_Auto	G=VAR_EXTERNAL
