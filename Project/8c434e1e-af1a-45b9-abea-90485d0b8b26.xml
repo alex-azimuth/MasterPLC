@@ -531,3 +531,20 @@ _EN=Variables
 ++D=DINT	N=Press_Speed_Raw_Baumer	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Safety_Ok	AT=IOBus://unit#10/Safety_Ok_Comm	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Stroke_Press	AT=IOBus://unit#10/Stroke_Press	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=S_Press	AT=MC://_MC_AX[7]	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=S_Press_STO1	G=VAR_GLOBAL
+++D=BOOL	N=S_Press_STO2	G=VAR_GLOBAL
+++D=BOOL	N=S_Press_Error	G=VAR_GLOBAL
+++D=BOOL	N=Record_Mode_Full	G=VAR_GLOBAL
+++D=BOOL	N=Record_Mode_Pendulum	G=VAR_GLOBAL
+++D=LREAL	N=HMI_Feed_Pos3	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=HMI_Feed_Pos4	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_Jog_FWD	G=VAR_GLOBAL	Com=Keyswitch
+++D=BOOL	N=Press_IN_Jog_REV	G=VAR_GLOBAL	Com=Keyswitch
+++D=BOOL	N=Mode_Full_Start_Conditions	G=VAR_GLOBAL
+++D=BOOL	N=Mode_Full_Auto_Start_Conditions	G=VAR_GLOBAL
+++D=BOOL	N=Mode_Full_Pendulum_Conditions	G=VAR_GLOBAL
+++D=BOOL	N=Mode_Full_Pendulum_Auto_Conditions	G=VAR_GLOBAL
+++D=BOOL	N=Mode_Pendulum_Conditions	G=VAR_GLOBAL
+++D=BOOL	N=Mode_Pendulum_Auto_Conditions	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Timer_Visibility	NTP=PublicationOnly	G=VAR_GLOBAL

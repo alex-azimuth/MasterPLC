@@ -289,6 +289,101 @@ _EN=Variables
 ++D=BOOL	N=Test_Total_Range	G=VAR
 ++D=BOOL	N=Safety_Controller	G=VAR	Com=True when a schneider safety controller is present.
 ++D=BOOL	N=Press_Adj_Start	G=VAR
+++D=MC_Home	N=Home_S_Press	G=VAR
+++D=BOOL	N=S_Press_Safety_OK	G=VAR	Com=STO drive Ok
+++D=BOOL	N=Test_Tuning	G=VAR
+++D=MC_Power	N=Power_ON_S_Press	G=VAR
+++D=BOOL	N=Power_ON_S_Press_Busy	G=VAR
+++D=BOOL	N=Power_ON_S_Press_Error	G=VAR
+++D=WORD	N=Power_ON_S_Press_ErrorID	G=VAR
+++D=S_Press_Max_Torque	N=S_Press_Max_Torque_FB	G=VAR
+++D=TOF	N=Reset_S_Press_TOF	G=VAR
+++D=MC_Reset	N=S_Press_Reset	G=VAR
+++D=BOOL	N=S_Press_Reset_Busy	G=VAR
+++D=BOOL	N=S_Press_Reset_Failure	G=VAR
+++D=BOOL	N=S_Press_Reset_Error	G=VAR
+++D=WORD	N=S_Press_Reset_ErrorID	G=VAR
+++D=ResetMCError	N=S_Press_Reset_MC_Error	G=VAR
+++D=BOOL	N=S_Press_Reset_MC_Error_Busy	G=VAR
+++D=BOOL	N=S_Press_Reset_MC_Error_Failure	G=VAR
+++D=BOOL	N=S_Press_Reset_MC_Error_Error	G=VAR
+++D=WORD	N=S_Press_Reset_MC_Error_ErrorID	G=VAR
+++D=ResetECError	N=S_Press_ResetEC_Error	G=VAR
+++D=BOOL	N=S_Press_ResetEC_Error_Busy	G=VAR
+++D=BOOL	N=S_Press_ResetEC_Error_Error	G=VAR
+++D=WORD	N=S_Press_ResetEC_Error_ErrorID	G=VAR
+++D=BOOL	N=S_Press_Status	G=VAR	Com=S_Press is powered on.
+++D=BOOL	N=S_Press_Moving	G=VAR	Com=Interlock - determines whether the S_Press is currently moving or not.
+++D=LREAL	N=C_Overrun_Angle1	IV=355	Const=1	G=VAR
+++D=LREAL	N=C_Overrun_Angle2	IV=20	Const=1	G=VAR
+++D=LREAL	N=S_Overrun_Angle1	IV=170	Const=1	G=VAR
+++D=LREAL	N=S_Overrun_Angle2	IV=195	Const=1	G=VAR
+++D=BOOL	N=S_Press_Start	G=VAR	Com=Start signal coming from the same place as DSV activate.
+++D=BOOL	N=S_Press_Wait_For_Feed	G=VAR
+++D=Zone_Switch	N=Feeding_Cam1	G=VAR
+++D=Zone_Switch	N=Feeding_Cam2	G=VAR
+++D=TOF	N=S_Press_Ensure_Feed	G=VAR
+++D=TOF	N=S_Press_Feed_Delay	G=VAR
+++D=BOOL	N=S_Press_Maintain_Stop	G=VAR	Com=Signal to stop the press because the palms were not maintained during the delay.
+++D=MC_MoveJog	N=S_Press_Jog	G=VAR
+++D=BOOL	N=Mode_Manual_Start_Conditions	G=VAR
+++D=BOOL	N=S_Press_Jog_Aborted	G=VAR
+++D=BOOL	N=S_Press_Jog_Error	G=VAR
+++D=WORD	N=S_Press_Jog_ErrorID	G=VAR
+++D=MC_MoveAbsolute	N=S_Press_Full_Stroke_Single	G=VAR
+++D=MC_MoveVelocity	N=S_Press_Full_Stroke_Auto	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Single_Busy	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Single_Active	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Single_Aborted	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Single_Error	G=VAR
+++D=WORD	N=S_Press_Full_Stroke_Single_ErrorID	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Auto_Busy	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Auto_Active	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Auto_Aborted	G=VAR
+++D=BOOL	N=S_Press_Full_Stroke_Auto_Error	G=VAR
+++D=WORD	N=S_Press_Full_Stroke_Auto_ErrorID	G=VAR
+++D=BOOL	N=S_Press_Move_Rel	G=VAR
+++D=MC_MoveRelative	N=S_Press_Full_Stroke_Single_Rel	G=VAR
+++D=MC_MoveAbsolute	N=S_Press_Pendulum_Abs1	G=VAR
+++D=BOOL	N=Exec_Move1	G=VAR
+++D=BOOL	N=Exec_Move2	G=VAR
+++D=MC_MoveAbsolute	N=S_Press_Pendulum_Abs2	G=VAR
+++D=MC_Stop	N=S_Press_Pendulum_Stop	G=VAR
+++D=MC_Stop	N=S_Press_Stop	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs1_Busy	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs1_Active	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs1_Aborted	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs1_Error	G=VAR
+++D=WORD	N=S_Press_Pendulum_Abs1_ErrorID	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs2_Busy	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs2_Active	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs2_Aborted	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Abs2_Error	G=VAR
+++D=WORD	N=S_Press_Pendulum_Abs2_ErrorID	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Stop_Busy	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Stop_Active	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Stop_Aborted	G=VAR
+++D=BOOL	N=S_Press_Pendulum_Stop_Error	G=VAR
+++D=WORD	N=S_Press_Pendulum_Stop_ErrorID	G=VAR
+++D=BOOL	N=S_Press_Stop_Busy	G=VAR
+++D=BOOL	N=S_Press_Stop_Active	G=VAR
+++D=BOOL	N=S_Press_Stop_Aborted	G=VAR
+++D=BOOL	N=S_Press_Stop_Error	G=VAR
+++D=WORD	N=S_Press_Stop_ErrorID	G=VAR
+++D=BOOL	N=S_Press_Reset_Stroke	G=VAR	Com=Palms, pedal or relays have been depressed. Servo version - latching.
+++D=ARRAY[0..32] OF MC_SetOverride	N=My_Overrides	G=VAR	Com=Palms, pedal or relays have been depressed. Servo version - latching.
+++D=UINT	N=Override_I	G=VAR
+++D=BOOL	N=S_Press_Init_Pos_Full	G=VAR	Com=Variable that makes sure we reached the initial position.
+++D=BOOL	N=S_Press_Goto_Pos_Full	G=VAR
+++D=MC_MoveAbsolute	N=S_Press_Full_Stroke_Goto_Pos	G=VAR
+++D=_eMC_DIRECTION	N=Init_Pos_Dir_Full	G=VAR	Com=Direction to avoid going through 180 to reach init pos
+++D=_eMC_DIRECTION	N=Pos_Dir_Full	G=VAR
+++D=BOOL	N=Actions_Active	G=VAR	Com=Enable actions or not depending on press mode.
+++D=BOOL	N=S_Press_Goto_Pos_Pendulum	G=VAR
+++D=BOOL	N=S_Press_Init_Pos_Pendulum	G=VAR	Com=Variable that makes sure we reached the initial position.
+++D=BOOL	N=S_Press_Init_Required	G=VAR
+++D=MC_MoveAbsolute	N=S_Press_Pendulum_Goto_Pos	G=VAR
+++D=LREAL	N=Init_Pos	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -478,3 +573,20 @@ _EN=Variables
 ++D=BOOL	N=SFT_Safety_Ok	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_Uncoiler_Dr_SFT_Comm	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_Stroke_Press	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=S_Press	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=S_Press_STO1	G=VAR_EXTERNAL
+++D=BOOL	N=S_Press_STO2	G=VAR_EXTERNAL
+++D=BOOL	N=S_Press_Error	G=VAR_EXTERNAL
+++D=BOOL	N=Record_Mode_Full	G=VAR_EXTERNAL
+++D=BOOL	N=Record_Mode_Pendulum	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Feed_Pos3	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Feed_Pos4	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Jog_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Jog_REV	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_Full_Start_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_Full_Auto_Start_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_Full_Pendulum_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_Full_Pendulum_Auto_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_Pendulum_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=Mode_Pendulum_Auto_Conditions	G=VAR_EXTERNAL
+++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	G=VAR_EXTERNAL

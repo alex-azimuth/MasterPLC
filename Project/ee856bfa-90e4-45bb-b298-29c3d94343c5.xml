@@ -26,4 +26,15 @@
 		Operating_Mode_Msg := CONCAT(Operating_Mode_Msg, 'Cut to length; ');&#xD;
 	END_IF;&#xD;
 &#xD;
+	IF (TestABit(Operating_Mode, 6)) THEN&#xD;
+		Operating_Mode_Msg := CONCAT(Operating_Mode_Msg, 'Pendulum; ');&#xD;
+	END_IF;&#xD;
+&#xD;
+	IF (TestABit(Operating_Mode, 7)) THEN&#xD;
+		Operating_Mode_Msg := CONCAT(Operating_Mode_Msg, 'Full; ');&#xD;
+	END_IF;&#xD;
+&#xD;
+	IF (TestABit(Operating_Mode, 8)) THEN&#xD;
+		Operating_Mode_Msg := CONCAT(Operating_Mode_Msg, 'Wait for feed; ');&#xD;
+	END_IF;&#xD;
 </Text></StructuredTextModel>

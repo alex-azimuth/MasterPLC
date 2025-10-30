@@ -51,3 +51,4 @@ _EN=Variables
 ++D=BOOL	N=HMI_User_Condition_Save	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_Condition_Cam	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_Condition_Changed	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Timer_Visibility	G=VAR_EXTERNAL

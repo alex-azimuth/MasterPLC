@@ -13,6 +13,8 @@ _EN=Variables
 ++D=TIME	N=Press_Stroke_Delay	G=VAR	Com=Delays of the timer
 ++D=TON	N=Press_Stroke_On_Delay	G=VAR
 ++D=TOF_Reset	N=Press_Stroke_Safe_Off_Delay	G=VAR
+++D=BOOL	N=Condition_Monitoring	G=VAR
+++D=BOOL	N=Continue_Inactive	G=VAR	Com=Cannot continue, continue condition was not fullfilled during cam.
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
 ++D=Recipe_Condition	N=Condition	Ord=1	G=VAR_IN_OUT
