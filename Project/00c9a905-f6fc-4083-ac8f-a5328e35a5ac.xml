@@ -57,7 +57,7 @@ _EN=Variables
 ++D=TON	N=Prevent_Drive_Restart_Issues_Timer	G=VAR
 ++D=BOOL	N=Switch_Val	G=VAR
 ++D=ARRAY[0..99] OF REAL	N=Val_Array	G=VAR
-++D=REAL	N=Val_Average	G=VAR
+++D=REAL	N=Val_Average	IV=0.0	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL

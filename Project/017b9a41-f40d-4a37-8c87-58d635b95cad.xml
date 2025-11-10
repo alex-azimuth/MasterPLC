@@ -31,6 +31,7 @@ _EN=Variables
 ++D=R_TRIG	N=HMI_Press_Model_Transfer_R	G=VAR
 ++D=R_TRIG	N=HMI_Feeder_Model_Transfer_R	G=VAR
 ++D=R_TRIG	N=HMI_Uncoiler_Model_Transfer_R	G=VAR
+++D=R_TRIG	N=Pendulum_Distance_Transfer_R	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
 ++D=HMI_Feed_Calc	N=HMI_Calc_Data_Feed	G=VAR_EXTERNAL
@@ -58,3 +59,4 @@ _EN=Variables
 ++D=BOOL	N=HMI_Press_Model_Transfer	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_Feeder_Model_Transfer	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_Uncoiler_Model_Transfer	G=VAR_EXTERNAL
+++D=HMI_Sequence_Absolute	N=HMI_ABS_Seq_Data	G=VAR_EXTERNAL

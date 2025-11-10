@@ -373,4 +373,27 @@ HMI_C_Press_Misc_Data.Msg_Mode_Operation := Operating_Mode_Msg(HMI_C_Press_Misc_
 Save_Mode_Operation_R(Clk := HMI_C_Press_Misc_Data.Save_Mode_Operation);&#xD;
 IF (Save_Mode_Operation_R.Q) THEN&#xD;
 	HMI_C_Press_Misc_Data.Mode_Operation_Saved := HMI_C_Press_Misc_Data.Mode_Operation;&#xD;
-END_IF;</Text></StructuredTextModel>
+END_IF;&#xD;
+&#xD;
+//----------- Calculate actual linear distance using the pendulum angles&#xD;
+HMI_Press_Data.Pendulum_Distance_Disp1 := Convert_Deg_To_Height(Deg:=HMI_Data_Press_Retained.Pendulum_Angle1,&#xD;
+													  Half_Stroke:=HMI_Calc_Data_Press_Retained.Stroke/2,&#xD;
+													  Pitman_Length:=HMI_Calc_Data_Press_Retained.Pitman_Length);&#xD;
+HMI_Press_Data.Pendulum_Distance_Disp2 := Convert_Deg_To_Height(Deg:=HMI_Data_Press_Retained.Pendulum_Angle2,&#xD;
+													  Half_Stroke:=HMI_Calc_Data_Press_Retained.Stroke/2,&#xD;
+													  Pitman_Length:=HMI_Calc_Data_Press_Retained.Pitman_Length);&#xD;
+&#xD;
+// ----------- Calculate pendulum angles based on linear distance&#xD;
+Pendulum_Distance_Transfer_R(CLK := HMI_Press_Data.Pendulum_Distance_Transfer);&#xD;
+IF (Pendulum_Distance_Transfer_R.Q) THEN&#xD;
+	HMI_Data_Press_Retained.Pendulum_Angle1 := BDC_To_Deg(Distance_From_BDC:=HMI_Press_Data.Pendulum_Distance_Edit,&#xD;
+														  Half_Stroke:=HMI_Calc_Data_Press_Retained.Stroke/2,&#xD;
+														  Pitman_Length:=HMI_Calc_Data_Press_Retained.Pitman_Length);&#xD;
+	HMI_Data_Press_Retained.Pendulum_Angle2 := 360-(BDC_To_Deg(Distance_From_BDC:=HMI_Press_Data.Pendulum_Distance_Edit,&#xD;
+														  Half_Stroke:=HMI_Calc_Data_Press_Retained.Stroke/2,&#xD;
+														  Pitman_Length:=HMI_Calc_Data_Press_Retained.Pitman_Length));&#xD;
+END_IF;&#xD;
+&#xD;
+// ---------- Approximate SPM of S_Press&#xD;
+HMI_Press_Data.S_Press_Full_SPM := (HMI_Data_Press_Retained.S_Press_Speed/360)*60;&#xD;
+HMI_Press_Data.S_Press_Pendulum_SPM := (HMI_Data_Press_Retained.S_Press_Speed/(ABS(HMI_Data_Press_Retained.Pendulum_Angle1-HMI_Data_Press_Retained.Pendulum_Angle2)))*60;</Text></StructuredTextModel>

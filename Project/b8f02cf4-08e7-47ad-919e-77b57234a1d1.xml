@@ -1,0 +1,6 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>A := (Pitman_Length+Half_Stroke-Distance_From_BDC);&#xD;
+Square_Pitman_Length := EXPT(Pitman_Length, 2);&#xD;
+Square_Half_Stroke := EXPT(Half_Stroke, 2);&#xD;
+Square_A := EXPT(A, 2);&#xD;
+&#xD;
+BDC_To_Deg := 180-RadToDeg(ACOS((Square_Pitman_Length-Square_Half_Stroke-Square_A)/(-2*Half_Stroke*A)));</Text></StructuredTextModel>
