@@ -385,6 +385,9 @@ _EN=Variables
 ++D=MC_MoveAbsolute	N=S_Press_Pendulum_Goto_Pos	G=VAR
 ++D=LREAL	N=Init_Pos	G=VAR
 ++D=BOOL	N=Oil_Timer_Reset	G=VAR
+++D=BOOL	N=SPM_Speed_Monitoring	G=VAR
+++D=SPM_Speed_Average	N=Average_Speed_Calc	G=VAR
+++D=TON	N=Stroke_Time	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
