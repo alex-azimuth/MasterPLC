@@ -406,6 +406,17 @@ _EN=Variables
 ++D=TOF	N=Wait_Press_Idle	G=VAR
 ++D=TON	N=Wait_Press_Idle_TON	G=VAR
 ++D=BOOL	N=Within_Init_Pos	G=VAR
+++D=ARRAY[0..3] OF Strain_Link_IOL	N=Strain_L	G=VAR
+++D=Zone_Switch	N=Tonnage_Monitor_Cam	G=VAR
+++D=BOOL	N=Strain_L_Four	G=VAR
+++D=INT	N=X	G=VAR
+++D=INT	N=X_Max	G=VAR
+++D=BOOL	N=Press_IOL_Tonnage_Alarm	G=VAR
+++D=R_TRIG	N=Tonnage_Above_SP_R	G=VAR
+++D=R_TRIG	N=Tonnage_Cam_R	G=VAR
+++D=ARRAY[0..3] OF REAL	N=Tonnage_C	G=VAR
+++D=INT	N=Press_Angle_INT	G=VAR
+++D=REAL	N=Tonnage_Total_C	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -617,3 +628,22 @@ _EN=Variables
 ++D=BOOL	N=Test_Press_USer1	G=VAR_EXTERNAL
 ++D=BOOL	N=Test_Press_USer2	G=VAR_EXTERNAL
 ++D=STRING[256]	N=UIO_Message_Display	G=VAR_EXTERNAL
+++D=HMI_Press_Tonnage_Ret	N=HMI_Press_Ton_Ret	G=VAR_EXTERNAL
+++D=WORD	N=Press_IOL_Strain1_2_Error	G=VAR_EXTERNAL
+++D=WORD	N=Press_IOL_Strain3_4_Error	G=VAR_EXTERNAL
+++D=HMI_Press_Tonnage	N=HMI_Press_Ton	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Out	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Val_1	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Val_2	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Data	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Out	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Val_1	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Val_2	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Data	G=VAR_EXTERNAL
+++D=Array[0..1] OF BYTE	N=Press_IOL_Strain3_Out	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain3_Val_1	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain3_Val_2	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Data	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_2	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_1	G=VAR_EXTERNAL
+++D=Array[0..1] OF BYTE	N=Press_IOL_Strain4_Out	G=VAR_EXTERNAL

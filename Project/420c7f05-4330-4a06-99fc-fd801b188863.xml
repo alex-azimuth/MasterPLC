@@ -1,0 +1,35 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DWORD	N=Value_DWORD	G=VAR
+++D=UDINT	N=Value_UDINT	G=VAR
+++D=INT	N=Exponent	G=VAR
+++D=REAL	N=Value_REAL	G=VAR
+++D=R_TRIG	N=Cam_Enable_R	G=VAR
+++D=R_TRIG	N=Calibrate_R	G=VAR
+++D=R_TRIG	N=Tare_R	G=VAR
+++D=TOF	N=Tare_TOFF	G=VAR
+++D=DWORD	N=Test_DWORD	G=VAR
+++D=DINT	N=Value_DINT	G=VAR
+++D=UINT	N=Exponent_UINT	G=VAR
+++D=SINT	N=Exponent_SINT	G=VAR
+++D=WORD	N=Value_Word1	G=VAR
+++D=WORD	N=Value_Word2	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT	Com=Cam during which we monitor tonnage
+++D=BOOL	N=Cam_Enable	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Calibrate	Ord=2	G=VAR_INPUT	Com=In calibration mode use the real tonnage value to find the divider
+++D=BOOL	N=Tare	Ord=3	G=VAR_INPUT
+++D=REAL	N=T_Mul	Ord=4	G=VAR_IN_OUT
+++D=Array[0..1] OF BYTE	N=Out_Comm	Ord=5	G=VAR_IN_OUT
+++D=ARRAY[0..1] OF BYTE	N=Val1	Ord=6	G=VAR_INPUT
+++D=ARRAY[0..1] OF BYTE	N=Val2	Ord=7	G=VAR_INPUT
+++D=ARRAY[0..1] OF BYTE	N=Data	Ord=8	G=VAR_INPUT
+++D=WORD	N=Error	Ord=9	G=VAR_INPUT
+++D=BOOL	N=Alarm	Ord=10	G=VAR_OUTPUT
+++D=REAL	N=T_Calibrate_Real_Val	Ord=11	G=VAR_INPUT	Com=Real value on loadcell that is entered by the user on the HMI
+++D=REAL	N=Raw_Value_C	Ord=12	G=VAR_OUTPUT	Com=Current raw value
+++D=REAL	N=Raw_Value_L	Ord=13	G=VAR_OUTPUT	Com=Last punch raw value
+++D=REAL	N=Tonnage	Ord=14	G=VAR_OUTPUT
+++D=REAL	N=Tonnage_C	Ord=15	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

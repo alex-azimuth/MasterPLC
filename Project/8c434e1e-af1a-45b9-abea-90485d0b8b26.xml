@@ -553,3 +553,22 @@ _EN=Variables
 ++D=BOOL	N=Test_Press_USer2	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
 ++D=BOOL	N=Test_Press_USer3	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
 ++D=STRING[256]	N=UIO_Message_Display	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Val_1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Val_2	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Data	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Out	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Val_1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Val_2	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Data	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain2_Out	G=VAR_GLOBAL
+++D=WORD	N=Press_IOL_Strain1_2_Error	G=VAR_GLOBAL
+++D=HMI_Press_Tonnage_Ret	N=HMI_Press_Ton_Ret	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Press_Tonnage	N=HMI_Press_Ton	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=WORD	N=Press_IOL_Strain3_4_Error	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain3_Val_1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain3_Val_2	G=VAR_GLOBAL
+++D=Array[0..1] OF BYTE	N=Press_IOL_Strain3_Out	G=VAR_GLOBAL
+++D=Array[0..1] OF BYTE	N=Press_IOL_Strain4_Out	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_2	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Data	G=VAR_GLOBAL
