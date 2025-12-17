@@ -12,6 +12,8 @@ _EN=Variables
 ++D=R_TRIG	N=I_Lim_R	G=VAR
 ++D=R_TRIG	N=Enable_R	G=VAR
 ++D=BOOL	N=First_Stroke_Flag	G=VAR
+++D=LINT	N=Punch_Test	G=VAR
+++D=BOOL	N=Timer_Reset	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
 ++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT

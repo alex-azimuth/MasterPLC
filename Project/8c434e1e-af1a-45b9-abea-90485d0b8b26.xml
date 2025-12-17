@@ -548,3 +548,8 @@ _EN=Variables
 ++D=BOOL	N=Mode_Pendulum_Conditions	G=VAR_GLOBAL
 ++D=BOOL	N=Mode_Pendulum_Auto_Conditions	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Timer_Visibility	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Test_Press_USer0	G=VAR_GLOBAL
+++D=BOOL	N=Test_Press_USer1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=Test_Press_USer2	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=Test_Press_USer3	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
+++D=STRING[256]	N=UIO_Message_Display	NTP=PublicationOnly	G=VAR_GLOBAL

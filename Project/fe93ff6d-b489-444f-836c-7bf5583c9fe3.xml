@@ -18,7 +18,6 @@ Act_Sequences.Vel := HMI_Feeder_Sequences_Retained.Vel;&#xD;
 Act_Sequences.Accel := HMI_Feeder_Sequences_Retained.Accel;&#xD;
 Act_Sequences.Decel := HMI_Feeder_Sequences_Retained.Decel;&#xD;
 Act_Sequences.No_Of_Pieces := HMI_Feeder_Sequences_Retained.No_Of_Pieces;&#xD;
-Act_Sequences.No_Of_Steps := HMI_Feeder_Sequences_Retained.No_Of_Steps;&#xD;
 	&#xD;
 // Always transfer the distance if there is only one step&#xD;
 IF (HMI_Feeder_Sequences_Retained.Enabled[1] = FALSE) THEN&#xD;

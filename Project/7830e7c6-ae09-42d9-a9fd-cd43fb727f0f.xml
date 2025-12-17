@@ -1,0 +1,6 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>List.Str_List[List.Index] := Text_Add;&#xD;
+List.Index := List.Index + 1;&#xD;
+&#xD;
+IF (List.Index &gt; 4)THEN&#xD;
+	List.Index := 0;&#xD;
+END_IF;</Text></StructuredTextModel>

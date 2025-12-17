@@ -388,6 +388,24 @@ _EN=Variables
 ++D=BOOL	N=SPM_Speed_Monitoring	G=VAR
 ++D=SPM_Speed_Average	N=Average_Speed_Calc	G=VAR
 ++D=TON	N=Stroke_Time	G=VAR
+++D=ARRAY[0..31] OF R_TRIG	N=Abort_Feed_R	G=VAR
+++D=ARRAY[0..31] OF R_TRIG	N=Continue_R	G=VAR
+++D=TON	N=Idle_SPM_TON	G=VAR
+++D=ARRAY[0..31] OF R_TRIG	N=Immediate_Stop_R	G=VAR
+++D=Text_List	N=Message_Stack	G=VAR
+++D=Text_List	N=Message_Stack_Empty	G=VAR
+++D=BOOL	N=Override_Inactive	G=VAR
+++D=BOOL	N=S_Press_Counter_T_Stop	G=VAR	Com=Triggers a top stop for the counter but not the feeder
+++D=BOOL	N=S_Press_Done	G=VAR
+++D=ARRAY[0..31] OF R_TRIG	N=Start_Condition_R	G=VAR
+++D=ARRAY[0..31] OF R_TRIG	N=Stop_R	G=VAR
+++D=BOOL	N=Test_Top_Stop	G=VAR
+++D=BOOL	N=Top_Stop_Conditions_Pendulum_Rexec	G=VAR
+++D=TON	N=Top_Stop_Wait_TON	G=VAR
+++D=STRING[256]	N=UIO_Message	G=VAR
+++D=TOF	N=Wait_Press_Idle	G=VAR
+++D=TON	N=Wait_Press_Idle_TON	G=VAR
+++D=BOOL	N=Within_Init_Pos	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -594,3 +612,8 @@ _EN=Variables
 ++D=BOOL	N=Mode_Pendulum_Conditions	G=VAR_EXTERNAL
 ++D=BOOL	N=Mode_Pendulum_Auto_Conditions	G=VAR_EXTERNAL
 ++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	G=VAR_EXTERNAL
+++D=BOOL	N=Test_Press_USer0	G=VAR_EXTERNAL
+++D=BOOL	N=Test_Press_USer1	G=VAR_EXTERNAL
+++D=BOOL	N=Test_Press_USer2	G=VAR_EXTERNAL
+++D=STRING[256]	N=UIO_Message_Display	G=VAR_EXTERNAL

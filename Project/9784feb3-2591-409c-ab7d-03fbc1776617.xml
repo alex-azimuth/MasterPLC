@@ -38,6 +38,9 @@ _EN=Variables
 ++D=UINT	N=Condition_Iterator	G=VAR
 ++D=UINT	N=I	G=VAR
 ++D=UINT	N=Selected_Condition	G=VAR
+++D=BOOL	N=Neg_Dir	G=VAR
+++D=BOOL	N=Pos_Dir	G=VAR
+++D=LREAL	N=Vel_Dir_Lim	IV=0.01	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	G=VAR_EXTERNAL
 ++D=BOOL	N=Stroke_Press	G=VAR_EXTERNAL
@@ -52,3 +55,5 @@ _EN=Variables
 ++D=BOOL	N=HMI_Condition_Cam	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_Condition_Changed	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_Timer_Visibility	G=VAR_EXTERNAL
+++D=Press_Options	N=Master_Press_Options	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=S_Press	Const=1	G=VAR_EXTERNAL
