@@ -572,3 +572,5 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_1	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_2	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Data	G=VAR_GLOBAL
+++D=LINT	N=Straightner_IN_Enc3_Pos	G=VAR_GLOBAL
+++D=LINT	N=Straightner_IN_Enc4_Pos	G=VAR_GLOBAL
