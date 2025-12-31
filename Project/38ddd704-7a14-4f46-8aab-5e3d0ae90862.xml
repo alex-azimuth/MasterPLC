@@ -96,3 +96,5 @@ _EN=Variables
 ++D=BOOL	N=Shear_Top_Stopped	G=VAR_EXTERNAL	Com=A top stop demand has been made in the shearing process
 ++D=INT	N=Step_No	G=VAR_EXTERNAL
 ++D=BOOL	N=Top_Stop_Shear	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
+++D=HMI_Shear	N=HMI2_Shear_Data	G=VAR_EXTERNAL

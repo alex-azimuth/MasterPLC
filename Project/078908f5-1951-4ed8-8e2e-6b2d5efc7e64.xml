@@ -571,14 +571,12 @@ _EN=Variables
 ++D=BOOL	N=Feed_After_Shear_Complete	G=VAR_EXTERNAL	Com=The first feed done after the shear cycle has completed has been done
 ++D=HMI_S_Adj	N=HMI_S_Adj_Data	G=VAR_EXTERNAL
 ++D=HMI_S_Adj_Retained	N=HMI_S_Adj_Data_Retained	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Main_Feeder	Const=1	G=VAR_EXTERNAL
 ++D=S_Adj_Data	N=My_S_Adj_Motor	G=VAR_EXTERNAL
 ++D=S_Adj_Data_Retained	N=My_S_Adj_Motor_Retained	G=VAR_EXTERNAL
 ++D=Shear_Data	N=My_Shear	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_S_Adj_STO1	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_S_Adj_STO2	G=VAR_EXTERNAL
 ++D=_sHOMING_REF	N=S_Adj_Homing	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=S_Adj_Motor	Const=1	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Auto_Activation	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
@@ -647,3 +645,9 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_2	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Val_1	G=VAR_EXTERNAL
 ++D=Array[0..1] OF BYTE	N=Press_IOL_Strain4_Out	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
+++D=HMI_Press	N=HMI2_Press_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Rev_Manual_Interlock2	G=VAR_EXTERNAL
+++D=BOOL	N=UIO_Stop_Latch2	G=VAR_EXTERNAL
+++D=BOOL	N=UIO_Top_Stop_Latch2	G=VAR_EXTERNAL
+++D=HMI_Press_Tonnage	N=HMI2_Press_Ton	G=VAR_EXTERNAL

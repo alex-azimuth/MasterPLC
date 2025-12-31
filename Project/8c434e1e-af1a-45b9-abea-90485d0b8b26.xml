@@ -81,12 +81,14 @@ _EN=Variables
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_GLOBAL
 ++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_GLOBAL
 ++D=HMI_Feeder	N=HMI_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Multiple_Shear_Seq" C="Triggered if there is more then one shear cycle in a sequence" /></ECs>
+++D=HMI_Feeder	N=HMI2_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Multiple_Shear_Seq" C="Triggered if there is more then one shear cycle in a sequence" /></ECs>
 ++D=HMI_Press	N=HMI_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /><EC EK="Alarms.Continuoud_On_Demand_Warning" C="Warning to restart the automatic on demand sequence with the palms." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	R=1	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False, Correction_Time_Limit := 0.5, Correction_Feed_Length_Begin := 0.9, Correction_Speed_Mul := 1, Correction_Accel_Mul := 1, Correction_Decel_Mul := 1, Correction_Factor := 1, Feed_Counter := 20, Feed_Complete_Time := 1, Feeder_Model := 0, Roller_Diameter := 0.0, Reduction_Ratio := 0.0, Feeder_Ratio := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Main	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Entry	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Exit	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Uncoiler	N=HMI2_Data_Uncoiler	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Uncoiler_Data	N=My_Uncoiler	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Uncoiler drive fault.
 ++D=INT	N=No_Gags_Installed	R=1	IV=20	G=VAR_GLOBAL	Com=Must be smaller than 19. Total number of gags physically installed on the machine.
@@ -145,7 +147,6 @@ _EN=Variables
 ++D=BOOL	N=Press_Ready	G=VAR_GLOBAL
 ++D=INT	N=Press_AOUT_Drv_Speed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=AOUT - Signal to control the uncoiler speed
 ++D=LREAL	N=Longest_Feed	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Main_Feeder	AT=MC://_MC_AX[2]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Main_STO1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Main_STO2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Data	N=My_Main_Feeder	G=VAR_GLOBAL
@@ -273,7 +274,6 @@ _EN=Variables
 ++D=BOOL	N=UIO_Top_Stop_Latch	NTP=PublicationOnly	Ord=4	G=VAR_GLOBAL
 ++D=BOOL	N=UIO_Stop_Latch	NTP=PublicationOnly	Ord=5	G=VAR_GLOBAL
 ++D=HMI_Recoiler	N=HMI_Recoiler_Data	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Recoiler	AT=MC://_MC_AX[12]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=Recoiler_Data	N=My_Recoiler	G=VAR_GLOBAL
 ++D=HMI_Recoiler_Retained	N=HMI_Recoiler_Data_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Recoiler_IN_STO1	G=VAR_GLOBAL
@@ -394,7 +394,6 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_GLOBAL
 ++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_GLOBAL
 ++D=INT	N=Uncoiler_ABB_Ref	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Strip_Encoder	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=Shaker_IN_Overload_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shaker motor overload
 ++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Hydraulic Unit Overload
 ++D=BOOL	N=Feeder_IN_Oiler_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Oiler motor overload
@@ -446,8 +445,6 @@ _EN=Variables
 ++D=BOOL	N=SFT_Door_Lock3	AT=IOBus://unit#10/Door3_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Door_Lock4	AT=IOBus://unit#10/Door4_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Door_Lock5	AT=IOBus://unit#10/Door5_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Master_Feed_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
-++D=_sAXIS_REF	N=Master_Axis_Error	AT=MC://_MC_AX[5]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sNXUNIT_ID	N=Press_CPL_2_NLI	IV=(NodeAdr := 10, IPAdr := [5(16#FF)], UnitNo := 0, Path := [16#11, 16#0, 16#2, 16#0, 16#a, 16#0, 16#1, 16#0, 16#2, 55(16#0)], PathLength := 12)	RO=1	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Die_Block	AT=IOBus://unit#10/Die_Block_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_FR1_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -488,7 +485,6 @@ _EN=Variables
 ++D=BOOL	N=Shear_Cycle_Completed	G=VAR_GLOBAL	Com=Active when the shear cycle has completed so the press can stroke again.
 ++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_GLOBAL	Com=Top Stop signal to enable the shear cycle.
 ++D=BOOL	N=Uncoiler_IN_Off_Signal	G=VAR_GLOBAL	Com=IN - Uncoiler needs to stop
-++D=_sAXIS_REF	N=S_Adj_Motor	AT=MC://_MC_AX[6]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=ARRAY[0..4] OF UINT	N=Act_Gag_List_Seq	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF UINT	N=Act_Gag_No_seq	G=VAR_GLOBAL
 ++D=C_Press_Calibration	N=C_Press_Calibration_Data	R=1	IV=(SPM_AT_MAX_HZ := 60, SPM_AT_MIN_HZ := 20, ANGLE_T_STOP_MAX_SPM := 220, ANGLE_T_STOP_MIN_SPM := 220, Auto_Top_Stop := False, Angle_Range := 10, BRAKE_T_MAX_SPM := 0.150, BRAKE_T_MIN_SPM := 0.150, MAX_HZ := 0.0, MIN_HZ := 0.0)	G=VAR_GLOBAL
@@ -574,3 +570,19 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain4_Data	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc3_Pos	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc4_Pos	G=VAR_GLOBAL
+++D=HMI_General_Data	N=HMI2_Data	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Press	N=HMI2_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /><EC EK="Alarms.Continuoud_On_Demand_Warning" C="Warning to restart the automatic on demand sequence with the palms." /></ECs>
+++D=BOOL	N=Rev_Manual_Interlock2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=UIO_Stop_Latch2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=UIO_Top_Stop_Latch2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Press_Tonnage	N=HMI2_Press_Ton	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Press_Fault2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Retained	N=HMI2_Feeder_Data_Retained	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False, Correction_Time_Limit := 0.5, Correction_Feed_Length_Begin := 0.9, Correction_Speed_Mul := 1, Correction_Accel_Mul := 1, Correction_Decel_Mul := 1, Correction_Factor := 1, Feed_Counter := 20, Feed_Complete_Time := 1, Feeder_Model := 0, Roller_Diameter := 0.0, Reduction_Ratio := 0.0, Feeder_Ratio := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Uncoiler	N=HMI2_Data_Uncoiler_Alarms	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Recoiler	N=HMI2_Recoiler_Data	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Recoiler	N=HMI2_Recoiler_Data_Alarms	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Shear	N=HMI2_Shear_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Fan_Overload" C="Fan motor overload has tripped" /><EC EK="Alarms.Hydraulic_Unit_Overload" C="Hydraulic unit motor overload has tripped." /><EC EK="Alarms.Oil_Temperature_Fault" C="The hydraulic unit oil temperature is too high." /><EC EK="Alarms.FR5_Discrepency" C="FR5 relay, which activates the going up movement of the shear, does not respond properly. Troubleshoot, change relay." /><EC EK="Alarms.FR6_Discrepency" C="FR6 relay, which activates the going down movement of the shear, does not respond properly. Troubleshoot, change relay." /><EC EK="Alarms.Auto_Activation_Up" C="Monitoring of blocage or sensor malfunction for shear to go up." /><EC EK="Alarms.Auto_Activation_Down" C="Monitoring of blocage or sensor malfunction for shear to go down." /><EC EK="Alarms.Not_Auto_Alarm" C="You are trying to execute an automatic movement of the shear, but the shear is set to manual mode" /><EC EK="Alarms.Need_Go_Up" C="The shear has faulted during a cycle. Press on the activation button to make it go at initial position." /><EC EK="Alarms.Stroke_While_Shear" C="An attemp to stroke the press has been made while the shearing cycle was excecuting." /></ECs>
+++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Entry	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
+++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Main	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
+++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Exit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
+++D=HMI_Uncoiler_Retained	N=HMI2_Data_Uncoiler_Retained	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 0.0, Speed_Manual := 0.0, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 5, AI_Scale_Speed_High := 60, AI_Offset := -4000, AI_Multiplier := 0.024)	NTP=PublicationOnly	G=VAR_GLOBAL

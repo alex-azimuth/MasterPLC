@@ -3,14 +3,13 @@
   <ControllerId>01f1921f-6c6d-4c9e-ad80-5af0f4e7c2ea</ControllerId>
   <ControllerName></ControllerName>
   <MajorVersion>1</MajorVersion>
-  <MinorVersion>60</MinorVersion>
+  <MinorVersion>69</MinorVersion>
   <Revision>0</Revision>
   <Category>Controller</Category>
   <Family>Nex</Family>
   <ModelName>NX102</ModelName>
-  <ModelDetail>1120</ModelDetail>
+  <ModelDetail>1100</ModelDetail>
   <SystemErrorMessageDisplayLanguageSetting>en-US,ja-JP</SystemErrorMessageDisplayLanguageSetting>
   <IsDuplicateIdOptimized>true</IsDuplicateIdOptimized>
-  <Packages>DBCon 2.01</Packages>
   <IsWithoutCommentTransfer>false</IsWithoutCommentTransfer>
 </data>

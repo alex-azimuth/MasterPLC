@@ -144,3 +144,7 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_ABB_AI1_Value	G=VAR_EXTERNAL
 ++D=DINT	N=Uncoiler_ABB_OUTFreq	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_Coast_Stop	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
+++D=HMI_Uncoiler	N=HMI2_Data_Uncoiler	G=VAR_EXTERNAL
+++D=HMI_Uncoiler	N=HMI2_Data_Uncoiler_Alarms	G=VAR_EXTERNAL
+++D=HMI_Uncoiler_Retained	N=HMI2_Data_Uncoiler_Retained	G=VAR_EXTERNAL

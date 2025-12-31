@@ -1,4 +1,4 @@
 ﻿{"CLs":[{"__type":"LD","Var":"Act_Mode_Inch"},{"__type":"ST","Ix":1,"Var":"HMI_Press_Data.Mode_Inch","X":1},{"__type":"ST","Ix":2,"Var":"Press_Signals.Act_Mode_Inch","X":1,"Y":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
 {"CLs":[{"__type":"LD","Var":"Act_Mode_Single"},{"__type":"ST","Ix":1,"Var":"HMI_Press_Data.Mode_Single","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"Act_Mode_Auto"},{"__type":"ST","Ix":1,"Var":"HMI_Press_Data.Mode_Auto","X":1}],"LRI":2,"RRI":3,"VLs":[]}
-{"CLs":[{"__type":"IST","EID":"947aee8a-b43a-4c43-8e96-ea4c07e96b70","H":150.00000000000006,"TXT":"Press_Pos_REAL := LREAL_TO_REAL(Press.Pos);","W":914}],"LRI":1,"RRI":2,"VLs":[]}
+{"CLs":[{"__type":"IST","EID":"947aee8a-b43a-4c43-8e96-ea4c07e96b70","H":186.80000000000013,"TXT":"Press_Pos_REAL := LREAL_TO_REAL(Press.Pos);\u000d\u000a\u000d\u000aHMI2_Press_Data.Alarms := HMI_Press_Data.Alarms;\u000d\u000aRev_Manual_Interlock2 := Rev_Manual_Interlock;\u000d\u000aUIO_Top_Stop_Latch2 := UIO_Top_Stop_Latch;\u000d\u000aUIO_Stop_Latch2 := UIO_Stop_Latch;\u000d\u000aHMI2_Press_Ton.Alarm := HMI_Press_Ton.Alarm;","W":914}],"LRI":1,"RRI":2,"VLs":[]}

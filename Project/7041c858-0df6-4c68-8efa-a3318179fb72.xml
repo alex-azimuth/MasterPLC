@@ -53,7 +53,6 @@ _EN=Variables
 ++D=LREAL	N=Show_AccDec	G=VAR
 ++D=TON	N=Idle_Filter	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
-++D=_sAXIS_REF	N=Recoiler	Const=1	G=VAR_EXTERNAL
 ++D=HMI_Recoiler	N=HMI_Recoiler_Data	G=VAR_EXTERNAL
 ++D=Recoiler_Data	N=My_Recoiler	G=VAR_EXTERNAL
 ++D=BOOL	N=Recoiler_IN_STO1	G=VAR_EXTERNAL
@@ -71,3 +70,6 @@ _EN=Variables
 ++D=ARRAY[0..31] OF Do_Action	N=My_Actions	G=VAR_EXTERNAL
 ++D=BOOL	N=Recoiler_IN_Jog_Rev	G=VAR_EXTERNAL
 ++D=BOOL	N=Recoiler_IN_Jog_Fwd	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
+++D=HMI_Recoiler	N=HMI2_Recoiler_Data	G=VAR_EXTERNAL
+++D=HMI_Recoiler	N=HMI2_Recoiler_Data_Alarms	G=VAR_EXTERNAL

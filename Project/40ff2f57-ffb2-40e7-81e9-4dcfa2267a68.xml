@@ -80,5 +80,53 @@
         <Option>EnumElement2</Option>
       </Options>
     </Opcua.Field.ExpandStructureNodes>
+    <OpcUa.Field.ExpandArrayNodes>
+      <CurrentValue>EnumElement1</CurrentValue>
+      <IsEnabled>false</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue>EnumElement1</DefaultValue>
+      <Options>
+        <Option>EnumElement1</Option>
+        <Option>EnumElement2</Option>
+      </Options>
+    </OpcUa.Field.ExpandArrayNodes>
+    <OpcUa.Field.PublishSettings.PublishVariables>
+      <CurrentValue>EnumElement1</CurrentValue>
+      <IsEnabled>false</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue>EnumElement1</DefaultValue>
+      <Options>
+        <Option>EnumElement1</Option>
+        <Option>EnumElement2</Option>
+      </Options>
+    </OpcUa.Field.PublishSettings.PublishVariables>
+    <OpcUa.Field.PublishSettings.Namespaces>
+      <CurrentValue></CurrentValue>
+      <IsEnabled>false</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue></DefaultValue>
+      <Options />
+    </OpcUa.Field.PublishSettings.Namespaces>
+    <OpcUa.Field.PublishSettings.Namespaces.Count>
+      <CurrentValue>0</CurrentValue>
+      <IsEnabled>false</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue>0</DefaultValue>
+      <Options />
+    </OpcUa.Field.PublishSettings.Namespaces.Count>
+    <OpcUa.Field.PublishSettings.Instances>
+      <CurrentValue></CurrentValue>
+      <IsEnabled>false</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue></DefaultValue>
+      <Options />
+    </OpcUa.Field.PublishSettings.Instances>
+    <OpcUa.Field.PublishSettings.Instances.Count>
+      <CurrentValue>0</CurrentValue>
+      <IsEnabled>false</IsEnabled>
+      <IsVisible>true</IsVisible>
+      <DefaultValue>0</DefaultValue>
+      <Options />
+    </OpcUa.Field.PublishSettings.Instances.Count>
   </Opcua.Section.ServerSetting>
 </data>

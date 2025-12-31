@@ -339,7 +339,6 @@ _EN=Variables
 ++D=BOOL	N=Global_Exit_Feed_Completed	G=VAR_EXTERNAL	Com=Flag that the exit feed has been completed successfully.
 ++D=BOOL	N=Global_Entry_Feed_Completed	G=VAR_EXTERNAL	Com=Flag that the entry feed has been completed successfully.
 ++D=BOOL	N=Feed_Before_Press	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Main_feeder	Const=1	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Main_STO1	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Main_STO2	G=VAR_EXTERNAL
 ++D=Feeder_Data	N=My_Main_Feeder	G=VAR_EXTERNAL	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
@@ -434,9 +433,6 @@ _EN=Variables
 ++D=BOOL	N=SFT_Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Strip_Encoder	Const=1	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Master_Feed_Axis	Const=1	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Master_Axis_Error	Const=1	G=VAR_EXTERNAL
 ++D=ARRAY[1..192] OF BOOL	N=_EC_CommErrTbl	Const=1	G=VAR_EXTERNAL
 ++D=ARRAY[1..192] OF BOOL	N=_EC_PDSlavTbl	Const=1	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_FR1_Monitor	G=VAR_EXTERNAL
@@ -462,3 +458,9 @@ _EN=Variables
 ++D=BOOL	N=Top_Stop_Shear	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc3_Pos	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc4_Pos	G=VAR_EXTERNAL
+++D=HMI_Feeder	N=HMI2_Feeder_Data	G=VAR_EXTERNAL
+++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
+++D=HMI_Feeder_Retained	N=HMI2_Feeder_Data_Retained	G=VAR_EXTERNAL
+++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Entry	G=VAR_EXTERNAL
+++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Main	G=VAR_EXTERNAL
+++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Exit	G=VAR_EXTERNAL
