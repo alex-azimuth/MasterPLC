@@ -73,3 +73,4 @@ _EN=Variables
 ++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
 ++D=HMI_Recoiler	N=HMI2_Recoiler_Data	G=VAR_EXTERNAL
 ++D=HMI_Recoiler	N=HMI2_Recoiler_Data_Alarms	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Recoiler	Const=1	G=VAR_EXTERNAL

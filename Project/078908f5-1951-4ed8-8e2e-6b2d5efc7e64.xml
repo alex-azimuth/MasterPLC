@@ -651,3 +651,4 @@ _EN=Variables
 ++D=BOOL	N=UIO_Stop_Latch2	G=VAR_EXTERNAL
 ++D=BOOL	N=UIO_Top_Stop_Latch2	G=VAR_EXTERNAL
 ++D=HMI_Press_Tonnage	N=HMI2_Press_Ton	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=S_Adj_Motor	Const=1	G=VAR_EXTERNAL

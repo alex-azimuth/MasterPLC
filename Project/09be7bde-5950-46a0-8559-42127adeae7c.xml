@@ -302,6 +302,9 @@ _EN=Variables
 ++D=EC_CoESDOWrite	N=Straightner_Enc4_Save_Data	G=VAR
 ++D=Straightner_Enc_Verification	N=Enc3_Verification	G=VAR
 ++D=Straightner_Enc_Verification	N=Enc4_Verification	G=VAR
+++D=TON	N=Palm_Activated_Delay	G=VAR
+++D=Antivalent	N=Antivalent_Palms	G=VAR
+++D=TOF	N=Prior_Act_Timer	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
@@ -464,3 +467,11 @@ _EN=Variables
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Entry	G=VAR_EXTERNAL
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Main	G=VAR_EXTERNAL
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Exit	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Main_Feeder	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Master_Feed_Axis	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Strip_Encoder	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Master_Axis_Error	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=Palm_Activated	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Palm1	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Palm2	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Prior_Act	G=VAR_EXTERNAL

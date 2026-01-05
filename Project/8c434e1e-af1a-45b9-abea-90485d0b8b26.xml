@@ -586,3 +586,9 @@ _EN=Variables
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Main	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Exit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=HMI_Uncoiler_Retained	N=HMI2_Data_Uncoiler_Retained	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 0.0, Speed_Manual := 0.0, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 5, AI_Scale_Speed_High := 60, AI_Offset := -4000, AI_Multiplier := 0.024)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Master_Feed_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Strip_Encoder	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Main_Feeder	AT=MC://_MC_AX[2]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Master_Axis_Error	AT=MC://_MC_AX[5]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=S_Adj_Motor	AT=MC://_MC_AX[6]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Recoiler	AT=MC://_MC_AX[12]	RO=1	Const=1	G=VAR_GLOBAL
