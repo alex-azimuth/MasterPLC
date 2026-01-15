@@ -232,7 +232,7 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Contactor_Rev	G=VAR_GLOBAL	Com=Contactor reverse output.
 ++D=BOOL	N=Prior_Act_Error	G=VAR_GLOBAL	Com=Operator neglected to press on prior act.
 ++D=BOOL	N=Palm_Signal	G=VAR_GLOBAL	Com=Dual palms are activated.
-++D=HMI_Uncoiler_Retained	N=HMI_Data_Uncoiler_Retained	R=1	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 0.0, Speed_Manual := 0.0, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 5, AI_Scale_Speed_High := 60, AI_Offset := -4000, AI_Multiplier := 0.024)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Uncoiler_Retained	N=HMI_Data_Uncoiler_Retained	R=1	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 0.0, Speed_Manual := 10, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 5, AI_Scale_Speed_High := 60, AI_Offset := -4000, AI_Multiplier := 0.024)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Die_Configuration	N=Gag_Config	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Configuration of the current die. Stored in recipes.
 ++D=STRING[256]	N=HMI_Dashboard_Recipe_Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Name of the recipe for the dashboard
 ++D=ARRAY[0..31] OF BOOL	N=HMI_Display_Details	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Buttons on the HMI that selects the user condition we'd like to display

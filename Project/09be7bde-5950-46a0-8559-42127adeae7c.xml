@@ -278,7 +278,7 @@ _EN=Variables
 ++D=BOOL	N=Shear_Cycle_Start_Conditions_2	G=VAR
 ++D=Encoder_Data	N=Entry_Feeder_Enc_Data	G=VAR
 ++D=Encoder_Data	N=Exit_Feeder_Enc_Data	G=VAR
-++D=Encoder_Data	N=Main_Feeder_Enc_Data	G=VAR
+++D=Encoder_Data	N=Main_Feeder_Enc_Data	IV=(Node := 0, Homing_Address := (Index := 16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := 16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False), Direction_Data := 0, Homing_Data := 100000, Units_Data := 0, Resolution_Data := 0, Save_Data := 0, Integration_Data := 0, Integration_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False), Speed_Update_Filter_Data := 0, Speed_Update_Depth_Address := (Index := 0, Subindex := 0, IsCompleteAccess := False), Speed_Update_Data := 0)	G=VAR
 ++D=ARRAY[0..16] OF BOOL	N=Gag_Faults_Act	G=VAR
 ++D=ARRAY[0..16] OF R_TRIG	N=Gag_Faults_Act_R	G=VAR
 ++D=ARRAY[0..16] OF BOOL	N=Gag_Faults_Deact	G=VAR
