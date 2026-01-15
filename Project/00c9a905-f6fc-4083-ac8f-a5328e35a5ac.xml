@@ -58,6 +58,10 @@ _EN=Variables
 ++D=BOOL	N=Switch_Val	G=VAR
 ++D=ARRAY[0..99] OF REAL	N=Val_Array	G=VAR
 ++D=REAL	N=Val_Average	IV=0.0	G=VAR
+++D=BOOL	N=Bypass_BlueScope	G=VAR
+++D=BOOL	N=Bypass_Coil_Keeper_Arm_Limit_Bluescope	G=VAR	Com=No on project yet maybe
+++D=BOOL	N=Bypass_Supporting_Arm_Bluescope	G=VAR	Com=No MOre supporting arm on this project
+++D=TOF	N=Pressing_Arm_Light_Indicator	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -148,3 +152,21 @@ _EN=Variables
 ++D=HMI_Uncoiler	N=HMI2_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=HMI_Uncoiler	N=HMI2_Data_Uncoiler_Alarms	G=VAR_EXTERNAL
 ++D=HMI_Uncoiler_Retained	N=HMI2_Data_Uncoiler_Retained	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Motor	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Hydraulic_Unit	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_OUT_Hyd_Unit_Motor	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_DOWN	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_REV	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_UP	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Coil_Clamp_Limit_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Coil_Clamp_Limit_REV	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Pressing_Arm_PSwitch_UP	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_SideS_Fwd	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_SideS_REV	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_IN_Upper_Pressure_Position	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_Inside	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_Outside	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_REV	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_OUT_Pressure_Light	G=VAR_EXTERNAL

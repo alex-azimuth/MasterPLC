@@ -45,6 +45,8 @@ _EN=Variables
 ++D=TOF	N=Shear_Hyd_Unit_Motor_TOF2	G=VAR
 ++D=TON	N=T_Stop_Shear_TON	G=VAR
 ++D=BOOL	N=Temp_BP_Alexis_Test_1	G=VAR
+++D=TOF	N=Shear_Clamp_Delay	G=VAR
+++D=TON	N=Shear_Cycle_Delay	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Shear_OUT_Cmd_Down	G=VAR_EXTERNAL
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL
@@ -98,3 +100,6 @@ _EN=Variables
 ++D=BOOL	N=Top_Stop_Shear	G=VAR_EXTERNAL
 ++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
 ++D=HMI_Shear	N=HMI2_Shear_Data	G=VAR_EXTERNAL
+++D=REAL	N=BlueScope_Delay	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_IN_Activation2	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_OUT_Piston_Valve	G=VAR_EXTERNAL

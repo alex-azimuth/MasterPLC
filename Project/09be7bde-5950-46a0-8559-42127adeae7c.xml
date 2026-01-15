@@ -103,10 +103,10 @@ _EN=Variables
 ++D=BOOL	N=Sequence_Counting	G=VAR
 ++D=Feeder_Data	N=My_Exit_Feeder	G=VAR	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
 ++D=ARRAY[0..99] OF Bool	N=Gags	G=VAR
-++D=Encoder_Data	N=Straightner_Enc1	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc2	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc3	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc4	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
+++D=Encoder_Data	N=Straightner_Enc1	R=1	IV=(Node := 5, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
+++D=Encoder_Data	N=Straightner_Enc2	R=1	IV=(Node := 6, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
+++D=Encoder_Data	N=Straightner_Enc3	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
+++D=Encoder_Data	N=Straightner_Enc4	R=1	IV=(Node := 8, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
 ++D=TOF	N=Start_Oiling_Cycle	G=VAR
 ++D=TON	N=Start_Oiling_Motor	G=VAR
 ++D=INT	N=Z	G=VAR
@@ -305,6 +305,36 @@ _EN=Variables
 ++D=TON	N=Palm_Activated_Delay	G=VAR
 ++D=Antivalent	N=Antivalent_Palms	G=VAR
 ++D=TOF	N=Prior_Act_Timer	G=VAR
+++D=EC_CoESDOWrite	N=Main_Feeder_Direction_Motion	G=VAR
+++D=DWORD	N=Main_Feeder_Direction_Motion_AbortCode	G=VAR
+++D=BOOL	N=Main_Feeder_Direction_Motion_Error	G=VAR
+++D=WORD	N=Main_Feeder_Direction_Motion_ErrorID	G=VAR
+++D=DWORD	N=Main_Feeder_Preset_Motion_AbortCode	G=VAR
+++D=BOOL	N=Main_Feeder_Preset_Motion_Error	G=VAR
+++D=WORD	N=Main_Feeder_Preset_Motion_ErrorID	G=VAR
+++D=DWORD	N=Main_Feeder_Preset_Motion_Motion	G=VAR
+++D=BOOL	N=Main_Jog_Stations	G=VAR
+++D=R_TRIG	N=Main_Release_R	G=VAR
+++D=DWORD	N=Straightner_Enc1_Direction_Set_AbortCode	G=VAR
+++D=BOOL	N=Straightner_Enc1_Direction_Set_Busy	G=VAR
+++D=BOOL	N=Straightner_Enc1_Direction_Set_Error	G=VAR
+++D=WORD	N=Straightner_Enc1_Direction_Set_ErrorID	G=VAR
+++D=DWORD	N=Straightner_Enc1_Preset_AbortCode	G=VAR
+++D=BOOL	N=Straightner_Enc1_Preset_Busy	G=VAR
+++D=BOOL	N=Straightner_Enc1_Preset_Error	G=VAR
+++D=WORD	N=Straightner_Enc1_Preset_ErrorID	G=VAR
+++D=EC_CoESDORead	N=Straightner_Enc1_Read_Resolution	G=VAR
+++D=DWORD	N=Straightner_Enc1_Read_Resolution_AbortCode	G=VAR
+++D=BOOL	N=Straightner_Enc1_Read_Resolution_Busy	G=VAR
+++D=BOOL	N=Straightner_Enc1_Read_Resolution_Error	G=VAR
+++D=WORD	N=Straightner_Enc1_Read_Resolution_ErrorID	G=VAR
+++D=DWORD	N=Straightner_Enc1_Save_Data_AbortCode	G=VAR
+++D=BOOL	N=Straightner_Enc1_Save_Data_Busy	G=VAR
+++D=WORD	N=Straightner_Enc1_Save_Data_ErrorID	G=VAR
+++D=BOOL	N=Straightner_Enc1_Save_Data_Errror	G=VAR
+++D=BOOL	N=Straightner_Test_Save	G=VAR
+++D=TOF	N=Straightner_Test_Save_TOF	G=VAR
+++D=BOOL	N=Test_Read_Straightner_Enc1	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="Max_Torque_Alarm2" C="Exit Feeder Max Torque" /><EC EK="Feed_Release_Alarm" C="Releasing while feeding. Preventive alarm found in press countroller when integrated with feeder." /><EC EK="Gag_Alarm_Bypass" C="Bypass all gag alarms." /><EC EK="Main_Feed_Micro" C="Toggle main feeder micro." /><EC EK="Main_Feed_Micro_Feedback" C="Feedback that the feeder is actually in micro mode." /><EC EK="Auto_Feeding" C="Feeder is in Auto mode." /><EC EK="Max_Torque_Alarm3" C="Main Feeder Max Torque" /><EC EK="Feed_Counter_Alarm" C="Standalone feeder counter has been reached. Please reset the counter." /><EC EK="Feeders_Clamp_Alarm" C="Both feeders are clamped - cannot feed." /><EC EK="Alarms.Feed_Sig_Lost" C="Feed signal was lost during feeding." /><EC EK="Alarms.Release" C="We received a feeding signal while waiting for the release signal or releasing." /><EC EK="Alarms.Entry_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Exit_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Main_Max_Torque" C="Entry feeder has reached maximum torque." /><EC EK="Alarms.Feed_Verification" C="Error occured during feeding." /><EC EK="Alarms.Entry_Feed_Release" C="Cannot feed - Entry rolls are opened." /><EC EK="Alarms.Exit_Feed_Release" C="Cannot feed - Exit rolls are opened." /><EC EK="Alarms.Main_Feed_Release" C="Cannot feed - exit rolls are opened." /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	G=VAR_EXTERNAL	EC=<ECs><EC EK="Feed_Verification_Ratio" C="Ratio for entry feeder verification." /></ECs>
@@ -475,3 +505,29 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Palm1	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Palm2	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Prior_Act	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Loading_Platform_DOWN	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Loading_Platform_UP	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_LoadingP_DOWN	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_LoadingP_In	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_LoadingP_Out	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_LoadingP_UP	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD2	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_Feed_REV1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_Feed_REV2	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_Release1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_Main_Release2	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_RollerG_Down	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_IN_RollerG_Up	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Hydraulic_Unit_Motor	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_LoadingP_Down	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_LoadingP_In	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_LoadingP_Out	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_LoadingP_Up	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Release_LED1	G=VAR_EXTERNAL
+++D=BOOL	N=Feeder_OUT_Release_LED2	G=VAR_EXTERNAL
+++D=Feeder_Options	N=Master_Feeder_Options2	G=VAR_EXTERNAL
+++D=UDINT	N=Straightner_IN_Enc1_Pos_Baumer	G=VAR_EXTERNAL
+++D=UDINT	N=Straightner_IN_Enc2_Pos_Baumer	G=VAR_EXTERNAL
+++D=UDINT	N=Straightner_IN_Enc3_Pos_Baumer	G=VAR_EXTERNAL
+++D=UDINT	N=Straightner_IN_Enc4_Pos_Baumer	G=VAR_EXTERNAL

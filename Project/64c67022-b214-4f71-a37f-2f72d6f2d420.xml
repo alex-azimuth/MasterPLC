@@ -92,3 +92,16 @@ _EN=Variables
 ++D=BOOL	N=SFT_Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_OUT_Buzzer	G=VAR_EXTERNAL
 ++D=HMI_General_Data	N=HMI2_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Master_IN_Door_Unlock1	G=VAR_EXTERNAL
+++D=BOOL	N=Master_IN_Door_Unlock2	G=VAR_EXTERNAL
+++D=BOOL	N=Master_IN_Safety_Reset1	G=VAR_EXTERNAL
+++D=BOOL	N=Master_IN_Safety_Reset2	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Door_Permission_LED1	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Door_Permission_LED2	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Safety_Reset_LED1	G=VAR_EXTERNAL
+++D=BOOL	N=Master_OUT_Safety_Reset_LED2	G=VAR_EXTERNAL
+++D=Press_Options	N=Master_Press_Options	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_DSV_Conditions	G=VAR_EXTERNAL
+++D=BOOL	N=S_Press_STO1	G=VAR_EXTERNAL
+++D=BOOL	N=S_Press_STO2	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Safety_Ok	G=VAR_EXTERNAL
