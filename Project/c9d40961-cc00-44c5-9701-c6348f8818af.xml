@@ -18,6 +18,7 @@ _EN=Variables
 ++D=TON	N=Coast_Timer	G=VAR
 ++D=TIME	N=Show_ET2	G=VAR
 ++D=UINT	N=Stop_Code2	R=1	IV=1150	G=VAR
+++D=BOOL	N=Speed_Control	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
 ++D=UINT	N=Control_Word	Ord=1	G=VAR_IN_OUT

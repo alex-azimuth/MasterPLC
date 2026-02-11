@@ -62,6 +62,8 @@ _EN=Variables
 ++D=BOOL	N=Bypass_Coil_Keeper_Arm_Limit_Bluescope	G=VAR	Com=No on project yet maybe
 ++D=BOOL	N=Bypass_Supporting_Arm_Bluescope	G=VAR	Com=No MOre supporting arm on this project
 ++D=TOF	N=Pressing_Arm_Light_Indicator	G=VAR
+++D=DINT	N=Uncoiler_ABB_OUTFreq_ABS	G=VAR
+++D=REAL	N=Uncoiler_ABB_OUTFreq_ABS2	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL

@@ -7,6 +7,7 @@ _EN=Variables
 ++D=REAL	N=Angle	G=VAR
 ++D=LINT	N=Enc_Pos_No_Offset	G=VAR
 ++D=LINT	N=Offset	R=1	IV=100000	G=VAR
+++D=LINT	N=Home_Offset	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
 ++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
@@ -17,7 +18,6 @@ _EN=Variables
 ++D=BOOL	N=Deviation_Fault	Ord=6	G=VAR_OUTPUT
 ++D=LREAL	N=Current_Value	Ord=7	G=VAR_OUTPUT
 ++D=LREAL	N=Deviation_Value	Ord=8	G=VAR_OUTPUT
-++D=LINT	N=Home_Offset	Ord=9	G=VAR_INPUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Feeder_Options	N=Master_Feeder_Options	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_EXTERNAL
