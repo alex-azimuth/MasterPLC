@@ -7,32 +7,26 @@ _EN=Variables
 ++D=BOOL	N=Stop_Press	G=VAR_GLOBAL
 ++D=BOOL	N=Press_Top_Pos	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is at the top position
 ++D=TIME	N=Micro_Time_Active	R=1	G=VAR_GLOBAL
-++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	AT=IOBus://unit#2/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	AT=IOBus://unit#3/Input Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=User_Input_1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 1
 ++D=BOOL	N=User_Input_2	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 2
-++D=BOOL	N=User_Input_3	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 3
-++D=BOOL	N=User_Input_4	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 4
-++D=BOOL	N=User_Input_5	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 5
-++D=BOOL	N=User_Input_6	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 6
 ++D=BOOL	N=HMI_Condition_Cam	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Show the user condition cam in higher or lower
-++D=BOOL	N=Press_IN_Adj_Up_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Topmost adjustment position reached.
-++D=BOOL	N=Press_IN_Adj_Down_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Bottommost adjustment position reached.
-++D=BOOL	N=Unc_IN_Overload_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Unc motor overload tripped.
-++D=BOOL	N=Press_IN_Hyd_Overload_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Hydraulic overload tripped.
-++D=BOOL	N=Press_IN_Hyd_Grease_Sensor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Cam sensor that moves when greasing.
+++D=BOOL	N=Press_IN_Adj_Up_Fault	AT=ECAT://node#[72,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Topmost adjustment position reached.
+++D=BOOL	N=Press_IN_Adj_Down_Fault	AT=ECAT://node#[72,1]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Bottommost adjustment position reached.
+++D=BOOL	N=Press_IN_Hyd_Overload_Fault	AT=ECAT://node#[72,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Hydraulic overload tripped.
+++D=BOOL	N=Press_IN_Hyd_Grease_Sensor	AT=ECAT://node#[72,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Cam sensor that moves when greasing.
 ++D=BOOL	N=Press_IN_Oiler_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Turns true when the oil level is too low.
-++D=BOOL	N=Press_IN_Air_Pressure	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch.
+++D=BOOL	N=Press_IN_Air_Pressure	AT=ECAT://node#[72,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch.
 ++D=Press_Comm	N=Press_Signals	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_Mode_Inch	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in inch mode.
-++D=BOOL	N=Press_IN_Mode_Auto	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in auto mode.
+++D=BOOL	N=Press_IN_Mode_Inch	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in inch mode.
+++D=BOOL	N=Press_IN_Mode_Auto	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in auto mode.
 ++D=BOOL	N=Press_IN_Mtr_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Press motor (drive/overload) fault.
 ++D=BOOL	N=Press_IN_Motor_Running	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signifies the motor is running - either with drive or with contactor.
 ++D=BOOL	N=Press_IN_Temp_Fault	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Press_OUT_Adj_Motor_Up	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move adjustment motor upwards.
-++D=BOOL	N=HMI_Eastwood_Cut_Activated	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Press_OUT_Adj_Motor_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move adjustment motor down.
-++D=BOOL	N=Press_OUT_Grease_Motor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Grease motor on.
-++D=BOOL	N=Press_OUT_Hyd_Overload_Sol	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Hydraulic overload solenoid.
+++D=BOOL	N=Press_OUT_Adj_Motor_Up	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move adjustment motor upwards.
+++D=BOOL	N=Press_OUT_Adj_Motor_Down	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move adjustment motor down.
+++D=BOOL	N=Press_OUT_Grease_Motor	AT=ECAT://node#[72,2]/Output Bit 16 bits/Output Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Grease motor on.
+++D=BOOL	N=Press_OUT_Hyd_Overload_Sol	AT=ECAT://node#[72,2]/Output Bit 16 bits/Output Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Hydraulic overload solenoid.
 ++D=BOOL	N=Press_OUT_Drv_Start	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Start the drive of the press.
 ++D=INT	N=HMI_Dashboard_Selected_Screen	IV=0	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Current screen selected
 ++D=ARRAY[0..5] OF BOOL	N=HMI_Dashboard_Display_Selected	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Active when a user clicks on the corresponding screen in the dashboard config
@@ -41,7 +35,7 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Drv_Reverse	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Put the drive of the press in reverse.
 ++D=BOOL	N=Press_IN_Exit_Conv_OL_Fault	G=VAR_GLOBAL
 ++D=BOOL	N=Press_Conditions	G=VAR_GLOBAL	Com=Non-Safe conditions required to start the press.
-++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	NTP=PublicationOnly	G=VAR_GLOBAL	Com=This variable stores the press current outputs cam
+++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	AT=IOBus://unit#5/Output Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL	Com=This variable stores the press current outputs cam
 ++D=BOOL	N=Reset_Stroke	G=VAR_GLOBAL	Com=Palms or relays have been depressed.
 ++D=BOOL	N=Rev_Manual_Interlock	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Features	N=Master_Features	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -51,10 +45,10 @@ _EN=Variables
 ++D=BOOL	N=Act_Mode_Single	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode single is active.
 ++D=BOOL	N=Act_Mode_Inch	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Mode inch is active mode.
 ++D=HMI_General_Data	N=HMI_Data	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_Adj_Start	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Start adjustment motor.
-++D=BOOL	N=Press_IN_Adj_Up_Req	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going up.
-++D=BOOL	N=Press_IN_Adj_Down_Req	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going down.
-++D=BOOL	N=Press_IN_Overrun_Prox	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prox detects the press at 0 degrees. - Additional security.
+++D=BOOL	N=Press_IN_Adj_Start	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Start adjustment motor.
+++D=BOOL	N=Press_IN_Adj_Up_Req	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going up.
+++D=BOOL	N=Press_IN_Adj_Down_Req	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Change state of adjustment motor to going down.
+++D=BOOL	N=Press_IN_Overrun_Prox	AT=ECAT://node#[72,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prox detects the press at 0 degrees. - Additional security.
 ++D=Grease_Cycle_Timers	N=My_Grease_Timers	R=1	G=VAR_GLOBAL	Com=Grease timer settings
 ++D=BOOL	N=Press_Idle	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is currently idle.
 ++D=LREAL	N=Press_Idle_Tolerance	R=1	IV=0.6	G=VAR_GLOBAL	Com=Possible distance between two positions - in between two sampling cycles.
@@ -62,12 +56,12 @@ _EN=Variables
 ++D=BOOL	N=Record_Mode_Manual	G=VAR_GLOBAL
 ++D=BOOL	N=Record_Mode_Auto	G=VAR_GLOBAL
 ++D=BOOL	N=Record_Mode_Inch	G=VAR_GLOBAL
-++D=BOOL	N=Press_OUT_Adj_Pulse	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Encoder module requires pulsing to provide accurate limit feedback.
+++D=BOOL	N=Press_OUT_Adj_Pulse	AT=ECAT://node#[72,2]/Output Bit 16 bits/Output Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Encoder module requires pulsing to provide accurate limit feedback.
 ++D=Uncoiler_Comm	N=Uncoiler_Signals	G=VAR_GLOBAL
 ++D=REAL	N=Brake_Time	R=1	IV=0.250	NTP=PublicationOnly	Ord=12	G=VAR_GLOBAL	Com=Time it takes for the press to stop - otherwise we get an alarm.
 ++D=REAL	N=Start_Time	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Time it takes to start the press - before generating an alarm.
 ++D=BOOL	N=Automatic_Start_Permission	G=VAR_GLOBAL	Com=Gives permission for the press to start in automatic mode.
-++D=BOOL	N=Press_IN_Prior_Act	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prior Act - necessary in order to start the press in auto mode.
+++D=BOOL	N=Press_IN_Prior_Act	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Prior Act - necessary in order to start the press in auto mode.
 ++D=HMI_Press_Retained	N=HMI_Data_Press_Retained	R=1	IV=(Press_Stop_Angle := 320, Prior_Act_Timer := 5, Micro_Time := 0.250, Press_Idle_Sampling_Rate := 0.01, Grease_Cycle_Complete := 40, Grease_Cycle_Complete_Delay := 20, Grease_Main_Timer := 144000, Grease_Main_Cycle := 120, Grease_Pulse := 10, Release_Pos1 := 0, Release_Pos2 := 0.0, Automatic_Single_Timer := 15, Feed_Pos1 := 230, Feed_Pos2 := 130, Press_Mtr_Speed := 300, Press_Mtr_Speed_Inch := 60, Automatic_Single_Stroke_Active := False, Automatic_Stroke_Feeder_Active := False, Continuous_On_Demand_Timer := 15, Continuous_On_Demand_Active := False, Press_Model := 0, S_Press_Torque_SP := 240, Mode_Full := False, Mode_Pendulum := TRUE, Mode_Wait_For_S_Press := False, Pendulum_Angle1 := 120, Pendulum_Angle2 := 240, S_Press_Accel := 100000, S_Press_Decel := 100000, S_Press_Speed := 400, S_Press_Speed_Inch := 20, S_Press_Speed_SPM := 0.0, S_Press_Jerk := 100000, Feed_Pos3 := 0.0, Feed_Pos4 := 0.0, S_Press_Min_Speed := 5, S_Press_Max_Speed := 400, S_Press_Min_AccelDec := 0.0, S_Press_Max_AccelDec := 99999999, S_Press_Min_Jerk := 0.0, S_Press_Max_Jerk := 99999999, Min_Shutheight := 0.0, Max_Shutheight := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Palm_Discrepency_Alarm	G=VAR_GLOBAL	Com=If a set of contacts does not concord with the other then give an alarm. Indicates a mechanical failure.
 ++D=BOOL	N=FR2_Discrepency_Error	G=VAR_GLOBAL	Com=FR2 relay, which activates second DSV, does not respond properly. Troubleshoot, change relay.
@@ -76,8 +70,8 @@ _EN=Variables
 ++D=BOOL	N=Act_Mode_Adj_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Adjustment motor active mode is going down.
 ++D=BOOL	N=Press_Mtr_Reverse_Req	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Drive reverse demand
 ++D=BOOL	N=Grease_Startup_Bypass	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Bypasses initial grease cycle upon power on
-++D=BOOL	N=Feeder_IN_Entry_STO1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Entry_STO2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Entry_STO1	AT=ECAT://node#52/Digital inputs/STO1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Entry_STO2	AT=ECAT://node#52/Digital inputs/STO2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Entry_Feeder	AT=MC://_MC_AX[3]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_GLOBAL
 ++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_GLOBAL
@@ -96,13 +90,12 @@ _EN=Variables
 ++D=BOOL	N=Machine_Stopped	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is currently idle.
 ++D=ARRAY[0..15] OF Bool	N=Gag_Pro	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..15] OF Bool	N=Gag_Ret	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_EOM_Sensor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - End of material sensor
+++D=BOOL	N=Feeder_IN_EOM_Sensor	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - End of material sensor
 ++D=BOOL	N=Uncoiler_IN_Rack_Limit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signals the loop has gone higher than it should.
-++D=BOOL	N=Feeder_Present	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Present	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Press_Data	N=Press	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Contains the position of the press - the rest is not useful for now.
-++D=BOOL	N=Press_IN_Top_Stop	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Top Stop request - must be sent for the press to stop.
-++D=ULINT	N=Press_Position_Raw	AT=ECAT://node#6/First TxPDO Mapping_High resolution position va_6008_00	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_Top_Stop	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Top Stop request - must be sent for the press to stop.
+++D=ULINT	N=Press_Position_Raw	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Reset_Home	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Sets the zero position of the press at wherever the press currently is.
 ++D=BOOL	N=Global_Feed_Completed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Rising edge that the feed is complete.
 ++D=Press_Analytics	N=HMI_Press_Analytics	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -111,19 +104,19 @@ _EN=Variables
 ++D=LREAL	N=HMI_Feed_Pos2	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Zone in which we feed and activate the pilot.
 ++D=LREAL	N=HMI_Release_Pos2	R=1	IV=0.0	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Position at which we trigger a pilot release.
 ++D=HMI_General_Data_Retained	N=HMI_Data_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=Encoder_Data	N=Press_Enc_Data	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 2, IsCompleteAccess := False), Speed_Measure_Data := 2, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 3, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 4, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
+++D=Encoder_Data	N=Press_Enc_Data	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 2, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 3, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 4, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
 ++D=BOOL	N=Overrun_Bypass	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Bypasses overrun alarm
-++D=BOOL	N=Feeder_IN_Entry_Feed_FWD	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder forward signal.
-++D=BOOL	N=Feeder_IN_Entry_Feed_REV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder reverse signal.
-++D=BOOL	N=Feeder_IN_Entry_Release	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder release signal.
-++D=BOOL	N=Feeder_IN_Exit_Release	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder release signal.
-++D=BOOL	N=Feeder_IN_Exit_Feed_FWD	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder forward signal.
+++D=BOOL	N=Feeder_IN_Entry_Feed_FWD	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder forward signal.
+++D=BOOL	N=Feeder_IN_Entry_Feed_REV	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder reverse signal.
+++D=BOOL	N=Feeder_IN_Entry_Release	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder release signal.
+++D=BOOL	N=Feeder_IN_Exit_Release	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder release signal.
+++D=BOOL	N=Feeder_IN_Exit_Feed_FWD	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder forward signal.
 ++D=BOOL	N=Feeder_IN_Exit_Feed_REV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Exit Feeder reverse signal.
 ++D=_sAXIS_REF	N=Exit_Feeder	AT=MC://_MC_AX[4]	RO=1	Const=1	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Exit_STO1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Exit_STO2	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_OUT_Entry_Release_Valve	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Opens the rolls when activated.
-++D=BOOL	N=Feeder_OUT_Exit_Release_Valve	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Opens the rolls when activated.
+++D=BOOL	N=Feeder_IN_Exit_STO1	AT=ECAT://node#53/Digital inputs/STO1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Exit_STO2	AT=ECAT://node#53/Digital inputs/STO2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_OUT_Entry_Release_Valve	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Opens the rolls when activated.
+++D=BOOL	N=Feeder_OUT_Exit_Release_Valve	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Opens the rolls when activated.
 ++D=BOOL	N=Feeder_Entry_Alternate_Release	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_Exit_Alternate_Release	G=VAR_GLOBAL
 ++D=ULINT	N=Feeder_IN_Entry_Encoder_Pos	G=VAR_GLOBAL
@@ -135,9 +128,8 @@ _EN=Variables
 ++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=REAL	N=Press_Pos_REAL	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=UDINT	N=Gag_Fault_No	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feed_Before_Press	R=1	G=VAR_GLOBAL
 ++D=BOOL	N=Update_Feeder_Sequences	G=VAR_GLOBAL	Com=New Feeder_Sequences transfer update the program.
-++D=BOOL	N=SFT_Doors_Unlock_Request	AT=IOBus://unit#10/Door_Unlock_Request	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Unlock front door.
+++D=BOOL	N=SFT_Doors_Unlock_Request	AT=IOBus://unit#8/Door_Unlock_Request	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Unlock front door.
 ++D=BOOL	N=Door1_Unlock_HMI	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Request from the HMI to unlock door1.
 ++D=BOOL	N=Door2_Unlock_HMI	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Request from the HMI to unlock door1.
 ++D=BOOL	N=Translate_Table	G=VAR_GLOBAL
@@ -148,11 +140,11 @@ _EN=Variables
 ++D=BOOL	N=Press_Ready	G=VAR_GLOBAL
 ++D=INT	N=Press_AOUT_Drv_Speed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=AOUT - Signal to control the uncoiler speed
 ++D=LREAL	N=Longest_Feed	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_STO1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_STO2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_STO1	AT=ECAT://node#51/Digital inputs/STO1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_STO2	AT=ECAT://node#51/Digital inputs/STO2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Data	N=My_Main_Feeder	G=VAR_GLOBAL
 ++D=REAL	N=SPM	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=INT	N=Press_Speed_Raw	AT=ECAT://node#6/First TxPDO Mapping_Speed value_6030_01	G=VAR_GLOBAL
+++D=INT	N=Press_Speed_Raw	G=VAR_GLOBAL
 ++D=BOOL	N=Feed_Alarm_Bypass	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Press_Fault	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_OUT_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output to communicate the feeder is in a fault condition.
@@ -163,8 +155,8 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Passline_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Overload relay for the passline motor.
 ++D=BOOL	N=Feeder_OUT_Passline_Up_Mtr	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the passline up using the motor.
 ++D=BOOL	N=Feeder_OUT_Passline_Down_Mtr	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the passline down using the motor.
-++D=BOOL	N=Feeder_IN_Swing_Arm_UP	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the swing arm at the entry of the feeder upwards.
-++D=BOOL	N=Feeder_IN_Swing_Arm_DOWN	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the swing arm at the entry of the feeder downwards.
+++D=BOOL	N=Feeder_IN_Swing_Arm_UP	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the swing arm at the entry of the feeder upwards.
+++D=BOOL	N=Feeder_IN_Swing_Arm_DOWN	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the swing arm at the entry of the feeder downwards.
 ++D=BOOL	N=Feeder_IN_Swing_Arm_UP_Limit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Swing arm is at its upwards limit, verified via reed switch.
 ++D=BOOL	N=Feeder_IN_Swing_Arm_Down_Limit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Swing arm is at its downwards limit, verified via reed switch.
 ++D=BOOL	N=Feeder_OUT_Swing_Arm_UP	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the swing arm upwards using a solenoid.
@@ -176,22 +168,22 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_OUT_Preset_Speed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Preset speed if we are going in manual.
 ++D=BOOL	N=Uncoiler_OUT_Pressing_Arm_UP	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the pressing arm upwards. 5/3 valve
 ++D=BOOL	N=Uncoiler_OUT_Pressing_Arm_DOWN	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the presssing arm downards. 5/3 vavle
-++D=BOOL	N=Uncoiler_IN_Pressing_Arm_UP	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Input to move the pressing arm upwards.
-++D=BOOL	N=Uncoiler_IN_Pressing_Arm_DOWN	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Input to move the pressing arm downwards.
+++D=BOOL	N=Uncoiler_IN_Pressing_Arm_UP	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 04	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Input to move the pressing arm upwards.
+++D=BOOL	N=Uncoiler_IN_Pressing_Arm_DOWN	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Input to move the pressing arm downwards.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Keeper	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Set or reset the coil keepers.
 ++D=BOOL	N=Uncoiler_IN_Coil_Keeper_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Input to move the coil keeper down.
 ++D=BOOL	N=Uncoiler_IN_Coil_Keeper_UP	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Input to move the coil keeper down.
-++D=BOOL	N=Uncoiler_IN_Supporting_Arm_Down	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Uncoiler_IN_Supporting_Arm_UP	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Uncoiler_IN_Supporting_Arm_Down	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Uncoiler_IN_Supporting_Arm_UP	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_OUT_Supporting_Arm_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog the supporting armdownwards.
 ++D=BOOL	N=Uncoiler_OUT_Supporting_Arm_Up	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog the supporting arm upwards.
 ++D=BOOL	N=Uncoiler_OUT_Hydraulic_Unit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Hydraulic unit for mandrel and coil cart.
-++D=BOOL	N=Uncoiler_IN_Mandrel_Expand	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 13	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Expand the mandrel.
-++D=BOOL	N=Uncoiler_IN_Mandrel_Shrink	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 11	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shrink the mandrel.
-++D=BOOL	N=Uncoiler_IN_Coil_Cart_Up	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart up.
-++D=BOOL	N=Uncoiler_IN_Coil_Cart_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart down.
-++D=BOOL	N=Uncoiler_IN_Coil_Cart_Fwd	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart forward.
-++D=BOOL	N=Uncoiler_IN_Coil_Cart_Rev	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart reverse.
+++D=BOOL	N=Uncoiler_IN_Mandrel_Expand	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Expand the mandrel.
+++D=BOOL	N=Uncoiler_IN_Mandrel_Shrink	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shrink the mandrel.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Up	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 13	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart up.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Down	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart down.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Fwd	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 11	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart forward.
+++D=BOOL	N=Uncoiler_IN_Coil_Cart_Rev	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the cart reverse.
 ++D=BOOL	N=Uncoiler_OUT_Mandrel_Expand	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Expand the mandrel.
 ++D=BOOL	N=Uncoiler_OUT_Mandrel_Shrink	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shrink the mandrel.
 ++D=BOOL	N=Uncoiler_IN_Limit_Forward	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Coil cart forward limit
@@ -203,20 +195,20 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart downwards.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Reverse	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart away from the uncoiler.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Forward	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart towards the feeder.
-++D=BOOL	N=Uncoiler_IN_Jog_FWD	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Uncoiler_IN_Jog_FWD	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_On_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Uncoiler is ON
 ++D=BOOL	N=Uncoiler_OUT_Forward	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move the uncoiler forward.
 ++D=BOOL	N=Uncoiler_OUT_Straightner_Release	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_OUT_Rev	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Move the uncoiler in reverse.
 ++D=BOOL	N=Uncoiler_IN_Straightner_Release	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Release the straightner valve when true.
-++D=BOOL	N=Uncoiler_IN_Jog_REV	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 09	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Uncoiler_IN_Jog_REV	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 09	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..15] OF int	N=UIO_Cam_Force	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=User I/O (32 is for display only)
-++D=BOOL	N=Press_IN_Mode_Single	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in single mode.
+++D=BOOL	N=Press_IN_Mode_Single	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in single mode.
 ++D=ARRAY[0..31] OF Do_Action	N=My_Actions	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Feed_Signal	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Reset_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder reset signal.
-++D=BOOL	N=Feeder_IN_Main_Release	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Main Feeder release button.
+++D=BOOL	N=Feeder_IN_Main_Release	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 11	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Main Feeder release button.
 ++D=Feed_Verification	N=HMI_Feed_Verification_Main	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feed_Verification	N=HMI_Feed_Verification_Entry	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feed_Verification	N=HMI_Feed_Verification_Exit	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -224,27 +216,27 @@ _EN=Variables
 ++D=BOOL	N=Feeder_IN_Release_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder release signal.
 ++D=BOOL	N=Feeder_OUT_Feed_Complete	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output a pulse when the feed is completed.
 ++D=BOOL	N=Feeder_OUT_Main_Release_Valve	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the rolls when activated.
-++D=BOOL	N=Feeder_IN_Main_Feed_FWD	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Feed_Rev	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 12	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 13	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := False, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := False, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := False, Greaser := False, DSV_Reset := False, C_Drive_Present := False, C_Contactor_Present := False, ABB_Drive := False, ABB_ECAT := False, Pedal := False, Extrenal_SFT := False, Baumer_Encoder := False, Air_Required := False)	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Sft_Press_Mtr_Comm	AT=IOBus://unit#10/Sft_Press_Mtr_Comm	G=VAR_GLOBAL
+++D=BOOL	N=Sft_Press_Mtr_Comm	AT=IOBus://unit#8/Sft_Press_Mtr_Comm	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_GLOBAL	Com=True when the operator must maintain both his hands on the dual palms to start in auto.
 ++D=BOOL	N=Press_OUT_Contactor_FWD	G=VAR_GLOBAL	Com=Contactor forward output.
 ++D=BOOL	N=Press_OUT_Contactor_Rev	G=VAR_GLOBAL	Com=Contactor reverse output.
 ++D=BOOL	N=Prior_Act_Error	G=VAR_GLOBAL	Com=Operator neglected to press on prior act.
 ++D=BOOL	N=Palm_Signal	G=VAR_GLOBAL	Com=Dual palms are activated.
-++D=HMI_Uncoiler_Retained	N=HMI_Data_Uncoiler_Retained	R=1	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 50, Speed_Manual := 50, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 5, AI_Scale_Speed_High := 60, AI_Offset := -4000, AI_Multiplier := 0.024)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Uncoiler_Retained	N=HMI_Data_Uncoiler_Retained	R=1	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 0.0, Speed_Manual := 0.0, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 100, AI_Scale_Speed_High := 1000, AI_Offset := -4000, Sensor_Height := 50, Prop_Gain := 10, AI_Multiplier := 0.024, Sensor_Below_Mounted := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Die_Configuration	N=Gag_Config	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Configuration of the current die. Stored in recipes.
 ++D=STRING[256]	N=HMI_Dashboard_Recipe_Name	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Name of the recipe for the dashboard
 ++D=ARRAY[0..31] OF BOOL	N=HMI_Display_Details	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Buttons on the HMI that selects the user condition we'd like to display
 ++D=AlarmCodes	N=HMI_Error_Code_List	NTP=PublicationOnly	G=VAR_GLOBAL	Com=List of the error codes
 ++D=UINT	N=HMI_Clicked_User_Condition	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Index of the user condition clicked for details
-++D=UINT	N=Press_ABB_Control_Word	AT=ECAT://node#3/RxPDO 21 map_ABB Drives control word_2101_00	G=VAR_GLOBAL
-++D=UINT	N=Press_ABB_Status_Word	AT=ECAT://node#3/TxPDO 21 map_ABB Drives status word_2104_00	G=VAR_GLOBAL
-++D=UINT	N=Press_ABB_Trip_Fault	G=VAR_GLOBAL
-++D=INT	N=Press_ABB_Ref	AT=ECAT://node#3/RxPDO 21 map_ABB Drives REF1_2102_00	G=VAR_GLOBAL
-++D=DINT	N=Press_ABB_Accel_Time	AT=ECAT://node#3/RxPDO 21 map_28.72 Freq acceleration tim_401C_48	G=VAR_GLOBAL
-++D=DINT	N=Press_ABB_Decel_Time	AT=ECAT://node#3/RxPDO 21 map_28.73 Freq deceleration tim_401C_49	G=VAR_GLOBAL
+++D=UINT	N=Press_ABB_Control_Word	AT=ECAT://node#30/RxPDO 21 map_ABB Drives control word_2101_00	G=VAR_GLOBAL
+++D=UINT	N=Press_ABB_Status_Word	AT=ECAT://node#30/TxPDO 21 map_ABB Drives status word_2104_00	G=VAR_GLOBAL
+++D=UINT	N=Press_ABB_Trip_Fault	AT=ECAT://node#30/TxPDO 21 map_04.01 Tripping fault_4004_01	G=VAR_GLOBAL
+++D=INT	N=Press_ABB_Ref	AT=ECAT://node#30/RxPDO 21 map_ABB Drives REF1_2102_00	G=VAR_GLOBAL
+++D=DINT	N=Press_ABB_Accel_Time	AT=ECAT://node#30/RxPDO 21 map_28.72 Freq acceleration tim_401C_48	G=VAR_GLOBAL
+++D=DINT	N=Press_ABB_Decel_Time	AT=ECAT://node#30/RxPDO 21 map_28.73 Freq deceleration tim_401C_49	G=VAR_GLOBAL
 ++D=Abb_Drv	N=ABB_Control	R=1	IV=(Accel_Time := 20, Decel_Time := 20, Speed := 30, Start := False, Stop := False, Reset := False, Reverse := False, Forward_Status := False, Fault := False, Running := False, FaultMsg := '', Current := 0.0, Total_Torque := 0.0, DC_Voltage := 0.0, Out_Freq := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Abb_Drv	N=ABB_Control_Uncoiler	R=1	IV=(Accel_Time := 2, Decel_Time := 2, Speed := 30, Start := False, Stop := False, Reset := False, Reverse := False, Forward_Status := False, Fault := False, Running := False, FaultMsg := '', Current := 0.0, Total_Torque := 0.0, DC_Voltage := 0.0, Out_Freq := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_W_Global_Condition	N=HMI_Widget_User_Condition	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Widget displaying some of the user conditions
@@ -253,22 +245,11 @@ _EN=Variables
 ++D=BOOL	N=Shaker_IN_Drive_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Fault with shaker drive
 ++D=BOOL	N=Shaker_OUT_Start	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Start the shaker. When on, the shaker is running
 ++D=BOOL	N=Shaker_OUT_Reset	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Reset alarms on the shaker
-++D=BOOL	N=User_Input_7	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 7
-++D=BOOL	N=User_Input_8	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Customizable input for user logic 8
-++D=BOOL	N=User_Output_1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 1
-++D=BOOL	N=User_Output_2	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 2
-++D=BOOL	N=User_Output_3	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 3
-++D=BOOL	N=User_Output_4	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 4
-++D=BOOL	N=User_Output_5	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 5
-++D=BOOL	N=User_Output_6	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 6
-++D=BOOL	N=User_Output_7	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 7
-++D=BOOL	N=User_Output_8	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Customizable Output for user logic 8
 ++D=HMI_Sequence	N=HMI_Feed_Seq	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Displays some infos about the current feed sequence
 ++D=INT	N=Unc_AOUT_Drv_Speed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Analog signal to control uncoiler's speed.
-++D=ULINT	N=Press_Position_Pulse	AT=ECAT://node#6/Second TxPDO Mapping_High resolution position ra_600B_00	G=VAR_GLOBAL	Com=Encoder position in pulse
-++D=DINT	N=Press_IN_Mtr_Current	G=VAR_GLOBAL
-++D=DINT	N=Press_IN_Total_Torque	G=VAR_GLOBAL
-++D=DINT	N=Press_IN_DC_Voltage	G=VAR_GLOBAL
+++D=DINT	N=Press_IN_Mtr_Current	AT=ECAT://node#30/TxPDO 21 map_01.07 Motor current_4001_07	G=VAR_GLOBAL
+++D=DINT	N=Press_IN_Total_Torque	AT=ECAT://node#30/TxPDO 21 map_01.08 Motor current % of mo_4001_08	G=VAR_GLOBAL
+++D=DINT	N=Press_IN_DC_Voltage	AT=ECAT://node#30/TxPDO 21 map_01.11 DC voltage_4001_0B	G=VAR_GLOBAL
 ++D=BOOL	N=Shaker_OUT_Start_PR	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Start the PR sequence
 ++D=BOOL	N=Shaker_OUT_Aux	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Choose PR sequence 1
 ++D=BOOL	N=Shaker_IN_Homed	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Shaker Homed.
@@ -277,12 +258,11 @@ _EN=Variables
 ++D=HMI_Recoiler	N=HMI_Recoiler_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Recoiler_Data	N=My_Recoiler	G=VAR_GLOBAL
 ++D=HMI_Recoiler_Retained	N=HMI_Recoiler_Data_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Recoiler_IN_STO1	G=VAR_GLOBAL
-++D=BOOL	N=Recoiler_IN_STO2	G=VAR_GLOBAL
+++D=BOOL	N=Recoiler_IN_STO1	AT=ECAT://node#55/Digital inputs/STO1	G=VAR_GLOBAL
+++D=BOOL	N=Recoiler_IN_STO2	AT=ECAT://node#55/Digital inputs/STO2	G=VAR_GLOBAL
 ++D=INT	N=Recoiler_IN_Radius_Sensor	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Recoiler_Comm	N=Recoiler_Signals	G=VAR_GLOBAL	EC=<ECs><EC EK="Length_Achieved_Top_Stop" C="Pause the press and feeder once the correct length has been reached." /></ECs>
-++D=BOOL	N=Press_IN_Adj	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_Adj_Overload_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Adj motor overload tripped.
+++D=BOOL	N=Press_IN_Adj_Overload_Fault	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Adj motor overload tripped.
 ++D=BOOL	N=Uncoiler_OUT_Clamp_Open	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the clamp of the uncoiler
 ++D=BOOL	N=Uncoiler_OUT_Clamp_Close	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Close the clamp of the uncoiler
 ++D=BOOL	N=Uncoiler_IN_Clamp_Open	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Open Uncoiler Clamp
@@ -290,52 +270,20 @@ _EN=Variables
 ++D=BOOL	N=Recoiler_IN_Clamp_Open	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Open The Recoiler Clamp
 ++D=BOOL	N=Shear_IN_Up_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Shear Going up forced guided relay monitoring
 ++D=BOOL	N=Shear_IN_Down_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Shear Going down forced guided relay monitoring
-++D=INT	N=Uncoiler_IN_Speed_Scaling	G=VAR_GLOBAL
 ++D=INT	N=Uncoiler_IN_Speed_INT	G=VAR_GLOBAL
 ++D=REAL	N=Uncoiler_IN_Speed_REAL	G=VAR_GLOBAL
-++D=INT	N=Unc_Drv_Speed_INT	G=VAR_GLOBAL
 ++D=BOOL	N=Recoiler_Not_Ready_For_Auto	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro10	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro9	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro7	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro8	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro5	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro6	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro4	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro3	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro2	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Pro1	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret2	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret1	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret3	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret4	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret5	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret6	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret7	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret8	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret9	G=VAR_GLOBAL
-++D=BOOL	N=Gag_Ret10	G=VAR_GLOBAL
-++D=BOOL	N=Gag1	G=VAR_GLOBAL
-++D=BOOL	N=Gag2	G=VAR_GLOBAL
 ++D=Die_Configuration	N=HMI_Die_Config	R=1	IV=(Name := '', Gag_Confirmed := True, Gag1 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag2 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag3 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag4 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag5 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag6 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag7 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag8 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag9 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag10 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag11 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag12 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag13 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag14 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag15 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Gag16 := (Enabled := False, Name := '', Status := False, Force := False, Reset := False, Protracted := False, Retracted := False), Extend_Confirmed := False, Retract_Confirmed := False, No_Punch_Per_Parts := 0, Die_Weight := 0.0, Material_Thickness := 0.0, Punch_Sharpening_SP := 0, Punch_Since_Last_Sharpening := 0, Punch_Left_Until_Sharpening := 0, Reset_Sharpening_CT := False, Last_Sharpening_Year := 2025, Last_Sharpening_Month := 01, Last_Sharpening_Day := 01)	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Gag3	G=VAR_GLOBAL
-++D=BOOL	N=Gag4	G=VAR_GLOBAL
-++D=BOOL	N=Gag5	G=VAR_GLOBAL
-++D=BOOL	N=Gag6	G=VAR_GLOBAL
-++D=BOOL	N=Gag7	G=VAR_GLOBAL
-++D=BOOL	N=Gag8	G=VAR_GLOBAL
-++D=BOOL	N=Gag9	G=VAR_GLOBAL
 ++D=Feed_Sequence	N=Act_Sequences	G=VAR_GLOBAL
 ++D=BOOL	N=Sequence_Transfered_Latch	G=VAR_GLOBAL
 ++D=BOOL	N=Feed_Sequence_Changed	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Condition_Changed	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=EtherCAT_Comm	N=HMI_EtherCAT_Comm	NTP=PublicationOnly	G=VAR_GLOBAL	Com=EtherCAT communication for read/write
-++D=BOOL	N=HMI_Eastwood_Cut_Activate	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_IN_Temp_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Hydraulique cooling unit temperature sensor
-++D=BOOL	N=Press_IN_FR1_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR1
-++D=BOOL	N=Press_IN_FR2_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR2
-++D=BOOL	N=Uncoiler_IN_FR3_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR3
-++D=BOOL	N=Uncoiler_IN_FR4_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR4
+++D=BOOL	N=Press_IN_FR1_Monitor	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR1
+++D=BOOL	N=Press_IN_FR2_Monitor	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR2
+++D=BOOL	N=Uncoiler_IN_FR3_Monitor	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR3
+++D=BOOL	N=Uncoiler_IN_FR4_Monitor	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 06	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Monitoring of Forced guides relay FR4
 ++D=BOOL	N=Shear_IN_Hyd_Unit_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Overload relay for the hydraulic unit motor.
 ++D=BOOL	N=Press_IN_DSV1_Pressure_Switch	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch of DSV1
 ++D=BOOL	N=Press_IN_DSV2_Pressure_Switch	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pressure switch of DSV2
@@ -350,13 +298,13 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Zero_CAM	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Pulse sent to Autoset to reset its reading value
 ++D=BOOL	N=Shear_OUT_Cmd_Up	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - 5/2 valve avtivation so the shear goes up.
 ++D=BOOL	N=Shear_OUT_Cmd_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - 5/2 valve avtivation so the shear goes down
-++D=BOOL	N=Press_IN_Palm2	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NC contacts
-++D=BOOL	N=Press_IN_Palm1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NO contacts
+++D=BOOL	N=Press_IN_Palm2	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NC contacts
+++D=BOOL	N=Press_IN_Palm1	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 09	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Palm NO contacts
 ++D=BOOL	N=Press_IN_Reset_Safety	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Safety Reset push button
 ++D=BOOL	N=Shear_IN_Activation	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signal for the shear to go down
-++D=BOOL	N=SFT_Act_Safety_Reset_PB	AT=IOBus://unit#10/Safety_Reset_Button	G=VAR_GLOBAL	Com=To Safety - Safety Reset Push button has been pressed.
-++D=BOOL	N=SFT_FR3_Active	AT=IOBus://unit#10/FR3_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR3 is active
-++D=BOOL	N=SFT_FR4_Active	AT=IOBus://unit#10/FR4_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR4 is active
+++D=BOOL	N=SFT_Act_Safety_Reset_PB	AT=IOBus://unit#8/Safety_Reset_Button	G=VAR_GLOBAL	Com=To Safety - Safety Reset Push button has been pressed.
+++D=BOOL	N=SFT_FR3_Active	AT=IOBus://unit#8/FR3_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR3 is active
+++D=BOOL	N=SFT_FR4_Active	AT=IOBus://unit#8/FR4_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Relay FR4 is active
 ++D=BOOL	N=FR3_Discrepency_Error	G=VAR_GLOBAL	Com=FR3 relay, which activates first STO for the uncoiler, does not respond properly. Troubleshoot, change relay.
 ++D=BOOL	N=FR4_Discrepency_Error	G=VAR_GLOBAL	Com=FR4 relay, which activates second STO for the uncoiler, does not respond properly. Troubleshoot, change relay.
 ++D=REAL	N=STO_Error_Time	IV=0.25	G=VAR_GLOBAL	Com=Time of non equivalence to between a STO fault and the monitoring of forced guided relays
@@ -379,22 +327,21 @@ _EN=Variables
 ++D=BOOL	N=Press_SOUT_AuxEquipment_STO	NTP=PublicationOnly	G=VAR_GLOBAL	Com=FBSOUT - Feedback from Safety output - Safe signal for auxiliary equipment and uncoiler
 ++D=BOOL	N=Press_SOUT_Drive_STO	NTP=PublicationOnly	G=VAR_GLOBAL	Com=FBSOUT - Feedback from Safety output - Press motor STO 
 ++D=BOOL	N=Feeder_SIN_EDM	NTP=PublicationOnly	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - Feeder EDM
-++D=BOOL	N=Alex_Test	G=VAR_GLOBAL
-++D=BOOL	N=SFT_R_DSV1	AT=IOBus://unit#10/Activate_DSV1	G=VAR_GLOBAL
-++D=BOOL	N=SFT_R_DSV2	AT=IOBus://unit#10/Activate_DSV2	G=VAR_GLOBAL
-++D=BOOL	N=SFT_FSFT_R_DSV	AT=IOBus://unit#10/FST_R_DSV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety, R_DSV
+++D=BOOL	N=SFT_R_DSV1	AT=IOBus://unit#8/Activate_DSV1	G=VAR_GLOBAL
+++D=BOOL	N=SFT_R_DSV2	AT=IOBus://unit#8/Activate_DSV2	G=VAR_GLOBAL
+++D=BOOL	N=SFT_FSFT_R_DSV	AT=IOBus://unit#8/FST_R_DSV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety, R_DSV
 ++D=STRING[256]	N=Version_Number_String	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_GLOBAL
 ++D=LINT	N=Straightner_IN_Enc2_Pos	G=VAR_GLOBAL
-++D=UINT	N=Uncoiler_ABB_Control_Word	G=VAR_GLOBAL
-++D=UINT	N=Uncoiler_ABB_Status_Word	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_IN_Mtr_Current	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_IN_Total_Torque	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_IN_DC_Voltage	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_ABB_Accel_Time	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_GLOBAL
-++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_GLOBAL
-++D=INT	N=Uncoiler_ABB_Ref	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Control_Word	AT=ECAT://node#31/RxPDO 21 map_ABB Drives control word_2101_00	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Status_Word	AT=ECAT://node#31/TxPDO 21 map_ABB Drives status word_2104_00	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_Mtr_Current	AT=ECAT://node#31/TxPDO 21 map_01.07 Motor current_4001_07	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_Total_Torque	AT=ECAT://node#31/TxPDO 21 map_01.08 Motor current % of mo_4001_08	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_IN_DC_Voltage	AT=ECAT://node#31/TxPDO 21 map_01.11 DC voltage_4001_0B	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_ABB_Accel_Time	AT=ECAT://node#31/RxPDO 21 map_23.12 Acceleration time 1_4017_0C	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_Abb_Decel_Time	AT=ECAT://node#31/RxPDO 21 map_23.13 Deceleration time 1_4017_0D	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_ABB_Trip_Fault	AT=ECAT://node#31/TxPDO 21 map_04.01 Tripping fault_4004_01	G=VAR_GLOBAL
+++D=INT	N=Uncoiler_ABB_Ref	AT=ECAT://node#31/RxPDO 21 map_ABB Drives REF1_2102_00	G=VAR_GLOBAL
 ++D=BOOL	N=Shaker_IN_Overload_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Shaker motor overload
 ++D=BOOL	N=Feeder_IN_Hyd_Unit_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Hydraulic Unit Overload
 ++D=BOOL	N=Feeder_IN_Oiler_Overload	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Oiler motor overload
@@ -412,20 +359,16 @@ _EN=Variables
 ++D=BOOL	N=Master_OUT_Hyd_OL_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Master_OUT_PassL_OL_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Master_OUT_Oil_OL_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Uncoiler_Active	AT=IOBus://unit#10/Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
-++D=BOOL	N=SFT_Shaker_Active	AT=IOBus://unit#10/Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
-++D=BOOL	N=SFT_State_Unsafe_Comm	AT=IOBus://unit#10/State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
-++D=BOOL	N=SFT_Doors_Unlock_Comm	AT=IOBus://unit#10/Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
+++D=BOOL	N=SFT_Uncoiler_Active	AT=IOBus://unit#8/Uncoiler_Active	G=VAR_GLOBAL	Com=Signal that the uncoiler is active, for unlocking doors.
+++D=BOOL	N=SFT_Shaker_Active	AT=IOBus://unit#8/Shaker_Active	G=VAR_GLOBAL	Com=Signal that the shaker is active, for unlocking doors.
+++D=BOOL	N=SFT_State_Unsafe_Comm	AT=IOBus://unit#8/State_Unsafe_Comm	G=VAR_GLOBAL	Com=Cannot unlock doors - state is unsafe.
+++D=BOOL	N=SFT_Doors_Unlock_Comm	AT=IOBus://unit#8/Doors_Unlock_Comm	G=VAR_GLOBAL	Com=From Safety - Doors are unlocked.
 ++D=BOOL	N=Master_OUT_Passline_OL_Reset	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Enable_Switch_Selector	AT=IOBus://unit#10/Enable_Switch_Valves	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
+++D=BOOL	N=SFT_Enable_Switch_Selector	AT=IOBus://unit#8/Enable_Switch_Valves	NTP=PublicationOnly	G=VAR_GLOBAL	Com=From Safety - Enable switch is activated, prevent valves from changing state.
 ++D=BOOL	N=Uncoiler_OUT_Brake_Sol	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Disengage the brake of the uncoiler mandrel.
-++D=BOOL	N=SFT_Uncoiler_Dr_SFT_Comm	AT=IOBus://unit#10/Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
+++D=BOOL	N=SFT_Uncoiler_Dr_SFT_Comm	AT=IOBus://unit#8/Uncoiler_Dr_SFT_Comm	G=VAR_GLOBAL	Com=Signal that the safeties for the drive are active.
 ++D=BOOL	N=Feeder_IN_Pause_Signal	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Feeder_IOL_EOM	G=VAR_GLOBAL	Com=Byte array of EOM Sensor, second byte has 0/1 value for end of material or not.
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_32	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_48	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	G=VAR_GLOBAL
@@ -433,61 +376,50 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA2	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Etalex_Temp_Retained	N=HMI_Data_Temp_Etalex_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Station_ES	AT=IOBus://unit#10/Station_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Uncoiler_ES	AT=IOBus://unit#10/Uncoiler_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door1_ES	AT=IOBus://unit#10/Door1_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door2_ES	AT=IOBus://unit#10/Door2_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door3_ES	AT=IOBus://unit#10/Door3_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door4_ES	AT=IOBus://unit#10/Door4_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door5_ES	AT=IOBus://unit#10/Door5_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Robot_ES	AT=IOBus://unit#10/Robot_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock1	AT=IOBus://unit#10/Door1_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock2	AT=IOBus://unit#10/Door2_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock3	AT=IOBus://unit#10/Door3_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock4	AT=IOBus://unit#10/Door4_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Door_Lock5	AT=IOBus://unit#10/Door5_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=_sNXUNIT_ID	N=Press_CPL_2_NLI	IV=(NodeAdr := 10, IPAdr := [5(16#FF)], UnitNo := 0, Path := [16#11, 16#0, 16#2, 16#0, 16#a, 16#0, 16#1, 16#0, 16#2, 55(16#0)], PathLength := 12)	RO=1	Const=1	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Die_Block	AT=IOBus://unit#10/Die_Block_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Station_ES	AT=IOBus://unit#8/Station_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Uncoiler_ES	AT=IOBus://unit#8/Uncoiler_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door1_ES	AT=IOBus://unit#8/Door1_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door2_ES	AT=IOBus://unit#8/Door2_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door3_ES	AT=IOBus://unit#8/Door3_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door4_ES	AT=IOBus://unit#8/Door4_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door5_ES	AT=IOBus://unit#8/Door5_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Robot_ES	AT=IOBus://unit#8/Robot_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock1	AT=IOBus://unit#8/Door1_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock2	AT=IOBus://unit#8/Door2_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock3	AT=IOBus://unit#8/Door3_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock4	AT=IOBus://unit#8/Door4_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Door_Lock5	AT=IOBus://unit#8/Door5_Lock_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=_sNXUNIT_ID	N=Press_CPL_2_NLI	IV=(NodeAdr := 72, IPAdr := [5(16#FF)], UnitNo := 0, Path := [16#11, 16#0, 16#2, 16#0, 16#48, 16#0, 16#1, 16#0, 16#2, 55(16#0)], PathLength := 12)	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Die_Block	AT=IOBus://unit#8/Die_Block_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_FR1_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_FR2_Monitor	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ULINT	N=Feeder_Strip_Encoder_Raw	G=VAR_GLOBAL
 ++D=BOOL	N=IOL_EOM_Signal	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA3	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA0	G=VAR_GLOBAL
-++D=BOOL	N=IOL_PO1_CE	G=VAR_GLOBAL
-++D=BOOL	N=IOL_PO1_SE	G=VAR_GLOBAL
-++D=BOOL	N=IOL_PO1_CmE	G=VAR_GLOBAL
-++D=BOOL	N=IOL_PO1_SiE	G=VAR_GLOBAL
-++D=BOOL	N=IOL_PO1_DE	G=VAR_GLOBAL
-++D=BOOL	N=IOL_PO1_DEI	G=VAR_GLOBAL
-++D=BOOL	N=IOL_PO1_PE	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempA4	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Buzzer	AT=IOBus://unit#4/Output Bit 16 bits/Output Bit 15	G=VAR_GLOBAL	Com=Electronic buzzer
+++D=BOOL	N=Master_OUT_Buzzer	G=VAR_GLOBAL	Com=Electronic buzzer
 ++D=BOOL	N=Feed_After_Shear	G=VAR_GLOBAL	Com=Variable to monitor the first feed after the shear cycle
 ++D=BOOL	N=Feed_After_Shear_Complete	G=VAR_GLOBAL	Com=The first feed done after the shear cycle has completed has been done
 ++D=BOOL	N=Global_Gags_16	G=VAR_GLOBAL
 ++D=HMI_S_Adj	N=HMI_S_Adj_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_S_Adj_Retained	N=HMI_S_Adj_Data_Retained	R=1	IV=(Adj_Factor := 1, Max_Torque := 150, Unit := False, Speed := 20, Accel := 50, Decel := 50, Bypass_Min_Alarm := False, Bypass_Max_Alarm := False, Bypass_Different_Shut_Height := False, Shut_Height_Max := 300, Shut_Height_Min := 200)	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=Shear_Data_Retained	N=HMI_Shear_Data_Retained	R=1	IV=(Activation_Alarms_Delay := 5, Auto_Pos_High_Alarms_Delay := 10)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=Shear_Data_Retained	N=HMI_Shear_Data_Retained	R=1	IV=(Activation_Alarms_Delay := 5, Auto_Pos_High_Alarms_Delay := 10, Wait_Timer := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Shear_Options	N=Master_Shear_Options	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=S_Adj_Data	N=My_S_Adj_Motor	R=1	IV=(Direction := True, Pos := 240, Speed := 10, Accel := 50, Decel := 50)	G=VAR_GLOBAL
 ++D=S_Adj_Data_Retained	N=My_S_Adj_Motor_Retained	R=1	G=VAR_GLOBAL
 ++D=Shear_Data	N=My_Shear	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_S_Adj_STO1	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_S_Adj_STO2	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_S_Adj_STO1	AT=ECAT://node#54/Digital inputs/STO1	G=VAR_GLOBAL
+++D=BOOL	N=Press_IN_S_Adj_STO2	AT=ECAT://node#54/Digital inputs/STO2	G=VAR_GLOBAL
 ++D=BOOL	N=Press_SIN_Die_block	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - Die Block
 ++D=BOOL	N=Press_SIN_S_Adj_EDM	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - S_Adj EDM
 ++D=_sHOMING_REF	N=S_Adj_Homing	G=VAR_GLOBAL	EC=<ECs><EC EK="Offset" C="Actual shut height value." /></ECs>
 ++D=BOOL	N=SFT_Back_Door	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Press_LC	AT=IOBus://unit#10/Press_LC_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Press_LC	AT=IOBus://unit#8/Press_LC_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Auto_Activation	G=VAR_GLOBAL	Com=Latch variable to imitate the manual shear button.
 ++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Cycle	G=VAR_GLOBAL	Com=When the shear cycle is active, this variable is set to true.
 ++D=BOOL	N=Shear_Cycle_Completed	G=VAR_GLOBAL	Com=Active when the shear cycle has completed so the press can stroke again.
 ++D=BOOL	N=T_Stop_Press_to_Shear	G=VAR_GLOBAL	Com=Top Stop signal to enable the shear cycle.
 ++D=BOOL	N=Uncoiler_IN_Off_Signal	G=VAR_GLOBAL	Com=IN - Uncoiler needs to stop
-++D=ARRAY[0..4] OF UINT	N=Act_Gag_List_Seq	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF UINT	N=Act_Gag_No_seq	G=VAR_GLOBAL
 ++D=C_Press_Calibration	N=C_Press_Calibration_Data	R=1	IV=(SPM_AT_MAX_HZ := 60, SPM_AT_MIN_HZ := 20, ANGLE_T_STOP_MAX_SPM := 220, ANGLE_T_STOP_MIN_SPM := 220, Auto_Top_Stop := False, Angle_Range := 10, BRAKE_T_MAX_SPM := 0.150, BRAKE_T_MIN_SPM := 0.150, MAX_HZ := 0.0, MIN_HZ := 0.0)	G=VAR_GLOBAL
 ++D=HMI_Sequence_Absolute	N=HMI_ABS_Seq_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_CP_Calibration	N=HMI_C_Press_Calibration_Data	IV=(Auto_Top_Stop_Toggle := False, Calibrate_Low_Toggle := False, Calibrate_High_Toggle := False, Auto_Stop_Angle := 220, Calibrate_Low_State := False, Calibrate_High_State := False, Auto_Top_Stop_State := False, Calibration_Alarm := False, Calibration_Speed := 20,SPM_AT_MAX_HZ := 60, SPM_AT_MIN_HZ := 20, ANGLE_T_STOP_MAX_SPM := 220, ANGLE_T_STOP_MIN_SPM := 220)	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -497,40 +429,34 @@ _EN=Variables
 ++D=HMI_Press_Pos_Calc	N=HMI_Calc_Data_Press_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Feeder_Model_Transfer	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Press_Model_Transfer	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=STRING[256]	N=HMI_Recipe_Picture_Path	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Transfer_Flag	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Uncoiler_Model_Transfer	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Mode_OFF	G=VAR_GLOBAL
 ++D=INT	N=Next_Step	G=VAR_GLOBAL
-++D=DINT	N=Press_ABB_OUTFreq	G=VAR_GLOBAL
+++D=DINT	N=Press_ABB_OUTFreq	AT=ECAT://node#30/TxPDO 21 map_01.06 Output frequency_4001_06	G=VAR_GLOBAL
 ++D=BOOL	N=Press_Coast_Stop	R=1	IV=False	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=REAL	N=Press_Distance_Real	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=UINT	N=Press_Enc_Speed_Source	G=VAR_GLOBAL
 ++D=UINT	N=Recipe_Number	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=UINT	N=Set_Recipe_No	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..499] OF UDINT	N=Sharpening_Data	R=1	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Auto_First_Cycle	G=VAR_GLOBAL	Com=Flag for the first shear cycle to be done when in automatic mode
 ++D=BOOL	N=Shear_IN_Motor_Overload	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_Top_Stopped	G=VAR_GLOBAL	Com=The shear has been top stopped
 ++D=INT	N=Step_No	G=VAR_GLOBAL
 ++D=BOOL	N=Top_Stop_Shear	G=VAR_GLOBAL	Com=Waiting for shear to be top stopped
-++D=DINT	N=Uncoiler_ABB_AI1_Value	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=DINT	N=Uncoiler_ABB_OUTFreq	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_ABB_AI1_Value	AT=ECAT://node#31/TxPDO 21 map_12.11 AI1 actual value_400C_0B	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=DINT	N=Uncoiler_ABB_OUTFreq	AT=ECAT://node#31/TxPDO 21 map_01.01 Motor speed used_4001_01	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_Coast_Stop	R=1	IV=True	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_Drive_Reverse	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_Drive_Safety	G=VAR_GLOBAL
-++D=BOOL	N=Press_IN_DSV_Conditions	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=IN - Feedback that the press is safe mode from safety controller
+++D=BOOL	N=Press_IN_DSV_Conditions	G=VAR_GLOBAL	Com=IN - Feedback that the press is safe mode from safety controller
 ++D=BOOL	N=Press_IN_DSV1_Monitor	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_DSV2_Monitor	G=VAR_GLOBAL
-++D=BOOL	N=Press_OUT_DSV1_Sig	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Press_OUT_DSV2_Sig	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=UDINT	N=Press_Position_Raw_Baumer	G=VAR_GLOBAL
-++D=DINT	N=Press_Speed_Raw_Baumer	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Safety_Ok	AT=IOBus://unit#10/Safety_Ok_Comm	G=VAR_GLOBAL
-++D=BOOL	N=SFT_Stroke_Press	AT=IOBus://unit#10/Stroke_Press	G=VAR_GLOBAL
+++D=UDINT	N=Press_Position_Raw_Baumer	AT=ECAT://node#90/TPDO 5 mapping parameter_Position value_6004_00	G=VAR_GLOBAL
+++D=DINT	N=Press_Speed_Raw_Baumer	AT=ECAT://node#90/TPDO 5 mapping parameter_Speed value 4 bytes_2004_00	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Safety_Ok	AT=IOBus://unit#8/Safety_Ok_Comm	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Stroke_Press	AT=IOBus://unit#8/Stroke_Press	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=S_Press	AT=MC://_MC_AX[7]	RO=1	Const=1	G=VAR_GLOBAL
-++D=BOOL	N=S_Press_STO1	G=VAR_GLOBAL
-++D=BOOL	N=S_Press_STO2	G=VAR_GLOBAL
+++D=BOOL	N=S_Press_STO1	AT=ECAT://node#50/Digital inputs/STO1	G=VAR_GLOBAL
+++D=BOOL	N=S_Press_STO2	AT=ECAT://node#50/Digital inputs/STO2	G=VAR_GLOBAL
 ++D=BOOL	N=S_Press_Error	G=VAR_GLOBAL
 ++D=BOOL	N=Record_Mode_Full	G=VAR_GLOBAL
 ++D=BOOL	N=Record_Mode_Pendulum	G=VAR_GLOBAL
@@ -540,15 +466,9 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Jog_REV	G=VAR_GLOBAL	Com=Keyswitch
 ++D=BOOL	N=Mode_Full_Start_Conditions	G=VAR_GLOBAL
 ++D=BOOL	N=Mode_Full_Auto_Start_Conditions	G=VAR_GLOBAL
-++D=BOOL	N=Mode_Full_Pendulum_Conditions	G=VAR_GLOBAL
-++D=BOOL	N=Mode_Full_Pendulum_Auto_Conditions	G=VAR_GLOBAL
 ++D=BOOL	N=Mode_Pendulum_Conditions	G=VAR_GLOBAL
 ++D=BOOL	N=Mode_Pendulum_Auto_Conditions	G=VAR_GLOBAL
 ++D=BOOL	N=HMI_Timer_Visibility	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Test_Press_USer0	G=VAR_GLOBAL
-++D=BOOL	N=Test_Press_USer1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
-++D=BOOL	N=Test_Press_USer2	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
-++D=BOOL	N=Test_Press_USer3	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
 ++D=STRING[256]	N=UIO_Message_Display	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Val_1	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_Strain1_Val_2	G=VAR_GLOBAL
@@ -577,7 +497,6 @@ _EN=Variables
 ++D=BOOL	N=UIO_Stop_Latch2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=UIO_Top_Stop_Latch2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Press_Tonnage	N=HMI2_Press_Ton	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Press_Fault2	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Feeder_Retained	N=HMI2_Feeder_Data_Retained	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False, Correction_Time_Limit := 0.5, Correction_Feed_Length_Begin := 0.9, Correction_Speed_Mul := 1, Correction_Accel_Mul := 1, Correction_Decel_Mul := 1, Correction_Factor := 1, Feed_Counter := 20, Feed_Complete_Time := 1, Feeder_Model := 0, Roller_Diameter := 0.0, Reduction_Ratio := 0.0, Feeder_Ratio := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Uncoiler	N=HMI2_Data_Uncoiler_Alarms	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Recoiler	N=HMI2_Recoiler_Data	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -586,7 +505,7 @@ _EN=Variables
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Entry	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Main	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Exit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
-++D=HMI_Uncoiler_Retained	N=HMI2_Data_Uncoiler_Retained	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 0.0, Speed_Manual := 0.0, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 5, AI_Scale_Speed_High := 60, AI_Offset := -4000, AI_Multiplier := 0.024)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Uncoiler_Retained	N=HMI2_Data_Uncoiler_Retained	IV=(Sensor_ON_Delay := 0.0, Sensor_OFF_Delay := 0.0, Speed := 0.0, Speed_Manual := 0.0, Rotation_Switch := False, Speed_Toggle := False, AI_Scale_Raw_Low := 0.0, AI_Scale_Raw_High := 0.0, IOL_Distance := 0.0, Uncoiler_Model := 0, AI_Scale_Speed_Low := 0.0, AI_Scale_Speed_High := 0.0, AI_Offset := 0.0, Sensor_Height := 0.0, Prop_Gain := 0.0, AI_Multiplier := 0.0, Sensor_Below_Mounted := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Master_Feed_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Strip_Encoder	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Main_Feeder	AT=MC://_MC_AX[2]	RO=1	Const=1	G=VAR_GLOBAL
@@ -596,60 +515,80 @@ _EN=Variables
 ++D=REAL	N=BlueScope_Delay	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Loading_Platform_DOWN	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Loading_Platform_UP	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_LoadingP_DOWN	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_LoadingP_In	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_LoadingP_Out	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_LoadingP_UP	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Feed_FWD1	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Feed_FWD2	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Feed_REV1	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Feed_REV2	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Release1	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Release2	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_LoadingP_DOWN	AT=ECAT://node#[71,2]/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_LoadingP_In	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 15	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_LoadingP_Out	AT=ECAT://node#[71,2]/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_LoadingP_UP	AT=ECAT://node#[71,2]/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD1	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD2	AT=ECAT://node#[71,2]/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_REV1	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_REV2	AT=ECAT://node#[71,2]/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Release1	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Release2	AT=ECAT://node#[71,2]/Input Bit 16 bits/Input Bit 06	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_RollerG_Down	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_RollerG_Up	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_OUT_LoadingP_Down	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_OUT_LoadingP_In	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_OUT_LoadingP_Out	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_OUT_LoadingP_Up	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_OUT_Release_LED1	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 02	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_OUT_Release_LED2	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_OUT_Release_LED1	AT=ECAT://node#[70,3]/Output Bit 16 bits/Output Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_OUT_Release_LED2	AT=ECAT://node#[71,3]/Output Bit 16 bits/Output Bit 02	G=VAR_GLOBAL
 ++D=Feeder_Options	N=Master_Feeder_Options2	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Master_IN_B	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Door green button - unlocks doors.
-++D=BOOL	N=Master_IN_Door_Unlock1	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Master_IN_Door_Unlock2	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Master_IN_Safety_Reset1	AT=ECAT://node#[4,1]/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL
+++D=BOOL	N=Master_IN_Door_Unlock1	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 14	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_IN_Door_Unlock2	AT=ECAT://node#[71,2]/Input Bit 16 bits/Input Bit 03	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_IN_Safety_Reset1	AT=ECAT://node#[70,1]/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL
 ++D=BOOL	N=Master_IN_Safety_Reset2	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Door_Permission_LED1	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 01	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Door_Permission_LED2	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Door_Permission_LED1	AT=ECAT://node#[70,3]/Output Bit 16 bits/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Door_Permission_LED2	AT=ECAT://node#[71,3]/Output Bit 16 bits/Output Bit 01	G=VAR_GLOBAL
 ++D=BOOL	N=Master_OUT_Hydraulic_Unit	G=VAR_GLOBAL	Com=Merge of different hydraulic systems sharing an hydraulic unit.
-++D=BOOL	N=Master_OUT_Safety_Reset_LED1	AT=ECAT://node#[4,2]/Output Bit 16 bits/Output Bit 00	G=VAR_GLOBAL
-++D=BOOL	N=Master_OUT_Safety_Reset_LED2	G=VAR_GLOBAL
-++D=BOOL	N=Shear_IN_Activation2	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
+++D=BOOL	N=Master_OUT_Safety_Reset_LED1	AT=ECAT://node#[70,3]/Output Bit 16 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=Master_OUT_Safety_Reset_LED2	AT=ECAT://node#[71,3]/Output Bit 16 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=Shear_IN_Activation2	AT=ECAT://node#[71,1]/Input Bit 16 bits/Input Bit 10	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog main feeder reverse.
 ++D=BOOL	N=Shear_OUT_Hydraulic_Unit_Motor	G=VAR_GLOBAL
 ++D=BOOL	N=Shear_OUT_Piston_Valve	G=VAR_GLOBAL	Com=Clamps the material prior to a shear.
-++D=UDINT	N=Straightner_IN_Enc1_Pos_Baumer	G=VAR_GLOBAL
-++D=UDINT	N=Straightner_IN_Enc2_Pos_Baumer	G=VAR_GLOBAL
-++D=UDINT	N=Straightner_IN_Enc3_Pos_Baumer	G=VAR_GLOBAL
-++D=UDINT	N=Straightner_IN_Enc4_Pos_Baumer	G=VAR_GLOBAL
+++D=UDINT	N=Straightner_IN_Enc1_Pos_Baumer	AT=ECAT://node#92/TPDO 5 mapping parameter_Position value_6004_00	G=VAR_GLOBAL
+++D=UDINT	N=Straightner_IN_Enc2_Pos_Baumer	AT=ECAT://node#93/TPDO 5 mapping parameter_Position value_6004_00	G=VAR_GLOBAL
+++D=UDINT	N=Straightner_IN_Enc3_Pos_Baumer	AT=ECAT://node#94/TPDO 5 mapping parameter_Position value_6004_00	G=VAR_GLOBAL
+++D=UDINT	N=Straightner_IN_Enc4_Pos_Baumer	AT=ECAT://node#95/TPDO 5 mapping parameter_Position value_6004_00	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_DOWN	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_FWD	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_REV	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Coil_Cart_Clamp_UP	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Coil_Clamp_Limit_FWD	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Coil_Clamp_Limit_REV	G=VAR_GLOBAL
-++D=BOOL	N=Uncoiler_IN_Lower_Pressure_Position	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Pressing_Arm_PSwitch_DOWN	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Pressing_Arm_PSwitch_UP	G=VAR_GLOBAL	Com=Pressure switch of upper pressing arm.
 ++D=BOOL	N=Uncoiler_IN_SideS_Fwd	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_SideS_REV	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_IN_Upper_Pressure_Position	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_OUT_Bot_Pressure_Down	G=VAR_GLOBAL
-++D=BOOL	N=Uncoiler_OUT_Bot_Pressure_Up	G=VAR_GLOBAL
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_FWD	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog the supporting arm upwards.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_Inside	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart towards the feeder.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_Outside	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Move the coil cart away from the uncoiler.
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_REV	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Jog the supporting armdownwards.
 ++D=BOOL	N=Uncoiler_OUT_Pressure_Light	G=VAR_GLOBAL
-++D=BOOL	N=Uncoiler_OUT_Top_Pressure_Down	G=VAR_GLOBAL
-++D=BOOL	N=Uncoiler_OUT_Top_Pressure_Up	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Entry_EOM	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Exit_EOM	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=Shear_IN_Wait_Sensor	G=VAR_GLOBAL
+++D=UINT	N=Press_Node_Adr	R=1	IV=30	G=VAR_GLOBAL
+++D=UINT	N=Uncoiler_Node_Adr	R=1	IV=31	G=VAR_GLOBAL
+++D=UINT	N=S_Press_Node_Adr	R=1	IV=50	G=VAR_GLOBAL
+++D=UINT	N=Main_Feeder_Node_Adr	R=1	IV=51	G=VAR_GLOBAL
+++D=UINT	N=Entry_Feeder_Node_Adr	R=1	IV=52	G=VAR_GLOBAL
+++D=UINT	N=Exit_Feeder_Node_Adr	R=1	IV=53	G=VAR_GLOBAL
+++D=UINT	N=S_Adj_Node_Adr	R=1	IV=54	G=VAR_GLOBAL
+++D=UINT	N=Recoiler_Node_Adr	R=1	IV=55	G=VAR_GLOBAL
+++D=UINT	N=Operator_Station_Node_Adr	R=1	IV=70	G=VAR_GLOBAL
+++D=UINT	N=Feedline_Station_Node_Adr	R=1	IV=71	G=VAR_GLOBAL
+++D=UINT	N=Press_Control_Node_Adr	R=1	IV=72	G=VAR_GLOBAL
+++D=UINT	N=Press_Enc_Node_Adr	R=1	IV=90	G=VAR_GLOBAL
+++D=UINT	N=Strip_Enc_Node_Adr	R=1	IV=91	G=VAR_GLOBAL
+++D=UINT	N=Straightner_Enc1_Adr	R=1	IV=92	G=VAR_GLOBAL
+++D=UINT	N=Straightner_Enc2_Adr	R=1	IV=93	G=VAR_GLOBAL
+++D=UINT	N=Straightner_Enc3_Adr	R=1	IV=94	G=VAR_GLOBAL
+++D=UINT	N=Straightner_Enc4_Adr	R=1	IV=95	G=VAR_GLOBAL
+++D=Encoder_Data	N=Main_Feeder_Enc_Data	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
+++D=Encoder_Data	N=Straightner_Enc1	R=1	IV=(Node := 5, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
+++D=Encoder_Data	N=Straightner_Enc2	R=1	IV=(Node := 6, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
+++D=Encoder_Data	N=Straightner_Enc3	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
+++D=Encoder_Data	N=Straightner_Enc4	R=1	IV=(Node := 8, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL

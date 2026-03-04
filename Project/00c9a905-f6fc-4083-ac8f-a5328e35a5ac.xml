@@ -64,6 +64,14 @@ _EN=Variables
 ++D=TOF	N=Pressing_Arm_Light_Indicator	G=VAR
 ++D=DINT	N=Uncoiler_ABB_OUTFreq_ABS	G=VAR
 ++D=REAL	N=Uncoiler_ABB_OUTFreq_ABS2	G=VAR
+++D=REAL	N=Loop_Distance	G=VAR
+++D=REAL	N=Loop_Height	G=VAR
+++D=REAL	N=Setpoint	G=VAR
+++D=REAL	N=Range	G=VAR
+++D=REAL	N=Error	G=VAR
+++D=REAL	N=Out	G=VAR
+++D=REAL	N=Speed_Value_Lim	Ord=1	G=VAR	AOE=1
+++D=UINT	N=Size_Ary	Ord=2	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -115,7 +123,6 @@ _EN=Variables
 ++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
 ++D=INT	N=Unc_AOUT_Drv_Speed	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_OUT_Clamp_Open	G=VAR_EXTERNAL
-++D=INT	N=Uncoiler_IN_Speed_Scaling	G=VAR_EXTERNAL
 ++D=INT	N=Uncoiler_IN_Speed_INT	G=VAR_EXTERNAL
 ++D=REAL	N=Uncoiler_IN_Speed_REAL	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_FR3_Monitor	G=VAR_EXTERNAL
@@ -136,14 +143,11 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_Abb_Decel_Time	G=VAR_EXTERNAL
 ++D=UINT	N=Uncoiler_ABB_Trip_Fault	G=VAR_EXTERNAL
 ++D=INT	N=Uncoiler_ABB_Ref	G=VAR_EXTERNAL
-++D=UINT	N=Uncoiler_IOL_AI1	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_Uncoiler_Active	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_Enable_Switch_Selector	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_Uncoiler_Dr_SFT_Comm	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_FWD	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_EnableSW_Jog_REV	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_16	G=VAR_EXTERNAL
 ++D=Abb_Drv	N=ABB_Control_Uncoiler	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_OUT_Brake_Sol	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_IN_Off_Signal	G=VAR_EXTERNAL

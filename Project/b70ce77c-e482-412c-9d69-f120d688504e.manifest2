@@ -11,8 +11,10 @@
       <ApplicationFeature name="SafetyDataProtection" />
       <ApplicationFeature name="SafetyProgramProtection" />
       <ApplicationFeature name="Safety_SL5x00_V1_4" />
+      <ApplicationFeature name="SraParametersSupportedSlave" />
       <ApplicationFeature name="Safety_DataProtectionV2_0Using" />
       <ApplicationFeature name="Safety" />
+      <ApplicationFeature name="SupportSraParameterFor1Sn51" />
       <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
     </ApplicationFeatures>
   </Solution>

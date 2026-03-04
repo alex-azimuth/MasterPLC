@@ -103,10 +103,6 @@ _EN=Variables
 ++D=BOOL	N=Sequence_Counting	G=VAR
 ++D=Feeder_Data	N=My_Exit_Feeder	G=VAR	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
 ++D=ARRAY[0..99] OF Bool	N=Gags	G=VAR
-++D=Encoder_Data	N=Straightner_Enc1	R=1	IV=(Node := 5, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc2	R=1	IV=(Node := 6, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc3	R=1	IV=(Node := 7, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
-++D=Encoder_Data	N=Straightner_Enc4	R=1	IV=(Node := 8, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
 ++D=TOF	N=Start_Oiling_Cycle	G=VAR
 ++D=TON	N=Start_Oiling_Motor	G=VAR
 ++D=INT	N=Z	G=VAR
@@ -278,7 +274,6 @@ _EN=Variables
 ++D=BOOL	N=Shear_Cycle_Start_Conditions_2	G=VAR
 ++D=Encoder_Data	N=Entry_Feeder_Enc_Data	G=VAR
 ++D=Encoder_Data	N=Exit_Feeder_Enc_Data	G=VAR
-++D=Encoder_Data	N=Main_Feeder_Enc_Data	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 0, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 5, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR
 ++D=ARRAY[0..16] OF BOOL	N=Gag_Faults_Act	G=VAR
 ++D=ARRAY[0..16] OF R_TRIG	N=Gag_Faults_Act_R	G=VAR
 ++D=ARRAY[0..16] OF BOOL	N=Gag_Faults_Deact	G=VAR
@@ -345,7 +340,6 @@ _EN=Variables
 ++D=ARRAY[0..15] OF Bool	N=Gag_Ret	G=VAR_EXTERNAL
 ++D=INT	N=No_Gags_Installed	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_EOM_Sensor	G=VAR_EXTERNAL
-++D=BOOL	N=Feeder_Present	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_Present	G=VAR_EXTERNAL
 ++D=BOOL	N=Global_Feed_Completed	G=VAR_EXTERNAL	Com=Rising edge that the feed is complete.
 ++D=_sAXIS_REF	N=Entry_Feeder	Const=1	G=VAR_EXTERNAL
@@ -371,7 +365,6 @@ _EN=Variables
 ++D=BOOL	N=Update_Feeder_Sequences	G=VAR_EXTERNAL
 ++D=BOOL	N=Global_Exit_Feed_Completed	G=VAR_EXTERNAL	Com=Flag that the exit feed has been completed successfully.
 ++D=BOOL	N=Global_Entry_Feed_Completed	G=VAR_EXTERNAL	Com=Flag that the entry feed has been completed successfully.
-++D=BOOL	N=Feed_Before_Press	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Main_STO1	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_IN_Main_STO2	G=VAR_EXTERNAL
 ++D=Feeder_Data	N=My_Main_Feeder	G=VAR_EXTERNAL	EC=<ECs><EC EK="Micro" C="Micro mode active." /></ECs>
@@ -423,42 +416,11 @@ _EN=Variables
 ++D=Recoiler_Comm	N=Recoiler_Signals	G=VAR_EXTERNAL
 ++D=Die_Configuration	N=Gag_Config	G=VAR_EXTERNAL
 ++D=BOOL	N=Machine_Stopped	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro10	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro9	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro7	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro8	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro5	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro6	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro4	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro3	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro2	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Pro1	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret2	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret1	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret3	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret4	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret5	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret6	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret7	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret8	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret9	G=VAR_EXTERNAL
-++D=BOOL	N=Gag_Ret10	G=VAR_EXTERNAL
 ++D=Die_Configuration	N=HMI_Die_Config	G=VAR_EXTERNAL
-++D=BOOL	N=Gag1	G=VAR_EXTERNAL
-++D=BOOL	N=Gag2	G=VAR_EXTERNAL
-++D=BOOL	N=Gag3	G=VAR_EXTERNAL
-++D=BOOL	N=Gag4	G=VAR_EXTERNAL
-++D=BOOL	N=Gag5	G=VAR_EXTERNAL
-++D=BOOL	N=Gag6	G=VAR_EXTERNAL
-++D=BOOL	N=Gag7	G=VAR_EXTERNAL
-++D=BOOL	N=Gag8	G=VAR_EXTERNAL
-++D=BOOL	N=Gag9	G=VAR_EXTERNAL
 ++D=Feed_Sequence	N=Act_Sequences	G=VAR_EXTERNAL
 ++D=BOOL	N=Sequence_Transfered_Latch	G=VAR_EXTERNAL
-++D=BOOL	N=HMI_Eastwood_Cut_Activated	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_Idle	G=VAR_EXTERNAL
 ++D=Press_Data	N=Press	G=VAR_EXTERNAL
-++D=BOOL	N=HMI_Eastwood_Cut_Activate	G=VAR_EXTERNAL
 ++D=HMI_Recoiler	N=HMI_Recoiler_Data	G=VAR_EXTERNAL
 ++D=Shear_Comm	N=Shear_Signals	G=VAR_EXTERNAL
 ++D=LINT	N=Straightner_IN_Enc1_Pos	G=VAR_EXTERNAL
@@ -531,3 +493,8 @@ _EN=Variables
 ++D=UDINT	N=Straightner_IN_Enc2_Pos_Baumer	G=VAR_EXTERNAL
 ++D=UDINT	N=Straightner_IN_Enc3_Pos_Baumer	G=VAR_EXTERNAL
 ++D=UDINT	N=Straightner_IN_Enc4_Pos_Baumer	G=VAR_EXTERNAL
+++D=Encoder_Data	N=Main_Feeder_Enc_Data	G=VAR_EXTERNAL
+++D=Encoder_Data	N=Straightner_Enc1	G=VAR_EXTERNAL
+++D=Encoder_Data	N=Straightner_Enc2	G=VAR_EXTERNAL
+++D=Encoder_Data	N=Straightner_Enc3	G=VAR_EXTERNAL
+++D=Encoder_Data	N=Straightner_Enc4	G=VAR_EXTERNAL

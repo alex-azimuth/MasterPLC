@@ -417,6 +417,7 @@ _EN=Variables
 ++D=ARRAY[0..3] OF REAL	N=Tonnage_C	G=VAR
 ++D=INT	N=Press_Angle_INT	G=VAR
 ++D=REAL	N=Tonnage_Total_C	G=VAR
+++D=BOOL	N=Air_Pressure_Prevent_Start	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -518,7 +519,6 @@ _EN=Variables
 ++D=Abb_Drv	N=ABB_Control	G=VAR_EXTERNAL
 ++D=REAL	N=Press_Pos_REAL	G=VAR_EXTERNAL
 ++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
-++D=ULINT	N=Press_Position_Pulse	G=VAR_EXTERNAL
 ++D=UINT	N=HMI_Clicked_User_Condition	G=VAR_EXTERNAL
 ++D=DINT	N=Press_IN_Mtr_Current	G=VAR_EXTERNAL
 ++D=DINT	N=Press_IN_Total_Torque	G=VAR_EXTERNAL
@@ -549,7 +549,6 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Tonnage_Fault	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_OUT_Zero_CAM	G=VAR_EXTERNAL
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
-++D=BOOL	N=Alex_Test	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_R_DSV1	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_R_DSV2	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_FSFT_R_DSV	G=VAR_EXTERNAL
@@ -558,7 +557,6 @@ _EN=Variables
 ++D=Shaker_Data	N=HMI_Shaker_Data	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_Shaker_Active	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_IN_Door_Btn_Yellow	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF BYTE	N=Uncoiler_IOL_DS_0	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS1	G=VAR_EXTERNAL
 ++D=ARRAY[0..1] OF BYTE	N=Press_IOL_TempS2	G=VAR_EXTERNAL
 ++D=HMI_Etalex_Temp	N=HMI_Data_Temp_Etalex	G=VAR_EXTERNAL
@@ -616,15 +614,10 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Jog_REV	G=VAR_EXTERNAL
 ++D=BOOL	N=Mode_Full_Start_Conditions	G=VAR_EXTERNAL
 ++D=BOOL	N=Mode_Full_Auto_Start_Conditions	G=VAR_EXTERNAL
-++D=BOOL	N=Mode_Full_Pendulum_Conditions	G=VAR_EXTERNAL
-++D=BOOL	N=Mode_Full_Pendulum_Auto_Conditions	G=VAR_EXTERNAL
 ++D=BOOL	N=Mode_Pendulum_Conditions	G=VAR_EXTERNAL
 ++D=BOOL	N=Mode_Pendulum_Auto_Conditions	G=VAR_EXTERNAL
 ++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	G=VAR_EXTERNAL
 ++D=ARRAY[0..15] OF BOOL	N=Press_IN_User	G=VAR_EXTERNAL
-++D=BOOL	N=Test_Press_USer0	G=VAR_EXTERNAL
-++D=BOOL	N=Test_Press_USer1	G=VAR_EXTERNAL
-++D=BOOL	N=Test_Press_USer2	G=VAR_EXTERNAL
 ++D=STRING[256]	N=UIO_Message_Display	G=VAR_EXTERNAL
 ++D=HMI_Press_Tonnage_Ret	N=HMI_Press_Ton_Ret	G=VAR_EXTERNAL
 ++D=WORD	N=Press_IOL_Strain1_2_Error	G=VAR_EXTERNAL
@@ -653,3 +646,5 @@ _EN=Variables
 ++D=HMI_Press_Tonnage	N=HMI2_Press_Ton	G=VAR_EXTERNAL
 ++D=_sAXIS_REF	N=S_Adj_Motor	Const=1	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Exit_Conv_OL_Fault	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_CommErrTbl	Const=1	G=VAR_EXTERNAL
+++D=UINT	N=Press_Enc_Node_Adr	G=VAR_EXTERNAL

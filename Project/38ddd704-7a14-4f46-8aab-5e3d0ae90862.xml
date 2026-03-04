@@ -47,6 +47,8 @@ _EN=Variables
 ++D=BOOL	N=Temp_BP_Alexis_Test_1	G=VAR
 ++D=TOF	N=Shear_Clamp_Delay	G=VAR
 ++D=TON	N=Shear_Cycle_Delay	G=VAR
+++D=TOF	N=Shear_Wait_Delay	G=VAR
+++D=TON	N=Shear_Cycle_Wait	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Shear_OUT_Cmd_Down	G=VAR_EXTERNAL
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL
@@ -85,7 +87,6 @@ _EN=Variables
 ++D=BOOL	N=Shear_Auto_Cycle_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Cycle	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_Cycle_Completed	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF UINT	N=Act_Gag_No_seq	G=VAR_EXTERNAL
 ++D=Feed_Sequence	N=Act_Sequences	G=VAR_EXTERNAL
 ++D=BOOL	N=Feeder_OUT_Main_Release_Valve	G=VAR_EXTERNAL
 ++D=HMI_Feeder	N=HMI_Feeder_Data	G=VAR_EXTERNAL
@@ -103,3 +104,4 @@ _EN=Variables
 ++D=REAL	N=BlueScope_Delay	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_IN_Activation2	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_OUT_Piston_Valve	G=VAR_EXTERNAL
+++D=BOOL	N=Shear_IN_Wait_Sensor	G=VAR_EXTERNAL

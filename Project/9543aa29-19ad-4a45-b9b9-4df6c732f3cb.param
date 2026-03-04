@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter index="2200.00" value="1" />
+  <parameter index="3011.04" value="146" />
+  <parameter index="3114.06" value="29" />
+  <parameter index="3115.03" value="146" />
+  <parameter index="3120.11" value="146" />
+  <parameter index="3121.11" value="146" />
+  <parameter index="3124.02" value="518" />
+  <parameter index="3124.06" value="29" />
+  <parameter index="3125.03" value="146" />
+  <parameter index="3213.01" value="29" />
+  <parameter index="3214.01" value="29" />
+  <parameter index="3223.01" value="146" />
+  <parameter index="3223.02" value="37" />
+  <parameter index="3224.01" value="146" />
+  <parameter index="3224.02" value="37" />
+  <parameter index="3233.02" value="1024" />
+  <parameter index="3234.02" value="1024" />
+</parameters>

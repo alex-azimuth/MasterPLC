@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Module VenderID="1" ProductCode="1266262" Revision="16777216" IONodeID="90308951-c798-4875-a87c-1f66f53c2e49" DeviceName="CPL2_DO3" SerialNo="0" IsEnabled="1">
+<Module VenderID="1" ProductCode="1266262" Revision="16777216" IONodeID="90308951-c798-4875-a87c-1f66f53c2e49" DeviceName="PCPL_DO1" SerialNo="0" IsEnabled="1">
   <Parameter Index="20498" SubIndex="1" Value="0" />
   <IOPort IOPortID="77bbb76a-d173-40de-91a3-7ef98bbef324" Index="28674" SubIndex="1">
     <SubIOPort IOPortID="e7a97ed3-a602-408d-9587-bbe6c76ff2b5" />
