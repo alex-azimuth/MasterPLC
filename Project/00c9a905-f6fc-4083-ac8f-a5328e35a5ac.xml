@@ -70,8 +70,14 @@ _EN=Variables
 ++D=REAL	N=Range	G=VAR
 ++D=REAL	N=Error	G=VAR
 ++D=REAL	N=Out	G=VAR
-++D=REAL	N=Speed_Value_Lim	Ord=1	G=VAR	AOE=1
-++D=UINT	N=Size_Ary	Ord=2	G=VAR	AOE=1
+++D=REAL	N=Speed_Value_Lim	G=VAR
+++D=UINT	N=Size_Ary	G=VAR
+++D=ACS580_ECAT	N=ECAT_Comm2	G=VAR
+++D=REAL	N=Uncoiler_pArm_Speed	G=VAR
+++D=REAL	N=Uncoiler_pArm_Speed_Percent	G=VAR
+++D=REAL	N=Uncoiler_pArm_Speed_Ratioed	G=VAR
+++D=REAL	N=Uncoiler_pArm_Speed_Scaled	G=VAR
+++D=TOF	N=Uncoiler_Stop_TOF	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
@@ -176,3 +182,16 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_Outside	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_OUT_Coil_Cart_Keeper_REV	G=VAR_EXTERNAL
 ++D=BOOL	N=Uncoiler_OUT_Pressure_Light	G=VAR_EXTERNAL
+++D=Abb_Drv	N=ABB_Control_Uncoiler_pArm	G=VAR_EXTERNAL
+++D=HMI_Uncoiler_pArm_Retained	N=HMI_Uncoiler_pArm_Ret	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_ABB_pArm_Accel_Time	G=VAR_EXTERNAL
+++D=UINT	N=Uncoiler_ABB_pArm_Control_Word	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_Abb_pArm_Decel_Time	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_ABB_pArm_OUTFreq	G=VAR_EXTERNAL
+++D=INT	N=Uncoiler_ABB_pArm_Ref	G=VAR_EXTERNAL
+++D=UINT	N=Uncoiler_ABB_pArm_Status_Word	G=VAR_EXTERNAL
+++D=UINT	N=Uncoiler_pArm_ABB_Trip_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=Uncoiler_pArm_Coast_Stop	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_pArm_IN_DC_Voltage	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_pArm_IN_Mtr_Current	G=VAR_EXTERNAL
+++D=DINT	N=Uncoiler_pArm_IN_Total_Torque	G=VAR_EXTERNAL

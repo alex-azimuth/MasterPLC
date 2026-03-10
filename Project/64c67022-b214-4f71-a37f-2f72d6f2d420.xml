@@ -138,3 +138,4 @@ _EN=Variables
 ++D=Encoder_Data	N=Straightner_Enc2	G=VAR_EXTERNAL
 ++D=Encoder_Data	N=Straightner_Enc3	G=VAR_EXTERNAL
 ++D=Encoder_Data	N=Straightner_Enc4	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Press_Fault	G=VAR_EXTERNAL
