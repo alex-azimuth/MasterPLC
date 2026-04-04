@@ -19,7 +19,7 @@
       </Options>
     </NexAxisMceTypeSelect>
     <NexAxisUseAxis>
-      <CurrentValue>NexAxisUsingAxis</CurrentValue>
+      <CurrentValue>NexAxisNotUsingAxisChangable</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisUsingAxis</DefaultValue>
@@ -1343,7 +1343,7 @@
     </PDO27Indispensable>
     <CorrectedFunctionIsIndispensable>
       <CurrentValue>True</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>false</IsVisible>
       <DefaultValue></DefaultValue>
       <Options />
@@ -1418,7 +1418,7 @@
     </NexAxisPulseDenominatorValue2>
     <NexAxisTravelDistancePerWorkRotation>
       <CurrentValue>10000</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10000</DefaultValue>
       <Options />
@@ -1432,14 +1432,14 @@
     </NexAxisTravelDistancePerWorkRotationValue2>
     <NexAxisWorkGearRatio>
       <CurrentValue>1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1</DefaultValue>
       <Options />
     </NexAxisWorkGearRatio>
     <NexAxisMotorGearRatio>
       <CurrentValue>1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1</DefaultValue>
       <Options />

@@ -417,7 +417,17 @@ _EN=Variables
 ++D=ARRAY[0..3] OF REAL	N=Tonnage_C	G=VAR
 ++D=INT	N=Press_Angle_INT	G=VAR
 ++D=REAL	N=Tonnage_Total_C	G=VAR
-++D=BOOL	N=Air_Pressure_Prevent_Start	G=VAR
+++D=BOOL	N=Prevent_Start	G=VAR	Com=Top stop conditions that prevent a start.
+++D=UDINT	N=Hardcoded_Clutch_Alarm_Threshold	R=1	IV=100000	Const=1	G=VAR
+++D=R_TRIG	N=Reset_Clutch_Maintenance_R	G=VAR
+++D=TON	N=Overrun_Bypass_Cancel	G=VAR
+++D=TON	N=Startup_Timer	G=VAR
+++D=TOF	N=Press_Save_Data_TOF	G=VAR
+++D=BOOL	N=Test_Save_Data	G=VAR
+++D=R_TRIG	N=Overrun_Prox_R	G=VAR
+++D=F_TRIG	N=Stop_Test_F	G=VAR
+++D=TON	N=Encoder_Failure_TON	G=VAR
+++D=BOOL	N=Overrun_Encoder_Failure	G=VAR	Com=Encoder is not detecting movement but the overrun is being activated.
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -648,3 +658,8 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Exit_Conv_OL_Fault	G=VAR_EXTERNAL
 ++D=ARRAY[1..192] OF BOOL	N=_EC_CommErrTbl	Const=1	G=VAR_EXTERNAL
 ++D=UINT	N=Press_Enc_Node_Adr	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Stop_Test_State	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Press_Overrun_Angle1	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Press_Overrun_Angle2	G=VAR_EXTERNAL
+++D=HMI_Dist_LC_Calc	N=HMI_Press_LC_Calcs	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_AS_Light	G=VAR_EXTERNAL

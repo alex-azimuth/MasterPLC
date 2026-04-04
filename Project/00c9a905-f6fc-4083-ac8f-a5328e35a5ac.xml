@@ -78,6 +78,7 @@ _EN=Variables
 ++D=REAL	N=Uncoiler_pArm_Speed_Ratioed	G=VAR
 ++D=REAL	N=Uncoiler_pArm_Speed_Scaled	G=VAR
 ++D=TOF	N=Uncoiler_Stop_TOF	G=VAR
+++D=Shear_SPM	N=Shear_SPM_Calc	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Uncoiler	N=HMI_Data_Uncoiler	G=VAR_EXTERNAL
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL

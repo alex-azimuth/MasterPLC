@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..3] OF REAL	N=Punch_Time	G=VAR
+++D=ARRAY[0..3] OF REAL	N=Punch_Time_Init	Const=1	G=VAR
+++D=TON	N=Punch_Timer	G=VAR
+++D=R_TRIG	N=Shear_Down_R	G=VAR
+++D=INT	N=I	G=VAR
+++D=BOOL	N=Timer_Reset	G=VAR
+++D=R_TRIG	N=I_Lim_R	G=VAR
+++D=INT	N=J	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Shear_Down	Ord=1	G=VAR_INPUT
+++D=REAL	N=SPM	Ord=2	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

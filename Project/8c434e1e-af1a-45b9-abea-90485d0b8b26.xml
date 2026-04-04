@@ -57,6 +57,7 @@ _EN=Variables
 ++D=BOOL	N=Record_Mode_Auto	G=VAR_GLOBAL
 ++D=BOOL	N=Record_Mode_Inch	G=VAR_GLOBAL
 ++D=BOOL	N=Press_OUT_Adj_Pulse	AT=ECAT://node#[72,2]/Output Bit 16 bits/Output Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Encoder module requires pulsing to provide accurate limit feedback.
+++D=HMI_Dist_LC_Calc	N=HMI_Press_LC_Calcs	R=1	IV=(Ts := 0.25, OS := 0.551181, Dpf := 0.0, Page_Close := False, Time_Ok := False, Distance_Hazard := 20, Tr := 0.021)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Uncoiler_Comm	N=Uncoiler_Signals	G=VAR_GLOBAL
 ++D=REAL	N=Brake_Time	R=1	IV=0.250	NTP=PublicationOnly	Ord=12	G=VAR_GLOBAL	Com=Time it takes for the press to stop - otherwise we get an alarm.
 ++D=REAL	N=Start_Time	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Time it takes to start the press - before generating an alarm.
@@ -77,7 +78,7 @@ _EN=Variables
 ++D=Feeder_Data	N=My_Entry_Feeder	G=VAR_GLOBAL
 ++D=HMI_Feeder	N=HMI_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Multiple_Shear_Seq" C="Triggered if there is more then one shear cycle in a sequence" /></ECs>
 ++D=HMI_Feeder	N=HMI2_Feeder_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Multiple_Shear_Seq" C="Triggered if there is more then one shear cycle in a sequence" /></ECs>
-++D=HMI_Press	N=HMI_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /><EC EK="Alarms.Continuoud_On_Demand_Warning" C="Warning to restart the automatic on demand sequence with the palms." /></ECs>
+++D=HMI_Press	N=HMI_Press_Data	NTP=PublicationOnly	G=VAR_GLOBAL	EC=<ECs><EC EK="Alarms.Single_Mode" C="Press is not in single and operator tried to start it in automatic single or " /><EC EK="Alarms.A_Single_Stroke_Warning" C="Warning to restart the automatic single sequence with the palms." /><EC EK="Alarms.Continuoud_On_Demand_Warning" C="Warning to restart the automatic on demand sequence with the palms." /><EC EK="Alarms.Clutch_Maintenance" C="Clutch maintenance alarm" /></ECs>
 ++D=HMI_Feeder_Retained	N=HMI_Feeder_Data_Retained	R=1	IV=(Entry_Adj_Factor := 1, Exit_Adj_Factor := 1, Max_Torque_Manual := 200, Unit := True, Bypass_EOM_Alarm := False, Entry_Jog_Speed := 1, Entry_Jog_Accel := 50, Entry_Jog_Decel := 50, Entry_Micro_Dist := 1, Main_Jog_Speed := 1, Main_Jog_Accel := 50, Main_Jog_Decel := 50, Main_Micro_Dist := 1, Exit_Jog_Speed := 1, Exit_Jog_Accel := 50, Exit_Jog_Decel := 50, Exit_Micro_Dist := 1, Entry_Feeder_Backlash := 0.0, Main_Feeder_Backlash := 0.0, Exit_Feeder_Backlash := 0.0, Feed_Verification_Tolerance := 0.0, Main_Adj_Factor := 1, Feed_Verification_Ratio := 0, Feed_Verification_Ratio2 := 0.0, Compensation_Multi := 0.5, Alternating_Distance := 1000, Gag_Delay := 0.100, Feed_Verification_Alarm_Threshold := 0.050, Feed_Verification_Ratio3 := 0.0, Bypass_Encoder_Alarm_Entry := False, Bypass_Encoder_Alarm_Exit := False, Bypass_Encoder_Alarm_Main := False, Manual_Speed_Limit := 50.8, Manual_Speed_Limit_Micro := 12.7, Straightner_Enc_Min_Val := -7.00, Straightner_Enc_Max_Val := 7.00, Straightner_Enc_Raw_Max := 65536, Straightner_Alarm := False, Correction_Time_Limit := 0.5, Correction_Feed_Length_Begin := 0.9, Correction_Speed_Mul := 1, Correction_Accel_Mul := 1, Correction_Decel_Mul := 1, Correction_Factor := 1, Feed_Counter := 20, Feed_Complete_Time := 1, Feeder_Model := 0, Roller_Diameter := 0.0, Reduction_Ratio := 0.0, Feeder_Ratio := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Main	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
 ++D=Feeder_Analytics	N=HMI_Feeder_Analytics_Entry	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Feeder data analytics
@@ -105,7 +106,7 @@ _EN=Variables
 ++D=LREAL	N=HMI_Release_Pos2	R=1	IV=0.0	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Position at which we trigger a pilot release.
 ++D=HMI_General_Data_Retained	N=HMI_Data_Retained	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Encoder_Data	N=Press_Enc_Data	R=1	IV=(Node := 0, Homing_Address := (Index := UINT#16#6003, Subindex := 0, IsCompleteAccess := False), Direction_Address := (Index := UINT#16#6000, Subindex := 0, IsCompleteAccess := False), Resolution_Address := (Index := UINT#16#6001, Subindex := 0, IsCompleteAccess := False), Scaling_Address := (Index := UINT#16#6002, Subindex := 0, IsCompleteAccess := False), Saving_Address := (Index := UINT#16#1010, Subindex := 1, IsCompleteAccess := False), Direction_Data := UINT#16#4, Homing_Data := UDINT#16#0, Units_Data := 3600, Resolution_Data := 3600, Save_Data := 1702257011, Integration_Data := 50, Integration_Address := (Index := UINT#16#6031, Subindex := USINT#16#2, IsCompleteAccess := False), Speed_Measure_Address := (Index := UINT#16#2002, Subindex := 2, IsCompleteAccess := False), Speed_Measure_Data := 0, Speed_Update_Filter_Address := (Index := UINT#16#2002, Subindex := 3, IsCompleteAccess := False), Speed_Update_Filter_Data := 10, Speed_Update_Depth_Address := (Index := UINT#16#2002, Subindex := 4, IsCompleteAccess := False), Speed_Update_Data := 5)	G=VAR_GLOBAL
-++D=BOOL	N=Overrun_Bypass	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Bypasses overrun alarm
+++D=BOOL	N=Overrun_Bypass	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Bypasses overrun alarm
 ++D=BOOL	N=Feeder_IN_Entry_Feed_FWD	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder forward signal.
 ++D=BOOL	N=Feeder_IN_Entry_Feed_REV	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder reverse signal.
 ++D=BOOL	N=Feeder_IN_Entry_Release	AT=ECAT://node#[70,2]/Input Bit 16 bits/Input Bit 00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Entry Feeder release signal.
@@ -313,8 +314,8 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Pedal1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pedal NO contact
 ++D=BOOL	N=Press_IN_Pedal2	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Pedal NC contact
 ++D=BOOL	N=PSW_Discrepency_Error	G=VAR_GLOBAL	Com=The two pressure switch of the dual valve indicates a malfunction of the valve.
-++D=BOOL	N=Press_IN_Automatic_Single_Strke_NC	NTP=PublicationOnly	G=VAR_GLOBAL	Com=/
-++D=BOOL	N=Press_IN_Automatic_Single_Strke_NO	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signal from SPDT relay activates by a sensor for automatic single stroke
+++D=BOOL	N=Press_IN_Automatic_Single_Strke_NC	AT=IOBus://unit#13/Input Bit 16 bits/Input Bit 07	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signal from SPDT relay activates by a sensor for automatic single stroke
+++D=BOOL	N=Press_IN_Automatic_Single_Strke_NO	AT=IOBus://unit#13/Input Bit 16 bits/Input Bit 08	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signal from SPDT relay activates by a sensor for automatic single stroke
 ++D=BOOL	N=Palm_Activated	R=1	G=VAR_GLOBAL	Com=The clutch activation mode has been set to be executed by the dual palms
 ++D=BOOL	N=Pedal_Activated	G=VAR_GLOBAL	Com=The clutch activation mode has been set to be executed by the pedal
 ++D=BOOL	N=Press_SIN_Back_Door_Intrlk	NTP=PublicationOnly	G=VAR_GLOBAL	Com=FBSIN - Feedback from Safety Input - Back Door Interlock
@@ -569,7 +570,7 @@ _EN=Variables
 ++D=BOOL	N=Uncoiler_OUT_Pressure_Light	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Entry_EOM	G=VAR_GLOBAL
 ++D=BOOL	N=Feeder_IN_Exit_EOM	AT=IOBus://unit#13/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL
-++D=BOOL	N=Shear_IN_Wait_Sensor	G=VAR_GLOBAL
+++D=BOOL	N=Shear_IN_Wait_Sensor	AT=IOBus://unit#13/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL
 ++D=UINT	N=Press_Node_Adr	R=1	IV=30	G=VAR_GLOBAL
 ++D=UINT	N=Uncoiler_Node_Adr	R=1	IV=31	G=VAR_GLOBAL
 ++D=UINT	N=S_Press_Node_Adr	R=1	IV=50	G=VAR_GLOBAL
@@ -608,3 +609,10 @@ _EN=Variables
 ++D=DINT	N=Uncoiler_pArm_IN_Mtr_Current	AT=ECAT://node#32/TxPDO 21 map_01.07 Motor current_4001_07	G=VAR_GLOBAL
 ++D=DINT	N=Uncoiler_pArm_IN_Total_Torque	AT=ECAT://node#32/TxPDO 21 map_01.08 Motor current % of mo_4001_08	G=VAR_GLOBAL
 ++D=BOOL	N=Press_OUT_Press_Fault	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Stop_Test_State	AT=IOBus://unit#2/Stop_Test	G=VAR_GLOBAL	Com=Signal to the safety controller to activate the stop test.
+++D=LREAL	N=HMI_Press_Overrun_Angle1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=HMI_Press_Overrun_Angle2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=Ds	G=VAR_GLOBAL
+++D=_sAXIS_PARAM	N=Main_Feeder_Ratio_Axis_Para	G=VAR_GLOBAL
+++D=HMI_Feeder_Ratios_Ret	N=HMI_Feeder_Ratio	R=1	IV=(Transfer_Main_Ratio := False, Main_Ratio := 1, Transfer_Entry_Ratio := False, Entry_Ratio := 1, Transfer_Exit_Ratio := False, Exit_Ratio := 1, Main_Ratio_Success := False, Entry_Ratio_Success := False, Exit_Ratio_Success := False, Entry_Transfer_Calc := False, Exit_Transfer_Calc := False, Main_Transfer_Calc := False, Main_Current_Ratio := 0.0, Entry_Current_Ratio := 0.0, Exit_Current_Ratio := 0.0, Entry_Roller_Dia := 1, Entry_Reduction := 1, Exit_Roller_Dia := 1, Exit_Reduction := 1)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Press_OUT_AS_Light	AT=IOBus://unit#15/Output Bit 16 bits/Output Bit 02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Light that signals Automatic Single Stroke is on.

@@ -40,7 +40,7 @@
 		// Convert to punches per minute&#xD;
 		SPM := SafeDiv_REAL(60, SPM);&#xD;
 	END_IF;&#xD;
-	&#xD;
+&#xD;
 ELSE&#xD;
 	// Initialize all values when the press is not running&#xD;
 	SPM := 0;&#xD;

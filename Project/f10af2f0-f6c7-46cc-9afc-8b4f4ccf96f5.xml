@@ -19,7 +19,7 @@
       </Options>
     </NexAxisMceTypeSelect>
     <NexAxisUseAxis>
-      <CurrentValue>NexAxisUsingAxis</CurrentValue>
+      <CurrentValue>NexAxisNotUsingAxisNotChangable</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisUsingAxis</DefaultValue>
@@ -31,7 +31,7 @@
     </NexAxisUseAxis>
     <NexAxisAxisType>
       <CurrentValue>NexAxisVirtualServoType</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisVirtualServoType</DefaultValue>
       <Options>
@@ -43,7 +43,7 @@
     </NexAxisAxisType>
     <NexAxisFunctionLimit>
       <CurrentValue>NexAxisSingleAxisPTP</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisNoLimit</DefaultValue>
       <Options>
@@ -53,7 +53,7 @@
     </NexAxisFunctionLimit>
     <UsedPDONumber>
       <CurrentValue>28</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -153,7 +153,7 @@
     </NexAxisOutputDevice3Channel>
     <NexAxisPdoAiosmapVersion>
       <CurrentValue>1.0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1.0</DefaultValue>
       <Options />
@@ -1352,7 +1352,7 @@
   <NexAxisScaling>
     <NexAxisUnitsConversion>
       <CurrentValue>EnumElement2</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -1366,7 +1366,7 @@
     </NexAxisUnitsConversion>
     <NexAxisUnitsNumerator>
       <CurrentValue>8388608</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10000</DefaultValue>
       <Options />
@@ -1380,7 +1380,7 @@
     </NexAxisUnitsNumeratorValue2>
     <NexAxisReducerUse>
       <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -1390,7 +1390,7 @@
     </NexAxisReducerUse>
     <NexAxisUnitsDenominator>
       <CurrentValue>12.77461422</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10000</DefaultValue>
       <Options />
@@ -1404,7 +1404,7 @@
     </NexAxisUnitsDenominatorValue2>
     <NexAxisPulseDenominator>
       <CurrentValue>1</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1</DefaultValue>
       <Options />
@@ -1448,7 +1448,7 @@
   <NexAxisDynamics>
     <NexAxisMaxVelocity>
       <CurrentValue>1000</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>400000000</DefaultValue>
       <Options />
@@ -1462,7 +1462,7 @@
     </NexAxisMaxVelocityValue2>
     <NexAxisWarningVelocityLimit>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1476,7 +1476,7 @@
     </NexAxisWarningVelocityLimitValue2>
     <NexAxisStartVelocity>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1490,7 +1490,7 @@
     </NexAxisStartVelocityValue2>
     <NexAxisMaxJogVelocity>
       <CurrentValue>1000</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1000000</DefaultValue>
       <Options />
@@ -1504,7 +1504,7 @@
     </NexAxisMaxJogVelocityValue2>
     <NexAxisMaxAcceleration>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1518,7 +1518,7 @@
     </NexAxisMaxAccelerationValue2>
     <NexAxisWarningAccelerationLimit>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1532,7 +1532,7 @@
     </NexAxisWarningAccelerationLimitValue2>
     <NexAxisMaxDeceleration>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1546,7 +1546,7 @@
     </NexAxisMaxDecelerationValue2>
     <NexAxisWarningDecelerationLimit>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1560,7 +1560,7 @@
     </NexAxisWarningDecelerationLimitValue2>
     <NexAxisAccDecOveractive>
       <CurrentValue>NexAxisNoErrorBlendingBuffered</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisNoErrorBlendingBuffered</DefaultValue>
       <Options>
@@ -1571,7 +1571,7 @@
     </NexAxisAccDecOveractive>
     <NexAxisReverseMovementMode>
       <CurrentValue>NexAxisDecreaseVelocityStop</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisDecreaseVelocityStop</DefaultValue>
       <Options>
@@ -1581,7 +1581,7 @@
     </NexAxisReverseMovementMode>
     <NexAxisWarningTorqueLimitPositive>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1595,7 +1595,7 @@
     </NexAxisWarningTorqueLimitPositiveValue2>
     <NexAxisWarningTorqueLimitNegative>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1609,7 +1609,7 @@
     </NexAxisWarningTorqueLimitNegativeValue2>
     <NexAxisInPositionBand>
       <CurrentValue>0.001</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10</DefaultValue>
       <Options />
@@ -1623,7 +1623,7 @@
     </NexAxisInPositionBandValue2>
     <NexAxisInPositionCheckTime>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1637,7 +1637,7 @@
     </NexAxisInPositionCheckTimeValue2>
     <NexAxisActualVelocityFilterTime>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1651,7 +1651,7 @@
     </NexAxisActualVelocityFilterTimeValue2>
     <NexAxisZeroPositionBand>
       <CurrentValue>.05</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10</DefaultValue>
       <Options />
@@ -1667,7 +1667,7 @@
   <NexAxisStopOptions>
     <NexAxisEmergencyStopMode>
       <CurrentValue>NexAxisImmediateStopAccumulatedPulse</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisImmediateStopAccumulatedPulse</DefaultValue>
       <Options>
@@ -1678,7 +1678,7 @@
     </NexAxisEmergencyStopMode>
     <NexAxisLimitInputStopMode>
       <CurrentValue>NexAxisImmediateStopAccumulatedPulse</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisImmediateStopAccumulatedPulse</DefaultValue>
       <Options>
@@ -1690,7 +1690,7 @@
     </NexAxisLimitInputStopMode>
     <NexAxisDriverAlarmResetTime>
       <CurrentValue>200</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>200</DefaultValue>
       <Options />
@@ -1704,7 +1704,7 @@
     </NexAxisDriverAlarmResetTimeValue2>
     <NexAxisMaxPositiveTorqueLimit>
       <CurrentValue>300.0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>300.0</DefaultValue>
       <Options />
@@ -1718,7 +1718,7 @@
     </NexAxisMaxPositiveTorqueLimitValue2>
     <NexAxisMaxNegativeTorqueLimit>
       <CurrentValue>300.0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>300.0</DefaultValue>
       <Options />
@@ -1774,7 +1774,7 @@
   <NexAxisLimits>
     <NexAxisSoftwareLimitMode>
       <CurrentValue>NexAxisInvalid</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisInvalid</DefaultValue>
       <Options>
@@ -1815,7 +1815,7 @@
     </NexAxisNegativeSoftwareLimitValue2>
     <NexAxisFollowingErrorLimit>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1829,7 +1829,7 @@
     </NexAxisFollowingErrorLimitValue2>
     <NexAxisFollowingErrorAlarmLimit>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1845,7 +1845,7 @@
   <NexAxisHoming>
     <NexAxisHomingMode>
       <CurrentValue>WithoutProximitySignalAndPressingSignal</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>OriginPreset</DefaultValue>
       <Options>
@@ -1863,7 +1863,7 @@
     </NexAxisHomingMode>
     <NexAxisOriginInputMode>
       <CurrentValue>NexAxisEXT</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisZInput</DefaultValue>
       <Options>
@@ -1873,7 +1873,7 @@
     </NexAxisOriginInputMode>
     <NexAxisStartDirection>
       <CurrentValue>NexAxisPositiveDirection</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisPositiveDirection</DefaultValue>
       <Options>
@@ -1883,7 +1883,7 @@
     </NexAxisStartDirection>
     <NexAxisOperationPositiveLimitInput>
       <CurrentValue>NexAxisReversedAndMovingRemainingPulsesStop</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisReversedAndMovingRemainingPulsesStop</DefaultValue>
       <Options>
@@ -1894,7 +1894,7 @@
     </NexAxisOperationPositiveLimitInput>
     <NexAxisOriginInputDetectionDirection>
       <CurrentValue>NexAxisPositiveDirection</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisPositiveDirection</DefaultValue>
       <Options>
@@ -1904,7 +1904,7 @@
     </NexAxisOriginInputDetectionDirection>
     <NexAxisOperationNegativeLimitInput>
       <CurrentValue>NexAxisReversedAndMovingRemainingPulsesStop</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisReversedAndMovingRemainingPulsesStop</DefaultValue>
       <Options>
@@ -1915,7 +1915,7 @@
     </NexAxisOperationNegativeLimitInput>
     <NexAxisHomingVelocity>
       <CurrentValue>10</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10000</DefaultValue>
       <Options />
@@ -1929,7 +1929,7 @@
     </NexAxisHomingVelocityValue2>
     <NexAxisHomingApproachVelocity>
       <CurrentValue>10</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1000</DefaultValue>
       <Options />
@@ -1943,7 +1943,7 @@
     </NexAxisHomingApproachVelocityValue2>
     <NexAxisHomingAcceleration>
       <CurrentValue>1</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1957,7 +1957,7 @@
     </NexAxisHomingAccelerationValue2>
     <NexAxisHomingDeceleration>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1971,7 +1971,7 @@
     </NexAxisHomingDecelerationValue2>
     <NexAxisHomingJerk>
       <CurrentValue>1</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -1999,7 +1999,7 @@
     </NexAxisOriginInputMaskAmountValue2>
     <NexAxisOriginPositionOffset>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -2027,7 +2027,7 @@
     </NexAxisPushTimeValue2>
     <NexAxisOriginCompensationValue>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -2041,7 +2041,7 @@
     </NexAxisOriginCompensationValueValue2>
     <NexAxisCompensationVelocity>
       <CurrentValue>1000</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1000</DefaultValue>
       <Options />
@@ -2057,7 +2057,7 @@
   <NexAxisCount>
     <NexAxisCountMode>
       <CurrentValue>EnumElement2</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -2067,7 +2067,7 @@
     </NexAxisCountMode>
     <NexAxisModuloMAXPosition>
       <CurrentValue>99999</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>2147483647</DefaultValue>
       <Options />
@@ -2081,7 +2081,7 @@
     </NexAxisModuloMAXPositionValue2>
     <NexAxisModuloMINPosition>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>-2147483648</DefaultValue>
       <Options />
@@ -2095,7 +2095,7 @@
     </NexAxisModuloMINPositionValue2>
     <NexAxisEncoderTypes>
       <CurrentValue>NexAxisAbs</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>NexAxisInc</DefaultValue>
       <Options>

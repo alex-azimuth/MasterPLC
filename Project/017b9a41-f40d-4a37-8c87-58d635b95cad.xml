@@ -33,6 +33,14 @@ _EN=Variables
 ++D=R_TRIG	N=HMI_Uncoiler_Model_Transfer_R	G=VAR
 ++D=R_TRIG	N=Pendulum_Distance_Transfer_R	G=VAR
 ++D=R_TRIG	N=Pendulum_Symmetrical_R	G=VAR
+++D=LREAL	N=K	IV=63	G=VAR	Com=63 inches per second
+++D=LREAL	N=Tc	IV=0.01	G=VAR
+++D=LREAL	N=Tspm	IV=0.04	Const=1	G=VAR
+++D=LREAL	N=Dpf	IV=0	G=VAR
+++D=LREAL	N=PI	IV=3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132	Const=1	G=VAR
+++D=R_TRIG	N=Transfer_Main_Ratio_R	Ord=1	G=VAR	AOE=1
+++D=R_TRIG	N=Transfer_Entry_Ratio_R	Ord=2	G=VAR	AOE=1
+++D=R_TRIG	N=Transfer_Exit_Ratio_R	Ord=3	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
 ++D=HMI_Feed_Calc	N=HMI_Calc_Data_Feed	G=VAR_EXTERNAL
@@ -61,3 +69,6 @@ _EN=Variables
 ++D=BOOL	N=HMI_Feeder_Model_Transfer	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_Uncoiler_Model_Transfer	G=VAR_EXTERNAL
 ++D=HMI_Sequence_Absolute	N=HMI_ABS_Seq_Data	G=VAR_EXTERNAL
+++D=HMI_Dist_LC_Calc	N=HMI_Press_LC_Calcs	G=VAR_EXTERNAL
+++D=LREAL	N=Ds	G=VAR_EXTERNAL
+++D=HMI_Feeder_Ratios_Ret	N=HMI_Feeder_Ratio	G=VAR_EXTERNAL

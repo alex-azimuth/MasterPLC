@@ -41,6 +41,7 @@ END_IF;&#xD;
 // Add a new count each time the clutch is activated. Set the variable that measures the time the clutch is active.&#xD;
 IF (Clutch_RT.Q) THEN&#xD;
 	Analytics.Clutch_Counter := Analytics.Clutch_Counter+1;&#xD;
+	Analytics.Maintenance_Clutch_Counter := Analytics.Maintenance_Clutch_Counter+1;&#xD;
 	Clutch_T_Start := TRUE;&#xD;
 END_IF;&#xD;
 &#xD;
