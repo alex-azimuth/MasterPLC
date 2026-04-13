@@ -50,6 +50,7 @@ _EN=Variables
 ++D=TOF	N=Shear_Wait_Delay	G=VAR
 ++D=TON	N=Shear_Cycle_Wait	G=VAR
 ++D=Shear_SPM	N=Shear_SPM_Calc	G=VAR
+++D=TON	N=Idle_Timer	Ord=1	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Shear_OUT_Cmd_Down	G=VAR_EXTERNAL
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL
@@ -107,3 +108,4 @@ _EN=Variables
 ++D=BOOL	N=Shear_OUT_Piston_Valve	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_IN_Wait_Sensor	G=VAR_EXTERNAL
 ++D=REAL	N=SPM	G=VAR_EXTERNAL
+++D=BOOL	N=T_Stop_Press_to_Shear	Ord=2	G=VAR_EXTERNAL	AOE=1
