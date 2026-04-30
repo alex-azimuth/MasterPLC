@@ -38,6 +38,8 @@ _EN=Variables
 ++D=BOOL	N=Axis_Home_CommandAborted	G=VAR
 ++D=BOOL	N=Axis_Home_Error	G=VAR
 ++D=WORD	N=Axis_Home_ErrorID	G=VAR
+++D=TOF	N=Change_USE_Delay	G=VAR
+++D=TON	N=Fault_Check	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
 ++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT

@@ -319,7 +319,6 @@ _EN=Variables
 ++D=LREAL	N=S_Overrun_Angle1	IV=170	Const=1	G=VAR
 ++D=LREAL	N=S_Overrun_Angle2	IV=195	Const=1	G=VAR
 ++D=BOOL	N=S_Press_Start	G=VAR	Com=Start signal coming from the same place as DSV activate.
-++D=BOOL	N=S_Press_Wait_For_Feed	G=VAR
 ++D=Zone_Switch	N=Feeding_Cam1	G=VAR
 ++D=Zone_Switch	N=Feeding_Cam2	G=VAR
 ++D=TOF	N=S_Press_Ensure_Feed	G=VAR
@@ -395,7 +394,6 @@ _EN=Variables
 ++D=Text_List	N=Message_Stack	G=VAR
 ++D=Text_List	N=Message_Stack_Empty	G=VAR
 ++D=BOOL	N=Override_Inactive	G=VAR
-++D=BOOL	N=S_Press_Counter_T_Stop	G=VAR	Com=Triggers a top stop for the counter but not the feeder
 ++D=BOOL	N=S_Press_Done	G=VAR
 ++D=ARRAY[0..31] OF R_TRIG	N=Start_Condition_R	G=VAR
 ++D=ARRAY[0..31] OF R_TRIG	N=Stop_R	G=VAR
@@ -428,6 +426,8 @@ _EN=Variables
 ++D=F_TRIG	N=Stop_Test_F	G=VAR
 ++D=TON	N=Encoder_Failure_TON	G=VAR
 ++D=BOOL	N=Overrun_Encoder_Failure	G=VAR	Com=Encoder is not detecting movement but the overrun is being activated.
+++D=CTU	N=Overrun_Flicker_Alarm	G=VAR
+++D=INT	N=Overrun_Flicker_Alarm_CV	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -663,3 +663,5 @@ _EN=Variables
 ++D=LREAL	N=HMI_Press_Overrun_Angle2	G=VAR_EXTERNAL
 ++D=HMI_Dist_LC_Calc	N=HMI_Press_LC_Calcs	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_OUT_AS_Light	G=VAR_EXTERNAL
+++D=BOOL	N=S_Press_Counter_T_Stop	G=VAR_EXTERNAL	Com=Triggers a top stop for the counter but not the feeder
+++D=BOOL	N=S_Press_Wait_For_Feed	G=VAR_EXTERNAL
