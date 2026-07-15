@@ -35,9 +35,14 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Drv_Reverse	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Put the drive of the press in reverse.
 ++D=BOOL	N=Press_IN_Exit_Conv_OL_Fault	G=VAR_GLOBAL
 ++D=BOOL	N=Press_Conditions	G=VAR_GLOBAL	Com=Non-Safe conditions required to start the press.
+++D=HMI_DSV_Monitor	N=HMI_DSV_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..15] OF Bool	N=Press_OUT_Cams	AT=IOBus://unit#16/Output Bit 16 bits	NTP=PublicationOnly	G=VAR_GLOBAL	Com=This variable stores the press current outputs cam
 ++D=BOOL	N=Reset_Stroke	G=VAR_GLOBAL	Com=Palms or relays have been depressed.
 ++D=BOOL	N=Rev_Manual_Interlock	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Direction	N=HMI_Feed_Data_Dir	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Direction	N=HMI_Feed_Entry_Data	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Direction	N=HMI_Feed_Exit_Data	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Direction	N=HMI_Strip_Enc_Data_Dir	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Features	N=Master_Features	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feeder_Options	N=Master_Feeder_Options	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Uncoiler_Options	N=Master_Uncoiler_Options	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
@@ -405,7 +410,7 @@ _EN=Variables
 ++D=HMI_S_Adj_Retained	N=HMI_S_Adj_Data_Retained	R=1	IV=(Adj_Factor := 1, Max_Torque := 150, Unit := False, Speed := 20, Accel := 50, Decel := 50, Bypass_Min_Alarm := False, Bypass_Max_Alarm := False, Bypass_Different_Shut_Height := False, Shut_Height_Max := 300, Shut_Height_Min := 200)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Shear_Data_Retained	N=HMI_Shear_Data_Retained	R=1	IV=(Activation_Alarms_Delay := 5, Auto_Pos_High_Alarms_Delay := 10, Wait_Timer := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Shear_Options	N=Master_Shear_Options	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=S_Adj_Data	N=My_S_Adj_Motor	R=1	IV=(Direction := True, Pos := 240, Speed := 10, Accel := 50, Decel := 50)	G=VAR_GLOBAL
+++D=S_Adj_Data	N=My_S_Adj_Motor	R=1	IV=(Direction := True, Pos := 240, Speed := 10, Accel := 50, Decel := 50)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=S_Adj_Data_Retained	N=My_S_Adj_Motor_Retained	R=1	G=VAR_GLOBAL
 ++D=Shear_Data	N=My_Shear	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_S_Adj_STO1	AT=ECAT://node#54/Digital inputs/STO1	G=VAR_GLOBAL
@@ -622,3 +627,7 @@ _EN=Variables
 ++D=Count_Data	N=HMI_Count_Total	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=S_Press_Counter_T_Stop	G=VAR_GLOBAL	Com=Triggers a top stop for the counter but not the feeder
 ++D=BOOL	N=S_Press_Wait_For_Feed	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Palms	AT=IOBus://unit#2/Palms_Comm	G=VAR_GLOBAL	Com=Palm buttons from safety controller
+++D=BOOL	N=Press_IN_DSV_Fault	AT=ECAT://node#[72,1]/Input Bit 16 bits/Input Bit 06	G=VAR_GLOBAL
+++D=BOOL	N=Press_OUT_DSV_Reset	AT=ECAT://node#[72,2]/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Auto_Allowed	AT=IOBus://unit#2/Auto_Allowed_Comm	G=VAR_GLOBAL	Com=Allow pedal and auto modes - normally a jumper in operator station.

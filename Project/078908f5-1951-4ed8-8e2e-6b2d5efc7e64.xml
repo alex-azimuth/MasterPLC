@@ -428,6 +428,9 @@ _EN=Variables
 ++D=BOOL	N=Overrun_Encoder_Failure	G=VAR	Com=Encoder is not detecting movement but the overrun is being activated.
 ++D=CTU	N=Overrun_Flicker_Alarm	G=VAR
 ++D=INT	N=Overrun_Flicker_Alarm_CV	G=VAR
+++D=BOOL	N=Auto_Cycle_180	G=VAR	Com=Make absolutely sure to pass through 180.
+++D=TP	N=Reset_DSV_TP	G=VAR
+++D=TP	N=Reset_DSV_Wait	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -665,3 +668,8 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_AS_Light	G=VAR_EXTERNAL
 ++D=BOOL	N=S_Press_Counter_T_Stop	G=VAR_EXTERNAL	Com=Triggers a top stop for the counter but not the feeder
 ++D=BOOL	N=S_Press_Wait_For_Feed	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Palms	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_DSV_Fault	G=VAR_EXTERNAL
+++D=HMI_DSV_Monitor	N=HMI_DSV_Data	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_DSV_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_Auto_Allowed	G=VAR_EXTERNAL
