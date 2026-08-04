@@ -6,13 +6,13 @@
       <ApplicationFeature name="HMI" />
       <ApplicationFeature name="NA-RTLD□□Version:1.17" />
       <ApplicationFeature name="SupportD41DDevice" />
-      <ApplicationFeature name="V102Project" />
-      <ApplicationFeature name="SetUnit NX102-1100 Ver. 1.69" />
       <ApplicationFeature name="SafetyDataProtection" />
       <ApplicationFeature name="SafetyProgramProtection" />
       <ApplicationFeature name="Safety_SL5x00_V1_4" />
       <ApplicationFeature name="Safety_DataProtectionV2_0Using" />
       <ApplicationFeature name="Safety" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="SetUnit NX102-1100 Ver. 1.69" />
       <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
     </ApplicationFeatures>
   </Solution>
