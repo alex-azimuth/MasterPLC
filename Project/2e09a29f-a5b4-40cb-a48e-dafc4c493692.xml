@@ -194,16 +194,6 @@
         <Option>EnumElement2</Option>
       </Options>
     </NexCpuEipFINSGatewayCounter>
-    <NexCpuEipFINSWriteProtectionEnable>
-      <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>true</IsEnabled>
-      <IsVisible>true</IsVisible>
-      <DefaultValue>EnumElement1</DefaultValue>
-      <Options>
-        <Option>EnumElement1</Option>
-        <Option>EnumElement2</Option>
-      </Options>
-    </NexCpuEipFINSWriteProtectionEnable>
     <NexCpuEipFINSRoutingTableLocalTableItem0LocalRowNumber>
       <CurrentValue></CurrentValue>
       <IsEnabled>true</IsEnabled>

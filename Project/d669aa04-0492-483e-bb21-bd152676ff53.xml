@@ -8,22 +8,14 @@
     </ExecutionConditionCJUnit>
   </GeneralSettingsData>
   <Programs>
-    <AssociatedProgramData ProgramName="C_Press" InstanceName="C_Press" IniFileTrackingId="a898fcd57773426f8591cbd78d5f55e9" StartupSetting="FALSE" SequenceNumber="2" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="Feeder" InstanceName="Feeder" IniFileTrackingId="5e121dfcd59940f29373fc7def511bdb" StartupSetting="FALSE" SequenceNumber="3" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="Modbus" InstanceName="Modbus" IniFileTrackingId="a8dbbf5f177341f8a9e69737fde141af" StartupSetting="FALSE" SequenceNumber="5" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Feeder" InstanceName="Feeder" IniFileTrackingId="5e121dfcd59940f29373fc7def511bdb" StartupSetting="FALSE" SequenceNumber="2" IsDebugProgram="false" />
     <AssociatedProgramData ProgramName="Master" InstanceName="Master" IniFileTrackingId="c32095ddc1cf46a2b15ebcf552a8221f" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="Uncoiler" InstanceName="Uncoiler" IniFileTrackingId="3fc0a9ea9f8f47c2bc3816b8af1fad98" StartupSetting="FALSE" SequenceNumber="4" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="Recoil" InstanceName="Recoil" IniFileTrackingId="d642a80e502344ae84eb324c9c25f6a2" StartupSetting="FALSE" SequenceNumber="6" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="Shear" InstanceName="Shear" IniFileTrackingId="6d0c794129ff448fa3c13357d65e239d" StartupSetting="FALSE" SequenceNumber="7" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Uncoiler" InstanceName="Uncoiler" IniFileTrackingId="3fc0a9ea9f8f47c2bc3816b8af1fad98" StartupSetting="FALSE" SequenceNumber="3" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Shear" InstanceName="Shear" IniFileTrackingId="6d0c794129ff448fa3c13357d65e239d" StartupSetting="FALSE" SequenceNumber="4" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds>
-    <RefreshUnitId RefreshUnitId="92abac92-967f-41bf-b74f-495297ef7196" />
-    <RefreshUnitId RefreshUnitId="0ebdf9e6-b249-4ea1-ae39-fa21b55fb58a" />
-    <RefreshUnitId RefreshUnitId="7e358f3e-1c0b-4dc3-9dff-e297444a2485" />
     <RefreshUnitId RefreshUnitId="81d7b7b9-bf18-42d9-b7b6-762647fa8bd2" />
-    <RefreshUnitId RefreshUnitId="aaa5c489-1328-48d7-b73a-52921814ae10" />
     <RefreshUnitId RefreshUnitId="b361b4a7-0af2-4f6c-a7e4-139f33b07dab" />
-    <RefreshUnitId RefreshUnitId="ec6cb8c3-b9c5-44b1-a04b-913043a4fee4" />
     <RefreshUnitId RefreshUnitId="d73f11e5-ef93-4d21-90c5-9e2e50718b3f" />
     <RefreshUnitId RefreshUnitId="5f26d991-78f3-4b40-b810-d72717df3477" />
     <RefreshUnitId RefreshUnitId="a09f5cb5-16b5-4239-9048-b48abdf33e05" />
@@ -31,27 +23,9 @@
     <RefreshUnitId RefreshUnitId="c16716ac-dcf5-4adf-a739-5103912dbd6c" />
     <RefreshUnitId RefreshUnitId="cec99160-5790-43b5-8129-29f3562da396" />
     <RefreshUnitId RefreshUnitId="d1274ec7-134b-44b1-a939-e70169e1cfff" />
-    <RefreshUnitId RefreshUnitId="634e1a83-0be4-4ae4-9b24-a428f489396d" />
-    <RefreshUnitId RefreshUnitId="33041c8c-ca69-4356-a2a0-e707158334a8" />
-    <RefreshUnitId RefreshUnitId="0218453c-7f9f-4deb-8be3-90208d0cfcc7" />
-    <RefreshUnitId RefreshUnitId="62a1e7d9-9775-423c-b592-72c88b80aa48" />
-    <RefreshUnitId RefreshUnitId="06238903-53c2-4d44-8154-ec08bad1e0a3" />
-    <RefreshUnitId RefreshUnitId="d3aa5987-397c-40e1-8dc1-5bf08534d4a9" />
-    <RefreshUnitId RefreshUnitId="55c2178f-0d73-4e75-a898-7c8db976f89d" />
-    <RefreshUnitId RefreshUnitId="20446bab-899f-4a04-a806-ddc37be3ad67" />
-    <RefreshUnitId RefreshUnitId="6c9309bb-fb37-454a-b48c-c04469d8b53a" />
-    <RefreshUnitId RefreshUnitId="e10b0b0b-1841-459b-8193-a91a97e8652a" />
-    <RefreshUnitId RefreshUnitId="cde50f92-3b4f-4b59-9565-43736ba2cb8a" />
-    <RefreshUnitId RefreshUnitId="943462b5-63f1-45a3-a297-139bddb1aa7e" />
-    <RefreshUnitId RefreshUnitId="6194e980-99a2-4ffb-b919-45d7a403a85c" />
-    <RefreshUnitId RefreshUnitId="3734b9f7-6546-4397-a532-52907afd503e" />
-    <RefreshUnitId RefreshUnitId="3ba9a967-467c-461f-904c-78781f8a687d" />
-    <RefreshUnitId RefreshUnitId="2b595193-1803-4344-9fb4-aba939def553" />
-    <RefreshUnitId RefreshUnitId="dfbfe311-0019-43e4-a6e9-1cbbbbde710d" />
-    <RefreshUnitId RefreshUnitId="857ddf39-c8cb-455e-a256-3512c306d5c2" />
     <RefreshUnitId RefreshUnitId="302013e9-73f9-489d-8640-4f70a72411a8" />
     <RefreshUnitId RefreshUnitId="fd471881-0cd7-4dd1-8a72-335ccd0fb489" />
-    <RefreshUnitId RefreshUnitId="688c39d1-82af-465b-aaf9-5d49d65a797a" />
+    <RefreshUnitId RefreshUnitId="9488d03c-632a-403d-8210-89af5a22942f" />
   </RefreshUnitIds>
   <TaskInterfaceVariables version="1" />
 </data>

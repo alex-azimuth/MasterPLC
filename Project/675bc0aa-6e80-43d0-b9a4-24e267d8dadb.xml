@@ -2,7 +2,7 @@
 <data>
   <NexAxisGeneralSetting>
     <NexAxisAxisNumber>
-      <CurrentValue>4</CurrentValue>
+      <CurrentValue>2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
@@ -1343,7 +1343,7 @@
     </PDO27Indispensable>
     <CorrectedFunctionIsIndispensable>
       <CurrentValue>True</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>false</IsVisible>
       <DefaultValue></DefaultValue>
       <Options />

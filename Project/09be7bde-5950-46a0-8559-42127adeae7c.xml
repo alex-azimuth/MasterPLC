@@ -585,9 +585,6 @@ _EN=Variables
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Main	G=VAR_EXTERNAL
 ++D=Feeder_Analytics	N=HMI2_Feeder_Analytics_Exit	G=VAR_EXTERNAL
 ++D=_sAXIS_REF	N=Main_Feeder	Const=1	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Master_Feed_Axis	Const=1	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Strip_Encoder	Const=1	G=VAR_EXTERNAL
-++D=_sAXIS_REF	N=Master_Axis_Error	Const=1	G=VAR_EXTERNAL
 ++D=BOOL	N=Palm_Activated	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Palm1	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Palm2	G=VAR_EXTERNAL

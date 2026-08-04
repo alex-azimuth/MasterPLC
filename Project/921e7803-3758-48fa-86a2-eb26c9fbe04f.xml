@@ -7,9 +7,7 @@
       <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
     </ExecutionConditionCJUnit>
   </GeneralSettingsData>
-  <Programs>
-    <AssociatedProgramData ProgramName="User_IOs" InstanceName="User_IOs" IniFileTrackingId="b24232ac8c0f4c44a49aa581de44de5a" StartupSetting="FALSE" SequenceNumber="1" IsDebugProgram="false" />
-  </Programs>
+  <Programs />
   <RefreshUnitIds />
   <TaskInterfaceVariables version="1" />
 </data>
