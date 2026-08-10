@@ -431,6 +431,17 @@ _EN=Variables
 ++D=BOOL	N=Auto_Cycle_180	G=VAR	Com=Make absolutely sure to pass through 180.
 ++D=TP	N=Reset_DSV_TP	G=VAR
 ++D=TP	N=Reset_DSV_Wait	G=VAR
+++D=Equivalent	N=Adj_Up_Eq	G=VAR
+++D=Equivalent	N=Adj_Down_Eq	G=VAR
+++D=REAL	N=Freq_Hysteresis	R=1	IV=5	G=VAR
+++D=BOOL	N=Transfer_Hysteresis	G=VAR
+++D=EC_CoESDOWrite	N=Press_ECAT_Change_Freq_Hysteresis	G=VAR
+++D=_sSDO_ACCESS	N=Freq_Hysteresis_SdoOBJ	IV=(Index := 16#402e, Subindex := 16#16, IsCompleteAccess := False)	G=VAR
+++D=BOOL	N=Press_ECAT_Change_Freq_Hysteresis_Busy	G=VAR
+++D=BOOL	N=Press_ECAT_Change_Freq_Hysteresis_Error	G=VAR
+++D=WORD	N=Press_ECAT_Change_Freq_Hysteresis_ErrorID	G=VAR
+++D=DWORD	N=Press_ECAT_Change_Freq_Hysteresis_AbortCode	G=VAR
+++D=DINT	N=Change_Freq_Value	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -673,3 +684,5 @@ _EN=Variables
 ++D=HMI_DSV_Monitor	N=HMI_DSV_Data	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_OUT_DSV_Reset	G=VAR_EXTERNAL
 ++D=BOOL	N=SFT_Auto_Allowed	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Up_Feedback	G=VAR_EXTERNAL
+++D=BOOL	N=Press_IN_Adj_Down_Feedback	G=VAR_EXTERNAL
