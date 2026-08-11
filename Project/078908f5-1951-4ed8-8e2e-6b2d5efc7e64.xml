@@ -442,6 +442,22 @@ _EN=Variables
 ++D=WORD	N=Press_ECAT_Change_Freq_Hysteresis_ErrorID	G=VAR
 ++D=DWORD	N=Press_ECAT_Change_Freq_Hysteresis_AbortCode	G=VAR
 ++D=DINT	N=Change_Freq_Value	G=VAR
+++D=TOF	N=Cooling_Unit_Delay	G=VAR
+++D=_sSDO_ACCESS	N=B_Signal_Status_Word_SDOobj	IV=(Index := UINT#16#31F0, Subindex := 02, IsCompleteAccess := False)	G=VAR
+++D=UINT	N=B_Status_Word	G=VAR
+++D=BOOL	N=Home_S_Press_Busy	G=VAR
+++D=BOOL	N=Home_S_Press_CommandAborted	G=VAR
+++D=BOOL	N=Home_S_Press_Error	G=VAR
+++D=WORD	N=Home_S_Press_ErrorID	G=VAR
+++D=BOOL	N=Pendulu_Reactivation	G=VAR
+++D=TON	N=Pos_Reached_Wait	G=VAR
+++D=BOOL	N=B_Drive_Present	R=1	G=VAR
+++D=EC_CoESDORead	N=B_Read_Status	G=VAR
+++D=BOOL	N=B_Read_Status_Busy	G=VAR
+++D=BOOL	N=B_Read_Status_Error	G=VAR
+++D=WORD	N=B_Read_Status_ErrorID	G=VAR
+++D=DWORD	N=B_Read_Status_Abort_Code	G=VAR
+++D=UINT	N=B_Read_Status_Size	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
@@ -686,3 +702,4 @@ _EN=Variables
 ++D=BOOL	N=SFT_Auto_Allowed	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Adj_Up_Feedback	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Adj_Down_Feedback	G=VAR_EXTERNAL
+++D=BOOL	N=Press_OUT_Cooling_Unit	G=VAR_EXTERNAL

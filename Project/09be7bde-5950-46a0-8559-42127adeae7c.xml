@@ -631,3 +631,4 @@ _EN=Variables
 ++D=HMI_Feeder_Direction	N=HMI_Strip_Enc_Data_Dir	G=VAR_EXTERNAL
 ++D=HMI_Feeder_Direction	N=HMI_Feed_Entry_Data	G=VAR_EXTERNAL
 ++D=HMI_Feeder_Direction	N=HMI_Feed_Exit_Data	G=VAR_EXTERNAL
+++D=HMI_Feeder_Limits	N=HMI_Feed_Limit_Data_Ret	G=VAR_EXTERNAL

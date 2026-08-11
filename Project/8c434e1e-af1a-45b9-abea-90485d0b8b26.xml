@@ -633,4 +633,5 @@ _EN=Variables
 ++D=BOOL	N=SFT_Auto_Allowed	AT=IOBus://unit#2/Auto_Allowed_Comm	G=VAR_GLOBAL	Com=Allow pedal and auto modes - normally a jumper in operator station.
 ++D=BOOL	N=Press_IN_Adj_Up_Feedback	AT=IOBus://unit#13/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL
 ++D=BOOL	N=Press_IN_Adj_Down_Feedback	AT=IOBus://unit#13/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
-++D=HMI_Feeder_Limits	N=HMI_Feed_Limit_Data_Ret	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Limits	N=HMI_Feed_Limit_Data_Ret	R=1	IV=(Max_Decel := 2540, Max_Dist := 1000000.0, Max_Dist_LREAL := 1000000.0, Min_Speed := 2, Min_Accel := 0.0, Min_Decel := 0.0, Min_Dist := -10000.0, Min_Dist_LREAL := -10000.0, Max_Speed := 762, Max_Accel := 2540, Max_Torque := 200)	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Press_OUT_Cooling_Unit	G=VAR_GLOBAL

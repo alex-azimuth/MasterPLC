@@ -20,5 +20,6 @@ _EN=Variables
 ++D=LREAL	N=Accel_O	Ord=12	G=VAR_OUTPUT
 ++D=LREAL	N=Decel_O	Ord=13	G=VAR_OUTPUT
 ++D=STRING[256]	N=Unit_Str	Ord=14	G=VAR_OUTPUT
+++D=HMI_Feeder_Limits	N=Limits	Ord=15	G=VAR_INPUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Machine_Stopped	G=VAR_EXTERNAL

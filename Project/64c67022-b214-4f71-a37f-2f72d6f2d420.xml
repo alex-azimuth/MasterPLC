@@ -57,6 +57,11 @@ _EN=Variables
 ++D=BOOL	N=Increase_Count	G=VAR
 ++D=CTU_Mul	N=Main_Counter_Mul	G=VAR
 ++D=CTU_Mul	N=Total_Count_Mul	G=VAR
+++D=SDO_WriteReadBack	N=SDO_Write_Modular	G=VAR
+++D=BOOL	N=SDO_Write_Modular_Done	G=VAR
+++D=BOOL	N=SDO_Write_Modular_Error	G=VAR
+++D=WORD	N=SDO_Write_Modular_ErrorID	G=VAR
+++D=DWORD	N=SDO_Write_Modular_Abortcode	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Features	N=Master_Features	G=VAR_EXTERNAL
 ++D=Press_Comm	N=Press_Signals	G=VAR_EXTERNAL
@@ -157,3 +162,4 @@ _EN=Variables
 ++D=BOOL	N=S_Press_Counter_T_Stop	G=VAR_EXTERNAL
 ++D=BOOL	N=S_Press_Wait_For_Feed	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_IN_Prox_Pos_Low	G=VAR_EXTERNAL
+++D=HMI_Feeder_Limits	N=HMI_Feed_Limit_Data_Ret	G=VAR_EXTERNAL

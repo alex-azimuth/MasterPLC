@@ -1,0 +1,9 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Val := (Percent*((Max_Value-Min_Value)/100))+Min_Value;&#xD;
+&#xD;
+IF (Val &gt; Max_Value) THEN&#xD;
+	Percent_Limit := Max_Value;&#xD;
+ELSIF (Val &lt; Min_Value) THEN&#xD;
+	Percent_Limit := Min_Value;&#xD;
+ELSE&#xD;
+	Percent_Limit := Val;&#xD;
+END_IF;</Text></StructuredTextModel>
