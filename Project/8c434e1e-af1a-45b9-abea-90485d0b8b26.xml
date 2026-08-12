@@ -41,6 +41,7 @@ _EN=Variables
 ++D=BOOL	N=Rev_Manual_Interlock	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Feeder_Direction	N=HMI_Feed_Data_Dir	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Feeder_Direction	N=HMI_Feed_Entry_Data	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_S_Press_Calc_Ratio	N=HMI_SPress_Calc_Data	IV=(Gearbox := 20, Pulleys := 2.11764705882352, RPM := 3000, Calc_Trigger := False, Ratio := 0.0)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Feeder_Direction	N=HMI_Feed_Exit_Data	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=HMI_Feeder_Direction	N=HMI_Strip_Enc_Data_Dir	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Features	N=Master_Features	R=1	NTP=PublicationOnly	G=VAR_GLOBAL

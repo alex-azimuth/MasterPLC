@@ -439,4 +439,11 @@ IF (Ds &lt; HMI_Press_LC_Calcs.Distance_Hazard) THEN&#xD;
 	HMI_Press_LC_Calcs.Time_Ok := TRUE;&#xD;
 ELSE&#xD;
 	HMI_Press_LC_Calcs.Time_Ok := FALSE;&#xD;
+END_IF;&#xD;
+&#xD;
+// ---------- Calculate max speed for S_Press&#xD;
+S_Press_Transfer_R(CLK := HMI_SPress_Calc_Data.Calc_Trigger);&#xD;
+&#xD;
+IF (S_Press_Transfer_R.Clk) THEN&#xD;
+	HMI_Data_Press_Retained.S_Press_Max_Speed := ((HMI_SPress_Calc_Data.RPM/60)*360)/(HMI_SPress_Calc_Data.Gearbox*HMI_SPress_Calc_Data.Pulleys);&#xD;
 END_IF;</Text></StructuredTextModel>
