@@ -163,3 +163,4 @@ _EN=Variables
 ++D=BOOL	N=S_Press_Wait_For_Feed	G=VAR_EXTERNAL
 ++D=BOOL	N=Shear_IN_Prox_Pos_Low	G=VAR_EXTERNAL
 ++D=HMI_Feeder_Limits	N=HMI_Feed_Limit_Data_Ret	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_C_Press	G=VAR_EXTERNAL

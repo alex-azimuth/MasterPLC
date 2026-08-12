@@ -703,3 +703,4 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_Adj_Up_Feedback	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_IN_Adj_Down_Feedback	G=VAR_EXTERNAL
 ++D=BOOL	N=Press_OUT_Cooling_Unit	G=VAR_EXTERNAL
+++D=BOOL	N=SFT_FR1_FR2_Discrepency	G=VAR_EXTERNAL
