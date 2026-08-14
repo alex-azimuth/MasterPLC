@@ -96,7 +96,7 @@ _EN=Variables
 ++D=BOOL	N=Machine_Stopped	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is currently idle.
 ++D=ARRAY[0..15] OF Bool	N=Gag_Pro	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..15] OF Bool	N=Gag_Ret	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_EOM_Sensor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - End of material sensor
+++D=BOOL	N=Feeder_IN_EOM_Sensor	AT=BuiltInIO://cpu/#0/Input_Bit_00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - End of material sensor
 ++D=BOOL	N=Uncoiler_IN_Rack_Limit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Signals the loop has gone higher than it should.
 ++D=BOOL	N=Uncoiler_Present	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Press_Data	N=Press	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Contains the position of the press - the rest is not useful for now.
@@ -152,8 +152,8 @@ _EN=Variables
 ++D=REAL	N=SPM	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=INT	N=Press_Speed_Raw	G=VAR_GLOBAL
 ++D=BOOL	N=Feed_Alarm_Bypass	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Press_Fault	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_OUT_Fault	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output to communicate the feeder is in a fault condition.
+++D=BOOL	N=Feeder_IN_Press_Fault	AT=BuiltInIO://cpu/#0/Input_Bit_04	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_OUT_Fault	AT=BuiltInIO://cpu/#0/Output_Bit_01	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output to communicate the feeder is in a fault condition.
 ++D=BOOL	N=Feeder_IN_Passline_UP	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Button to move the passline up.
 ++D=BOOL	N=Feeder_IN_Passline_Down	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Button to move the passline down.
 ++D=BOOL	N=Feeder_IN_Passline_Up_Limit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Limit switch that prevents the passline motor from exceeding its limits.
@@ -212,18 +212,18 @@ _EN=Variables
 ++D=ARRAY[0..32] OF Recipe_Condition	N=Global_Conditions	R=1	NTP=PublicationOnly	G=VAR_GLOBAL	Com=User I/O (32 is for display only)
 ++D=BOOL	N=Press_IN_Mode_Single	NTP=PublicationOnly	G=VAR_GLOBAL	Com=IN - Selector in single mode.
 ++D=ARRAY[0..31] OF Do_Action	N=My_Actions	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Feed_Signal	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Reset_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder reset signal.
-++D=BOOL	N=Feeder_IN_Main_Release	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Main Feeder release button.
+++D=BOOL	N=Feeder_IN_Feed_Signal	AT=BuiltInIO://cpu/#0/Input_Bit_01	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Reset_Signal	AT=BuiltInIO://cpu/#0/Input_Bit_02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder reset signal.
+++D=BOOL	N=Feeder_IN_Main_Release	AT=BuiltInIO://cpu/#0/Input_Bit_05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Main Feeder release button.
 ++D=Feed_Verification	N=HMI_Feed_Verification_Main	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feed_Verification	N=HMI_Feed_Verification_Entry	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Feed_Verification	N=HMI_Feed_Verification_Exit	R=1	IV=(Gearbox := 0.0, Pulse_Per_Rotation := 0.0, Encoder_Diameter := 0.0, After_Gearbox_Ratio := 0.0, Pulse_Ratio := 0.0, Manual_Homing := False, Encoder_Homing_Limit := 1081555777)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ULINT	N=Feeder_IN_Main_Encoder_Pos	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Release_Signal	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder release signal.
-++D=BOOL	N=Feeder_OUT_Feed_Complete	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output a pulse when the feed is completed.
-++D=BOOL	N=Feeder_OUT_Main_Release_Valve	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the rolls when activated.
-++D=BOOL	N=Feeder_IN_Main_Feed_FWD	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=Feeder_IN_Main_Feed_Rev	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Release_Signal	AT=BuiltInIO://cpu/#0/Input_Bit_03	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Standalone feeder release signal.
+++D=BOOL	N=Feeder_OUT_Feed_Complete	AT=BuiltInIO://cpu/#0/Output_Bit_02	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Output a pulse when the feed is completed.
+++D=BOOL	N=Feeder_OUT_Main_Release_Valve	AT=BuiltInIO://cpu/#0/Output_Bit_00	NTP=PublicationOnly	G=VAR_GLOBAL	Com=OUT - Open the rolls when activated.
+++D=BOOL	N=Feeder_IN_Main_Feed_FWD	AT=BuiltInIO://cpu/#0/Input_Bit_06	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Feeder_IN_Main_Feed_Rev	AT=BuiltInIO://cpu/#0/Input_Bit_07	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=Press_Options	N=Master_Press_Options	R=1	IV=(C_Press := False, S_Press := False, S_Press_Pulse_Generator := False, Hydraulic_Clamps := False, Tonnage_Monitoring := False, C_Adjustment_Motor := False, S_Adjustment_Motor := False, Adjustment_Ethercat := False, Hydraulic_Overload := False, Greaser := False, DSV_Reset := False, C_Drive_Present := False, C_Contactor_Present := False, ABB_Drive := False, ABB_ECAT := False, Pedal := False, Extrenal_SFT := False, Baumer_Encoder := False, Air_Required := False)	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Press_Mtr_Comm	G=VAR_GLOBAL
 ++D=BOOL	N=Sft_Maintain_Timer_ON	G=VAR_GLOBAL	Com=True when the operator must maintain both his hands on the dual palms to start in auto.
@@ -625,3 +625,5 @@ _EN=Variables
 ++D=BOOL	N=Press_IN_DSV_Fault	G=VAR_GLOBAL
 ++D=BOOL	N=Press_OUT_DSV_Reset	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_Auto_Allowed	G=VAR_GLOBAL	Com=Allow pedal and auto modes - normally a jumper in operator station.
+++D=REAL	N=HMI_External_Press_Spm	R=1	IV=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=HMI_Feeder_Limits	N=HMI_Feed_Limit_Data_Ret	R=1	IV=(Max_Decel := 2540, Max_Dist := 1000000.0, Max_Dist_LREAL := 1000000.0, Min_Speed := 2, Min_Accel := 0.0, Min_Decel := 0.0, Min_Dist := -10000.0, Min_Dist_LREAL := -10000.0, Max_Speed := 762, Max_Accel := 2540, Max_Torque := 200)	NTP=PublicationOnly	G=VAR_GLOBAL

@@ -72,3 +72,4 @@ _EN=Variables
 ++D=HMI_Dist_LC_Calc	N=HMI_Press_LC_Calcs	G=VAR_EXTERNAL
 ++D=LREAL	N=Ds	G=VAR_EXTERNAL
 ++D=HMI_Feeder_Ratios_Ret	N=HMI_Feeder_Ratio	G=VAR_EXTERNAL
+++D=REAL	N=HMI_External_Press_Spm	G=VAR_EXTERNAL
