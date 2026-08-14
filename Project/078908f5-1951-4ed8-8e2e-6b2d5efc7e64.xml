@@ -458,6 +458,7 @@ _EN=Variables
 ++D=WORD	N=B_Read_Status_ErrorID	G=VAR
 ++D=DWORD	N=B_Read_Status_Abort_Code	G=VAR
 ++D=UINT	N=B_Read_Status_Size	G=VAR
+++D=TOF	N=Reset_S_Press_Alarm_TOF	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL
