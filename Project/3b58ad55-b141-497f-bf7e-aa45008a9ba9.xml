@@ -446,4 +446,24 @@ S_Press_Transfer_R(CLK := HMI_SPress_Calc_Data.Calc_Trigger);&#xD;
 &#xD;
 IF (S_Press_Transfer_R.Clk) THEN&#xD;
 	HMI_Data_Press_Retained.S_Press_Max_Speed := ((HMI_SPress_Calc_Data.RPM/60)*360)/(HMI_SPress_Calc_Data.Gearbox*HMI_SPress_Calc_Data.Pulleys);&#xD;
-END_IF;</Text></StructuredTextModel>
+END_IF;&#xD;
+&#xD;
+// ---------- Feeder adj factor decide based on roller size&#xD;
+&#xD;
+// Select correct adj factor based on roller size (map on HMI), otherwise use the adjustment factor in the adjustment screen&#xD;
+HMI_Feeder_Adj_Empty_Flag := TRUE;&#xD;
+FOR F_Index := 0 TO 24 DO&#xD;
+		IF (HMI_Feeder_Adj_Size[F_Index] &lt;&gt; 0 ) THEN&#xD;
+			HMI_Feeder_Adj_Empty_Flag := FALSE;&#xD;
+			IF (HMI_Feeder_Adj_Size[F_Index] = HMI_Feeder_Adj_Index)THEN&#xD;
+				IF (Master_Feeder_Options.One_Feed_System) THEN&#xD;
+					HMI_Feeder_Data_Retained.Main_Adj_Factor := HMI_Feeder_Adj_Map[F_Index];&#xD;
+				ELSE&#xD;
+					HMI_Feeder_Data_Retained.Entry_Adj_Factor := HMI_Feeder_Adj_Map[F_Index];&#xD;
+					HMI_Feeder_Data_Retained.Exit_Adj_Factor := HMI_Feeder_Adj_Map[F_Index];&#xD;
+				END_IF;&#xD;
+				EXIT;&#xD;
+			END_IF;&#xD;
+		END_IF;&#xD;
+END_FOR;&#xD;
+</Text></StructuredTextModel>

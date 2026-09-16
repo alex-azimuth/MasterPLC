@@ -638,3 +638,7 @@ _EN=Variables
 ++D=BOOL	N=Press_OUT_Cooling_Unit	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_FR1_FR2_Discrepency	AT=IOBus://unit#2/FR1_FR2_Discrepency	G=VAR_GLOBAL
 ++D=BOOL	N=SFT_C_Press	AT=IOBus://unit#2/C_Press	G=VAR_GLOBAL	Com=C_Press option
+++D=BOOL	N=HMI_Feeder_Adj_Empty_Flag	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=HMI_Feeder_Adj_Index	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..24] OF LREAL	N=HMI_Feeder_Adj_Map	R=1	IV=[25(1.0)]	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..24] OF LREAL	N=HMI_Feeder_Adj_Size	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
