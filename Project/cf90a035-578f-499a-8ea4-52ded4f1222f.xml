@@ -37,6 +37,10 @@ _EN=Variables
 ++D=INT	N=Last_1	G=VAR
 ++D=INT	N=R	G=VAR
 ++D=ARRAY[0..30] OF Sequence_Absolute	N=Sorted_Pos	G=VAR
+++D=TOF	N=Calculate_Pos_TOF	G=VAR
+++D=LREAL	N=Cut_Off_Length	G=VAR
+++D=TOF	N=Transfer_Sequence_TOF	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=HMI_Sequence_Absolute	N=HMI_ABS_Seq_Data	G=VAR_EXTERNAL
 ++D=Feed_Sequence_REAL	N=HMI_Feeder_Sequences_Retained	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_Feed_Absolute_Cutoff	G=VAR_EXTERNAL
