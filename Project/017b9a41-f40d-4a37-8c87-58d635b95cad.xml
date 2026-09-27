@@ -43,6 +43,7 @@ _EN=Variables
 ++D=R_TRIG	N=Transfer_Exit_Ratio_R	G=VAR
 ++D=INT	N=F_Index	G=VAR
 ++D=R_TRIG	N=S_Press_Transfer_R	G=VAR
+++D=INT	N=D_Index	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=Feeder_Comm	N=Feeder_Signals	G=VAR_EXTERNAL
 ++D=HMI_Feed_Calc	N=HMI_Calc_Data_Feed	G=VAR_EXTERNAL

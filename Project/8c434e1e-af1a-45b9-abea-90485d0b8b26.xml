@@ -3,6 +3,7 @@ _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_GLOBAL
 ++D=HMI_Overload_Reset	N=HMI_O_Reset	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=HMI_Feed_Absolute_Cutoff	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=Stroke_Press	G=VAR_GLOBAL	Com=From Safety - DSV is active.
 ++D=BOOL	N=Stop_Press	G=VAR_GLOBAL
 ++D=BOOL	N=Press_Top_Pos	NTP=PublicationOnly	G=VAR_GLOBAL	Com=Press is at the top position
