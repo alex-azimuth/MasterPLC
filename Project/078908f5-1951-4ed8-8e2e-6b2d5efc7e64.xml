@@ -469,6 +469,7 @@ _EN=Variables
 ++D=BOOL	N=S_Adj_Stop_Error	G=VAR
 ++D=WORD	N=S_Adj_Stop_ErrorID	G=VAR
 ++D=BOOL	N=ADJ_Permission	G=VAR
+++D=TOF	N=Pendulum_Move_TOF	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Safety_Ok	G=VAR_EXTERNAL	Com=Safety coming from the safety PLC.
 ++D=BOOL	N=Press_Top_Pos	G=VAR_EXTERNAL

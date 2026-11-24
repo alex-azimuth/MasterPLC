@@ -644,3 +644,13 @@ _EN=Variables
 ++D=ARRAY[0..24] OF LREAL	N=HMI_Feeder_Adj_Map	R=1	IV=[25(1.0)]	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..24] OF LREAL	N=HMI_Feeder_Adj_Size	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=LREAL	N=HMI_S_Desired_Shut_Height_Ret	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Doors_Closed	AT=IOBus://unit#2/Doors_Closed_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Doors_Mag	AT=IOBus://unit#2/Doors_Mag_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_LC_2	AT=IOBus://unit#2/LC2_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Aux_ES	AT=IOBus://unit#2/Aux_ES_Comm	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_One_Feed_System	AT=IOBus://unit#2/One_Feed_System	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Two_Feed_System	AT=IOBus://unit#2/Two_Feed_System	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Recoiler_Active	AT=IOBus://unit#2/Recoiler_Active	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_Feeder_Active	AT=IOBus://unit#2/Feeder_Active	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_S_Press	AT=IOBus://unit#2/S_Press	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SFT_S_Adj	AT=IOBus://unit#2/S_ADJ	NTP=PublicationOnly	G=VAR_GLOBAL
